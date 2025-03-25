@@ -12,21 +12,55 @@ namespace Login_Register
 {
     public partial class Login_Register: Form
     {
+        
+        private int targetX;
         public Login_Register()
         {
             InitializeComponent();
         }
-
-        private void btnMinimizarRegister_Click(object sender, EventArgs e)
+        private void Login_Register_Load(object sender, EventArgs e)
         {
+            
 
+
+            // Inicializa a posição do painel
+             pnl.Left = 0;
+             targetX = 0;
+
+             // Configura os eventos de clique dos botões
+             linkRegister.LinkClicked += linkRegister_LinkClicked; // Método gerado pelo Designer
+             linkLogin.LinkClicked += linkLogin_LinkClicked_1;
+
+             // Inicia o timer para a animação
+             Timer animationTimer = new Timer();
+             animationTimer.Interval = 10; // Intervalo de 10ms
+             animationTimer.Tick += AnimationTimer_Tick;
+             animationTimer.Start();
+            
         }
-
-        private void btnFecharRegister_Click(object sender, EventArgs e)
+        private void linkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            targetX = 440;
+            
         }
-
+        private void linkLogin_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            targetX = 0;
+            
+        }
+        private void AnimationTimer_Tick(object sender, EventArgs e)
+        {
+           // Verifica se o painel precisa se mover
+            if (pnl.Left < targetX)
+            {
+                pnl.Left += 5; // Move para a direita
+            }
+            else if (pnl.Left > targetX)
+            {
+                pnl.Left -= 5; // Move para a esquerda
+            }
+           
+        }
         private void txtRegister_Click(object sender, EventArgs e)
         {
 
@@ -99,17 +133,12 @@ namespace Login_Register
 
         private void btnFecharLogin_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void btnMinimizarLogin_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void linkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
         }
 
         private void pnl_Paint(object sender, PaintEventArgs e)
@@ -118,6 +147,21 @@ namespace Login_Register
         }
 
         private void txtLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFecharRegister_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMinimizarRegister_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void label_error_Click(object sender, EventArgs e)
         {
 
         }
