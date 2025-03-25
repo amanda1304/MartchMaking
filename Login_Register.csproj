@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConexaoBancoDados.cs" />
     <Compile Include="Login_Register.cs">
       <SubType>Form</SubType>
     </Compile>
