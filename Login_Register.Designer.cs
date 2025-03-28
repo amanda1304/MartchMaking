@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_Register));
             this.label5 = new System.Windows.Forms.Label();
-            this.panelUserLogin = new System.Windows.Forms.Panel();
-            this.textBoxuser = new System.Windows.Forms.TextBox();
             this.btnFecharLogin = new System.Windows.Forms.Button();
             this.btnMinimizarLogin = new System.Windows.Forms.Button();
             this.txtLogin = new System.Windows.Forms.Label();
@@ -65,12 +63,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxpassword = new System.Windows.Forms.TextBox();
             this.panelSenhaLogin = new System.Windows.Forms.Panel();
-            this.panelUserLogin.SuspendLayout();
+            this.textBoxuser = new System.Windows.Forms.TextBox();
+            this.panelUserLogin = new System.Windows.Forms.Panel();
             this.panelconfirmsenha.SuspendLayout();
             this.panelsenharegister.SuspendLayout();
             this.panelemail.SuspendLayout();
             this.paneluserregister.SuspendLayout();
             this.panelSenhaLogin.SuspendLayout();
+            this.panelUserLogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
@@ -82,30 +82,6 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 25);
             this.label5.TabIndex = 31;
-            // 
-            // panelUserLogin
-            // 
-            this.panelUserLogin.BackColor = System.Drawing.Color.White;
-            this.panelUserLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panelUserLogin.Controls.Add(this.textBoxuser);
-            this.panelUserLogin.Location = new System.Drawing.Point(523, 189);
-            this.panelUserLogin.Margin = new System.Windows.Forms.Padding(0);
-            this.panelUserLogin.Name = "panelUserLogin";
-            this.panelUserLogin.Size = new System.Drawing.Size(270, 37);
-            this.panelUserLogin.TabIndex = 32;
-            // 
-            // textBoxuser
-            // 
-            this.textBoxuser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxuser.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxuser.Location = new System.Drawing.Point(14, 10);
-            this.textBoxuser.Multiline = true;
-            this.textBoxuser.Name = "textBoxuser";
-            this.textBoxuser.Size = new System.Drawing.Size(242, 22);
-            this.textBoxuser.TabIndex = 2;
             // 
             // btnFecharLogin
             // 
@@ -523,6 +499,30 @@
             this.panelSenhaLogin.Size = new System.Drawing.Size(270, 37);
             this.panelSenhaLogin.TabIndex = 33;
             // 
+            // textBoxuser
+            // 
+            this.textBoxuser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxuser.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxuser.Location = new System.Drawing.Point(14, 10);
+            this.textBoxuser.Multiline = true;
+            this.textBoxuser.Name = "textBoxuser";
+            this.textBoxuser.Size = new System.Drawing.Size(242, 22);
+            this.textBoxuser.TabIndex = 2;
+            // 
+            // panelUserLogin
+            // 
+            this.panelUserLogin.BackColor = System.Drawing.Color.White;
+            this.panelUserLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelUserLogin.Controls.Add(this.textBoxuser);
+            this.panelUserLogin.Location = new System.Drawing.Point(523, 189);
+            this.panelUserLogin.Margin = new System.Windows.Forms.Padding(0);
+            this.panelUserLogin.Name = "panelUserLogin";
+            this.panelUserLogin.Size = new System.Drawing.Size(270, 37);
+            this.panelUserLogin.TabIndex = 32;
+            // 
             // Login_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -563,8 +563,6 @@
             this.Name = "Login_Register";
             this.Text = "Login_Register";
             this.Load += new System.EventHandler(this.Login_Register_Load);
-            this.panelUserLogin.ResumeLayout(false);
-            this.panelUserLogin.PerformLayout();
             this.panelconfirmsenha.ResumeLayout(false);
             this.panelconfirmsenha.PerformLayout();
             this.panelsenharegister.ResumeLayout(false);
@@ -575,6 +573,8 @@
             this.paneluserregister.PerformLayout();
             this.panelSenhaLogin.ResumeLayout(false);
             this.panelSenhaLogin.PerformLayout();
+            this.panelUserLogin.ResumeLayout(false);
+            this.panelUserLogin.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -582,8 +582,6 @@
 
         #endregion
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panelUserLogin;
-        private System.Windows.Forms.TextBox textBoxuser;
         private System.Windows.Forms.Button btnFecharLogin;
         private System.Windows.Forms.Button btnMinimizarLogin;
         private System.Windows.Forms.Label txtLogin;
@@ -617,5 +615,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxpassword;
         private System.Windows.Forms.Panel panelSenhaLogin;
+        private System.Windows.Forms.TextBox textBoxuser;
+        private System.Windows.Forms.Panel panelUserLogin;
     }
 }
