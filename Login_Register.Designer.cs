@@ -30,11 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_Register));
             this.label5 = new System.Windows.Forms.Label();
+            this.panelUserLogin = new System.Windows.Forms.Panel();
+            this.textBoxuser = new System.Windows.Forms.TextBox();
             this.btnFecharLogin = new System.Windows.Forms.Button();
             this.btnMinimizarLogin = new System.Windows.Forms.Button();
             this.txtLogin = new System.Windows.Forms.Label();
             this.txtNameUserLogin = new System.Windows.Forms.Label();
             this.txtSenhaLogin = new System.Windows.Forms.Label();
+            this.panelSenhaLogin = new System.Windows.Forms.Panel();
+            this.textBoxpassword = new System.Windows.Forms.TextBox();
             this.linkRegister = new System.Windows.Forms.LinkLabel();
             this.txtNaoTemContaLogin = new System.Windows.Forms.Label();
             this.BtnEntrar = new System.Windows.Forms.Button();
@@ -59,18 +63,12 @@
             this.pnl = new System.Windows.Forms.Panel();
             this.label_error = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxpassword = new System.Windows.Forms.TextBox();
-            this.panelSenhaLogin = new System.Windows.Forms.Panel();
-            this.textBoxuser = new System.Windows.Forms.TextBox();
-            this.panelUserLogin = new System.Windows.Forms.Panel();
+            this.panelUserLogin.SuspendLayout();
+            this.panelSenhaLogin.SuspendLayout();
             this.panelconfirmsenha.SuspendLayout();
             this.panelsenharegister.SuspendLayout();
             this.panelemail.SuspendLayout();
             this.paneluserregister.SuspendLayout();
-            this.panelSenhaLogin.SuspendLayout();
-            this.panelUserLogin.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
@@ -82,6 +80,30 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 25);
             this.label5.TabIndex = 31;
+            // 
+            // panelUserLogin
+            // 
+            this.panelUserLogin.BackColor = System.Drawing.Color.White;
+            this.panelUserLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelUserLogin.Controls.Add(this.textBoxuser);
+            this.panelUserLogin.Location = new System.Drawing.Point(523, 189);
+            this.panelUserLogin.Margin = new System.Windows.Forms.Padding(0);
+            this.panelUserLogin.Name = "panelUserLogin";
+            this.panelUserLogin.Size = new System.Drawing.Size(270, 37);
+            this.panelUserLogin.TabIndex = 32;
+            // 
+            // textBoxuser
+            // 
+            this.textBoxuser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxuser.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxuser.Location = new System.Drawing.Point(14, 10);
+            this.textBoxuser.Multiline = true;
+            this.textBoxuser.Name = "textBoxuser";
+            this.textBoxuser.Size = new System.Drawing.Size(242, 22);
+            this.textBoxuser.TabIndex = 2;
             // 
             // btnFecharLogin
             // 
@@ -144,13 +166,38 @@
             this.txtSenhaLogin.TabIndex = 28;
             this.txtSenhaLogin.Text = "Senha";
             // 
+            // panelSenhaLogin
+            // 
+            this.panelSenhaLogin.BackColor = System.Drawing.Color.White;
+            this.panelSenhaLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelSenhaLogin.Controls.Add(this.textBoxpassword);
+            this.panelSenhaLogin.Location = new System.Drawing.Point(523, 278);
+            this.panelSenhaLogin.Margin = new System.Windows.Forms.Padding(0);
+            this.panelSenhaLogin.Name = "panelSenhaLogin";
+            this.panelSenhaLogin.Size = new System.Drawing.Size(270, 37);
+            this.panelSenhaLogin.TabIndex = 33;
+            // 
+            // textBoxpassword
+            // 
+            this.textBoxpassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxpassword.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.textBoxpassword.Location = new System.Drawing.Point(14, 10);
+            this.textBoxpassword.Multiline = true;
+            this.textBoxpassword.Name = "textBoxpassword";
+            this.textBoxpassword.PasswordChar = '•';
+            this.textBoxpassword.Size = new System.Drawing.Size(242, 22);
+            this.textBoxpassword.TabIndex = 2;
+            // 
             // linkRegister
             // 
             this.linkRegister.ActiveLinkColor = System.Drawing.Color.Cyan;
             this.linkRegister.AutoSize = true;
             this.linkRegister.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkRegister.LinkColor = System.Drawing.Color.SteelBlue;
-            this.linkRegister.Location = new System.Drawing.Point(589, 506);
+            this.linkRegister.Location = new System.Drawing.Point(589, 500);
             this.linkRegister.Name = "linkRegister";
             this.linkRegister.Size = new System.Drawing.Size(136, 24);
             this.linkRegister.TabIndex = 34;
@@ -163,7 +210,7 @@
             this.txtNaoTemContaLogin.AutoSize = true;
             this.txtNaoTemContaLogin.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNaoTemContaLogin.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.txtNaoTemContaLogin.Location = new System.Drawing.Point(583, 474);
+            this.txtNaoTemContaLogin.Location = new System.Drawing.Point(583, 468);
             this.txtNaoTemContaLogin.Name = "txtNaoTemContaLogin";
             this.txtNaoTemContaLogin.Size = new System.Drawing.Size(148, 20);
             this.txtNaoTemContaLogin.TabIndex = 30;
@@ -357,7 +404,7 @@
             this.txtRegister.BackColor = System.Drawing.Color.Transparent;
             this.txtRegister.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRegister.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.txtRegister.Location = new System.Drawing.Point(152, 46);
+            this.txtRegister.Location = new System.Drawing.Point(142, 46);
             this.txtRegister.Name = "txtRegister";
             this.txtRegister.Size = new System.Drawing.Size(160, 36);
             this.txtRegister.TabIndex = 37;
@@ -418,11 +465,7 @@
             // 
             this.pnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl.BackgroundImage")));
             this.pnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-
-            this.pnl.Location = new System.Drawing.Point(-3, 2);
-
             this.pnl.Location = new System.Drawing.Point(3, 5);
-
             this.pnl.Name = "pnl";
             this.pnl.Size = new System.Drawing.Size(445, 600);
             this.pnl.TabIndex = 51;
@@ -433,7 +476,7 @@
             this.label_error.AutoSize = true;
             this.label_error.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_error.ForeColor = System.Drawing.Color.Firebrick;
-            this.label_error.Location = new System.Drawing.Point(543, 123);
+            this.label_error.Location = new System.Drawing.Point(534, 123);
             this.label_error.Name = "label_error";
             this.label_error.Size = new System.Drawing.Size(236, 17);
             this.label_error.TabIndex = 52;
@@ -452,81 +495,6 @@
             this.label1.TabIndex = 53;
             this.label1.Text = "*As senhas não coincidem";
             // 
-            // button2
-            // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(523, 415);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(270, 39);
-            this.button2.TabIndex = 55;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Tomato;
-            this.label2.Location = new System.Drawing.Point(134, 91);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 17);
-            this.label2.TabIndex = 56;
-            this.label2.Text = "*Preencha todos os campos";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // textBoxpassword
-            // 
-            this.textBoxpassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxpassword.Font = new System.Drawing.Font("Arial", 11.25F);
-            this.textBoxpassword.Location = new System.Drawing.Point(14, 10);
-            this.textBoxpassword.Multiline = true;
-            this.textBoxpassword.Name = "textBoxpassword";
-            this.textBoxpassword.PasswordChar = '•';
-            this.textBoxpassword.Size = new System.Drawing.Size(242, 22);
-            this.textBoxpassword.TabIndex = 2;
-            // 
-            // panelSenhaLogin
-            // 
-            this.panelSenhaLogin.BackColor = System.Drawing.Color.White;
-            this.panelSenhaLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panelSenhaLogin.Controls.Add(this.textBoxpassword);
-            this.panelSenhaLogin.Location = new System.Drawing.Point(523, 278);
-            this.panelSenhaLogin.Margin = new System.Windows.Forms.Padding(0);
-            this.panelSenhaLogin.Name = "panelSenhaLogin";
-            this.panelSenhaLogin.Size = new System.Drawing.Size(270, 37);
-            this.panelSenhaLogin.TabIndex = 33;
-            // 
-            // textBoxuser
-            // 
-            this.textBoxuser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBoxuser.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxuser.Location = new System.Drawing.Point(14, 10);
-            this.textBoxuser.Multiline = true;
-            this.textBoxuser.Name = "textBoxuser";
-            this.textBoxuser.Size = new System.Drawing.Size(242, 22);
-            this.textBoxuser.TabIndex = 2;
-            // 
-            // panelUserLogin
-            // 
-            this.panelUserLogin.BackColor = System.Drawing.Color.White;
-            this.panelUserLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panelUserLogin.Controls.Add(this.textBoxuser);
-            this.panelUserLogin.Location = new System.Drawing.Point(523, 189);
-            this.panelUserLogin.Margin = new System.Windows.Forms.Padding(0);
-            this.panelUserLogin.Name = "panelUserLogin";
-            this.panelUserLogin.Size = new System.Drawing.Size(270, 37);
-            this.panelUserLogin.TabIndex = 32;
-            // 
             // Login_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -534,8 +502,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(884, 597);
             this.Controls.Add(this.pnl);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_error);
             this.Controls.Add(this.btnFecharRegister);
@@ -567,13 +533,10 @@
             this.Name = "Login_Register";
             this.Text = "Login_Register";
             this.Load += new System.EventHandler(this.Login_Register_Load);
-
-=======
             this.panelUserLogin.ResumeLayout(false);
             this.panelUserLogin.PerformLayout();
             this.panelSenhaLogin.ResumeLayout(false);
             this.panelSenhaLogin.PerformLayout();
-
             this.panelconfirmsenha.ResumeLayout(false);
             this.panelconfirmsenha.PerformLayout();
             this.panelsenharegister.ResumeLayout(false);
@@ -582,10 +545,6 @@
             this.panelemail.PerformLayout();
             this.paneluserregister.ResumeLayout(false);
             this.paneluserregister.PerformLayout();
-            this.panelSenhaLogin.ResumeLayout(false);
-            this.panelSenhaLogin.PerformLayout();
-            this.panelUserLogin.ResumeLayout(false);
-            this.panelUserLogin.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -593,11 +552,15 @@
 
         #endregion
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panelUserLogin;
+        private System.Windows.Forms.TextBox textBoxuser;
         private System.Windows.Forms.Button btnFecharLogin;
         private System.Windows.Forms.Button btnMinimizarLogin;
         private System.Windows.Forms.Label txtLogin;
         private System.Windows.Forms.Label txtNameUserLogin;
         private System.Windows.Forms.Label txtSenhaLogin;
+        private System.Windows.Forms.Panel panelSenhaLogin;
+        private System.Windows.Forms.TextBox textBoxpassword;
         private System.Windows.Forms.LinkLabel linkRegister;
         private System.Windows.Forms.Label txtNaoTemContaLogin;
         private System.Windows.Forms.Button BtnEntrar;
@@ -622,11 +585,5 @@
         private System.Windows.Forms.Panel pnl;
         private System.Windows.Forms.Label label_error;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxpassword;
-        private System.Windows.Forms.Panel panelSenhaLogin;
-        private System.Windows.Forms.TextBox textBoxuser;
-        private System.Windows.Forms.Panel panelUserLogin;
     }
 }
