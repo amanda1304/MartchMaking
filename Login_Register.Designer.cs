@@ -429,7 +429,7 @@
             this.label_error.AutoSize = true;
             this.label_error.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_error.ForeColor = System.Drawing.Color.Firebrick;
-            this.label_error.Location = new System.Drawing.Point(534, 123);
+            this.label_error.Location = new System.Drawing.Point(543, 123);
             this.label_error.Name = "label_error";
             this.label_error.Size = new System.Drawing.Size(236, 17);
             this.label_error.TabIndex = 52;
