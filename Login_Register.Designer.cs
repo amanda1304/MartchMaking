@@ -418,7 +418,11 @@
             // 
             this.pnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl.BackgroundImage")));
             this.pnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+
             this.pnl.Location = new System.Drawing.Point(-3, 2);
+
+            this.pnl.Location = new System.Drawing.Point(3, 5);
+
             this.pnl.Name = "pnl";
             this.pnl.Size = new System.Drawing.Size(445, 600);
             this.pnl.TabIndex = 51;
@@ -563,6 +567,13 @@
             this.Name = "Login_Register";
             this.Text = "Login_Register";
             this.Load += new System.EventHandler(this.Login_Register_Load);
+
+=======
+            this.panelUserLogin.ResumeLayout(false);
+            this.panelUserLogin.PerformLayout();
+            this.panelSenhaLogin.ResumeLayout(false);
+            this.panelSenhaLogin.PerformLayout();
+
             this.panelconfirmsenha.ResumeLayout(false);
             this.panelconfirmsenha.PerformLayout();
             this.panelsenharegister.ResumeLayout(false);
