@@ -17,6 +17,8 @@ namespace Login_Register
         public Login_Register()
         {
             InitializeComponent();
+
+
         }
         private void Login_Register_Load(object sender, EventArgs e)
         {
@@ -163,10 +165,15 @@ namespace Login_Register
 
         private void label_error_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnEntrar_Click(object sender, EventArgs e)
         {
 
         }

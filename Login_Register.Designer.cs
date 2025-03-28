@@ -65,6 +65,8 @@
             this.panelSenhaLogin = new System.Windows.Forms.Panel();
             this.textBoxuser = new System.Windows.Forms.TextBox();
             this.panelUserLogin = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panelconfirmsenha.SuspendLayout();
             this.panelsenharegister.SuspendLayout();
             this.panelemail.SuspendLayout();
@@ -183,6 +185,7 @@
             this.BtnEntrar.TabIndex = 29;
             this.BtnEntrar.Text = "Entrar";
             this.BtnEntrar.UseVisualStyleBackColor = true;
+            this.BtnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
             // 
             // btnFecharRegister
             // 
@@ -418,7 +421,7 @@
             // 
             this.pnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl.BackgroundImage")));
             this.pnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnl.Location = new System.Drawing.Point(-3, 2);
+            this.pnl.Location = new System.Drawing.Point(-2, 3);
             this.pnl.Name = "pnl";
             this.pnl.Size = new System.Drawing.Size(445, 600);
             this.pnl.TabIndex = 51;
@@ -523,12 +526,37 @@
             this.panelUserLogin.Size = new System.Drawing.Size(270, 37);
             this.panelUserLogin.TabIndex = 32;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Firebrick;
+            this.label3.Location = new System.Drawing.Point(526, 319);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(169, 17);
+            this.label3.TabIndex = 57;
+            this.label3.Text = "*As senhas não coincidem";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Firebrick;
+            this.label4.Location = new System.Drawing.Point(526, 226);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 17);
+            this.label4.TabIndex = 58;
+            // 
             // Login_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(884, 597);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.pnl);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
@@ -617,5 +645,7 @@
         private System.Windows.Forms.Panel panelSenhaLogin;
         private System.Windows.Forms.TextBox textBoxuser;
         private System.Windows.Forms.Panel panelUserLogin;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
