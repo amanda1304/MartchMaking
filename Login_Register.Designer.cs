@@ -435,9 +435,8 @@
             this.label_error.ForeColor = System.Drawing.Color.Firebrick;
             this.label_error.Location = new System.Drawing.Point(543, 123);
             this.label_error.Name = "label_error";
-            this.label_error.Size = new System.Drawing.Size(236, 17);
+            this.label_error.Size = new System.Drawing.Size(0, 17);
             this.label_error.TabIndex = 52;
-            this.label_error.Text = "*O Login e/ou a senhá está incorreto";
             this.label_error.Click += new System.EventHandler(this.label_error_Click);
             // 
             // label1
@@ -491,6 +490,7 @@
             this.textBoxpassword.PasswordChar = '•';
             this.textBoxpassword.Size = new System.Drawing.Size(242, 22);
             this.textBoxpassword.TabIndex = 2;
+            this.textBoxpassword.TextChanged += new System.EventHandler(this.textBoxpassword_TextChanged);
             // 
             // panelSenhaLogin
             // 
@@ -515,6 +515,7 @@
             this.textBoxuser.Name = "textBoxuser";
             this.textBoxuser.Size = new System.Drawing.Size(242, 22);
             this.textBoxuser.TabIndex = 2;
+            this.textBoxuser.TextChanged += new System.EventHandler(this.textBoxuser_TextChanged);
             // 
             // panelUserLogin
             // 
@@ -549,9 +550,11 @@
             this.linkEsqueciASenha.TabIndex = 59;
             this.linkEsqueciASenha.TabStop = true;
             this.linkEsqueciASenha.Text = "Esqueci a senha";
+            this.linkEsqueciASenha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkEsqueciASenha_LinkClicked);
             // 
             // Login_Register
             // 
+            this.AcceptButton = this.BtnEntrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
@@ -588,10 +591,15 @@
             this.Controls.Add(this.panelUserLogin);
             this.Controls.Add(this.linkRegister);
             this.Controls.Add(this.btnMinimizarLogin);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login_Register";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login_Register";
             this.Load += new System.EventHandler(this.Login_Register_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_Register_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Login_Register_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Login_Register_MouseUp);
             this.panelconfirmsenha.ResumeLayout(false);
             this.panelconfirmsenha.PerformLayout();
             this.panelsenharegister.ResumeLayout(false);

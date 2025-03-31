@@ -17,12 +17,16 @@ namespace Login_Register
         public Login_Register()
         {
             InitializeComponent();
-
-
         }
+            int TogMove;
+            int MValX;
+            int MValY;
+
+        
         private void Login_Register_Load(object sender, EventArgs e)
         {
             
+
 
 
             // Inicializa a posição do painel
@@ -40,6 +44,29 @@ namespace Login_Register
              animationTimer.Start();
             
         }
+
+        private void Login_Register_MouseDown(object sender, MouseEventArgs e)
+        {
+           
+            TogMove = 1;
+            MValX = e.X;
+            MValY = e.Y;
+        }
+
+        private void Login_Register_MouseUp(object sender, MouseEventArgs e)
+        {
+            TogMove = 0;
+        }
+
+        private void Login_Register_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (TogMove == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - MValX, MousePosition.Y - MValY);
+            }
+        }
+
+
         private void linkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             targetX = 440;
@@ -180,12 +207,40 @@ namespace Login_Register
 
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
-
+            ValidarLogin validacao = new ValidarLogin();
+            if (validacao.Validar(textBoxuser.Text, textBoxpassword.Text))
+            {
+                this.Hide();
+                 TelaInicial telainicial = new TelaInicial();
+                telainicial.ShowDialog();
+            }
+            else
+            {
+                label_error.Text = "*O Login e/ou a senhá está incorreto";
+            }
         }
 
         private void txtNaoTemContaLogin_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBoxuser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxpassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkEsqueciASenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
+                this.Hide();
+            EsqueciASenha esqueciasenha = new EsqueciASenha();
+            esqueciasenha.Show();
         }
     }
 }

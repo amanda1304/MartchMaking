@@ -72,6 +72,7 @@
     <Compile Include="Interface\TelaInicial.Designer.cs">
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="ValidarLogin.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
