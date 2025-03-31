@@ -16,5 +16,12 @@ namespace Login_Register
         {
             InitializeComponent();
         }
+
+        private void btnVoltarRecuperarSenha_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login_Register login_register = new Login_Register();
+            login_register.Show();
+        }
     }
 }

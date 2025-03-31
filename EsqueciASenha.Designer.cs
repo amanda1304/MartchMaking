@@ -111,6 +111,7 @@
             this.btnVoltarRecuperarSenha.Size = new System.Drawing.Size(95, 32);
             this.btnVoltarRecuperarSenha.TabIndex = 58;
             this.btnVoltarRecuperarSenha.UseVisualStyleBackColor = true;
+            this.btnVoltarRecuperarSenha.Click += new System.EventHandler(this.btnVoltarRecuperarSenha_Click);
             // 
             // EsqueciASenha
             // 

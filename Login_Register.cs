@@ -175,12 +175,40 @@ namespace Login_Register
 
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
-
+            ValidarLogin validacao = new ValidarLogin();
+            if (validacao.Validar(textBoxuser.Text, textBoxpassword.Text))
+            {
+                this.Hide();
+                 TelaInicial telainicial = new TelaInicial();
+                telainicial.ShowDialog();
+            }
+            else
+            {
+                label_error.Text = "*O Login e/ou a senhá está incorreto";
+            }
         }
 
         private void txtNaoTemContaLogin_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBoxuser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxpassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkEsqueciASenha_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
+                this.Hide();
+            EsqueciASenha esqueciasenha = new EsqueciASenha();
+            esqueciasenha.Show();
         }
     }
 }

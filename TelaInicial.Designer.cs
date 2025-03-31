@@ -30,33 +30,36 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaInicial));
             this.pnlMenuTelaInicial = new System.Windows.Forms.Panel();
+            this.pictureBoxIconesTelaInicial = new System.Windows.Forms.PictureBox();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.btnMatchMakingLogo = new System.Windows.Forms.Button();
+            this.btnConfiguracoes = new System.Windows.Forms.Button();
             this.btnPerfil = new System.Windows.Forms.Button();
+            this.btnMatchMaking = new System.Windows.Forms.Button();
             this.btnSimbolos = new System.Windows.Forms.Button();
             this.btnAmigos = new System.Windows.Forms.Button();
-            this.btnMatchMaking = new System.Windows.Forms.Button();
-            this.btnConfiguracoes = new System.Windows.Forms.Button();
-            this.btnLogOut = new System.Windows.Forms.Button();
             this.pnlBanerSoldado = new System.Windows.Forms.Panel();
             this.pnlTextoJogosEmDestaque = new System.Windows.Forms.Panel();
             this.panelBannersJogosEmDestaque = new System.Windows.Forms.Panel();
             this.pnlFavdaSemana1 = new System.Windows.Forms.Panel();
+            this.labelFavoritosDaSemana1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.labelFavoritosDaSemana2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.labelFavoritosDaSemana3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.labelFavoritosDaSemana4 = new System.Windows.Forms.Label();
             this.pnlHistoricoMatchMakingTelaInicial = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pnlSugesdeAmizadeTelaInicial = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pnlPerfilTelaInicial = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.labelStatusPerfilTelaInicial = new System.Windows.Forms.Label();
+            this.labelNomePerfilTelaInicial = new System.Windows.Forms.Label();
             this.btnFecharTelaInicial = new System.Windows.Forms.Button();
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
             this.btnNotificacoes = new System.Windows.Forms.Button();
-            this.pictureBoxIconesTelaInicial = new System.Windows.Forms.PictureBox();
-            this.labelFavoritosDaSemana1 = new System.Windows.Forms.Label();
-            this.labelFavoritosDaSemana2 = new System.Windows.Forms.Label();
-            this.labelFavoritosDaSemana3 = new System.Windows.Forms.Label();
-            this.labelFavoritosDaSemana4 = new System.Windows.Forms.Label();
             this.labelHistoricoNomeDeUsuario1 = new System.Windows.Forms.Label();
             this.labelHistoricoNomeDeUsuario2 = new System.Windows.Forms.Label();
             this.labelHistoricoNomeDeUsuario3 = new System.Windows.Forms.Label();
@@ -117,17 +120,15 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.labelAmigosOnlineStatus5 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.labelStatusPerfilTelaInicial = new System.Windows.Forms.Label();
-            this.labelNomePerfilTelaInicial = new System.Windows.Forms.Label();
             this.pnlMenuTelaInicial.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconesTelaInicial)).BeginInit();
             this.pnlBanerSoldado.SuspendLayout();
             this.pnlFavdaSemana1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.pnlPerfilTelaInicial.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconesTelaInicial)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHistoricoFotoDeUsuario1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHistoricoFotoDeUsuario2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHistoricoFotoDeUsuario3)).BeginInit();
@@ -144,7 +145,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenuTelaInicial
@@ -165,6 +165,26 @@
             this.pnlMenuTelaInicial.Size = new System.Drawing.Size(256, 758);
             this.pnlMenuTelaInicial.TabIndex = 0;
             // 
+            // pictureBoxIconesTelaInicial
+            // 
+            this.pictureBoxIconesTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxIconesTelaInicial.BackgroundImage")));
+            this.pictureBoxIconesTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxIconesTelaInicial.Location = new System.Drawing.Point(35, 181);
+            this.pictureBoxIconesTelaInicial.Name = "pictureBoxIconesTelaInicial";
+            this.pictureBoxIconesTelaInicial.Size = new System.Drawing.Size(30, 262);
+            this.pictureBoxIconesTelaInicial.TabIndex = 7;
+            this.pictureBoxIconesTelaInicial.TabStop = false;
+            // 
+            // btnLogOut
+            // 
+            this.btnLogOut.FlatAppearance.BorderSize = 0;
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Location = new System.Drawing.Point(1, 648);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(252, 52);
+            this.btnLogOut.TabIndex = 6;
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            // 
             // btnMatchMakingLogo
             // 
             this.btnMatchMakingLogo.BackColor = System.Drawing.Color.Transparent;
@@ -178,6 +198,16 @@
             this.btnMatchMakingLogo.TabIndex = 0;
             this.btnMatchMakingLogo.UseVisualStyleBackColor = false;
             // 
+            // btnConfiguracoes
+            // 
+            this.btnConfiguracoes.FlatAppearance.BorderSize = 0;
+            this.btnConfiguracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfiguracoes.Location = new System.Drawing.Point(1, 403);
+            this.btnConfiguracoes.Name = "btnConfiguracoes";
+            this.btnConfiguracoes.Size = new System.Drawing.Size(252, 52);
+            this.btnConfiguracoes.TabIndex = 5;
+            this.btnConfiguracoes.UseVisualStyleBackColor = true;
+            // 
             // btnPerfil
             // 
             this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -188,6 +218,16 @@
             this.btnPerfil.Size = new System.Drawing.Size(252, 52);
             this.btnPerfil.TabIndex = 1;
             this.btnPerfil.UseVisualStyleBackColor = true;
+            // 
+            // btnMatchMaking
+            // 
+            this.btnMatchMaking.FlatAppearance.BorderSize = 0;
+            this.btnMatchMaking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMatchMaking.Location = new System.Drawing.Point(1, 345);
+            this.btnMatchMaking.Name = "btnMatchMaking";
+            this.btnMatchMaking.Size = new System.Drawing.Size(252, 52);
+            this.btnMatchMaking.TabIndex = 4;
+            this.btnMatchMaking.UseVisualStyleBackColor = true;
             // 
             // btnSimbolos
             // 
@@ -208,36 +248,6 @@
             this.btnAmigos.Size = new System.Drawing.Size(252, 52);
             this.btnAmigos.TabIndex = 3;
             this.btnAmigos.UseVisualStyleBackColor = true;
-            // 
-            // btnMatchMaking
-            // 
-            this.btnMatchMaking.FlatAppearance.BorderSize = 0;
-            this.btnMatchMaking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMatchMaking.Location = new System.Drawing.Point(1, 345);
-            this.btnMatchMaking.Name = "btnMatchMaking";
-            this.btnMatchMaking.Size = new System.Drawing.Size(252, 52);
-            this.btnMatchMaking.TabIndex = 4;
-            this.btnMatchMaking.UseVisualStyleBackColor = true;
-            // 
-            // btnConfiguracoes
-            // 
-            this.btnConfiguracoes.FlatAppearance.BorderSize = 0;
-            this.btnConfiguracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfiguracoes.Location = new System.Drawing.Point(1, 403);
-            this.btnConfiguracoes.Name = "btnConfiguracoes";
-            this.btnConfiguracoes.Size = new System.Drawing.Size(252, 52);
-            this.btnConfiguracoes.TabIndex = 5;
-            this.btnConfiguracoes.UseVisualStyleBackColor = true;
-            // 
-            // btnLogOut
-            // 
-            this.btnLogOut.FlatAppearance.BorderSize = 0;
-            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogOut.Location = new System.Drawing.Point(1, 648);
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(252, 52);
-            this.btnLogOut.TabIndex = 6;
-            this.btnLogOut.UseVisualStyleBackColor = true;
             // 
             // pnlBanerSoldado
             // 
@@ -278,6 +288,20 @@
             this.pnlFavdaSemana1.Size = new System.Drawing.Size(150, 43);
             this.pnlFavdaSemana1.TabIndex = 3;
             // 
+            // labelFavoritosDaSemana1
+            // 
+            this.labelFavoritosDaSemana1.AutoSize = true;
+            this.labelFavoritosDaSemana1.BackColor = System.Drawing.Color.Transparent;
+            this.labelFavoritosDaSemana1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFavoritosDaSemana1.ForeColor = System.Drawing.Color.Transparent;
+            this.labelFavoritosDaSemana1.Location = new System.Drawing.Point(12, 14);
+            this.labelFavoritosDaSemana1.Name = "labelFavoritosDaSemana1";
+            this.labelFavoritosDaSemana1.Size = new System.Drawing.Size(123, 16);
+            this.labelFavoritosDaSemana1.TabIndex = 0;
+            this.labelFavoritosDaSemana1.Text = "League of Legends";
+            this.labelFavoritosDaSemana1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelFavoritosDaSemana1.Click += new System.EventHandler(this.labelFavoritosDaSemana1_Click);
+            // 
             // panel3
             // 
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
@@ -286,6 +310,19 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(150, 43);
             this.panel3.TabIndex = 4;
+            // 
+            // labelFavoritosDaSemana2
+            // 
+            this.labelFavoritosDaSemana2.AutoSize = true;
+            this.labelFavoritosDaSemana2.BackColor = System.Drawing.Color.Transparent;
+            this.labelFavoritosDaSemana2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFavoritosDaSemana2.ForeColor = System.Drawing.Color.Transparent;
+            this.labelFavoritosDaSemana2.Location = new System.Drawing.Point(47, 14);
+            this.labelFavoritosDaSemana2.Name = "labelFavoritosDaSemana2";
+            this.labelFavoritosDaSemana2.Size = new System.Drawing.Size(57, 16);
+            this.labelFavoritosDaSemana2.TabIndex = 1;
+            this.labelFavoritosDaSemana2.Text = "Valorant";
+            this.labelFavoritosDaSemana2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
             // 
@@ -296,6 +333,19 @@
             this.panel4.Size = new System.Drawing.Size(150, 43);
             this.panel4.TabIndex = 5;
             // 
+            // labelFavoritosDaSemana3
+            // 
+            this.labelFavoritosDaSemana3.AutoSize = true;
+            this.labelFavoritosDaSemana3.BackColor = System.Drawing.Color.Transparent;
+            this.labelFavoritosDaSemana3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFavoritosDaSemana3.ForeColor = System.Drawing.Color.Transparent;
+            this.labelFavoritosDaSemana3.Location = new System.Drawing.Point(49, 14);
+            this.labelFavoritosDaSemana3.Name = "labelFavoritosDaSemana3";
+            this.labelFavoritosDaSemana3.Size = new System.Drawing.Size(51, 16);
+            this.labelFavoritosDaSemana3.TabIndex = 2;
+            this.labelFavoritosDaSemana3.Text = "Fortnite";
+            this.labelFavoritosDaSemana3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel5
             // 
             this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
@@ -304,6 +354,19 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(150, 43);
             this.panel5.TabIndex = 6;
+            // 
+            // labelFavoritosDaSemana4
+            // 
+            this.labelFavoritosDaSemana4.AutoSize = true;
+            this.labelFavoritosDaSemana4.BackColor = System.Drawing.Color.Transparent;
+            this.labelFavoritosDaSemana4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFavoritosDaSemana4.ForeColor = System.Drawing.Color.Transparent;
+            this.labelFavoritosDaSemana4.Location = new System.Drawing.Point(29, 14);
+            this.labelFavoritosDaSemana4.Name = "labelFavoritosDaSemana4";
+            this.labelFavoritosDaSemana4.Size = new System.Drawing.Size(99, 16);
+            this.labelFavoritosDaSemana4.TabIndex = 3;
+            this.labelFavoritosDaSemana4.Text = "Rocket League";
+            this.labelFavoritosDaSemana4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlHistoricoMatchMakingTelaInicial
             // 
@@ -356,6 +419,44 @@
             this.pnlPerfilTelaInicial.Size = new System.Drawing.Size(222, 84);
             this.pnlPerfilTelaInicial.TabIndex = 11;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox6.Location = new System.Drawing.Point(8, 16);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox6.TabIndex = 99;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // labelStatusPerfilTelaInicial
+            // 
+            this.labelStatusPerfilTelaInicial.AutoSize = true;
+            this.labelStatusPerfilTelaInicial.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatusPerfilTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelStatusPerfilTelaInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStatusPerfilTelaInicial.ForeColor = System.Drawing.Color.Lime;
+            this.labelStatusPerfilTelaInicial.Location = new System.Drawing.Point(71, 44);
+            this.labelStatusPerfilTelaInicial.Name = "labelStatusPerfilTelaInicial";
+            this.labelStatusPerfilTelaInicial.Size = new System.Drawing.Size(51, 15);
+            this.labelStatusPerfilTelaInicial.TabIndex = 101;
+            this.labelStatusPerfilTelaInicial.Text = "• Online";
+            // 
+            // labelNomePerfilTelaInicial
+            // 
+            this.labelNomePerfilTelaInicial.AutoSize = true;
+            this.labelNomePerfilTelaInicial.BackColor = System.Drawing.Color.Transparent;
+            this.labelNomePerfilTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelNomePerfilTelaInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNomePerfilTelaInicial.ForeColor = System.Drawing.Color.Transparent;
+            this.labelNomePerfilTelaInicial.Location = new System.Drawing.Point(64, 25);
+            this.labelNomePerfilTelaInicial.Name = "labelNomePerfilTelaInicial";
+            this.labelNomePerfilTelaInicial.Size = new System.Drawing.Size(114, 16);
+            this.labelNomePerfilTelaInicial.TabIndex = 100;
+            this.labelNomePerfilTelaInicial.Text = "Rafael Almeida";
+            this.labelNomePerfilTelaInicial.Click += new System.EventHandler(this.label3_Click);
+            // 
             // btnFecharTelaInicial
             // 
             this.btnFecharTelaInicial.BackColor = System.Drawing.Color.Transparent;
@@ -369,6 +470,7 @@
             this.btnFecharTelaInicial.Size = new System.Drawing.Size(29, 31);
             this.btnFecharTelaInicial.TabIndex = 37;
             this.btnFecharTelaInicial.UseVisualStyleBackColor = false;
+            this.btnFecharTelaInicial.Click += new System.EventHandler(this.btnFecharTelaInicial_Click);
             // 
             // btnMinimizarTelaInicial
             // 
@@ -382,6 +484,7 @@
             this.btnMinimizarTelaInicial.Size = new System.Drawing.Size(29, 31);
             this.btnMinimizarTelaInicial.TabIndex = 38;
             this.btnMinimizarTelaInicial.UseVisualStyleBackColor = false;
+            this.btnMinimizarTelaInicial.Click += new System.EventHandler(this.btnMinimizarTelaInicial_Click);
             // 
             // btnNotificacoes
             // 
@@ -395,69 +498,6 @@
             this.btnNotificacoes.Size = new System.Drawing.Size(27, 30);
             this.btnNotificacoes.TabIndex = 39;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
-            // 
-            // pictureBoxIconesTelaInicial
-            // 
-            this.pictureBoxIconesTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxIconesTelaInicial.BackgroundImage")));
-            this.pictureBoxIconesTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxIconesTelaInicial.Location = new System.Drawing.Point(35, 181);
-            this.pictureBoxIconesTelaInicial.Name = "pictureBoxIconesTelaInicial";
-            this.pictureBoxIconesTelaInicial.Size = new System.Drawing.Size(30, 262);
-            this.pictureBoxIconesTelaInicial.TabIndex = 7;
-            this.pictureBoxIconesTelaInicial.TabStop = false;
-            // 
-            // labelFavoritosDaSemana1
-            // 
-            this.labelFavoritosDaSemana1.AutoSize = true;
-            this.labelFavoritosDaSemana1.BackColor = System.Drawing.Color.Transparent;
-            this.labelFavoritosDaSemana1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFavoritosDaSemana1.ForeColor = System.Drawing.Color.Transparent;
-            this.labelFavoritosDaSemana1.Location = new System.Drawing.Point(12, 14);
-            this.labelFavoritosDaSemana1.Name = "labelFavoritosDaSemana1";
-            this.labelFavoritosDaSemana1.Size = new System.Drawing.Size(123, 16);
-            this.labelFavoritosDaSemana1.TabIndex = 0;
-            this.labelFavoritosDaSemana1.Text = "League of Legends";
-            this.labelFavoritosDaSemana1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelFavoritosDaSemana1.Click += new System.EventHandler(this.labelFavoritosDaSemana1_Click);
-            // 
-            // labelFavoritosDaSemana2
-            // 
-            this.labelFavoritosDaSemana2.AutoSize = true;
-            this.labelFavoritosDaSemana2.BackColor = System.Drawing.Color.Transparent;
-            this.labelFavoritosDaSemana2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFavoritosDaSemana2.ForeColor = System.Drawing.Color.Transparent;
-            this.labelFavoritosDaSemana2.Location = new System.Drawing.Point(47, 14);
-            this.labelFavoritosDaSemana2.Name = "labelFavoritosDaSemana2";
-            this.labelFavoritosDaSemana2.Size = new System.Drawing.Size(57, 16);
-            this.labelFavoritosDaSemana2.TabIndex = 1;
-            this.labelFavoritosDaSemana2.Text = "Valorant";
-            this.labelFavoritosDaSemana2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelFavoritosDaSemana3
-            // 
-            this.labelFavoritosDaSemana3.AutoSize = true;
-            this.labelFavoritosDaSemana3.BackColor = System.Drawing.Color.Transparent;
-            this.labelFavoritosDaSemana3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFavoritosDaSemana3.ForeColor = System.Drawing.Color.Transparent;
-            this.labelFavoritosDaSemana3.Location = new System.Drawing.Point(49, 14);
-            this.labelFavoritosDaSemana3.Name = "labelFavoritosDaSemana3";
-            this.labelFavoritosDaSemana3.Size = new System.Drawing.Size(51, 16);
-            this.labelFavoritosDaSemana3.TabIndex = 2;
-            this.labelFavoritosDaSemana3.Text = "Fortnite";
-            this.labelFavoritosDaSemana3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelFavoritosDaSemana4
-            // 
-            this.labelFavoritosDaSemana4.AutoSize = true;
-            this.labelFavoritosDaSemana4.BackColor = System.Drawing.Color.Transparent;
-            this.labelFavoritosDaSemana4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFavoritosDaSemana4.ForeColor = System.Drawing.Color.Transparent;
-            this.labelFavoritosDaSemana4.Location = new System.Drawing.Point(29, 14);
-            this.labelFavoritosDaSemana4.Name = "labelFavoritosDaSemana4";
-            this.labelFavoritosDaSemana4.Size = new System.Drawing.Size(99, 16);
-            this.labelFavoritosDaSemana4.TabIndex = 3;
-            this.labelFavoritosDaSemana4.Text = "Rocket League";
-            this.labelFavoritosDaSemana4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelHistoricoNomeDeUsuario1
             // 
@@ -1190,44 +1230,6 @@
             this.label10.TabIndex = 96;
             this.label10.Text = "Daniele Correia";
             // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(8, 16);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox6.TabIndex = 99;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
-            // labelStatusPerfilTelaInicial
-            // 
-            this.labelStatusPerfilTelaInicial.AutoSize = true;
-            this.labelStatusPerfilTelaInicial.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatusPerfilTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelStatusPerfilTelaInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStatusPerfilTelaInicial.ForeColor = System.Drawing.Color.Lime;
-            this.labelStatusPerfilTelaInicial.Location = new System.Drawing.Point(71, 44);
-            this.labelStatusPerfilTelaInicial.Name = "labelStatusPerfilTelaInicial";
-            this.labelStatusPerfilTelaInicial.Size = new System.Drawing.Size(51, 15);
-            this.labelStatusPerfilTelaInicial.TabIndex = 101;
-            this.labelStatusPerfilTelaInicial.Text = "• Online";
-            // 
-            // labelNomePerfilTelaInicial
-            // 
-            this.labelNomePerfilTelaInicial.AutoSize = true;
-            this.labelNomePerfilTelaInicial.BackColor = System.Drawing.Color.Transparent;
-            this.labelNomePerfilTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelNomePerfilTelaInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNomePerfilTelaInicial.ForeColor = System.Drawing.Color.Transparent;
-            this.labelNomePerfilTelaInicial.Location = new System.Drawing.Point(64, 25);
-            this.labelNomePerfilTelaInicial.Name = "labelNomePerfilTelaInicial";
-            this.labelNomePerfilTelaInicial.Size = new System.Drawing.Size(114, 16);
-            this.labelNomePerfilTelaInicial.TabIndex = 100;
-            this.labelNomePerfilTelaInicial.Text = "Rafael Almeida";
-            this.labelNomePerfilTelaInicial.Click += new System.EventHandler(this.label3_Click);
-            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1315,6 +1317,7 @@
             this.Name = "TelaInicial";
             this.Text = "TelaInicial";
             this.pnlMenuTelaInicial.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconesTelaInicial)).EndInit();
             this.pnlBanerSoldado.ResumeLayout(false);
             this.pnlFavdaSemana1.ResumeLayout(false);
             this.pnlFavdaSemana1.PerformLayout();
@@ -1326,7 +1329,7 @@
             this.panel5.PerformLayout();
             this.pnlPerfilTelaInicial.ResumeLayout(false);
             this.pnlPerfilTelaInicial.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconesTelaInicial)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHistoricoFotoDeUsuario1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHistoricoFotoDeUsuario2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHistoricoFotoDeUsuario3)).EndInit();
@@ -1343,7 +1346,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
