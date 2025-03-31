@@ -45,30 +45,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConexaoBancoDados.cs" />
-    <Compile Include="EsqueciASenha.cs">
+    <Compile Include="Banco de dados\ConexaoBancoDados.cs" />
+    <Compile Include="Classes\AnimacaoLogin.cs" />
+    <Compile Include="Interface\EsqueciASenha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EsqueciASenha.Designer.cs">
+    <Compile Include="Interface\EsqueciASenha.Designer.cs">
       <DependentUpon>EsqueciASenha.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login_Register.cs">
+    <Compile Include="Interface\Login_Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login_Register.Designer.cs">
+    <Compile Include="Interface\Login_Register.Designer.cs">
       <DependentUpon>Login_Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="TelaInicial.cs">
+    <Compile Include="Interface\TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaInicial.Designer.cs">
+    <Compile Include="Interface\TelaInicial.Designer.cs">
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -76,19 +77,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="EsqueciASenha.resx">
+    <EmbeddedResource Include="Interface\EsqueciASenha.resx">
       <DependentUpon>EsqueciASenha.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login_Register.resx">
+    <EmbeddedResource Include="Interface\Login_Register.resx">
       <DependentUpon>Login_Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaInicial.resx">
+    <EmbeddedResource Include="Interface\TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
