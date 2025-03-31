@@ -111,6 +111,7 @@
             this.btnVoltarRecuperarSenha.Size = new System.Drawing.Size(95, 32);
             this.btnVoltarRecuperarSenha.TabIndex = 58;
             this.btnVoltarRecuperarSenha.UseVisualStyleBackColor = true;
+            this.btnVoltarRecuperarSenha.Click += new System.EventHandler(this.btnVoltarRecuperarSenha_Click);
             // 
             // EsqueciASenha
             // 
@@ -125,6 +126,7 @@
             this.Controls.Add(this.panelUserRecuperarSenha);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EsqueciASenha";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EsqueciASenha";
             this.panelUserRecuperarSenha.ResumeLayout(false);
             this.panelUserRecuperarSenha.PerformLayout();
