@@ -191,6 +191,8 @@
             this.btnMatchMakingLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMakingLogo.BackgroundImage")));
             this.btnMatchMakingLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMatchMakingLogo.FlatAppearance.BorderSize = 0;
+            this.btnMatchMakingLogo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMatchMakingLogo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnMatchMakingLogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMatchMakingLogo.Location = new System.Drawing.Point(65, 29);
             this.btnMatchMakingLogo.Name = "btnMatchMakingLogo";
@@ -836,6 +838,8 @@
             this.btnAdicionarAmigo1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdicionarAmigo1.BackgroundImage")));
             this.btnAdicionarAmigo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdicionarAmigo1.FlatAppearance.BorderSize = 0;
+            this.btnAdicionarAmigo1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAdicionarAmigo1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnAdicionarAmigo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdicionarAmigo1.Location = new System.Drawing.Point(1045, 479);
             this.btnAdicionarAmigo1.Name = "btnAdicionarAmigo1";
@@ -849,6 +853,8 @@
             this.btnAdicionarAmigo2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdicionarAmigo2.BackgroundImage")));
             this.btnAdicionarAmigo2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdicionarAmigo2.FlatAppearance.BorderSize = 0;
+            this.btnAdicionarAmigo2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAdicionarAmigo2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnAdicionarAmigo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdicionarAmigo2.Location = new System.Drawing.Point(1045, 528);
             this.btnAdicionarAmigo2.Name = "btnAdicionarAmigo2";
@@ -898,6 +904,8 @@
             this.btnAdicionarAmigo3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdicionarAmigo3.BackgroundImage")));
             this.btnAdicionarAmigo3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdicionarAmigo3.FlatAppearance.BorderSize = 0;
+            this.btnAdicionarAmigo3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAdicionarAmigo3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnAdicionarAmigo3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdicionarAmigo3.Location = new System.Drawing.Point(1045, 577);
             this.btnAdicionarAmigo3.Name = "btnAdicionarAmigo3";
@@ -947,6 +955,8 @@
             this.btnAdicionarAmigo5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdicionarAmigo5.BackgroundImage")));
             this.btnAdicionarAmigo5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdicionarAmigo5.FlatAppearance.BorderSize = 0;
+            this.btnAdicionarAmigo5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAdicionarAmigo5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnAdicionarAmigo5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdicionarAmigo5.Location = new System.Drawing.Point(1045, 672);
             this.btnAdicionarAmigo5.Name = "btnAdicionarAmigo5";
@@ -996,6 +1006,8 @@
             this.btnAdicionarAmigo4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdicionarAmigo4.BackgroundImage")));
             this.btnAdicionarAmigo4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdicionarAmigo4.FlatAppearance.BorderSize = 0;
+            this.btnAdicionarAmigo4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAdicionarAmigo4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnAdicionarAmigo4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdicionarAmigo4.Location = new System.Drawing.Point(1045, 625);
             this.btnAdicionarAmigo4.Name = "btnAdicionarAmigo4";
@@ -1315,6 +1327,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TelaInicial";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaInicial";
             this.pnlMenuTelaInicial.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconesTelaInicial)).EndInit();

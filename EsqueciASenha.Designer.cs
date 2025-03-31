@@ -126,6 +126,7 @@
             this.Controls.Add(this.panelUserRecuperarSenha);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EsqueciASenha";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EsqueciASenha";
             this.panelUserRecuperarSenha.ResumeLayout(false);
             this.panelUserRecuperarSenha.PerformLayout();
