@@ -65,8 +65,8 @@
             this.panelSenhaLogin = new System.Windows.Forms.Panel();
             this.textBoxuser = new System.Windows.Forms.TextBox();
             this.panelUserLogin = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.linkEsqueciASenha = new System.Windows.Forms.LinkLabel();
             this.panelconfirmsenha.SuspendLayout();
             this.panelsenharegister.SuspendLayout();
             this.panelemail.SuspendLayout();
@@ -152,7 +152,7 @@
             this.linkRegister.AutoSize = true;
             this.linkRegister.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkRegister.LinkColor = System.Drawing.Color.SteelBlue;
-            this.linkRegister.Location = new System.Drawing.Point(589, 506);
+            this.linkRegister.Location = new System.Drawing.Point(591, 527);
             this.linkRegister.Name = "linkRegister";
             this.linkRegister.Size = new System.Drawing.Size(136, 24);
             this.linkRegister.TabIndex = 34;
@@ -165,11 +165,12 @@
             this.txtNaoTemContaLogin.AutoSize = true;
             this.txtNaoTemContaLogin.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNaoTemContaLogin.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.txtNaoTemContaLogin.Location = new System.Drawing.Point(583, 474);
+            this.txtNaoTemContaLogin.Location = new System.Drawing.Point(587, 493);
             this.txtNaoTemContaLogin.Name = "txtNaoTemContaLogin";
             this.txtNaoTemContaLogin.Size = new System.Drawing.Size(148, 20);
             this.txtNaoTemContaLogin.TabIndex = 30;
             this.txtNaoTemContaLogin.Text = "Não tem uma conta?";
+            this.txtNaoTemContaLogin.Click += new System.EventHandler(this.txtNaoTemContaLogin_Click);
             // 
             // BtnEntrar
             // 
@@ -178,7 +179,7 @@
             this.BtnEntrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEntrar.ForeColor = System.Drawing.Color.White;
             this.BtnEntrar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEntrar.Image")));
-            this.BtnEntrar.Location = new System.Drawing.Point(523, 360);
+            this.BtnEntrar.Location = new System.Drawing.Point(523, 338);
             this.BtnEntrar.Margin = new System.Windows.Forms.Padding(0);
             this.BtnEntrar.Name = "BtnEntrar";
             this.BtnEntrar.Size = new System.Drawing.Size(270, 39);
@@ -207,7 +208,7 @@
             this.linkLogin.BackColor = System.Drawing.Color.Transparent;
             this.linkLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLogin.LinkColor = System.Drawing.Color.PowderBlue;
-            this.linkLogin.Location = new System.Drawing.Point(148, 503);
+            this.linkLogin.Location = new System.Drawing.Point(148, 524);
             this.linkLogin.Name = "linkLogin";
             this.linkLogin.Size = new System.Drawing.Size(130, 24);
             this.linkLogin.TabIndex = 44;
@@ -372,7 +373,7 @@
             this.txtJaTemConta.BackColor = System.Drawing.Color.Transparent;
             this.txtJaTemConta.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJaTemConta.ForeColor = System.Drawing.Color.AliceBlue;
-            this.txtJaTemConta.Location = new System.Drawing.Point(149, 470);
+            this.txtJaTemConta.Location = new System.Drawing.Point(148, 492);
             this.txtJaTemConta.Name = "txtJaTemConta";
             this.txtJaTemConta.Size = new System.Drawing.Size(133, 20);
             this.txtJaTemConta.TabIndex = 41;
@@ -421,7 +422,7 @@
             // 
             this.pnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl.BackgroundImage")));
             this.pnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnl.Location = new System.Drawing.Point(-2, 3);
+            this.pnl.Location = new System.Drawing.Point(3, 3);
             this.pnl.Name = "pnl";
             this.pnl.Size = new System.Drawing.Size(445, 600);
             this.pnl.TabIndex = 51;
@@ -457,7 +458,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(523, 415);
+            this.button2.Location = new System.Drawing.Point(523, 384);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(270, 39);
             this.button2.TabIndex = 55;
@@ -526,18 +527,6 @@
             this.panelUserLogin.Size = new System.Drawing.Size(270, 37);
             this.panelUserLogin.TabIndex = 32;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Firebrick;
-            this.label3.Location = new System.Drawing.Point(526, 319);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 17);
-            this.label3.TabIndex = 57;
-            this.label3.Text = "*As senhas não coincidem";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -549,6 +538,18 @@
             this.label4.Size = new System.Drawing.Size(0, 17);
             this.label4.TabIndex = 58;
             // 
+            // linkEsqueciASenha
+            // 
+            this.linkEsqueciASenha.AutoSize = true;
+            this.linkEsqueciASenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkEsqueciASenha.LinkColor = System.Drawing.Color.RoyalBlue;
+            this.linkEsqueciASenha.Location = new System.Drawing.Point(602, 455);
+            this.linkEsqueciASenha.Name = "linkEsqueciASenha";
+            this.linkEsqueciASenha.Size = new System.Drawing.Size(107, 16);
+            this.linkEsqueciASenha.TabIndex = 59;
+            this.linkEsqueciASenha.TabStop = true;
+            this.linkEsqueciASenha.Text = "Esqueci a senha";
+            // 
             // Login_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -556,8 +557,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(884, 597);
             this.Controls.Add(this.pnl);
+            this.Controls.Add(this.linkEsqueciASenha);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
@@ -645,7 +646,7 @@
         private System.Windows.Forms.Panel panelSenhaLogin;
         private System.Windows.Forms.TextBox textBoxuser;
         private System.Windows.Forms.Panel panelUserLogin;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.LinkLabel linkEsqueciASenha;
     }
 }

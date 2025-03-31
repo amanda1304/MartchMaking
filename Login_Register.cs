@@ -182,5 +182,10 @@ namespace Login_Register
         {
 
         }
+
+        private void txtNaoTemContaLogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
