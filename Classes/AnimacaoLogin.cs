@@ -1,73 +1,65 @@
 ﻿using System;
-using System.Windows.Forms;
 using System.Drawing;
+using System.Windows.Forms;
 
-
-namespace Login_Register.Classes
+namespace YourNamespace
 {
-    internal class AnimacaoLogin
+    public class AnimacaoLogin
     {
         private Timer _timer;
-        private Panel Pnl;
-        private int targetX;
+        private Panel pnl;
+        private int _targetX;
         private int _speed;
-        private bool _moveDireito;
-        private int _posicaoInicial;
+        private bool _movingRight;
 
         public AnimacaoLogin()
         {
-
             _timer = new Timer();
-            _timer.Interval = 7;
+            _timer.Interval = 5; // Quanto menor, mais suave a animação
             _timer.Tick += Timer_Tick;
         }
-        private void Timer_Tick(object sender, EventArgs e) {
-            if (Pnl == null) return;
-            if (!_moveDireito)
-            {
-                Pnl.Left -= _speed;
 
-                if (Pnl.Left >= _posicaoInicial)// Corrigido: Agora a condição é para alcançar o destino na esquerda
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            if (pnl == null) return;
+            if (_movingRight)
+            {
+                pnl.Left += _speed;
+                if (pnl.Left >= _targetX)
                 {
-                    Pnl.Left = _posicaoInicial;
+                    pnl.Left = _targetX;
                     _timer.Stop();
                 }
-
-
             }
             else
             {
-                Pnl.Left += _speed;
-                if (Pnl.Left <= _posicaoInicial)
+                pnl.Left -= _speed;
+                if (pnl.Left <= _targetX)
                 {
-                    Pnl.Left = _posicaoInicial;
+                    pnl.Left = _targetX;
                     _timer.Stop();
                 }
             }
-         }
-        public void ConfigurarPainel(Panel Pnl)
-        {
-            this.Pnl = Pnl;
-            _posicaoInicial = Pnl.Left;
-        }
-       
-        public void MoverParaDireita( Panel Pnl, int distancia, int speed)
-        {
             
-            _moveDireito = true;
-            _speed = speed;
-            targetX = _posicaoInicial - distancia;
-            _timer.Start();
-
         }
-        public void MoverParaEsquerda(  Panel Pnl, int speed)
-        {
-            _moveDireito = false;
-            _speed = speed;
-            targetX = _posicaoInicial;
-            _timer.Stop();
 
+        public void MoverParaDireita(Panel panel, int distancia, int speed)
+        {
+            pnl = panel;
+            _speed = speed;
+            _movingRight = true;
+            _targetX = panel.Left + distancia;
+            _timer.Start();
+        }
+
+        public void MoverParaEsquerda(Panel panel, int distancia, int speed)
+        {
+            pnl = panel;
+            _speed = speed;
+            _movingRight = false;
+            _targetX = panel.Left - distancia;
+            _timer.Start();
         }
     }
-
 }
+

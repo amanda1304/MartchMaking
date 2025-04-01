@@ -426,6 +426,7 @@
             this.pnl.Name = "pnl";
             this.pnl.Size = new System.Drawing.Size(445, 600);
             this.pnl.TabIndex = 51;
+            this.pnl.TabStop = true;
             this.pnl.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Paint);
             // 
             // label_error
@@ -435,7 +436,7 @@
             this.label_error.ForeColor = System.Drawing.Color.Firebrick;
             this.label_error.Location = new System.Drawing.Point(543, 123);
             this.label_error.Name = "label_error";
-            this.label_error.Size = new System.Drawing.Size(0, 17);
+            this.label_error.Size = new System.Drawing.Size(236, 17);
             this.label_error.TabIndex = 52;
             this.label_error.Text = "*O Login e/ou a senhá está incorreto";
             this.label_error.Click += new System.EventHandler(this.label_error_Click);
@@ -589,8 +590,10 @@
             this.Controls.Add(this.panelUserLogin);
             this.Controls.Add(this.linkRegister);
             this.Controls.Add(this.btnMinimizarLogin);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login_Register";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login_Register";
             this.Load += new System.EventHandler(this.Login_Register_Load);
             this.panelconfirmsenha.ResumeLayout(false);

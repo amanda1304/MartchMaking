@@ -1,24 +1,18 @@
-﻿using Login_Register.Classes;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
+using YourNamespace;
+
 
 namespace Login_Register
 {
     public partial class Login_Register : Form
     {
-
-        private int targetX;
+        private AnimacaoLogin animador = new AnimacaoLogin();
+        //private int targetX;
         public Login_Register()
         {
             InitializeComponent();
-            animar.ConfigurarPainel(pnl);
+         
         }
         int TogMove;
         int MValX;
@@ -27,7 +21,7 @@ namespace Login_Register
 
         private void Login_Register_Load(object sender, EventArgs e)
         {
-           
+           /*
             // Inicializa a posição do painel
             pnl.Left = 0;
             targetX = 0;
@@ -38,9 +32,9 @@ namespace Login_Register
 
             // Inicia o timer para a animação
             Timer animationTimer = new Timer();
-            animationTimer.Interval = 10; // Intervalo de 10ms
+            animationTimer.Interval = 5; // Intervalo de 10ms
             animationTimer.Tick += AnimationTimer_Tick;
-            animationTimer.Start();
+            animationTimer.Start();*/
 
         }
 
@@ -65,26 +59,27 @@ namespace Login_Register
         }
         private void linkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            targetX = 440;
-
+            //targetX = 440;
+            animador.MoverParaDireita(pnl, 440, 10);
         }
         private void linkLogin_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            targetX = 0;
-
+            //targetX = 0;
+            animador.MoverParaEsquerda(pnl, 440, 10);
         }
         private void AnimationTimer_Tick(object sender, EventArgs e)
         {
+            /*
             // Verifica se o painel precisa se mover
             if (pnl.Left < targetX)
-            {
+           {
                 pnl.Left += 5; // Move para a direita
             }
-            else if (pnl.Left > targetX)
+           else if (pnl.Left > targetX)
             {
-                pnl.Left -= 5; // Move para a esquerda
+               pnl.Left -= 5; // Move para a esquerda
             }
-
+            */
            
         }
         private void txtRegister_Click(object sender, EventArgs e)
@@ -169,6 +164,7 @@ namespace Login_Register
 
         private void pnl_Paint(object sender, PaintEventArgs e)
         {
+           
 
         }
 

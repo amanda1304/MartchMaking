@@ -16,7 +16,14 @@ namespace Login_Register
         {
             InitializeComponent();
         }
-
+        private void TelaInicial_Load(object sender, EventArgs e)
+        {
+            foreach (Control control in this.Controls)
+            {
+                control.Width = this.ClientSize.Width / 2; // Exemplo de ajuste dinâmico
+                control.Height = this.ClientSize.Height / 2;
+            }
+        }
         private void labelFavoritosDaSemana1_Click(object sender, EventArgs e)
         {
 
@@ -41,5 +48,7 @@ namespace Login_Register
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        
     }
 }
