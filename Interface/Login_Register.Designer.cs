@@ -437,6 +437,7 @@
             this.label_error.Name = "label_error";
             this.label_error.Size = new System.Drawing.Size(0, 17);
             this.label_error.TabIndex = 52;
+            this.label_error.Text = "*O Login e/ou a senhá está incorreto";
             this.label_error.Click += new System.EventHandler(this.label_error_Click);
             // 
             // label1

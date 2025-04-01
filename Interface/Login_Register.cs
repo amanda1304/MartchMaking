@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Login_Register.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,7 @@ namespace Login_Register
         public Login_Register()
         {
             InitializeComponent();
+            animar.ConfigurarPainel(pnl);
         }
         int TogMove;
         int MValX;
@@ -25,7 +27,7 @@ namespace Login_Register
 
         private void Login_Register_Load(object sender, EventArgs e)
         {
-
+           
             // Inicializa a posição do painel
             pnl.Left = 0;
             targetX = 0;
@@ -83,6 +85,7 @@ namespace Login_Register
                 pnl.Left -= 5; // Move para a esquerda
             }
 
+           
         }
         private void txtRegister_Click(object sender, EventArgs e)
         {
@@ -118,6 +121,7 @@ namespace Login_Register
         {
 
         }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -142,6 +146,7 @@ namespace Login_Register
         {
 
         }
+
         private void textBoxEmail_TextChanged(object sender, EventArgs e)
         {
 
@@ -166,23 +171,27 @@ namespace Login_Register
         {
 
         }
+
         private void txtLogin_Click(object sender, EventArgs e)
         {
 
         }
+
         private void btnFecharRegister_Click_1(object sender, EventArgs e)
         {
             this.Close();
 
         }
+
         private void BtnMinimizarRegister_Click_1(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
 
         }
+
         private void label_error_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -190,6 +199,7 @@ namespace Login_Register
             this.Close();
 
         }
+
         private void btnMinimizarRegister_Click_1(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
