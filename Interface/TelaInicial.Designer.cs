@@ -184,6 +184,7 @@
             this.btnLogOut.Size = new System.Drawing.Size(252, 52);
             this.btnLogOut.TabIndex = 6;
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnMatchMakingLogo
             // 

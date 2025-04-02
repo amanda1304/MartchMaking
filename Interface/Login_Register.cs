@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Login_Register
 {
-    public partial class Login_Register: Form
+    public partial class Login_Register : Form
     {
         private AnimacaoLogin animar = new AnimacaoLogin();
         private int targetX;
@@ -22,11 +22,11 @@ namespace Login_Register
         }
         private void Login_Register_Load(object sender, EventArgs e)
         {
-           
+
         }
         private void linkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            animar.MoverParaDireita( pnl, 440, 3);
+            animar.MoverParaDireita(pnl, 440, 3);
         }
         private void linkLogin_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -36,7 +36,7 @@ namespace Login_Register
         private void AnimationTimer_Tick(object sender, EventArgs e)
         {
 
-           
+
         }
         private void txtRegister_Click(object sender, EventArgs e)
         {
@@ -140,7 +140,7 @@ namespace Login_Register
 
         private void label_error_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -162,5 +162,86 @@ namespace Login_Register
         {
 
         }
+        public void FormRegistro()
+        {
+            InitializeComponent();
+        }
+        private void btnRegistrar_Click_1(object sender, EventArgs e)
+        {
+
+            string nomeUsuario = textBoxUserNameRegister.Text;
+            string email = textBoxEmail.Text;
+            string senha = textBoxSenhaRegister.Text;
+            string confirmacaoSenha = textBoxConfirmarSenha.Text;
+
+            RegistroMensagens resultado = ValidarCampos(nomeUsuario, email, senha, confirmacaoSenha);
+            label2.Visible = false;
+            // Exibe a mensagem conforme o resultado da validação
+            label2.Text = resultado.Mensagem;
+
+            // Define a cor do texto com base no tipo de mensagem
+            if (resultado.Tipo == "erro")
+            {
+                label2.ForeColor = System.Drawing.Color.Tomato;
+                
+            }
+            else
+            {
+                label2.ForeColor = System.Drawing.Color.Green;
+            }
+           
+
+            label2.Visible = true;
+        }
+            
+        
+
+        // Função que valida os campos do formulário
+        private RegistroMensagens ValidarCampos(string nomeUsuario, string email, string senha, string confirmacaoSenha)
+        {
+            // Verifica se todos os campos estão preenchidos
+            if (string.IsNullOrEmpty(nomeUsuario) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha) || string.IsNullOrEmpty(confirmacaoSenha))
+            {
+                return new RegistroMensagens("Todos os campos devem ser preenchidos!", "erro");
+            }
+
+            // Verifica se a senha e a confirmação de senha são iguais
+            if (senha != confirmacaoSenha)
+            {
+                return new RegistroMensagens("senhas não coincidem!", "erro");
+              
+            }
+
+            // Verifica se o e-mail tem um formato válido
+            try
+            {
+                var mailAddress = new System.Net.Mail.MailAddress(email);
+            }
+            catch
+            {
+                return new RegistroMensagens("E-mail inválido!", "erro");
+            }
+
+            // Se todas as validações passarem
+            return new RegistroMensagens("Usuário registrado com sucesso!", "sucesso");
+        }
+            
+
+
+
+        
+
+            
+
+        private void textBoxUserNameRegister_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+            
+        
     }
 }
+
+                
+       
+    

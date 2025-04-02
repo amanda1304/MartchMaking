@@ -41,5 +41,21 @@ namespace Login_Register
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Tem certeza que deseja continuar?", "Confirmação",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            // Se o usuário clicar em "Sim", abre o formulário LoginRegister
+            if (resultado == DialogResult.Yes)
+            {
+                Login_Register loginForm = new Login_Register();
+                loginForm.Show();
+
+                // (Opcional) Esconder a TelaInicial
+                this.Hide();
+            }
+        }
     }
 }

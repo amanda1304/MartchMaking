@@ -340,6 +340,7 @@
             this.textBoxUserNameRegister.Name = "textBoxUserNameRegister";
             this.textBoxUserNameRegister.Size = new System.Drawing.Size(242, 22);
             this.textBoxUserNameRegister.TabIndex = 2;
+            this.textBoxUserNameRegister.TextChanged += new System.EventHandler(this.textBoxUserNameRegister_TextChanged);
             // 
             // btnMinimizarRegister
             // 
@@ -394,6 +395,7 @@
             this.btnRegistrar.TabIndex = 40;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click_1);
             // 
             // txtUserNameRegister
             // 
@@ -451,6 +453,7 @@
             this.label1.Size = new System.Drawing.Size(169, 17);
             this.label1.TabIndex = 53;
             this.label1.Text = "*As senhas não coincidem";
+            this.label1.Visible = false;
             // 
             // button2
             // 
@@ -476,6 +479,7 @@
             this.label2.Size = new System.Drawing.Size(178, 17);
             this.label2.TabIndex = 56;
             this.label2.Text = "*Preencha todos os campos";
+            this.label2.Visible = false;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBoxpassword
