@@ -60,12 +60,12 @@ namespace Login_Register
         private void linkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             //targetX = 440;
-            animador.MoverParaDireita(pnl, 440, 10);
+            animador.MoverParaDireita(pnl, 441, 25);
         }
         private void linkLogin_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             //targetX = 0;
-            animador.MoverParaEsquerda(pnl, 440, 10);
+            animador.MoverParaEsquerda(pnl, 441, 25);
         }
         private void AnimationTimer_Tick(object sender, EventArgs e)
         {

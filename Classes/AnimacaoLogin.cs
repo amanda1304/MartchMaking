@@ -15,7 +15,7 @@ namespace YourNamespace
         public AnimacaoLogin()
         {
             _timer = new Timer();
-            _timer.Interval = 5; // Quanto menor, mais suave a animação
+            _timer.Interval = 20; // Quanto menor, mais suave a animação
             _timer.Tick += Timer_Tick;
         }
 

@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Banco de dados\ConexaoBancoDados.cs" />
     <Compile Include="Classes\AnimacaoLogin.cs" />
+    <Compile Include="Classes\MoverTela.cs" />
     <Compile Include="Interface\EsqueciASenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +93,5 @@
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

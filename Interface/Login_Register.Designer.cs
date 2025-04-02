@@ -38,7 +38,6 @@
             this.linkRegister = new System.Windows.Forms.LinkLabel();
             this.txtNaoTemContaLogin = new System.Windows.Forms.Label();
             this.BtnEntrar = new System.Windows.Forms.Button();
-            this.btnFecharRegister = new System.Windows.Forms.Button();
             this.linkLogin = new System.Windows.Forms.LinkLabel();
             this.textBoxConfirmarSenha = new System.Windows.Forms.TextBox();
             this.panelconfirmsenha = new System.Windows.Forms.Panel();
@@ -50,13 +49,11 @@
             this.panelemail = new System.Windows.Forms.Panel();
             this.txtEmail = new System.Windows.Forms.Label();
             this.textBoxUserNameRegister = new System.Windows.Forms.TextBox();
-            this.btnMinimizarRegister = new System.Windows.Forms.Button();
             this.txtRegister = new System.Windows.Forms.Label();
             this.txtJaTemConta = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.txtUserNameRegister = new System.Windows.Forms.Label();
             this.paneluserregister = new System.Windows.Forms.Panel();
-            this.pnl = new System.Windows.Forms.Panel();
             this.label_error = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -67,12 +64,17 @@
             this.panelUserLogin = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.linkEsqueciASenha = new System.Windows.Forms.LinkLabel();
+            this.pnl = new System.Windows.Forms.Panel();
+            this.btnMinimizarRegister = new System.Windows.Forms.Button();
+            this.btnFecharRegister = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelconfirmsenha.SuspendLayout();
             this.panelsenharegister.SuspendLayout();
             this.panelemail.SuspendLayout();
             this.paneluserregister.SuspendLayout();
             this.panelSenhaLogin.SuspendLayout();
             this.panelUserLogin.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -188,24 +190,11 @@
             this.BtnEntrar.UseVisualStyleBackColor = true;
             this.BtnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
             // 
-            // btnFecharRegister
-            // 
-            this.btnFecharRegister.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFecharRegister.BackgroundImage")));
-            this.btnFecharRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFecharRegister.FlatAppearance.BorderSize = 0;
-            this.btnFecharRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFecharRegister.Location = new System.Drawing.Point(3, 3);
-            this.btnFecharRegister.Name = "btnFecharRegister";
-            this.btnFecharRegister.Size = new System.Drawing.Size(29, 31);
-            this.btnFecharRegister.TabIndex = 50;
-            this.btnFecharRegister.UseVisualStyleBackColor = true;
-            this.btnFecharRegister.Click += new System.EventHandler(this.btnFecharRegister_Click_1);
-            // 
             // linkLogin
             // 
             this.linkLogin.ActiveLinkColor = System.Drawing.Color.Cyan;
             this.linkLogin.AutoSize = true;
-            this.linkLogin.BackColor = System.Drawing.Color.Transparent;
+            this.linkLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.linkLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLogin.LinkColor = System.Drawing.Color.PowderBlue;
             this.linkLogin.Location = new System.Drawing.Point(148, 524);
@@ -244,7 +233,7 @@
             // txtConfirmarSenha
             // 
             this.txtConfirmarSenha.AutoSize = true;
-            this.txtConfirmarSenha.BackColor = System.Drawing.Color.Transparent;
+            this.txtConfirmarSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.txtConfirmarSenha.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmarSenha.ForeColor = System.Drawing.Color.Azure;
             this.txtConfirmarSenha.Location = new System.Drawing.Point(92, 326);
@@ -281,7 +270,7 @@
             // txtSenhaRegister
             // 
             this.txtSenhaRegister.AutoSize = true;
-            this.txtSenhaRegister.BackColor = System.Drawing.Color.Transparent;
+            this.txtSenhaRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.txtSenhaRegister.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenhaRegister.ForeColor = System.Drawing.Color.Azure;
             this.txtSenhaRegister.Location = new System.Drawing.Point(92, 258);
@@ -318,7 +307,7 @@
             // txtEmail
             // 
             this.txtEmail.AutoSize = true;
-            this.txtEmail.BackColor = System.Drawing.Color.Transparent;
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.txtEmail.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.Azure;
             this.txtEmail.Location = new System.Drawing.Point(92, 189);
@@ -341,24 +330,10 @@
             this.textBoxUserNameRegister.Size = new System.Drawing.Size(242, 22);
             this.textBoxUserNameRegister.TabIndex = 2;
             // 
-            // btnMinimizarRegister
-            // 
-            this.btnMinimizarRegister.BackColor = System.Drawing.Color.Transparent;
-            this.btnMinimizarRegister.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimizarRegister.BackgroundImage")));
-            this.btnMinimizarRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMinimizarRegister.FlatAppearance.BorderSize = 0;
-            this.btnMinimizarRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMinimizarRegister.Location = new System.Drawing.Point(32, 3);
-            this.btnMinimizarRegister.Name = "btnMinimizarRegister";
-            this.btnMinimizarRegister.Size = new System.Drawing.Size(29, 31);
-            this.btnMinimizarRegister.TabIndex = 49;
-            this.btnMinimizarRegister.UseVisualStyleBackColor = false;
-            this.btnMinimizarRegister.Click += new System.EventHandler(this.btnMinimizarRegister_Click_1);
-            // 
             // txtRegister
             // 
             this.txtRegister.AutoSize = true;
-            this.txtRegister.BackColor = System.Drawing.Color.Transparent;
+            this.txtRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.txtRegister.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRegister.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.txtRegister.Location = new System.Drawing.Point(152, 46);
@@ -370,7 +345,7 @@
             // txtJaTemConta
             // 
             this.txtJaTemConta.AutoSize = true;
-            this.txtJaTemConta.BackColor = System.Drawing.Color.Transparent;
+            this.txtJaTemConta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.txtJaTemConta.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJaTemConta.ForeColor = System.Drawing.Color.AliceBlue;
             this.txtJaTemConta.Location = new System.Drawing.Point(148, 492);
@@ -398,7 +373,7 @@
             // txtUserNameRegister
             // 
             this.txtUserNameRegister.AutoSize = true;
-            this.txtUserNameRegister.BackColor = System.Drawing.Color.Transparent;
+            this.txtUserNameRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.txtUserNameRegister.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserNameRegister.ForeColor = System.Drawing.Color.Azure;
             this.txtUserNameRegister.Location = new System.Drawing.Point(92, 123);
@@ -418,17 +393,6 @@
             this.paneluserregister.Size = new System.Drawing.Size(270, 37);
             this.paneluserregister.TabIndex = 42;
             // 
-            // pnl
-            // 
-            this.pnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl.BackgroundImage")));
-            this.pnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnl.Location = new System.Drawing.Point(3, 3);
-            this.pnl.Name = "pnl";
-            this.pnl.Size = new System.Drawing.Size(445, 600);
-            this.pnl.TabIndex = 51;
-            this.pnl.TabStop = true;
-            this.pnl.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Paint);
-            // 
             // label_error
             // 
             this.label_error.AutoSize = true;
@@ -444,7 +408,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Tomato;
             this.label1.Location = new System.Drawing.Point(90, 384);
@@ -468,7 +432,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Tomato;
@@ -552,11 +516,60 @@
             this.linkEsqueciASenha.Text = "Esqueci a senha";
             this.linkEsqueciASenha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkEsqueciASenha_LinkClicked_1);
             // 
+            // pnl
+            // 
+            this.pnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl.BackgroundImage")));
+            this.pnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnl.Location = new System.Drawing.Point(0, -3);
+            this.pnl.Name = "pnl";
+            this.pnl.Size = new System.Drawing.Size(445, 600);
+            this.pnl.TabIndex = 51;
+            this.pnl.TabStop = true;
+            this.pnl.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Paint);
+            // 
+            // btnMinimizarRegister
+            // 
+            this.btnMinimizarRegister.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinimizarRegister.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimizarRegister.BackgroundImage")));
+            this.btnMinimizarRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMinimizarRegister.FlatAppearance.BorderSize = 0;
+            this.btnMinimizarRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizarRegister.Location = new System.Drawing.Point(32, 3);
+            this.btnMinimizarRegister.Name = "btnMinimizarRegister";
+            this.btnMinimizarRegister.Size = new System.Drawing.Size(29, 31);
+            this.btnMinimizarRegister.TabIndex = 49;
+            this.btnMinimizarRegister.UseVisualStyleBackColor = false;
+            this.btnMinimizarRegister.Click += new System.EventHandler(this.btnMinimizarRegister_Click_1);
+            // 
+            // btnFecharRegister
+            // 
+            this.btnFecharRegister.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFecharRegister.BackgroundImage")));
+            this.btnFecharRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFecharRegister.FlatAppearance.BorderSize = 0;
+            this.btnFecharRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFecharRegister.Location = new System.Drawing.Point(3, 3);
+            this.btnFecharRegister.Name = "btnFecharRegister";
+            this.btnFecharRegister.Size = new System.Drawing.Size(29, 31);
+            this.btnFecharRegister.TabIndex = 50;
+            this.btnFecharRegister.UseVisualStyleBackColor = true;
+            this.btnFecharRegister.Click += new System.EventHandler(this.btnFecharRegister_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.pictureBox1.Location = new System.Drawing.Point(-15, -13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(459, 632);
+            this.pictureBox1.TabIndex = 60;
+            this.pictureBox1.TabStop = false;
+            // 
             // Login_Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(884, 597);
             this.Controls.Add(this.pnl);
             this.Controls.Add(this.linkEsqueciASenha);
@@ -590,6 +603,7 @@
             this.Controls.Add(this.panelUserLogin);
             this.Controls.Add(this.linkRegister);
             this.Controls.Add(this.btnMinimizarLogin);
+            this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login_Register";
@@ -608,6 +622,7 @@
             this.panelSenhaLogin.PerformLayout();
             this.panelUserLogin.ResumeLayout(false);
             this.panelUserLogin.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -623,7 +638,6 @@
         private System.Windows.Forms.LinkLabel linkRegister;
         private System.Windows.Forms.Label txtNaoTemContaLogin;
         private System.Windows.Forms.Button BtnEntrar;
-        private System.Windows.Forms.Button btnFecharRegister;
         private System.Windows.Forms.LinkLabel linkLogin;
         private System.Windows.Forms.TextBox textBoxConfirmarSenha;
         private System.Windows.Forms.Panel panelconfirmsenha;
@@ -635,13 +649,11 @@
         private System.Windows.Forms.Panel panelemail;
         private System.Windows.Forms.Label txtEmail;
         private System.Windows.Forms.TextBox textBoxUserNameRegister;
-        private System.Windows.Forms.Button btnMinimizarRegister;
         private System.Windows.Forms.Label txtRegister;
         private System.Windows.Forms.Label txtJaTemConta;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Label txtUserNameRegister;
         private System.Windows.Forms.Panel paneluserregister;
-        private System.Windows.Forms.Panel pnl;
         private System.Windows.Forms.Label label_error;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
@@ -652,5 +664,9 @@
         private System.Windows.Forms.Panel panelUserLogin;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkEsqueciASenha;
+        private System.Windows.Forms.Panel pnl;
+        private System.Windows.Forms.Button btnMinimizarRegister;
+        private System.Windows.Forms.Button btnFecharRegister;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
