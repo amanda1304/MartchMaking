@@ -54,7 +54,7 @@ namespace Login_Register
                 loginForm.Show();
 
                 // (Opcional) Esconder a TelaInicial
-                this.Hide();
+                this.Close();
             }
         }
     }
