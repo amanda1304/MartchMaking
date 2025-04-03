@@ -23,5 +23,10 @@ namespace Login_Register
             Login_Register login_register = new Login_Register();
             login_register.Show();
         }
+
+        private void textBoxRecuperarSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

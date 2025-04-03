@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_Register));
             this.label5 = new System.Windows.Forms.Label();
             this.btnFecharLogin = new System.Windows.Forms.Button();
@@ -68,6 +69,9 @@
             this.btnMinimizarRegister = new System.Windows.Forms.Button();
             this.btnFecharRegister = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnOpenEye = new System.Windows.Forms.Button();
+            this.btnClosedEye = new System.Windows.Forms.Button();
             this.panelconfirmsenha.SuspendLayout();
             this.panelsenharegister.SuspendLayout();
             this.panelemail.SuspendLayout();
@@ -188,7 +192,8 @@
             this.BtnEntrar.TabIndex = 29;
             this.BtnEntrar.Text = "Entrar";
             this.BtnEntrar.UseVisualStyleBackColor = true;
-            this.BtnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
+            this.BtnEntrar.Click += new System.EventHandler(this.buttonEntrar_Click);
+            this.BtnEntrar.Enter += new System.EventHandler(this.BtnEntrar_Click);
             // 
             // linkLogin
             // 
@@ -400,9 +405,9 @@
             this.label_error.ForeColor = System.Drawing.Color.Firebrick;
             this.label_error.Location = new System.Drawing.Point(543, 123);
             this.label_error.Name = "label_error";
-            this.label_error.Size = new System.Drawing.Size(236, 17);
+            this.label_error.Size = new System.Drawing.Size(0, 17);
             this.label_error.TabIndex = 52;
-            this.label_error.Text = "*O Login e/ou a senhá está incorreto";
+            this.label_error.Visible = false;
             this.label_error.Click += new System.EventHandler(this.label_error_Click);
             // 
             // label1
@@ -454,13 +459,16 @@
             this.textBoxpassword.Multiline = true;
             this.textBoxpassword.Name = "textBoxpassword";
             this.textBoxpassword.PasswordChar = '•';
-            this.textBoxpassword.Size = new System.Drawing.Size(242, 22);
+            this.textBoxpassword.Size = new System.Drawing.Size(221, 22);
             this.textBoxpassword.TabIndex = 2;
+            this.textBoxpassword.TextChanged += new System.EventHandler(this.textBoxpassword_TextChanged_1);
             // 
             // panelSenhaLogin
             // 
             this.panelSenhaLogin.BackColor = System.Drawing.Color.White;
             this.panelSenhaLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelSenhaLogin.Controls.Add(this.btnClosedEye);
+            this.panelSenhaLogin.Controls.Add(this.btnOpenEye);
             this.panelSenhaLogin.Controls.Add(this.textBoxpassword);
             this.panelSenhaLogin.Location = new System.Drawing.Point(523, 278);
             this.panelSenhaLogin.Margin = new System.Windows.Forms.Padding(0);
@@ -480,6 +488,7 @@
             this.textBoxuser.Name = "textBoxuser";
             this.textBoxuser.Size = new System.Drawing.Size(242, 22);
             this.textBoxuser.TabIndex = 2;
+            this.textBoxuser.TextChanged += new System.EventHandler(this.textBoxuser_TextChanged_1);
             // 
             // panelUserLogin
             // 
@@ -563,8 +572,42 @@
             this.pictureBox1.TabIndex = 60;
             this.pictureBox1.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 20;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btnOpenEye
+            // 
+            this.btnOpenEye.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOpenEye.BackgroundImage")));
+            this.btnOpenEye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnOpenEye.FlatAppearance.BorderSize = 0;
+            this.btnOpenEye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOpenEye.Location = new System.Drawing.Point(239, 8);
+            this.btnOpenEye.Name = "btnOpenEye";
+            this.btnOpenEye.Size = new System.Drawing.Size(26, 22);
+            this.btnOpenEye.TabIndex = 61;
+            this.btnOpenEye.UseVisualStyleBackColor = true;
+            this.btnOpenEye.Click += new System.EventHandler(this.btnOpenEye_Click);
+            // 
+            // btnClosedEye
+            // 
+            this.btnClosedEye.BackColor = System.Drawing.Color.Transparent;
+            this.btnClosedEye.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClosedEye.BackgroundImage")));
+            this.btnClosedEye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnClosedEye.FlatAppearance.BorderSize = 0;
+            this.btnClosedEye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClosedEye.ForeColor = System.Drawing.Color.Transparent;
+            this.btnClosedEye.Location = new System.Drawing.Point(238, 9);
+            this.btnClosedEye.Name = "btnClosedEye";
+            this.btnClosedEye.Size = new System.Drawing.Size(26, 22);
+            this.btnClosedEye.TabIndex = 62;
+            this.btnClosedEye.UseVisualStyleBackColor = false;
+            this.btnClosedEye.Click += new System.EventHandler(this.btnClosedEye_Click);
+            // 
             // Login_Register
             // 
+            this.AcceptButton = this.BtnEntrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -607,6 +650,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login_Register";
+            this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login_Register";
             this.Load += new System.EventHandler(this.Login_Register_Load);
@@ -668,5 +712,8 @@
         private System.Windows.Forms.Button btnMinimizarRegister;
         private System.Windows.Forms.Button btnFecharRegister;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnOpenEye;
+        private System.Windows.Forms.Button btnClosedEye;
     }
 }

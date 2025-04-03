@@ -15,6 +15,18 @@ namespace Login_Register
         public Logo()
         {
             InitializeComponent();
+            FecharJanela();
+        }
+        private async void FecharJanela()
+        {
+            await Task.Delay(5000);
+            this.Close();
+
+        }
+
+        private void Logo_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

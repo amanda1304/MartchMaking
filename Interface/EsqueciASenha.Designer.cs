@@ -98,6 +98,7 @@
             this.textBoxRecuperarSenha.Name = "textBoxRecuperarSenha";
             this.textBoxRecuperarSenha.Size = new System.Drawing.Size(242, 22);
             this.textBoxRecuperarSenha.TabIndex = 2;
+            this.textBoxRecuperarSenha.TextChanged += new System.EventHandler(this.textBoxRecuperarSenha_TextChanged);
             // 
             // btnVoltarRecuperarSenha
             // 

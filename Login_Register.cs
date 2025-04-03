@@ -212,7 +212,7 @@ namespace Login_Register
             {
                 this.Hide();
                  TelaInicial telainicial = new TelaInicial();
-                telainicial.ShowDialog();
+                 telainicial.ShowDialog();
             }
             else
             {

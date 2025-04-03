@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using YourNamespace;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 namespace Login_Register
@@ -21,6 +22,8 @@ namespace Login_Register
 
         private void Login_Register_Load(object sender, EventArgs e)
         {
+
+            timer1.Start();
            /*
             // Inicializa a posição do painel
             pnl.Left = 0;
@@ -132,11 +135,6 @@ namespace Login_Register
 
         }
 
-        private void txtEmail_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtUserNameRegister_Click(object sender, EventArgs e)
         {
 
@@ -187,7 +185,7 @@ namespace Login_Register
 
         private void label_error_Click(object sender, EventArgs e)
         {
-           
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -202,25 +200,10 @@ namespace Login_Register
         }
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
-            ValidarLogin validacao = new ValidarLogin();
-            if (validacao.Validar(textBoxuser.Text, textBoxpassword.Text))
-            {
-                this.Hide();
-                TelaInicial telainicial = new TelaInicial();
-                telainicial.Show();
-            }
-            else
-            {
-                label_error.Text = "*O Login e/ou a senhá está incorreto";
-            }
+            
         }
 
         private void txtNaoTemContaLogin_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxuser_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -236,6 +219,57 @@ namespace Login_Register
             EsqueciASenha esqueciasenha = new EsqueciASenha();
             esqueciasenha.Show();
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Opacity += .2;
+        }
+
+        private void textBoxuser_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxpassword_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOpenEye_Click(object sender, EventArgs e)
+        {
+            if (textBoxpassword.PasswordChar == '\0')
+            {
+                btnClosedEye.BringToFront();
+                textBoxpassword.PasswordChar = '•';
+            }
+        }
+
+        private void btnClosedEye_Click(object sender, EventArgs e)
+        {
+            if (textBoxpassword.PasswordChar == '•')
+            {
+                btnOpenEye.BringToFront();
+                textBoxpassword.PasswordChar = '\0';
+            }
+        }
+
+        private void buttonEntrar_Click(object sender, EventArgs e)
+        {
+            ValidarLogin validacao = new ValidarLogin();
+            if (validacao.Validar(textBoxuser.Text, textBoxpassword.Text))
+            {
+
+                this.Hide();
+                TelaInicial telainicial = new TelaInicial();
+                telainicial.Show();
+
+            }
+            else
+            {
+                label_error.Text = "*O Login e/ou a senhá está incorreto";
+                label_error.Visible = true;
+            }
         }
     }
 }
