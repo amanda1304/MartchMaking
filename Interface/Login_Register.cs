@@ -155,7 +155,19 @@ namespace Login_Register
 
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
-
+            if (textBoxuser.Text == "admin" && textBoxpassword.Text == "1234")
+            {
+                label_error.Text = "Login Sucesso";
+                label_error.ForeColor = System.Drawing.Color.Green; // Deixa a mensagem verde
+                label_error.Visible = true;
+            }
+            else
+            {
+                label_error.Text = "Login Falhou";
+                label_error.ForeColor = System.Drawing.Color.Red; // Deixa a mensagem vermelha
+                label_error.Visible= true;
+            }
+           
         }
 
         private void txtNaoTemContaLogin_Click(object sender, EventArgs e)

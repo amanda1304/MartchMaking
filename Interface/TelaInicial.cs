@@ -57,5 +57,16 @@ namespace Login_Register
                 this.Close();
             }
         }
+
+        private void TelaInicial_Load(object sender, EventArgs e)
+        {
+            
+                InitializeComponent();
+         }
+
+        private void TelaInicio_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit(); // Fecha o programa quando a TelaInicio for fechada
+        }
     }
 }

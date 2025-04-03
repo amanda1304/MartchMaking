@@ -150,11 +150,11 @@
             // 
             this.linkRegister.ActiveLinkColor = System.Drawing.Color.Cyan;
             this.linkRegister.AutoSize = true;
-            this.linkRegister.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkRegister.LinkColor = System.Drawing.Color.SteelBlue;
             this.linkRegister.Location = new System.Drawing.Point(591, 527);
             this.linkRegister.Name = "linkRegister";
-            this.linkRegister.Size = new System.Drawing.Size(136, 24);
+            this.linkRegister.Size = new System.Drawing.Size(133, 25);
             this.linkRegister.TabIndex = 34;
             this.linkRegister.TabStop = true;
             this.linkRegister.Text = "Resgistre-se";
@@ -176,7 +176,7 @@
             // 
             this.BtnEntrar.FlatAppearance.BorderSize = 0;
             this.BtnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEntrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEntrar.ForeColor = System.Drawing.Color.White;
             this.BtnEntrar.Image = ((System.Drawing.Image)(resources.GetObject("BtnEntrar.Image")));
             this.BtnEntrar.Location = new System.Drawing.Point(523, 338);
@@ -206,11 +206,11 @@
             this.linkLogin.ActiveLinkColor = System.Drawing.Color.Cyan;
             this.linkLogin.AutoSize = true;
             this.linkLogin.BackColor = System.Drawing.Color.Transparent;
-            this.linkLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLogin.LinkColor = System.Drawing.Color.PowderBlue;
             this.linkLogin.Location = new System.Drawing.Point(148, 524);
             this.linkLogin.Name = "linkLogin";
-            this.linkLogin.Size = new System.Drawing.Size(130, 24);
+            this.linkLogin.Size = new System.Drawing.Size(126, 25);
             this.linkLogin.TabIndex = 44;
             this.linkLogin.TabStop = true;
             this.linkLogin.Text = "Fazer Login";
@@ -386,7 +386,7 @@
             this.btnRegistrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRegistrar.FlatAppearance.BorderSize = 0;
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.White;
             this.btnRegistrar.Location = new System.Drawing.Point(89, 415);
             this.btnRegistrar.Margin = new System.Windows.Forms.Padding(0);
@@ -440,6 +440,7 @@
             this.label_error.Size = new System.Drawing.Size(236, 17);
             this.label_error.TabIndex = 52;
             this.label_error.Text = "*O Login e/ou a senhá está incorreto";
+            this.label_error.Visible = false;
             this.label_error.Click += new System.EventHandler(this.label_error_Click);
             // 
             // label1

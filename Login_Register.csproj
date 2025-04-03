@@ -74,6 +74,7 @@
     </Compile>
     <Compile Include="Classes\RegistroMensagens.cs" />
     <Compile Include="Classes\ValidarLogin.cs" />
+    <Compile Include="usuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
