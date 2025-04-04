@@ -51,7 +51,7 @@ namespace Login_Register
 
         private void btnAdicionarAmigo1_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
