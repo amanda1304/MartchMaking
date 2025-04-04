@@ -98,6 +98,16 @@ namespace Login_Register
         {
             btnAmigoAdicionado5.BringToFront();
         }
+
+        private void labelHistoricoJogoDeUsuario1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnJogos_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

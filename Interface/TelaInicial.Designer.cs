@@ -35,7 +35,7 @@
             this.btnConfiguracoes = new System.Windows.Forms.Button();
             this.btnPerfil = new System.Windows.Forms.Button();
             this.btnMatchMaking = new System.Windows.Forms.Button();
-            this.btnSimbolos = new System.Windows.Forms.Button();
+            this.btnJogos = new System.Windows.Forms.Button();
             this.btnAmigos = new System.Windows.Forms.Button();
             this.pnlBanerSoldado = new System.Windows.Forms.Panel();
             this.pnlTextoJogosEmDestaque = new System.Windows.Forms.Panel();
@@ -170,7 +170,7 @@
             this.pnlMenuTelaInicial.Controls.Add(this.btnConfiguracoes);
             this.pnlMenuTelaInicial.Controls.Add(this.btnPerfil);
             this.pnlMenuTelaInicial.Controls.Add(this.btnMatchMaking);
-            this.pnlMenuTelaInicial.Controls.Add(this.btnSimbolos);
+            this.pnlMenuTelaInicial.Controls.Add(this.btnJogos);
             this.pnlMenuTelaInicial.Controls.Add(this.btnAmigos);
             this.pnlMenuTelaInicial.Location = new System.Drawing.Point(0, 0);
             this.pnlMenuTelaInicial.Name = "pnlMenuTelaInicial";
@@ -233,15 +233,16 @@
             this.btnMatchMaking.TabIndex = 4;
             this.btnMatchMaking.UseVisualStyleBackColor = true;
             // 
-            // btnSimbolos
+            // btnJogos
             // 
-            this.btnSimbolos.FlatAppearance.BorderSize = 0;
-            this.btnSimbolos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSimbolos.Location = new System.Drawing.Point(1, 229);
-            this.btnSimbolos.Name = "btnSimbolos";
-            this.btnSimbolos.Size = new System.Drawing.Size(252, 52);
-            this.btnSimbolos.TabIndex = 2;
-            this.btnSimbolos.UseVisualStyleBackColor = true;
+            this.btnJogos.FlatAppearance.BorderSize = 0;
+            this.btnJogos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnJogos.Location = new System.Drawing.Point(1, 229);
+            this.btnJogos.Name = "btnJogos";
+            this.btnJogos.Size = new System.Drawing.Size(252, 52);
+            this.btnJogos.TabIndex = 2;
+            this.btnJogos.UseVisualStyleBackColor = true;
+            this.btnJogos.Click += new System.EventHandler(this.btnJogos_Click);
             // 
             // btnAmigos
             // 
@@ -440,7 +441,7 @@
             this.labelStatusPerfilTelaInicial.BackColor = System.Drawing.Color.Transparent;
             this.labelStatusPerfilTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelStatusPerfilTelaInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStatusPerfilTelaInicial.ForeColor = System.Drawing.Color.Lime;
+            this.labelStatusPerfilTelaInicial.ForeColor = System.Drawing.Color.LawnGreen;
             this.labelStatusPerfilTelaInicial.Location = new System.Drawing.Point(71, 44);
             this.labelStatusPerfilTelaInicial.Name = "labelStatusPerfilTelaInicial";
             this.labelStatusPerfilTelaInicial.Size = new System.Drawing.Size(51, 15);
@@ -471,7 +472,7 @@
             this.btnFecharTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFecharTelaInicial.Location = new System.Drawing.Point(1340, 18);
             this.btnFecharTelaInicial.Name = "btnFecharTelaInicial";
-            this.btnFecharTelaInicial.Size = new System.Drawing.Size(29, 31);
+            this.btnFecharTelaInicial.Size = new System.Drawing.Size(25, 27);
             this.btnFecharTelaInicial.TabIndex = 37;
             this.btnFecharTelaInicial.UseVisualStyleBackColor = false;
             this.btnFecharTelaInicial.Click += new System.EventHandler(this.btnFecharTelaInicial_Click);
@@ -485,7 +486,7 @@
             this.btnMinimizarTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimizarTelaInicial.Location = new System.Drawing.Point(1307, 17);
             this.btnMinimizarTelaInicial.Name = "btnMinimizarTelaInicial";
-            this.btnMinimizarTelaInicial.Size = new System.Drawing.Size(29, 31);
+            this.btnMinimizarTelaInicial.Size = new System.Drawing.Size(25, 27);
             this.btnMinimizarTelaInicial.TabIndex = 38;
             this.btnMinimizarTelaInicial.UseVisualStyleBackColor = false;
             this.btnMinimizarTelaInicial.Click += new System.EventHandler(this.btnMinimizarTelaInicial_Click);
@@ -499,7 +500,7 @@
             this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNotificacoes.Location = new System.Drawing.Point(1135, 22);
             this.btnNotificacoes.Name = "btnNotificacoes";
-            this.btnNotificacoes.Size = new System.Drawing.Size(18, 22);
+            this.btnNotificacoes.Size = new System.Drawing.Size(16, 20);
             this.btnNotificacoes.TabIndex = 39;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
             // 
@@ -671,6 +672,7 @@
             this.labelHistoricoJogoDeUsuario1.Size = new System.Drawing.Size(82, 12);
             this.labelHistoricoJogoDeUsuario1.TabIndex = 52;
             this.labelHistoricoJogoDeUsuario1.Text = "League of Legends";
+            this.labelHistoricoJogoDeUsuario1.Click += new System.EventHandler(this.labelHistoricoJogoDeUsuario1_Click);
             // 
             // labelHistoricoJogoDeUsuario2
             // 
@@ -814,7 +816,7 @@
             this.labelSugestoesDeAmizadeStatusDeUsuario1.BackColor = System.Drawing.Color.Transparent;
             this.labelSugestoesDeAmizadeStatusDeUsuario1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelSugestoesDeAmizadeStatusDeUsuario1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSugestoesDeAmizadeStatusDeUsuario1.ForeColor = System.Drawing.Color.Transparent;
+            this.labelSugestoesDeAmizadeStatusDeUsuario1.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.labelSugestoesDeAmizadeStatusDeUsuario1.Location = new System.Drawing.Point(960, 492);
             this.labelSugestoesDeAmizadeStatusDeUsuario1.Name = "labelSugestoesDeAmizadeStatusDeUsuario1";
             this.labelSugestoesDeAmizadeStatusDeUsuario1.Size = new System.Drawing.Size(80, 9);
@@ -850,7 +852,7 @@
             this.labelSugestoesDeAmizadeStatusDeUsuario.BackColor = System.Drawing.Color.Transparent;
             this.labelSugestoesDeAmizadeStatusDeUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelSugestoesDeAmizadeStatusDeUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSugestoesDeAmizadeStatusDeUsuario.ForeColor = System.Drawing.Color.Transparent;
+            this.labelSugestoesDeAmizadeStatusDeUsuario.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.labelSugestoesDeAmizadeStatusDeUsuario.Location = new System.Drawing.Point(960, 541);
             this.labelSugestoesDeAmizadeStatusDeUsuario.Name = "labelSugestoesDeAmizadeStatusDeUsuario";
             this.labelSugestoesDeAmizadeStatusDeUsuario.Size = new System.Drawing.Size(55, 9);
@@ -886,7 +888,7 @@
             this.labelSugestoesDeAmizadeStatusDeUsuario3.BackColor = System.Drawing.Color.Transparent;
             this.labelSugestoesDeAmizadeStatusDeUsuario3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelSugestoesDeAmizadeStatusDeUsuario3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSugestoesDeAmizadeStatusDeUsuario3.ForeColor = System.Drawing.Color.Transparent;
+            this.labelSugestoesDeAmizadeStatusDeUsuario3.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.labelSugestoesDeAmizadeStatusDeUsuario3.Location = new System.Drawing.Point(960, 590);
             this.labelSugestoesDeAmizadeStatusDeUsuario3.Name = "labelSugestoesDeAmizadeStatusDeUsuario3";
             this.labelSugestoesDeAmizadeStatusDeUsuario3.Size = new System.Drawing.Size(80, 9);
@@ -958,7 +960,7 @@
             this.labelSugestoesDeAmizadeStatusDeUsuario4.BackColor = System.Drawing.Color.Transparent;
             this.labelSugestoesDeAmizadeStatusDeUsuario4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelSugestoesDeAmizadeStatusDeUsuario4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSugestoesDeAmizadeStatusDeUsuario4.ForeColor = System.Drawing.Color.Transparent;
+            this.labelSugestoesDeAmizadeStatusDeUsuario4.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.labelSugestoesDeAmizadeStatusDeUsuario4.Location = new System.Drawing.Point(960, 638);
             this.labelSugestoesDeAmizadeStatusDeUsuario4.Name = "labelSugestoesDeAmizadeStatusDeUsuario4";
             this.labelSugestoesDeAmizadeStatusDeUsuario4.Size = new System.Drawing.Size(50, 9);
@@ -1004,7 +1006,7 @@
             this.labelAmigosOnlineStatus1.BackColor = System.Drawing.Color.Transparent;
             this.labelAmigosOnlineStatus1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelAmigosOnlineStatus1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAmigosOnlineStatus1.ForeColor = System.Drawing.Color.Lime;
+            this.labelAmigosOnlineStatus1.ForeColor = System.Drawing.Color.LawnGreen;
             this.labelAmigosOnlineStatus1.Location = new System.Drawing.Point(1209, 262);
             this.labelAmigosOnlineStatus1.Name = "labelAmigosOnlineStatus1";
             this.labelAmigosOnlineStatus1.Size = new System.Drawing.Size(37, 12);
@@ -1040,7 +1042,7 @@
             this.labelAmigosOnlineStatus2.BackColor = System.Drawing.Color.Transparent;
             this.labelAmigosOnlineStatus2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelAmigosOnlineStatus2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAmigosOnlineStatus2.ForeColor = System.Drawing.Color.Lime;
+            this.labelAmigosOnlineStatus2.ForeColor = System.Drawing.Color.LawnGreen;
             this.labelAmigosOnlineStatus2.Location = new System.Drawing.Point(1209, 318);
             this.labelAmigosOnlineStatus2.Name = "labelAmigosOnlineStatus2";
             this.labelAmigosOnlineStatus2.Size = new System.Drawing.Size(37, 12);
@@ -1076,7 +1078,7 @@
             this.labelAmigosOnlineStatus3.BackColor = System.Drawing.Color.Transparent;
             this.labelAmigosOnlineStatus3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelAmigosOnlineStatus3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAmigosOnlineStatus3.ForeColor = System.Drawing.Color.Lime;
+            this.labelAmigosOnlineStatus3.ForeColor = System.Drawing.Color.LemonChiffon;
             this.labelAmigosOnlineStatus3.Location = new System.Drawing.Point(1209, 380);
             this.labelAmigosOnlineStatus3.Name = "labelAmigosOnlineStatus3";
             this.labelAmigosOnlineStatus3.Size = new System.Drawing.Size(37, 12);
@@ -1112,7 +1114,7 @@
             this.labelAmigosOnlineStatus4.BackColor = System.Drawing.Color.Transparent;
             this.labelAmigosOnlineStatus4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelAmigosOnlineStatus4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAmigosOnlineStatus4.ForeColor = System.Drawing.Color.Lime;
+            this.labelAmigosOnlineStatus4.ForeColor = System.Drawing.Color.LawnGreen;
             this.labelAmigosOnlineStatus4.Location = new System.Drawing.Point(1207, 436);
             this.labelAmigosOnlineStatus4.Name = "labelAmigosOnlineStatus4";
             this.labelAmigosOnlineStatus4.Size = new System.Drawing.Size(37, 12);
@@ -1149,7 +1151,7 @@
             this.labelAmigosOnlineStatus5.BackColor = System.Drawing.Color.Transparent;
             this.labelAmigosOnlineStatus5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelAmigosOnlineStatus5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAmigosOnlineStatus5.ForeColor = System.Drawing.Color.Lime;
+            this.labelAmigosOnlineStatus5.ForeColor = System.Drawing.Color.LawnGreen;
             this.labelAmigosOnlineStatus5.Location = new System.Drawing.Point(1207, 490);
             this.labelAmigosOnlineStatus5.Name = "labelAmigosOnlineStatus5";
             this.labelAmigosOnlineStatus5.Size = new System.Drawing.Size(37, 12);
@@ -1462,6 +1464,7 @@
             this.Controls.Add(this.pnlBanerSoldado);
             this.Controls.Add(this.pnlMenuTelaInicial);
             this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TelaInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1512,7 +1515,7 @@
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Button btnConfiguracoes;
         private System.Windows.Forms.Button btnMatchMaking;
-        private System.Windows.Forms.Button btnSimbolos;
+        private System.Windows.Forms.Button btnJogos;
         private System.Windows.Forms.Button btnAmigos;
         private System.Windows.Forms.Panel pnlBanerSoldado;
         private System.Windows.Forms.Panel panelBannersJogosEmDestaque;
