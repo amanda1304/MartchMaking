@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Login_Register
 {
-    public partial class TelaInicial: Form
+    public partial class TelaInicial : Form
     {
         public TelaInicial()
         {
@@ -51,7 +51,53 @@ namespace Login_Register
 
         private void btnAdicionarAmigo1_Click(object sender, EventArgs e)
         {
-            
+            btnAmigoAdicionado1.BringToFront();
+        }
+
+        private void btnAmigoAdicionado1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnAmigoAdicionado2_Click(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        private void btnAdicionarAmigo2_Click(object sender, EventArgs e)
+        {
+            btnAmigoAdicionado2.BringToFront();
+        }
+
+        private void btnAmigoAdicionado3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdicionarAmigo3_Click(object sender, EventArgs e)
+        {
+            btnAmigoAdicionado3.BringToFront();
+        }
+
+        private void btnAmigoAdicionado4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdicionarAmigo4_Click(object sender, EventArgs e)
+        {
+            btnAmigoAdicionado4.BringToFront();
+        }
+
+        private void btnAmigoAdicionado5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdicionarAmigo5_Click(object sender, EventArgs e)
+        {
+            btnAmigoAdicionado5.BringToFront();
         }
     }
+
 }
