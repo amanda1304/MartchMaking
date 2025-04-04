@@ -45,19 +45,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Amigos.cs">
+    <Compile Include="Interface\Amigos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Amigos.Designer.cs">
+    <Compile Include="Interface\Amigos.Designer.cs">
       <DependentUpon>Amigos.cs</DependentUpon>
     </Compile>
     <Compile Include="Banco de dados\ConexaoBancoDados.cs" />
     <Compile Include="Classes\AnimacaoLogin.cs" />
     <Compile Include="Classes\MoverTela.cs" />
-    <Compile Include="Configurações.cs">
+    <Compile Include="Interface\Configurações.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Configurações.Designer.cs">
+    <Compile Include="Interface\Configurações.Designer.cs">
       <DependentUpon>Configurações.cs</DependentUpon>
     </Compile>
     <Compile Include="Interface\EsqueciASenha.cs">
@@ -73,28 +73,28 @@
       <DependentUpon>Login_Register.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Program.cs" />
-    <Compile Include="Jogos.cs">
+    <Compile Include="Interface\Jogos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Jogos.Designer.cs">
+    <Compile Include="Interface\Jogos.Designer.cs">
       <DependentUpon>Jogos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Logo.cs">
+    <Compile Include="Interface\Logo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Logo.Designer.cs">
+    <Compile Include="Interface\Logo.Designer.cs">
       <DependentUpon>Logo.cs</DependentUpon>
     </Compile>
-    <Compile Include="MatchMaking.cs">
+    <Compile Include="Interface\MatchMaking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MatchMaking.Designer.cs">
+    <Compile Include="Interface\MatchMaking.Designer.cs">
       <DependentUpon>MatchMaking.cs</DependentUpon>
     </Compile>
-    <Compile Include="Perfil.cs">
+    <Compile Include="Interface\Perfil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Perfil.Designer.cs">
+    <Compile Include="Interface\Perfil.Designer.cs">
       <DependentUpon>Perfil.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -115,10 +115,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Amigos.resx">
+    <EmbeddedResource Include="Interface\Amigos.resx">
       <DependentUpon>Amigos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Configurações.resx">
+    <EmbeddedResource Include="Interface\Configurações.resx">
       <DependentUpon>Configurações.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\EsqueciASenha.resx">
@@ -127,16 +127,16 @@
     <EmbeddedResource Include="Interface\Login_Register.resx">
       <DependentUpon>Login_Register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Jogos.resx">
+    <EmbeddedResource Include="Interface\Jogos.resx">
       <DependentUpon>Jogos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Logo.resx">
+    <EmbeddedResource Include="Interface\Logo.resx">
       <DependentUpon>Logo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MatchMaking.resx">
+    <EmbeddedResource Include="Interface\MatchMaking.resx">
       <DependentUpon>MatchMaking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Perfil.resx">
+    <EmbeddedResource Include="Interface\Perfil.resx">
       <DependentUpon>Perfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
