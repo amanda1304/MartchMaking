@@ -61,6 +61,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxpassword = new System.Windows.Forms.TextBox();
             this.panelSenhaLogin = new System.Windows.Forms.Panel();
+            this.btnClosedEye = new System.Windows.Forms.Button();
+            this.btnOpenEye = new System.Windows.Forms.Button();
             this.textBoxuser = new System.Windows.Forms.TextBox();
             this.panelUserLogin = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
@@ -70,8 +72,6 @@
             this.btnFecharRegister = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnOpenEye = new System.Windows.Forms.Button();
-            this.btnClosedEye = new System.Windows.Forms.Button();
             this.panelconfirmsenha.SuspendLayout();
             this.panelsenharegister.SuspendLayout();
             this.panelemail.SuspendLayout();
@@ -123,7 +123,7 @@
             this.txtLogin.AutoSize = true;
             this.txtLogin.Font = new System.Drawing.Font("Microsoft PhagsPa", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogin.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtLogin.Location = new System.Drawing.Point(611, 55);
+            this.txtLogin.Location = new System.Drawing.Point(622, 55);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(87, 36);
             this.txtLogin.TabIndex = 26;
@@ -156,6 +156,7 @@
             // 
             this.linkRegister.ActiveLinkColor = System.Drawing.Color.Cyan;
             this.linkRegister.AutoSize = true;
+            this.linkRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkRegister.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkRegister.LinkColor = System.Drawing.Color.SteelBlue;
             this.linkRegister.Location = new System.Drawing.Point(591, 527);
@@ -180,6 +181,7 @@
             // 
             // BtnEntrar
             // 
+            this.BtnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnEntrar.FlatAppearance.BorderSize = 0;
             this.BtnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEntrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -200,6 +202,7 @@
             this.linkLogin.ActiveLinkColor = System.Drawing.Color.Cyan;
             this.linkLogin.AutoSize = true;
             this.linkLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.linkLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLogin.LinkColor = System.Drawing.Color.PowderBlue;
             this.linkLogin.Location = new System.Drawing.Point(148, 524);
@@ -363,6 +366,7 @@
             // 
             this.btnRegistrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRegistrar.BackgroundImage")));
             this.btnRegistrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistrar.FlatAppearance.BorderSize = 0;
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -426,6 +430,7 @@
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(523, 384);
@@ -476,6 +481,35 @@
             this.panelSenhaLogin.Size = new System.Drawing.Size(270, 37);
             this.panelSenhaLogin.TabIndex = 33;
             // 
+            // btnClosedEye
+            // 
+            this.btnClosedEye.BackColor = System.Drawing.Color.Transparent;
+            this.btnClosedEye.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClosedEye.BackgroundImage")));
+            this.btnClosedEye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnClosedEye.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClosedEye.FlatAppearance.BorderSize = 0;
+            this.btnClosedEye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClosedEye.ForeColor = System.Drawing.Color.Transparent;
+            this.btnClosedEye.Location = new System.Drawing.Point(238, 9);
+            this.btnClosedEye.Name = "btnClosedEye";
+            this.btnClosedEye.Size = new System.Drawing.Size(26, 22);
+            this.btnClosedEye.TabIndex = 62;
+            this.btnClosedEye.UseVisualStyleBackColor = false;
+            this.btnClosedEye.Click += new System.EventHandler(this.btnClosedEye_Click);
+            // 
+            // btnOpenEye
+            // 
+            this.btnOpenEye.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOpenEye.BackgroundImage")));
+            this.btnOpenEye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnOpenEye.FlatAppearance.BorderSize = 0;
+            this.btnOpenEye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOpenEye.Location = new System.Drawing.Point(239, 8);
+            this.btnOpenEye.Name = "btnOpenEye";
+            this.btnOpenEye.Size = new System.Drawing.Size(26, 22);
+            this.btnOpenEye.TabIndex = 61;
+            this.btnOpenEye.UseVisualStyleBackColor = true;
+            this.btnOpenEye.Click += new System.EventHandler(this.btnOpenEye_Click);
+            // 
             // textBoxuser
             // 
             this.textBoxuser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -515,6 +549,7 @@
             // linkEsqueciASenha
             // 
             this.linkEsqueciASenha.AutoSize = true;
+            this.linkEsqueciASenha.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkEsqueciASenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkEsqueciASenha.LinkColor = System.Drawing.Color.RoyalBlue;
             this.linkEsqueciASenha.Location = new System.Drawing.Point(602, 455);
@@ -529,7 +564,7 @@
             // 
             this.pnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl.BackgroundImage")));
             this.pnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnl.Location = new System.Drawing.Point(0, -3);
+            this.pnl.Location = new System.Drawing.Point(-1, -1);
             this.pnl.Name = "pnl";
             this.pnl.Size = new System.Drawing.Size(445, 600);
             this.pnl.TabIndex = 51;
@@ -541,6 +576,7 @@
             this.btnMinimizarRegister.BackColor = System.Drawing.Color.Transparent;
             this.btnMinimizarRegister.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimizarRegister.BackgroundImage")));
             this.btnMinimizarRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMinimizarRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizarRegister.FlatAppearance.BorderSize = 0;
             this.btnMinimizarRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimizarRegister.Location = new System.Drawing.Point(32, 3);
@@ -554,6 +590,7 @@
             // 
             this.btnFecharRegister.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFecharRegister.BackgroundImage")));
             this.btnFecharRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFecharRegister.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFecharRegister.FlatAppearance.BorderSize = 0;
             this.btnFecharRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFecharRegister.Location = new System.Drawing.Point(3, 3);
@@ -576,34 +613,6 @@
             // 
             this.timer1.Interval = 20;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // btnOpenEye
-            // 
-            this.btnOpenEye.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOpenEye.BackgroundImage")));
-            this.btnOpenEye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnOpenEye.FlatAppearance.BorderSize = 0;
-            this.btnOpenEye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpenEye.Location = new System.Drawing.Point(239, 8);
-            this.btnOpenEye.Name = "btnOpenEye";
-            this.btnOpenEye.Size = new System.Drawing.Size(26, 22);
-            this.btnOpenEye.TabIndex = 61;
-            this.btnOpenEye.UseVisualStyleBackColor = true;
-            this.btnOpenEye.Click += new System.EventHandler(this.btnOpenEye_Click);
-            // 
-            // btnClosedEye
-            // 
-            this.btnClosedEye.BackColor = System.Drawing.Color.Transparent;
-            this.btnClosedEye.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClosedEye.BackgroundImage")));
-            this.btnClosedEye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnClosedEye.FlatAppearance.BorderSize = 0;
-            this.btnClosedEye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClosedEye.ForeColor = System.Drawing.Color.Transparent;
-            this.btnClosedEye.Location = new System.Drawing.Point(238, 9);
-            this.btnClosedEye.Name = "btnClosedEye";
-            this.btnClosedEye.Size = new System.Drawing.Size(26, 22);
-            this.btnClosedEye.TabIndex = 62;
-            this.btnClosedEye.UseVisualStyleBackColor = false;
-            this.btnClosedEye.Click += new System.EventHandler(this.btnClosedEye_Click);
             // 
             // Login_Register
             // 

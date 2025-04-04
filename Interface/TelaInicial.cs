@@ -49,6 +49,9 @@ namespace Login_Register
             this.WindowState = FormWindowState.Minimized;
         }
 
-        
+        private void btnAdicionarAmigo1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

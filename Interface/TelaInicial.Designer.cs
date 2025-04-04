@@ -30,11 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaInicial));
             this.pnlMenuTelaInicial = new System.Windows.Forms.Panel();
-            this.pictureBoxIconesTelaInicial = new System.Windows.Forms.PictureBox();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnMatchMakingLogo = new System.Windows.Forms.Button();
             this.btnConfiguracoes = new System.Windows.Forms.Button();
-            this.btnPerfil = new System.Windows.Forms.Button();
             this.btnMatchMaking = new System.Windows.Forms.Button();
             this.btnSimbolos = new System.Windows.Forms.Button();
             this.btnAmigos = new System.Windows.Forms.Button();
@@ -120,8 +118,9 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.labelAmigosOnlineStatus5 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnPerfil = new System.Windows.Forms.Button();
             this.pnlMenuTelaInicial.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconesTelaInicial)).BeginInit();
             this.pnlBanerSoldado.SuspendLayout();
             this.pnlFavdaSemana1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -145,6 +144,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenuTelaInicial
@@ -152,7 +152,6 @@
             this.pnlMenuTelaInicial.BackColor = System.Drawing.Color.Transparent;
             this.pnlMenuTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMenuTelaInicial.BackgroundImage")));
             this.pnlMenuTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pnlMenuTelaInicial.Controls.Add(this.pictureBoxIconesTelaInicial);
             this.pnlMenuTelaInicial.Controls.Add(this.btnLogOut);
             this.pnlMenuTelaInicial.Controls.Add(this.btnMatchMakingLogo);
             this.pnlMenuTelaInicial.Controls.Add(this.btnConfiguracoes);
@@ -164,16 +163,6 @@
             this.pnlMenuTelaInicial.Name = "pnlMenuTelaInicial";
             this.pnlMenuTelaInicial.Size = new System.Drawing.Size(256, 758);
             this.pnlMenuTelaInicial.TabIndex = 0;
-            // 
-            // pictureBoxIconesTelaInicial
-            // 
-            this.pictureBoxIconesTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxIconesTelaInicial.BackgroundImage")));
-            this.pictureBoxIconesTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxIconesTelaInicial.Location = new System.Drawing.Point(35, 181);
-            this.pictureBoxIconesTelaInicial.Name = "pictureBoxIconesTelaInicial";
-            this.pictureBoxIconesTelaInicial.Size = new System.Drawing.Size(30, 262);
-            this.pictureBoxIconesTelaInicial.TabIndex = 7;
-            this.pictureBoxIconesTelaInicial.TabStop = false;
             // 
             // btnLogOut
             // 
@@ -194,7 +183,7 @@
             this.btnMatchMakingLogo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnMatchMakingLogo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnMatchMakingLogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMatchMakingLogo.Location = new System.Drawing.Point(65, 29);
+            this.btnMatchMakingLogo.Location = new System.Drawing.Point(73, 29);
             this.btnMatchMakingLogo.Name = "btnMatchMakingLogo";
             this.btnMatchMakingLogo.Size = new System.Drawing.Size(117, 58);
             this.btnMatchMakingLogo.TabIndex = 0;
@@ -209,17 +198,6 @@
             this.btnConfiguracoes.Size = new System.Drawing.Size(252, 52);
             this.btnConfiguracoes.TabIndex = 5;
             this.btnConfiguracoes.UseVisualStyleBackColor = true;
-            // 
-            // btnPerfil
-            // 
-            this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPerfil.FlatAppearance.BorderSize = 0;
-            this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPerfil.Location = new System.Drawing.Point(1, 171);
-            this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(252, 52);
-            this.btnPerfil.TabIndex = 1;
-            this.btnPerfil.UseVisualStyleBackColor = true;
             // 
             // btnMatchMaking
             // 
@@ -841,11 +819,12 @@
             this.btnAdicionarAmigo1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnAdicionarAmigo1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnAdicionarAmigo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdicionarAmigo1.Location = new System.Drawing.Point(1045, 479);
+            this.btnAdicionarAmigo1.Location = new System.Drawing.Point(0, 1);
             this.btnAdicionarAmigo1.Name = "btnAdicionarAmigo1";
             this.btnAdicionarAmigo1.Size = new System.Drawing.Size(76, 23);
             this.btnAdicionarAmigo1.TabIndex = 66;
             this.btnAdicionarAmigo1.UseVisualStyleBackColor = false;
+            this.btnAdicionarAmigo1.Click += new System.EventHandler(this.btnAdicionarAmigo1_Click);
             // 
             // btnAdicionarAmigo2
             // 
@@ -1242,6 +1221,26 @@
             this.label10.TabIndex = 96;
             this.label10.Text = "Daniele Correia";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.btnAdicionarAmigo1);
+            this.panel1.Location = new System.Drawing.Point(1045, 480);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(76, 25);
+            this.panel1.TabIndex = 0;
+            // 
+            // btnPerfil
+            // 
+            this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPerfil.FlatAppearance.BorderSize = 0;
+            this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPerfil.Location = new System.Drawing.Point(1, 171);
+            this.btnPerfil.Name = "btnPerfil";
+            this.btnPerfil.Size = new System.Drawing.Size(252, 52);
+            this.btnPerfil.TabIndex = 1;
+            this.btnPerfil.UseVisualStyleBackColor = true;
+            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1249,6 +1248,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1386, 757);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.labelAmigosOnlineStatus5);
             this.Controls.Add(this.label10);
@@ -1281,7 +1281,6 @@
             this.Controls.Add(this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2);
             this.Controls.Add(this.labelSugestoesDeAmizadeStatusDeUsuario);
             this.Controls.Add(this.labelSugestoesDeAmizadeNomeDeUsuario2);
-            this.Controls.Add(this.btnAdicionarAmigo1);
             this.Controls.Add(this.pictureBoxSugestoesDeAmizadeFotoDeUsuario1);
             this.Controls.Add(this.labelSugestoesDeAmizadeStatusDeUsuario1);
             this.Controls.Add(this.labelSugestoesDeAmizadeNomeDeUsuario1);
@@ -1330,7 +1329,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaInicial";
             this.pnlMenuTelaInicial.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconesTelaInicial)).EndInit();
             this.pnlBanerSoldado.ResumeLayout(false);
             this.pnlFavdaSemana1.ResumeLayout(false);
             this.pnlFavdaSemana1.PerformLayout();
@@ -1359,6 +1357,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1370,7 +1369,6 @@
         private System.Windows.Forms.Button btnMatchMakingLogo;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Button btnConfiguracoes;
-        private System.Windows.Forms.Button btnPerfil;
         private System.Windows.Forms.Button btnMatchMaking;
         private System.Windows.Forms.Button btnSimbolos;
         private System.Windows.Forms.Button btnAmigos;
@@ -1389,7 +1387,6 @@
         private System.Windows.Forms.Button btnFecharTelaInicial;
         private System.Windows.Forms.Button btnMinimizarTelaInicial;
         private System.Windows.Forms.Button btnNotificacoes;
-        private System.Windows.Forms.PictureBox pictureBoxIconesTelaInicial;
         private System.Windows.Forms.Label labelFavoritosDaSemana1;
         private System.Windows.Forms.Label labelFavoritosDaSemana2;
         private System.Windows.Forms.Label labelFavoritosDaSemana3;
@@ -1457,5 +1454,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label labelStatusPerfilTelaInicial;
         private System.Windows.Forms.Label labelNomePerfilTelaInicial;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnPerfil;
     }
 }

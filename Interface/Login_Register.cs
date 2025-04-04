@@ -271,5 +271,10 @@ namespace Login_Register
                 label_error.Visible = true;
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
