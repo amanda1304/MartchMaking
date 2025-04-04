@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Login_Register
 {
@@ -26,7 +27,8 @@ namespace Login_Register
 
         private void Logo_Load(object sender, EventArgs e)
         {
-
+             SoundPlayer splayer = new SoundPlayer(@"C:\Users\amanda.afranca1\Documents\ProjetoMatchMaking\audio\Matchmaking.wav");
+             splayer.Play();
         }
     }
 }
