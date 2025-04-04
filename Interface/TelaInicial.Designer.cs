@@ -33,6 +33,7 @@
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnMatchMakingLogo = new System.Windows.Forms.Button();
             this.btnConfiguracoes = new System.Windows.Forms.Button();
+            this.btnPerfil = new System.Windows.Forms.Button();
             this.btnMatchMaking = new System.Windows.Forms.Button();
             this.btnSimbolos = new System.Windows.Forms.Button();
             this.btnAmigos = new System.Windows.Forms.Button();
@@ -86,7 +87,6 @@
             this.labelSugestoesDeAmizadeStatusDeUsuario1 = new System.Windows.Forms.Label();
             this.labelSugestoesDeAmizadeNomeDeUsuario1 = new System.Windows.Forms.Label();
             this.btnAdicionarAmigo1 = new System.Windows.Forms.Button();
-            this.btnAdicionarAmigo2 = new System.Windows.Forms.Button();
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2 = new System.Windows.Forms.PictureBox();
             this.labelSugestoesDeAmizadeStatusDeUsuario = new System.Windows.Forms.Label();
             this.labelSugestoesDeAmizadeNomeDeUsuario2 = new System.Windows.Forms.Label();
@@ -119,7 +119,7 @@
             this.labelAmigosOnlineStatus5 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnPerfil = new System.Windows.Forms.Button();
+            this.btnAmigoAdicionado1 = new System.Windows.Forms.Button();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.pnlBanerSoldado.SuspendLayout();
             this.pnlFavdaSemana1.SuspendLayout();
@@ -198,6 +198,17 @@
             this.btnConfiguracoes.Size = new System.Drawing.Size(252, 52);
             this.btnConfiguracoes.TabIndex = 5;
             this.btnConfiguracoes.UseVisualStyleBackColor = true;
+            // 
+            // btnPerfil
+            // 
+            this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPerfil.FlatAppearance.BorderSize = 0;
+            this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPerfil.Location = new System.Drawing.Point(1, 171);
+            this.btnPerfil.Name = "btnPerfil";
+            this.btnPerfil.Size = new System.Drawing.Size(252, 52);
+            this.btnPerfil.TabIndex = 1;
+            this.btnPerfil.UseVisualStyleBackColor = true;
             // 
             // btnMatchMaking
             // 
@@ -826,21 +837,6 @@
             this.btnAdicionarAmigo1.UseVisualStyleBackColor = false;
             this.btnAdicionarAmigo1.Click += new System.EventHandler(this.btnAdicionarAmigo1_Click);
             // 
-            // btnAdicionarAmigo2
-            // 
-            this.btnAdicionarAmigo2.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdicionarAmigo2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdicionarAmigo2.BackgroundImage")));
-            this.btnAdicionarAmigo2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdicionarAmigo2.FlatAppearance.BorderSize = 0;
-            this.btnAdicionarAmigo2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnAdicionarAmigo2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnAdicionarAmigo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdicionarAmigo2.Location = new System.Drawing.Point(1045, 528);
-            this.btnAdicionarAmigo2.Name = "btnAdicionarAmigo2";
-            this.btnAdicionarAmigo2.Size = new System.Drawing.Size(76, 23);
-            this.btnAdicionarAmigo2.TabIndex = 70;
-            this.btnAdicionarAmigo2.UseVisualStyleBackColor = false;
-            // 
             // pictureBoxSugestoesDeAmizadeFotoDeUsuario2
             // 
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxSugestoesDeAmizadeFotoDeUsuario2.BackgroundImage")));
@@ -1230,16 +1226,20 @@
             this.panel1.Size = new System.Drawing.Size(76, 25);
             this.panel1.TabIndex = 0;
             // 
-            // btnPerfil
+            // btnAmigoAdicionado1
             // 
-            this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnPerfil.FlatAppearance.BorderSize = 0;
-            this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPerfil.Location = new System.Drawing.Point(1, 171);
-            this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(252, 52);
-            this.btnPerfil.TabIndex = 1;
-            this.btnPerfil.UseVisualStyleBackColor = true;
+            this.btnAmigoAdicionado1.BackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigoAdicionado1.BackgroundImage")));
+            this.btnAmigoAdicionado1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAmigoAdicionado1.FlatAppearance.BorderSize = 0;
+            this.btnAmigoAdicionado1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAmigoAdicionado1.Location = new System.Drawing.Point(934, 480);
+            this.btnAmigoAdicionado1.Name = "btnAmigoAdicionado1";
+            this.btnAmigoAdicionado1.Size = new System.Drawing.Size(76, 23);
+            this.btnAmigoAdicionado1.TabIndex = 70;
+            this.btnAmigoAdicionado1.UseVisualStyleBackColor = false;
             // 
             // TelaInicial
             // 
@@ -1277,7 +1277,7 @@
             this.Controls.Add(this.pictureBoxSugestoesDeAmizadeFotoDeUsuario3);
             this.Controls.Add(this.labelSugestoesDeAmizadeStatusDeUsuario3);
             this.Controls.Add(this.labelSugestoesDeAmizadeNomeDeUsuario3);
-            this.Controls.Add(this.btnAdicionarAmigo2);
+            this.Controls.Add(this.btnAmigoAdicionado1);
             this.Controls.Add(this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2);
             this.Controls.Add(this.labelSugestoesDeAmizadeStatusDeUsuario);
             this.Controls.Add(this.labelSugestoesDeAmizadeNomeDeUsuario2);
@@ -1419,7 +1419,6 @@
         private System.Windows.Forms.Label labelSugestoesDeAmizadeStatusDeUsuario1;
         private System.Windows.Forms.Label labelSugestoesDeAmizadeNomeDeUsuario1;
         private System.Windows.Forms.Button btnAdicionarAmigo1;
-        private System.Windows.Forms.Button btnAdicionarAmigo2;
         private System.Windows.Forms.PictureBox pictureBoxSugestoesDeAmizadeFotoDeUsuario2;
         private System.Windows.Forms.Label labelSugestoesDeAmizadeStatusDeUsuario;
         private System.Windows.Forms.Label labelSugestoesDeAmizadeNomeDeUsuario2;
@@ -1456,5 +1455,6 @@
         private System.Windows.Forms.Label labelNomePerfilTelaInicial;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnPerfil;
+        private System.Windows.Forms.Button btnAmigoAdicionado1;
     }
 }
