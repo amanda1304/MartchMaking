@@ -53,7 +53,6 @@
     </Compile>
     <Compile Include="Banco de dados\ConexaoBancoDados.cs" />
     <Compile Include="Classes\AnimacaoLogin.cs" />
-    <Compile Include="Classes\MoverTela.cs" />
     <Compile Include="Interface\Configurações.cs">
       <SubType>Form</SubType>
     </Compile>

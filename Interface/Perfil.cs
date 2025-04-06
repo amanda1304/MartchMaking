@@ -15,6 +15,9 @@ namespace Login_Register
         public Perfil()
         {
             InitializeComponent();
+            int TogMove;
+            int MValX;
+            int MValY;
         }
     }
 }

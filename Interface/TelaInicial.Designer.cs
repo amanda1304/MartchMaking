@@ -115,20 +115,20 @@
             this.labelAmigosOnlineStatus5 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnAmigoAdicionado1 = new System.Windows.Forms.Button();
             this.btnAdicionarAmigo1 = new System.Windows.Forms.Button();
+            this.btnAmigoAdicionado1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.btnAmigoAdicionado2 = new System.Windows.Forms.Button();
-            this.btnAmigoAdicionado3 = new System.Windows.Forms.Button();
-            this.btnAmigoAdicionado4 = new System.Windows.Forms.Button();
-            this.btnAmigoAdicionado5 = new System.Windows.Forms.Button();
             this.btnAdicionarAmigo2 = new System.Windows.Forms.Button();
+            this.btnAmigoAdicionado2 = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
             this.btnAdicionarAmigo3 = new System.Windows.Forms.Button();
-            this.btnAdicionarAmigo4 = new System.Windows.Forms.Button();
+            this.btnAmigoAdicionado3 = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.btnAdicionarAmigo5 = new System.Windows.Forms.Button();
+            this.btnAmigoAdicionado5 = new System.Windows.Forms.Button();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.btnAdicionarAmigo4 = new System.Windows.Forms.Button();
+            this.btnAmigoAdicionado4 = new System.Windows.Forms.Button();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.pnlBanerSoldado.SuspendLayout();
             this.pnlFavdaSemana1.SuspendLayout();
@@ -1181,22 +1181,6 @@
             this.panel1.Size = new System.Drawing.Size(76, 25);
             this.panel1.TabIndex = 0;
             // 
-            // btnAmigoAdicionado1
-            // 
-            this.btnAmigoAdicionado1.BackColor = System.Drawing.Color.Transparent;
-            this.btnAmigoAdicionado1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigoAdicionado1.BackgroundImage")));
-            this.btnAmigoAdicionado1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAmigoAdicionado1.FlatAppearance.BorderSize = 0;
-            this.btnAmigoAdicionado1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnAmigoAdicionado1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnAmigoAdicionado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAmigoAdicionado1.Location = new System.Drawing.Point(0, 1);
-            this.btnAmigoAdicionado1.Name = "btnAmigoAdicionado1";
-            this.btnAmigoAdicionado1.Size = new System.Drawing.Size(76, 23);
-            this.btnAmigoAdicionado1.TabIndex = 70;
-            this.btnAmigoAdicionado1.UseVisualStyleBackColor = false;
-            this.btnAmigoAdicionado1.Click += new System.EventHandler(this.btnAmigoAdicionado1_Click);
-            // 
             // btnAdicionarAmigo1
             // 
             this.btnAdicionarAmigo1.BackColor = System.Drawing.Color.Transparent;
@@ -1213,6 +1197,22 @@
             this.btnAdicionarAmigo1.UseVisualStyleBackColor = false;
             this.btnAdicionarAmigo1.Click += new System.EventHandler(this.btnAdicionarAmigo1_Click);
             // 
+            // btnAmigoAdicionado1
+            // 
+            this.btnAmigoAdicionado1.BackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigoAdicionado1.BackgroundImage")));
+            this.btnAmigoAdicionado1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAmigoAdicionado1.FlatAppearance.BorderSize = 0;
+            this.btnAmigoAdicionado1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAmigoAdicionado1.Location = new System.Drawing.Point(0, 1);
+            this.btnAmigoAdicionado1.Name = "btnAmigoAdicionado1";
+            this.btnAmigoAdicionado1.Size = new System.Drawing.Size(76, 23);
+            this.btnAmigoAdicionado1.TabIndex = 70;
+            this.btnAmigoAdicionado1.UseVisualStyleBackColor = false;
+            this.btnAmigoAdicionado1.Click += new System.EventHandler(this.btnAmigoAdicionado1_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
@@ -1222,100 +1222,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(76, 25);
             this.panel2.TabIndex = 1;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Transparent;
-            this.panel9.Controls.Add(this.btnAdicionarAmigo3);
-            this.panel9.Controls.Add(this.btnAmigoAdicionado3);
-            this.panel9.Location = new System.Drawing.Point(1045, 572);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(76, 25);
-            this.panel9.TabIndex = 2;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Transparent;
-            this.panel10.Controls.Add(this.btnAdicionarAmigo5);
-            this.panel10.Controls.Add(this.btnAmigoAdicionado5);
-            this.panel10.Location = new System.Drawing.Point(1045, 669);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(76, 25);
-            this.panel10.TabIndex = 4;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.Transparent;
-            this.panel11.Controls.Add(this.btnAdicionarAmigo4);
-            this.panel11.Controls.Add(this.btnAmigoAdicionado4);
-            this.panel11.Location = new System.Drawing.Point(1045, 622);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(76, 25);
-            this.panel11.TabIndex = 3;
-            // 
-            // btnAmigoAdicionado2
-            // 
-            this.btnAmigoAdicionado2.BackColor = System.Drawing.Color.Transparent;
-            this.btnAmigoAdicionado2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigoAdicionado2.BackgroundImage")));
-            this.btnAmigoAdicionado2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAmigoAdicionado2.FlatAppearance.BorderSize = 0;
-            this.btnAmigoAdicionado2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnAmigoAdicionado2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnAmigoAdicionado2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAmigoAdicionado2.Location = new System.Drawing.Point(0, 1);
-            this.btnAmigoAdicionado2.Name = "btnAmigoAdicionado2";
-            this.btnAmigoAdicionado2.Size = new System.Drawing.Size(76, 23);
-            this.btnAmigoAdicionado2.TabIndex = 71;
-            this.btnAmigoAdicionado2.UseVisualStyleBackColor = false;
-            this.btnAmigoAdicionado2.Click += new System.EventHandler(this.btnAmigoAdicionado2_Click);
-            // 
-            // btnAmigoAdicionado3
-            // 
-            this.btnAmigoAdicionado3.BackColor = System.Drawing.Color.Transparent;
-            this.btnAmigoAdicionado3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigoAdicionado3.BackgroundImage")));
-            this.btnAmigoAdicionado3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAmigoAdicionado3.FlatAppearance.BorderSize = 0;
-            this.btnAmigoAdicionado3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnAmigoAdicionado3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnAmigoAdicionado3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAmigoAdicionado3.Location = new System.Drawing.Point(0, 0);
-            this.btnAmigoAdicionado3.Name = "btnAmigoAdicionado3";
-            this.btnAmigoAdicionado3.Size = new System.Drawing.Size(76, 23);
-            this.btnAmigoAdicionado3.TabIndex = 72;
-            this.btnAmigoAdicionado3.UseVisualStyleBackColor = false;
-            this.btnAmigoAdicionado3.Click += new System.EventHandler(this.btnAmigoAdicionado3_Click);
-            // 
-            // btnAmigoAdicionado4
-            // 
-            this.btnAmigoAdicionado4.BackColor = System.Drawing.Color.Transparent;
-            this.btnAmigoAdicionado4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigoAdicionado4.BackgroundImage")));
-            this.btnAmigoAdicionado4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAmigoAdicionado4.FlatAppearance.BorderSize = 0;
-            this.btnAmigoAdicionado4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnAmigoAdicionado4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnAmigoAdicionado4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAmigoAdicionado4.Location = new System.Drawing.Point(0, 0);
-            this.btnAmigoAdicionado4.Name = "btnAmigoAdicionado4";
-            this.btnAmigoAdicionado4.Size = new System.Drawing.Size(76, 23);
-            this.btnAmigoAdicionado4.TabIndex = 73;
-            this.btnAmigoAdicionado4.UseVisualStyleBackColor = false;
-            this.btnAmigoAdicionado4.Click += new System.EventHandler(this.btnAmigoAdicionado4_Click);
-            // 
-            // btnAmigoAdicionado5
-            // 
-            this.btnAmigoAdicionado5.BackColor = System.Drawing.Color.Transparent;
-            this.btnAmigoAdicionado5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigoAdicionado5.BackgroundImage")));
-            this.btnAmigoAdicionado5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAmigoAdicionado5.FlatAppearance.BorderSize = 0;
-            this.btnAmigoAdicionado5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnAmigoAdicionado5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnAmigoAdicionado5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAmigoAdicionado5.Location = new System.Drawing.Point(1, 1);
-            this.btnAmigoAdicionado5.Name = "btnAmigoAdicionado5";
-            this.btnAmigoAdicionado5.Size = new System.Drawing.Size(76, 23);
-            this.btnAmigoAdicionado5.TabIndex = 74;
-            this.btnAmigoAdicionado5.UseVisualStyleBackColor = false;
-            this.btnAmigoAdicionado5.Click += new System.EventHandler(this.btnAmigoAdicionado5_Click);
             // 
             // btnAdicionarAmigo2
             // 
@@ -1333,6 +1239,32 @@
             this.btnAdicionarAmigo2.UseVisualStyleBackColor = false;
             this.btnAdicionarAmigo2.Click += new System.EventHandler(this.btnAdicionarAmigo2_Click);
             // 
+            // btnAmigoAdicionado2
+            // 
+            this.btnAmigoAdicionado2.BackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigoAdicionado2.BackgroundImage")));
+            this.btnAmigoAdicionado2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAmigoAdicionado2.FlatAppearance.BorderSize = 0;
+            this.btnAmigoAdicionado2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAmigoAdicionado2.Location = new System.Drawing.Point(0, 1);
+            this.btnAmigoAdicionado2.Name = "btnAmigoAdicionado2";
+            this.btnAmigoAdicionado2.Size = new System.Drawing.Size(76, 23);
+            this.btnAmigoAdicionado2.TabIndex = 71;
+            this.btnAmigoAdicionado2.UseVisualStyleBackColor = false;
+            this.btnAmigoAdicionado2.Click += new System.EventHandler(this.btnAmigoAdicionado2_Click);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Transparent;
+            this.panel9.Controls.Add(this.btnAdicionarAmigo3);
+            this.panel9.Controls.Add(this.btnAmigoAdicionado3);
+            this.panel9.Location = new System.Drawing.Point(1045, 572);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(76, 25);
+            this.panel9.TabIndex = 2;
+            // 
             // btnAdicionarAmigo3
             // 
             this.btnAdicionarAmigo3.BackColor = System.Drawing.Color.Transparent;
@@ -1348,6 +1280,74 @@
             this.btnAdicionarAmigo3.TabIndex = 100;
             this.btnAdicionarAmigo3.UseVisualStyleBackColor = false;
             this.btnAdicionarAmigo3.Click += new System.EventHandler(this.btnAdicionarAmigo3_Click);
+            // 
+            // btnAmigoAdicionado3
+            // 
+            this.btnAmigoAdicionado3.BackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigoAdicionado3.BackgroundImage")));
+            this.btnAmigoAdicionado3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAmigoAdicionado3.FlatAppearance.BorderSize = 0;
+            this.btnAmigoAdicionado3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAmigoAdicionado3.Location = new System.Drawing.Point(0, 0);
+            this.btnAmigoAdicionado3.Name = "btnAmigoAdicionado3";
+            this.btnAmigoAdicionado3.Size = new System.Drawing.Size(76, 23);
+            this.btnAmigoAdicionado3.TabIndex = 72;
+            this.btnAmigoAdicionado3.UseVisualStyleBackColor = false;
+            this.btnAmigoAdicionado3.Click += new System.EventHandler(this.btnAmigoAdicionado3_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Transparent;
+            this.panel10.Controls.Add(this.btnAdicionarAmigo5);
+            this.panel10.Controls.Add(this.btnAmigoAdicionado5);
+            this.panel10.Location = new System.Drawing.Point(1045, 669);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(76, 25);
+            this.panel10.TabIndex = 4;
+            // 
+            // btnAdicionarAmigo5
+            // 
+            this.btnAdicionarAmigo5.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdicionarAmigo5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdicionarAmigo5.BackgroundImage")));
+            this.btnAdicionarAmigo5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdicionarAmigo5.FlatAppearance.BorderSize = 0;
+            this.btnAdicionarAmigo5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAdicionarAmigo5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAdicionarAmigo5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdicionarAmigo5.Location = new System.Drawing.Point(1, 1);
+            this.btnAdicionarAmigo5.Name = "btnAdicionarAmigo5";
+            this.btnAdicionarAmigo5.Size = new System.Drawing.Size(76, 23);
+            this.btnAdicionarAmigo5.TabIndex = 102;
+            this.btnAdicionarAmigo5.UseVisualStyleBackColor = false;
+            this.btnAdicionarAmigo5.Click += new System.EventHandler(this.btnAdicionarAmigo5_Click);
+            // 
+            // btnAmigoAdicionado5
+            // 
+            this.btnAmigoAdicionado5.BackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigoAdicionado5.BackgroundImage")));
+            this.btnAmigoAdicionado5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAmigoAdicionado5.FlatAppearance.BorderSize = 0;
+            this.btnAmigoAdicionado5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAmigoAdicionado5.Location = new System.Drawing.Point(1, 1);
+            this.btnAmigoAdicionado5.Name = "btnAmigoAdicionado5";
+            this.btnAmigoAdicionado5.Size = new System.Drawing.Size(76, 23);
+            this.btnAmigoAdicionado5.TabIndex = 74;
+            this.btnAmigoAdicionado5.UseVisualStyleBackColor = false;
+            this.btnAmigoAdicionado5.Click += new System.EventHandler(this.btnAmigoAdicionado5_Click);
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.Transparent;
+            this.panel11.Controls.Add(this.btnAdicionarAmigo4);
+            this.panel11.Controls.Add(this.btnAmigoAdicionado4);
+            this.panel11.Location = new System.Drawing.Point(1045, 622);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(76, 25);
+            this.panel11.TabIndex = 3;
             // 
             // btnAdicionarAmigo4
             // 
@@ -1365,21 +1365,21 @@
             this.btnAdicionarAmigo4.UseVisualStyleBackColor = false;
             this.btnAdicionarAmigo4.Click += new System.EventHandler(this.btnAdicionarAmigo4_Click);
             // 
-            // btnAdicionarAmigo5
+            // btnAmigoAdicionado4
             // 
-            this.btnAdicionarAmigo5.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdicionarAmigo5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdicionarAmigo5.BackgroundImage")));
-            this.btnAdicionarAmigo5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAdicionarAmigo5.FlatAppearance.BorderSize = 0;
-            this.btnAdicionarAmigo5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnAdicionarAmigo5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnAdicionarAmigo5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdicionarAmigo5.Location = new System.Drawing.Point(1, 1);
-            this.btnAdicionarAmigo5.Name = "btnAdicionarAmigo5";
-            this.btnAdicionarAmigo5.Size = new System.Drawing.Size(76, 23);
-            this.btnAdicionarAmigo5.TabIndex = 102;
-            this.btnAdicionarAmigo5.UseVisualStyleBackColor = false;
-            this.btnAdicionarAmigo5.Click += new System.EventHandler(this.btnAdicionarAmigo5_Click);
+            this.btnAmigoAdicionado4.BackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigoAdicionado4.BackgroundImage")));
+            this.btnAmigoAdicionado4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAmigoAdicionado4.FlatAppearance.BorderSize = 0;
+            this.btnAmigoAdicionado4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAmigoAdicionado4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAmigoAdicionado4.Location = new System.Drawing.Point(0, 0);
+            this.btnAmigoAdicionado4.Name = "btnAmigoAdicionado4";
+            this.btnAmigoAdicionado4.Size = new System.Drawing.Size(76, 23);
+            this.btnAmigoAdicionado4.TabIndex = 73;
+            this.btnAmigoAdicionado4.UseVisualStyleBackColor = false;
+            this.btnAmigoAdicionado4.Click += new System.EventHandler(this.btnAmigoAdicionado4_Click);
             // 
             // TelaInicial
             // 
@@ -1469,6 +1469,9 @@
             this.Name = "TelaInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaInicial";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TelaInicial_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TelaInicial_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.TelaInicial_MouseUp);
             this.pnlMenuTelaInicial.ResumeLayout(false);
             this.pnlBanerSoldado.ResumeLayout(false);
             this.pnlFavdaSemana1.ResumeLayout(false);

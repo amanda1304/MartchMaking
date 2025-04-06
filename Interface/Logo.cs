@@ -27,7 +27,7 @@ namespace Login_Register
 
         private void Logo_Load(object sender, EventArgs e)
         {
-             SoundPlayer splayer = new SoundPlayer(@"C:\Users\amanda.afranca1\Documents\ProjetoMatchMaking\audio\Matchmaking.wav");
+             SoundPlayer splayer = new SoundPlayer(@"C:\Users\mand_\OneDrive\C#\_MatchMaking\audio\Matchmaking.wav");
              splayer.Play();
         }
     }

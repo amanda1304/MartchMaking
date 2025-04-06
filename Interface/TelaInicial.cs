@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Login_Register
 {
@@ -15,6 +16,30 @@ namespace Login_Register
         public TelaInicial()
         {
             InitializeComponent();
+            
+        }
+        int TogMove;
+        int MValX;
+        int MValY;
+        private void TelaInicial_MouseDown(object sender, MouseEventArgs e)
+        {
+
+            TogMove = 1;
+            MValX = e.X;
+            MValY = e.Y;
+        }
+
+        private void TelaInicial_MouseUp(object sender, MouseEventArgs e)
+        {
+            TogMove = 0;
+        }
+
+        private void TelaInicial_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (TogMove == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - MValX, MousePosition.Y - MValY);
+            }
         }
         private void TelaInicial_Load(object sender, EventArgs e)
         {
@@ -24,6 +49,7 @@ namespace Login_Register
                 control.Height = this.ClientSize.Height / 2;
             }
         }
+  
         private void labelFavoritosDaSemana1_Click(object sender, EventArgs e)
         {
 
@@ -108,6 +134,8 @@ namespace Login_Register
         {
 
         }
+
+        
     }
 
 }

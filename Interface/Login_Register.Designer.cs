@@ -663,6 +663,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login_Register";
             this.Load += new System.EventHandler(this.Login_Register_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_Register_MouseDown_1);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Login_Register_MouseMove_1);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Login_Register_MouseUp_1);
             this.panelconfirmsenha.ResumeLayout(false);
             this.panelconfirmsenha.PerformLayout();
             this.panelsenharegister.ResumeLayout(false);

@@ -1,19 +1,28 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using YourNamespace;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-
 namespace Login_Register
 {
+    
     public partial class Login_Register : Form
     {
+        
         private AnimacaoLogin animador = new AnimacaoLogin();
+       
         //private int targetX;
         public Login_Register()
         {
             InitializeComponent();
-         
+            
         }
         int TogMove;
         int MValX;
@@ -40,25 +49,24 @@ namespace Login_Register
             animationTimer.Start();*/
 
         }
-
-        private void Login_Register_MouseDown(object sender, MouseEventArgs e)
+        private void Login_Register_MouseDown_1(object sender, MouseEventArgs e)
         {
-
             TogMove = 1;
             MValX = e.X;
             MValY = e.Y;
         }
-        private void Login_Register_MouseUp(object sender, MouseEventArgs e)
-        {
-            TogMove = 0;
-        }
 
-        private void Login_Register_MouseMove(object sender, MouseEventArgs e)
+        private void Login_Register_MouseMove_1(object sender, MouseEventArgs e)
         {
             if (TogMove == 1)
             {
                 this.SetDesktopLocation(MousePosition.X - MValX, MousePosition.Y - MValY);
             }
+        }
+
+        private void Login_Register_MouseUp_1(object sender, MouseEventArgs e)
+        {
+            TogMove = 0;
         }
         private void linkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -276,5 +284,7 @@ namespace Login_Register
         {
 
         }
+
+
     }
 }
