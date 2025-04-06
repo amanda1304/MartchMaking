@@ -142,7 +142,11 @@
             this.Controls.Add(this.pnlMenuTelaInicial);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Perfil";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfil";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Perfil_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Perfil_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Perfil_MouseUp);
             this.pnlMenuTelaInicial.ResumeLayout(false);
             this.ResumeLayout(false);
 

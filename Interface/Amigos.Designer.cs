@@ -142,7 +142,11 @@
             this.Controls.Add(this.pnlMenuTelaInicial);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Amigos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Amigos";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Amigos_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Amigos_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Amigos_MouseUp);
             this.pnlMenuTelaInicial.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -142,7 +142,11 @@
             this.Controls.Add(this.pnlMenuTelaInicial);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MatchMaking";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MatchMaking";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MatchMaking_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MatchMaking_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MatchMaking_MouseUp);
             this.pnlMenuTelaInicial.ResumeLayout(false);
             this.ResumeLayout(false);
 

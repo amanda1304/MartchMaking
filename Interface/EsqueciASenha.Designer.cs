@@ -129,6 +129,9 @@
             this.Name = "EsqueciASenha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EsqueciASenha";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.EsqueciASenha_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.EsqueciASenha_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.EsqueciASenha_MouseUp);
             this.panelUserRecuperarSenha.ResumeLayout(false);
             this.panelUserRecuperarSenha.PerformLayout();
             this.ResumeLayout(false);

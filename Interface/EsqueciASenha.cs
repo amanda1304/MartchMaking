@@ -16,7 +16,9 @@ namespace Login_Register
         {
             InitializeComponent();
         }
-
+        int TogMove;
+        int MValX;
+        int MValY;
         private void btnVoltarRecuperarSenha_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -27,6 +29,26 @@ namespace Login_Register
         private void textBoxRecuperarSenha_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void EsqueciASenha_MouseDown(object sender, MouseEventArgs e)
+        {
+            TogMove = 1;
+            MValX = e.X;
+            MValY = e.Y;
+        }
+
+        private void EsqueciASenha_MouseUp(object sender, MouseEventArgs e)
+        {
+            TogMove = 0;
+        }
+
+        private void EsqueciASenha_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (TogMove == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - MValX, MousePosition.Y - MValY);
+            }
         }
     }
 }

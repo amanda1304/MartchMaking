@@ -16,5 +16,28 @@ namespace Login_Register
         {
             InitializeComponent();
         }
+        int TogMove;
+        int MValX;
+        int MValY;
+
+        private void Jogos_MouseDown(object sender, MouseEventArgs e)
+        {
+            TogMove = 1;
+            MValX = e.X;
+            MValY = e.Y;
+        }
+
+        private void Jogos_MouseUp(object sender, MouseEventArgs e)
+        {
+            TogMove = 0;
+        }
+
+        private void Jogos_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (TogMove == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - MValX, MousePosition.Y - MValY);
+            }
+        }
     }
 }
