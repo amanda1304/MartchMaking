@@ -33,6 +33,7 @@ namespace Login_Register
         {
 
             timer1.Start();
+            
            /*
             // Inicializa a posição do painel
             pnl.Left = 0;
