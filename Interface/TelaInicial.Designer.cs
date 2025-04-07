@@ -179,6 +179,7 @@
             // 
             // btnLogOut
             // 
+            this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogOut.FlatAppearance.BorderSize = 0;
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Location = new System.Drawing.Point(1, 648);
@@ -192,6 +193,7 @@
             this.btnMatchMakingLogo.BackColor = System.Drawing.Color.Transparent;
             this.btnMatchMakingLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMakingLogo.BackgroundImage")));
             this.btnMatchMakingLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMatchMakingLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMatchMakingLogo.FlatAppearance.BorderSize = 0;
             this.btnMatchMakingLogo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnMatchMakingLogo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -204,6 +206,8 @@
             // 
             // btnConfiguracoes
             // 
+            this.btnConfiguracoes.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
+            this.btnConfiguracoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfiguracoes.FlatAppearance.BorderSize = 0;
             this.btnConfiguracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfiguracoes.Location = new System.Drawing.Point(1, 403);
@@ -214,17 +218,26 @@
             // 
             // btnPerfil
             // 
+            this.btnPerfil.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
+            this.btnPerfil.BackColor = System.Drawing.Color.Transparent;
             this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPerfil.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
             this.btnPerfil.FlatAppearance.BorderSize = 0;
+            this.btnPerfil.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPerfil.ForeColor = System.Drawing.Color.Transparent;
             this.btnPerfil.Location = new System.Drawing.Point(1, 171);
             this.btnPerfil.Name = "btnPerfil";
             this.btnPerfil.Size = new System.Drawing.Size(252, 52);
             this.btnPerfil.TabIndex = 1;
-            this.btnPerfil.UseVisualStyleBackColor = true;
+            this.btnPerfil.UseVisualStyleBackColor = false;
             // 
             // btnMatchMaking
             // 
+            this.btnMatchMaking.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
+            this.btnMatchMaking.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMatchMaking.FlatAppearance.BorderSize = 0;
             this.btnMatchMaking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMatchMaking.Location = new System.Drawing.Point(1, 345);
@@ -235,6 +248,8 @@
             // 
             // btnJogos
             // 
+            this.btnJogos.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
+            this.btnJogos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnJogos.FlatAppearance.BorderSize = 0;
             this.btnJogos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnJogos.Location = new System.Drawing.Point(1, 229);
@@ -246,6 +261,8 @@
             // 
             // btnAmigos
             // 
+            this.btnAmigos.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
+            this.btnAmigos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAmigos.FlatAppearance.BorderSize = 0;
             this.btnAmigos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAmigos.Location = new System.Drawing.Point(1, 287);
@@ -467,8 +484,9 @@
             this.btnFecharTelaInicial.BackColor = System.Drawing.Color.Transparent;
             this.btnFecharTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFecharTelaInicial.BackgroundImage")));
             this.btnFecharTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnFecharTelaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFecharTelaInicial.FlatAppearance.BorderSize = 0;
-            this.btnFecharTelaInicial.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnFecharTelaInicial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
             this.btnFecharTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFecharTelaInicial.Location = new System.Drawing.Point(1340, 18);
             this.btnFecharTelaInicial.Name = "btnFecharTelaInicial";
@@ -482,6 +500,7 @@
             this.btnMinimizarTelaInicial.BackColor = System.Drawing.Color.Transparent;
             this.btnMinimizarTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimizarTelaInicial.BackgroundImage")));
             this.btnMinimizarTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnMinimizarTelaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizarTelaInicial.FlatAppearance.BorderSize = 0;
             this.btnMinimizarTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimizarTelaInicial.Location = new System.Drawing.Point(1307, 17);
@@ -496,6 +515,7 @@
             this.btnNotificacoes.BackColor = System.Drawing.Color.Transparent;
             this.btnNotificacoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNotificacoes.BackgroundImage")));
             this.btnNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNotificacoes.FlatAppearance.BorderSize = 0;
             this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNotificacoes.Location = new System.Drawing.Point(1135, 22);
@@ -994,6 +1014,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Location = new System.Drawing.Point(1162, 245);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(35, 35);
@@ -1017,6 +1038,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Transparent;
@@ -1030,6 +1052,7 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Location = new System.Drawing.Point(1162, 304);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(35, 35);
@@ -1053,6 +1076,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Transparent;
@@ -1066,6 +1090,7 @@
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Location = new System.Drawing.Point(1162, 362);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(35, 35);
@@ -1089,6 +1114,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Transparent;
@@ -1102,6 +1128,7 @@
             // 
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Location = new System.Drawing.Point(1160, 418);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(35, 35);
@@ -1125,6 +1152,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Transparent;
@@ -1139,6 +1167,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Location = new System.Drawing.Point(1160, 470);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(35, 35);
@@ -1162,6 +1191,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Transparent;
@@ -1186,6 +1216,7 @@
             this.btnAdicionarAmigo1.BackColor = System.Drawing.Color.Transparent;
             this.btnAdicionarAmigo1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdicionarAmigo1.BackgroundImage")));
             this.btnAdicionarAmigo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdicionarAmigo1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdicionarAmigo1.FlatAppearance.BorderSize = 0;
             this.btnAdicionarAmigo1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnAdicionarAmigo1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -1228,6 +1259,7 @@
             this.btnAdicionarAmigo2.BackColor = System.Drawing.Color.Transparent;
             this.btnAdicionarAmigo2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdicionarAmigo2.BackgroundImage")));
             this.btnAdicionarAmigo2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdicionarAmigo2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdicionarAmigo2.FlatAppearance.BorderSize = 0;
             this.btnAdicionarAmigo2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnAdicionarAmigo2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -1270,6 +1302,7 @@
             this.btnAdicionarAmigo3.BackColor = System.Drawing.Color.Transparent;
             this.btnAdicionarAmigo3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdicionarAmigo3.BackgroundImage")));
             this.btnAdicionarAmigo3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdicionarAmigo3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdicionarAmigo3.FlatAppearance.BorderSize = 0;
             this.btnAdicionarAmigo3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnAdicionarAmigo3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -1354,6 +1387,7 @@
             this.btnAdicionarAmigo4.BackColor = System.Drawing.Color.Transparent;
             this.btnAdicionarAmigo4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdicionarAmigo4.BackgroundImage")));
             this.btnAdicionarAmigo4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAdicionarAmigo4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdicionarAmigo4.FlatAppearance.BorderSize = 0;
             this.btnAdicionarAmigo4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnAdicionarAmigo4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
