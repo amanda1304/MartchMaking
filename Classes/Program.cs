@@ -12,6 +12,9 @@ namespace Login_Register
             Application.SetCompatibleTextRenderingDefault(false);
             Logo logo = new Logo();
             Application.Run(new Logo());
+            //Application.Run(new Perfil());
+            //Application.Run(new Amigos());
+            //Application.Run(new Jogos());
             if (logo.IsDisposed)
             {
                 Application.Run(new Login_Register());
