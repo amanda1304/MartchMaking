@@ -443,6 +443,7 @@
             // 
             // pictureBox6
             // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox6.Location = new System.Drawing.Point(8, 16);
@@ -470,13 +471,13 @@
             this.labelNomePerfilTelaInicial.AutoSize = true;
             this.labelNomePerfilTelaInicial.BackColor = System.Drawing.Color.Transparent;
             this.labelNomePerfilTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelNomePerfilTelaInicial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNomePerfilTelaInicial.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNomePerfilTelaInicial.ForeColor = System.Drawing.Color.Transparent;
             this.labelNomePerfilTelaInicial.Location = new System.Drawing.Point(64, 25);
             this.labelNomePerfilTelaInicial.Name = "labelNomePerfilTelaInicial";
-            this.labelNomePerfilTelaInicial.Size = new System.Drawing.Size(114, 16);
+            this.labelNomePerfilTelaInicial.Size = new System.Drawing.Size(102, 16);
             this.labelNomePerfilTelaInicial.TabIndex = 100;
-            this.labelNomePerfilTelaInicial.Text = "Rafael Almeida";
+            this.labelNomePerfilTelaInicial.Text = "Roberta Pardo";
             this.labelNomePerfilTelaInicial.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnFecharTelaInicial
@@ -761,6 +762,7 @@
             // 
             // pictureBoxHistoricoFotoDeUsuario1
             // 
+            this.pictureBoxHistoricoFotoDeUsuario1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxHistoricoFotoDeUsuario1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxHistoricoFotoDeUsuario1.BackgroundImage")));
             this.pictureBoxHistoricoFotoDeUsuario1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxHistoricoFotoDeUsuario1.Location = new System.Drawing.Point(453, 572);
@@ -771,6 +773,7 @@
             // 
             // pictureBoxHistoricoFotoDeUsuario2
             // 
+            this.pictureBoxHistoricoFotoDeUsuario2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxHistoricoFotoDeUsuario2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxHistoricoFotoDeUsuario2.BackgroundImage")));
             this.pictureBoxHistoricoFotoDeUsuario2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxHistoricoFotoDeUsuario2.Location = new System.Drawing.Point(453, 622);
@@ -781,6 +784,7 @@
             // 
             // pictureBoxHistoricoFotoDeUsuario3
             // 
+            this.pictureBoxHistoricoFotoDeUsuario3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxHistoricoFotoDeUsuario3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxHistoricoFotoDeUsuario3.BackgroundImage")));
             this.pictureBoxHistoricoFotoDeUsuario3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxHistoricoFotoDeUsuario3.Location = new System.Drawing.Point(453, 671);
@@ -791,6 +795,7 @@
             // 
             // pictureBoxHistoricoFotoDeUsuario6
             // 
+            this.pictureBoxHistoricoFotoDeUsuario6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxHistoricoFotoDeUsuario6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxHistoricoFotoDeUsuario6.BackgroundImage")));
             this.pictureBoxHistoricoFotoDeUsuario6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxHistoricoFotoDeUsuario6.Location = new System.Drawing.Point(697, 671);
@@ -822,6 +827,7 @@
             // 
             // pictureBoxSugestoesDeAmizadeFotoDeUsuario1
             // 
+            this.pictureBoxSugestoesDeAmizadeFotoDeUsuario1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxSugestoesDeAmizadeFotoDeUsuario1.BackgroundImage")));
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario1.Location = new System.Drawing.Point(930, 477);
@@ -858,6 +864,7 @@
             // 
             // pictureBoxSugestoesDeAmizadeFotoDeUsuario2
             // 
+            this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxSugestoesDeAmizadeFotoDeUsuario2.BackgroundImage")));
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2.Location = new System.Drawing.Point(930, 526);
@@ -894,6 +901,7 @@
             // 
             // pictureBoxSugestoesDeAmizadeFotoDeUsuario3
             // 
+            this.pictureBoxSugestoesDeAmizadeFotoDeUsuario3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxSugestoesDeAmizadeFotoDeUsuario3.BackgroundImage")));
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario3.Location = new System.Drawing.Point(930, 575);
@@ -930,6 +938,7 @@
             // 
             // pictureBoxSugestoesDeAmizadeFotoDeUsuario5
             // 
+            this.pictureBoxSugestoesDeAmizadeFotoDeUsuario5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxSugestoesDeAmizadeFotoDeUsuario5.BackgroundImage")));
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario5.Location = new System.Drawing.Point(930, 670);
@@ -966,6 +975,7 @@
             // 
             // pictureBoxSugestoesDeAmizadeFotoDeUsuario4
             // 
+            this.pictureBoxSugestoesDeAmizadeFotoDeUsuario4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxSugestoesDeAmizadeFotoDeUsuario4.BackgroundImage")));
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario4.Location = new System.Drawing.Point(930, 623);
@@ -1012,6 +1022,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -1050,6 +1061,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -1088,6 +1100,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -1126,6 +1139,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
