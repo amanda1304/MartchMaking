@@ -10,7 +10,7 @@ namespace Login_Register
     {
         public bool Validar(string usuario, string senha)
         {
-            return usuario == "projetointegrador@gmail.com" && senha == "1234";
+            return usuario == "projeto" && senha == "1234";
         }
     }
 }
