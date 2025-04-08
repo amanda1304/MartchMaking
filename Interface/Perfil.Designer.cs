@@ -30,19 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Perfil));
             this.pnlMenuTelaInicial = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnLogOut = new System.Windows.Forms.Button();
+            this.btnMatchMakingLogo = new System.Windows.Forms.Button();
             this.btnConfiguracoes = new System.Windows.Forms.Button();
             this.btnPerfil = new System.Windows.Forms.Button();
             this.btnMatchMaking = new System.Windows.Forms.Button();
             this.btnSimbolos = new System.Windows.Forms.Button();
             this.btnAmigos = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnMatchMakingLogo = new System.Windows.Forms.Button();
+            this.btnNotificacoes = new System.Windows.Forms.Button();
+            this.btnFecharTelaInicial = new System.Windows.Forms.Button();
+            this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -67,6 +70,15 @@
             this.pnlMenuTelaInicial.Size = new System.Drawing.Size(256, 758);
             this.pnlMenuTelaInicial.TabIndex = 1;
             // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(257, 56);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1131, 225);
+            this.panel2.TabIndex = 8;
+            // 
             // btnLogOut
             // 
             this.btnLogOut.FlatAppearance.BorderSize = 0;
@@ -76,6 +88,21 @@
             this.btnLogOut.Size = new System.Drawing.Size(252, 52);
             this.btnLogOut.TabIndex = 6;
             this.btnLogOut.UseVisualStyleBackColor = true;
+            // 
+            // btnMatchMakingLogo
+            // 
+            this.btnMatchMakingLogo.BackColor = System.Drawing.Color.Transparent;
+            this.btnMatchMakingLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMakingLogo.BackgroundImage")));
+            this.btnMatchMakingLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMatchMakingLogo.FlatAppearance.BorderSize = 0;
+            this.btnMatchMakingLogo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMatchMakingLogo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMatchMakingLogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMatchMakingLogo.Location = new System.Drawing.Point(73, 29);
+            this.btnMatchMakingLogo.Name = "btnMatchMakingLogo";
+            this.btnMatchMakingLogo.Size = new System.Drawing.Size(117, 58);
+            this.btnMatchMakingLogo.TabIndex = 0;
+            this.btnMatchMakingLogo.UseVisualStyleBackColor = false;
             // 
             // btnConfiguracoes
             // 
@@ -128,15 +155,6 @@
             this.btnAmigos.TabIndex = 3;
             this.btnAmigos.UseVisualStyleBackColor = true;
             // 
-            // panel2
-            // 
-            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(257, 56);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1131, 225);
-            this.panel2.TabIndex = 8;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
@@ -159,6 +177,17 @@
             this.panel3.Size = new System.Drawing.Size(292, 635);
             this.panel3.TabIndex = 1;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(80, 351);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(130, 23);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Roberta Pardo";
+            // 
             // panel4
             // 
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
@@ -178,31 +207,48 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
-            // label2
+            // btnNotificacoes
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(80, 351);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 23);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Roberta Pardo";
+            this.btnNotificacoes.BackColor = System.Drawing.Color.Transparent;
+            this.btnNotificacoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNotificacoes.BackgroundImage")));
+            this.btnNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNotificacoes.FlatAppearance.BorderSize = 0;
+            this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotificacoes.Location = new System.Drawing.Point(1135, 22);
+            this.btnNotificacoes.Name = "btnNotificacoes";
+            this.btnNotificacoes.Size = new System.Drawing.Size(16, 20);
+            this.btnNotificacoes.TabIndex = 42;
+            this.btnNotificacoes.UseVisualStyleBackColor = false;
             // 
-            // btnMatchMakingLogo
+            // btnFecharTelaInicial
             // 
-            this.btnMatchMakingLogo.BackColor = System.Drawing.Color.Transparent;
-            this.btnMatchMakingLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMakingLogo.BackgroundImage")));
-            this.btnMatchMakingLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnMatchMakingLogo.FlatAppearance.BorderSize = 0;
-            this.btnMatchMakingLogo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnMatchMakingLogo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnMatchMakingLogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMatchMakingLogo.Location = new System.Drawing.Point(73, 29);
-            this.btnMatchMakingLogo.Name = "btnMatchMakingLogo";
-            this.btnMatchMakingLogo.Size = new System.Drawing.Size(117, 58);
-            this.btnMatchMakingLogo.TabIndex = 0;
-            this.btnMatchMakingLogo.UseVisualStyleBackColor = false;
+            this.btnFecharTelaInicial.BackColor = System.Drawing.Color.Transparent;
+            this.btnFecharTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFecharTelaInicial.BackgroundImage")));
+            this.btnFecharTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnFecharTelaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFecharTelaInicial.FlatAppearance.BorderSize = 0;
+            this.btnFecharTelaInicial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
+            this.btnFecharTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFecharTelaInicial.Location = new System.Drawing.Point(1340, 18);
+            this.btnFecharTelaInicial.Name = "btnFecharTelaInicial";
+            this.btnFecharTelaInicial.Size = new System.Drawing.Size(25, 27);
+            this.btnFecharTelaInicial.TabIndex = 40;
+            this.btnFecharTelaInicial.UseVisualStyleBackColor = false;
+            // 
+            // btnMinimizarTelaInicial
+            // 
+            this.btnMinimizarTelaInicial.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinimizarTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimizarTelaInicial.BackgroundImage")));
+            this.btnMinimizarTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnMinimizarTelaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizarTelaInicial.FlatAppearance.BorderSize = 0;
+            this.btnMinimizarTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizarTelaInicial.Location = new System.Drawing.Point(1307, 17);
+            this.btnMinimizarTelaInicial.Name = "btnMinimizarTelaInicial";
+            this.btnMinimizarTelaInicial.Size = new System.Drawing.Size(25, 27);
+            this.btnMinimizarTelaInicial.TabIndex = 41;
+            this.btnMinimizarTelaInicial.UseVisualStyleBackColor = false;
             // 
             // Perfil
             // 
@@ -212,6 +258,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1386, 757);
+            this.Controls.Add(this.btnNotificacoes);
+            this.Controls.Add(this.btnFecharTelaInicial);
+            this.Controls.Add(this.btnMinimizarTelaInicial);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlMenuTelaInicial);
             this.DoubleBuffered = true;
@@ -248,5 +297,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnMatchMakingLogo;
+        private System.Windows.Forms.Button btnNotificacoes;
+        private System.Windows.Forms.Button btnFecharTelaInicial;
+        private System.Windows.Forms.Button btnMinimizarTelaInicial;
     }
 }
