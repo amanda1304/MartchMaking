@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\RegistroMensagens.cs" />
     <Compile Include="Interface\Amigos.cs">
       <SubType>Form</SubType>
     </Compile>

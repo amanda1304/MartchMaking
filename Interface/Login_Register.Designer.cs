@@ -56,7 +56,6 @@
             this.txtUserNameRegister = new System.Windows.Forms.Label();
             this.paneluserregister = new System.Windows.Forms.Panel();
             this.label_error = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxpassword = new System.Windows.Forms.TextBox();
@@ -378,6 +377,7 @@
             this.btnRegistrar.TabIndex = 40;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click_1);
             // 
             // txtUserNameRegister
             // 
@@ -414,18 +414,6 @@
             this.label_error.Visible = false;
             this.label_error.Click += new System.EventHandler(this.label_error_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Tomato;
-            this.label1.Location = new System.Drawing.Point(90, 384);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 17);
-            this.label1.TabIndex = 53;
-            this.label1.Text = "*As senhas não coincidem";
-            // 
             // button2
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
@@ -446,11 +434,11 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Tomato;
-            this.label2.Location = new System.Drawing.Point(134, 91);
+            this.label2.Location = new System.Drawing.Point(94, 91);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 17);
+            this.label2.Size = new System.Drawing.Size(0, 17);
             this.label2.TabIndex = 56;
-            this.label2.Text = "*Preencha todos os campos";
+            this.label2.Visible = false;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBoxpassword
@@ -564,9 +552,9 @@
             // 
             this.pnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl.BackgroundImage")));
             this.pnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnl.Location = new System.Drawing.Point(-1, -1);
+            this.pnl.Location = new System.Drawing.Point(0, 0);
             this.pnl.Name = "pnl";
-            this.pnl.Size = new System.Drawing.Size(445, 600);
+            this.pnl.Size = new System.Drawing.Size(459, 600);
             this.pnl.TabIndex = 51;
             this.pnl.TabStop = true;
             this.pnl.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Paint);
@@ -603,7 +591,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
-            this.pictureBox1.Location = new System.Drawing.Point(-15, -13);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(459, 632);
             this.pictureBox1.TabIndex = 60;
@@ -628,7 +616,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label_error);
             this.Controls.Add(this.btnFecharRegister);
             this.Controls.Add(this.linkLogin);
@@ -712,7 +699,6 @@
         private System.Windows.Forms.Label txtUserNameRegister;
         private System.Windows.Forms.Panel paneluserregister;
         private System.Windows.Forms.Label label_error;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxpassword;

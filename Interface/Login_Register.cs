@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login_Register.Classes;
 using YourNamespace;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -286,6 +287,48 @@ namespace Login_Register
 
         }
 
+        private void btnRegistrar_Click_1(object sender, EventArgs e)
+        {
+            string nomeUsuario = textBoxUserNameRegister.Text;
+            string email = textBoxEmail.Text;
+            string senha = textBoxSenhaRegister.Text;
+            string confirmacaoSenha = textBoxConfirmarSenha.Text;
+
+            RegistroMensagens resultado = ValidarCampos(nomeUsuario, email, senha, confirmacaoSenha);
+            label2.Visible = true;
+            // Exibe a mensagem conforme o resultado da validação
+            label2.Text = resultado.Mensagem;
+           
+        }
+        // Função que valida os campos do formulário
+        private RegistroMensagens ValidarCampos(string nomeUsuario, string email, string senha, string confirmacaoSenha)
+        {
+            // Verifica se todos os campos estão preenchidos
+            if (string.IsNullOrEmpty(nomeUsuario) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha) || string.IsNullOrEmpty(confirmacaoSenha))
+            {
+                return new RegistroMensagens("Todos os campos devem ser preenchidos!", "erro");
+            }
+
+            // Verifica se a senha e a confirmação de senha são iguais
+            if (senha != confirmacaoSenha)
+            {
+                return new RegistroMensagens("senhas não coincidem!", "erro");
+
+            }
+
+            // Verifica se o e-mail tem um formato válido
+            try
+            {
+                var mailAddress = new System.Net.Mail.MailAddress(email);
+            }
+            catch
+            {
+                return new RegistroMensagens("E-mail inválido!", "erro");
+            }
+
+            // Se todas as validações passarem
+            return new RegistroMensagens("Usuário registrado com sucesso!", "sucesso");
+        }
 
     }
 }
