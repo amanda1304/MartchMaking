@@ -45,6 +45,7 @@
             this.btnNotificacoes = new System.Windows.Forms.Button();
             this.btnFecharTelaInicial = new System.Windows.Forms.Button();
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -191,6 +192,7 @@
             // 
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(1, 1);
@@ -263,6 +265,17 @@
             this.btnMinimizarTelaInicial.TabIndex = 41;
             this.btnMinimizarTelaInicial.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(80, 372);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(130, 23);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Roberta Pardo";
+            // 
             // Perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -310,5 +323,6 @@
         private System.Windows.Forms.Button btnNotificacoes;
         private System.Windows.Forms.Button btnFecharTelaInicial;
         private System.Windows.Forms.Button btnMinimizarTelaInicial;
+        private System.Windows.Forms.Label label1;
     }
 }
