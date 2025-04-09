@@ -245,6 +245,7 @@
             this.btnPerfil.Size = new System.Drawing.Size(252, 52);
             this.btnPerfil.TabIndex = 1;
             this.btnPerfil.UseVisualStyleBackColor = false;
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
             // btnMatchMaking
             // 

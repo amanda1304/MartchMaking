@@ -17,6 +17,13 @@ namespace Login_Register
         {
             InitializeComponent();
             FecharJanela();
+            PlaySound();
+        }
+        private void PlaySound()
+        {
+            // Reproduz o áudio embutido
+            SoundPlayer player = new SoundPlayer(Properties.Resources.Matchmaking);
+            player.Play(); // ou .PlayLooping() ou .PlaySync()
         }
         private async void FecharJanela()
         {
@@ -27,8 +34,8 @@ namespace Login_Register
 
         private void Logo_Load(object sender, EventArgs e)
         {
-             SoundPlayer splayer = new SoundPlayer(@"C:\Users\Bia\Desktop\Projeto Integrador\MatchMaking\audio\Matchmaking.wav");
-             splayer.Play();
+            // SoundPlayer splayer = new SoundPlayer(@"C:\Users\Bia\Desktop\Projeto Integrador\MatchMaking\audio\Matchmaking.wav");
+            // splayer.Play();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

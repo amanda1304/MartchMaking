@@ -135,7 +135,12 @@ namespace Login_Register
 
         }
 
-        
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Perfil perfil = new Perfil();
+            perfil.Show();
+        }
     }
 
 }
