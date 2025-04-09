@@ -179,8 +179,13 @@
             // 
             // btnLogOut
             // 
+            this.btnLogOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogOut.BackgroundImage")));
+            this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogOut.FlatAppearance.BorderSize = 0;
+            this.btnLogOut.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.btnLogOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Location = new System.Drawing.Point(1, 648);
             this.btnLogOut.Name = "btnLogOut";
@@ -207,8 +212,13 @@
             // btnConfiguracoes
             // 
             this.btnConfiguracoes.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
+            this.btnConfiguracoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfiguracoes.BackgroundImage")));
+            this.btnConfiguracoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnConfiguracoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfiguracoes.FlatAppearance.BorderSize = 0;
+            this.btnConfiguracoes.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.btnConfiguracoes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnConfiguracoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
             this.btnConfiguracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfiguracoes.Location = new System.Drawing.Point(1, 403);
             this.btnConfiguracoes.Name = "btnConfiguracoes";
@@ -220,12 +230,14 @@
             // 
             this.btnPerfil.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
             this.btnPerfil.BackColor = System.Drawing.Color.Transparent;
+            this.btnPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPerfil.BackgroundImage")));
             this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPerfil.FlatAppearance.BorderColor = System.Drawing.Color.Cyan;
             this.btnPerfil.FlatAppearance.BorderSize = 0;
-            this.btnPerfil.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnPerfil.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.btnPerfil.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPerfil.ForeColor = System.Drawing.Color.Transparent;
             this.btnPerfil.Location = new System.Drawing.Point(1, 171);
@@ -237,8 +249,13 @@
             // btnMatchMaking
             // 
             this.btnMatchMaking.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
+            this.btnMatchMaking.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMaking.BackgroundImage")));
+            this.btnMatchMaking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMatchMaking.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMatchMaking.FlatAppearance.BorderSize = 0;
+            this.btnMatchMaking.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.btnMatchMaking.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnMatchMaking.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumVioletRed;
             this.btnMatchMaking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMatchMaking.Location = new System.Drawing.Point(1, 345);
             this.btnMatchMaking.Name = "btnMatchMaking";
@@ -249,8 +266,13 @@
             // btnJogos
             // 
             this.btnJogos.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
+            this.btnJogos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnJogos.BackgroundImage")));
+            this.btnJogos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnJogos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnJogos.FlatAppearance.BorderSize = 0;
+            this.btnJogos.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.btnJogos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnJogos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateBlue;
             this.btnJogos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnJogos.Location = new System.Drawing.Point(1, 229);
             this.btnJogos.Name = "btnJogos";
@@ -262,8 +284,13 @@
             // btnAmigos
             // 
             this.btnAmigos.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
+            this.btnAmigos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigos.BackgroundImage")));
+            this.btnAmigos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAmigos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAmigos.FlatAppearance.BorderSize = 0;
+            this.btnAmigos.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.btnAmigos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnAmigos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnAmigos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAmigos.Location = new System.Drawing.Point(1, 287);
             this.btnAmigos.Name = "btnAmigos";
@@ -503,6 +530,8 @@
             this.btnMinimizarTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMinimizarTelaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizarTelaInicial.FlatAppearance.BorderSize = 0;
+            this.btnMinimizarTelaInicial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnMinimizarTelaInicial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
             this.btnMinimizarTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimizarTelaInicial.Location = new System.Drawing.Point(1307, 17);
             this.btnMinimizarTelaInicial.Name = "btnMinimizarTelaInicial";
