@@ -52,13 +52,15 @@
             this.pnlMenuTelaInicial.Controls.Add(this.btnMatchMaking);
             this.pnlMenuTelaInicial.Controls.Add(this.btnSimbolos);
             this.pnlMenuTelaInicial.Controls.Add(this.btnAmigos);
-            this.pnlMenuTelaInicial.Location = new System.Drawing.Point(0, 0);
+            this.pnlMenuTelaInicial.Location = new System.Drawing.Point(-1, 0);
             this.pnlMenuTelaInicial.Name = "pnlMenuTelaInicial";
             this.pnlMenuTelaInicial.Size = new System.Drawing.Size(256, 758);
             this.pnlMenuTelaInicial.TabIndex = 2;
             // 
             // btnLogOut
             // 
+            this.btnLogOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogOut.BackgroundImage")));
+            this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLogOut.FlatAppearance.BorderSize = 0;
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Location = new System.Drawing.Point(-1, 654);
@@ -84,6 +86,8 @@
             // 
             // btnConfiguracoes
             // 
+            this.btnConfiguracoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfiguracoes.BackgroundImage")));
+            this.btnConfiguracoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnConfiguracoes.FlatAppearance.BorderSize = 0;
             this.btnConfiguracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfiguracoes.Location = new System.Drawing.Point(-1, 403);
@@ -94,6 +98,7 @@
             // 
             // btnPerfil
             // 
+            this.btnPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPerfil.BackgroundImage")));
             this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPerfil.FlatAppearance.BorderSize = 0;
             this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -105,6 +110,8 @@
             // 
             // btnMatchMaking
             // 
+            this.btnMatchMaking.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMaking.BackgroundImage")));
+            this.btnMatchMaking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMatchMaking.FlatAppearance.BorderSize = 0;
             this.btnMatchMaking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMatchMaking.Location = new System.Drawing.Point(-1, 345);
@@ -115,6 +122,8 @@
             // 
             // btnSimbolos
             // 
+            this.btnSimbolos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSimbolos.BackgroundImage")));
+            this.btnSimbolos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSimbolos.FlatAppearance.BorderSize = 0;
             this.btnSimbolos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSimbolos.Location = new System.Drawing.Point(-1, 229);
@@ -125,6 +134,8 @@
             // 
             // btnAmigos
             // 
+            this.btnAmigos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigos.BackgroundImage")));
+            this.btnAmigos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAmigos.FlatAppearance.BorderSize = 0;
             this.btnAmigos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAmigos.Location = new System.Drawing.Point(-1, 287);
