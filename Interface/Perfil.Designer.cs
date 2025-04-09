@@ -90,6 +90,7 @@
             this.btnLogOut.Size = new System.Drawing.Size(252, 52);
             this.btnLogOut.TabIndex = 6;
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnMatchMakingLogo
             // 
@@ -105,6 +106,7 @@
             this.btnMatchMakingLogo.Size = new System.Drawing.Size(117, 58);
             this.btnMatchMakingLogo.TabIndex = 0;
             this.btnMatchMakingLogo.UseVisualStyleBackColor = false;
+            this.btnMatchMakingLogo.Click += new System.EventHandler(this.btnMatchMakingLogo_Click);
             // 
             // btnConfiguracoes
             // 
@@ -119,6 +121,7 @@
             this.btnConfiguracoes.Size = new System.Drawing.Size(252, 52);
             this.btnConfiguracoes.TabIndex = 5;
             this.btnConfiguracoes.UseVisualStyleBackColor = true;
+            this.btnConfiguracoes.Click += new System.EventHandler(this.btnConfiguracoes_Click);
             // 
             // btnPerfil
             // 
@@ -147,6 +150,7 @@
             this.btnMatchMaking.Size = new System.Drawing.Size(252, 52);
             this.btnMatchMaking.TabIndex = 4;
             this.btnMatchMaking.UseVisualStyleBackColor = true;
+            this.btnMatchMaking.Click += new System.EventHandler(this.btnMatchMaking_Click);
             // 
             // btnSimbolos
             // 
@@ -161,6 +165,7 @@
             this.btnSimbolos.Size = new System.Drawing.Size(252, 52);
             this.btnSimbolos.TabIndex = 2;
             this.btnSimbolos.UseVisualStyleBackColor = true;
+            this.btnSimbolos.Click += new System.EventHandler(this.btnSimbolos_Click);
             // 
             // btnAmigos
             // 
@@ -175,6 +180,7 @@
             this.btnAmigos.Size = new System.Drawing.Size(252, 52);
             this.btnAmigos.TabIndex = 3;
             this.btnAmigos.UseVisualStyleBackColor = true;
+            this.btnAmigos.Click += new System.EventHandler(this.btnAmigos_Click);
             // 
             // panel1
             // 
@@ -246,6 +252,7 @@
             this.btnFecharTelaInicial.Size = new System.Drawing.Size(25, 27);
             this.btnFecharTelaInicial.TabIndex = 40;
             this.btnFecharTelaInicial.UseVisualStyleBackColor = false;
+            this.btnFecharTelaInicial.Click += new System.EventHandler(this.btnFecharTelaInicial_Click);
             // 
             // btnMinimizarTelaInicial
             // 
@@ -262,6 +269,7 @@
             this.btnMinimizarTelaInicial.Size = new System.Drawing.Size(25, 27);
             this.btnMinimizarTelaInicial.TabIndex = 41;
             this.btnMinimizarTelaInicial.UseVisualStyleBackColor = false;
+            this.btnMinimizarTelaInicial.Click += new System.EventHandler(this.btnMinimizarTelaInicial_Click);
             // 
             // Perfil
             // 
