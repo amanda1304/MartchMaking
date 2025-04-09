@@ -9,8 +9,6 @@ namespace Login_Register
 {
     internal class ConexaoBancoDados
     {
-        //public class ConexaoBanco { private MySqlConnection conexao; public MySqlConnection Conectar() 
-           // { string strConexao = "Server=localhost;Database=seu_banco;Uid=root;Pwd=senha;"; 
-             //   conexao = new MySqlConnection(strConexao); conexao.Open(); return conexao; } }
+       
     }
 }
