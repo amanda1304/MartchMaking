@@ -132,7 +132,9 @@ namespace Login_Register
 
         private void btnJogos_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Jogos TelaJogos = new Jogos();
+            TelaJogos.Show();
         }
 
         private void btnPerfil_Click(object sender, EventArgs e)
@@ -140,6 +142,54 @@ namespace Login_Register
             this.Hide();
             Perfil perfil = new Perfil();
             perfil.Show();
+        }
+
+        private void btnAmigos_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Amigos TelaAmigos = new Amigos();
+            TelaAmigos.Show();
+        }
+
+        private void btnMatchMaking_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MatchMaking TelaMatch = new MatchMaking();
+            TelaMatch.Show();
+        }
+
+        private void btnConfiguracoes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Configurações Telaconfig = new Configurações();
+            Telaconfig.Show();
+        }
+
+        private void btnMatchMakingLogo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            {
+                DialogResult resultado = MessageBox.Show(
+                    "Tem certeza que deseja sair?",
+                    "Confirmação",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                );
+
+                if (resultado == DialogResult.Yes)
+                {
+                    // Abre outro formulário
+                    Login_Register loginregister = new Login_Register(); // substitua pelo seu form
+                    loginregister.Show();
+
+                    // Fecha o formulário atual
+                    this.Close();
+                }
+            }
         }
     }
 

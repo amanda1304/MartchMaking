@@ -40,6 +40,63 @@ namespace Login_Register
             }
         }
 
+        private void btnSimbolos_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Jogos TelaJogos = new Jogos();
+            TelaJogos.Show();
+        }
+
+        private void btnAmigos_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Amigos TelaAmigos = new Amigos();
+            TelaAmigos.Show();
+        }
+
+        private void btnMatchMaking_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MatchMaking TelaMatch = new MatchMaking();
+            TelaMatch.Show();
+        }
+
+        private void btnConfiguracoes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Configurações Telaconfig = new Configurações();
+            Telaconfig.Show();
+        }
+
+        private void btnMatchMakingLogo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TelaInicial TelaInicial = new TelaInicial();
+            TelaInicial.Show();
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            {
+                DialogResult resultado = MessageBox.Show(
+                    "Tem certeza que deseja sair?",
+                    "Confirmação",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question
+                );
+
+                if (resultado == DialogResult.Yes)
+                {
+                    // Abre outro formulário
+                    Login_Register loginregister = new Login_Register(); // substitua pelo seu form
+                    loginregister.Show();
+
+                    // Fecha o formulário atual
+                    this.Close();
+                }
+            }
+        }
+
         private void btnFecharTelaInicial_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -48,16 +105,6 @@ namespace Login_Register
         private void btnMinimizarTelaInicial_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
