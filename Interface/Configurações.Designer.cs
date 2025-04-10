@@ -187,6 +187,7 @@
             this.btnFecharTelaInicial.Size = new System.Drawing.Size(25, 27);
             this.btnFecharTelaInicial.TabIndex = 43;
             this.btnFecharTelaInicial.UseVisualStyleBackColor = false;
+            this.btnFecharTelaInicial.Click += new System.EventHandler(this.btnFecharTelaInicial_Click);
             // 
             // btnMinimizarTelaInicial
             // 
@@ -203,6 +204,7 @@
             this.btnMinimizarTelaInicial.Size = new System.Drawing.Size(25, 27);
             this.btnMinimizarTelaInicial.TabIndex = 44;
             this.btnMinimizarTelaInicial.UseVisualStyleBackColor = false;
+            this.btnMinimizarTelaInicial.Click += new System.EventHandler(this.btnMinimizarTelaInicial_Click);
             // 
             // Configurações
             // 

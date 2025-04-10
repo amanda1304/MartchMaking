@@ -39,5 +39,25 @@ namespace Login_Register
                 this.SetDesktopLocation(MousePosition.X - MValX, MousePosition.Y - MValY);
             }
         }
+
+        private void btnFecharTelaInicial_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMinimizarTelaInicial_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
