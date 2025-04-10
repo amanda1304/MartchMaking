@@ -247,6 +247,7 @@
             this.btnPerfil.Name = "btnPerfil";
             this.btnPerfil.Size = new System.Drawing.Size(252, 52);
             this.btnPerfil.TabIndex = 1;
+            this.btnPerfil.Text = ".";
             this.btnPerfil.UseVisualStyleBackColor = false;
             this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
@@ -428,7 +429,7 @@
             this.pnlHistoricoMatchMakingTelaInicial.BackColor = System.Drawing.Color.Transparent;
             this.pnlHistoricoMatchMakingTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlHistoricoMatchMakingTelaInicial.BackgroundImage")));
             this.pnlHistoricoMatchMakingTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pnlHistoricoMatchMakingTelaInicial.Location = new System.Drawing.Point(276, 529);
+            this.pnlHistoricoMatchMakingTelaInicial.Location = new System.Drawing.Point(279, 529);
             this.pnlHistoricoMatchMakingTelaInicial.Name = "pnlHistoricoMatchMakingTelaInicial";
             this.pnlHistoricoMatchMakingTelaInicial.Size = new System.Drawing.Size(146, 188);
             this.pnlHistoricoMatchMakingTelaInicial.TabIndex = 8;
@@ -988,7 +989,7 @@
             this.labelSugestoesDeAmizadeStatusDeUsuario5.BackColor = System.Drawing.Color.Transparent;
             this.labelSugestoesDeAmizadeStatusDeUsuario5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelSugestoesDeAmizadeStatusDeUsuario5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSugestoesDeAmizadeStatusDeUsuario5.ForeColor = System.Drawing.Color.Transparent;
+            this.labelSugestoesDeAmizadeStatusDeUsuario5.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.labelSugestoesDeAmizadeStatusDeUsuario5.Location = new System.Drawing.Point(960, 685);
             this.labelSugestoesDeAmizadeStatusDeUsuario5.Name = "labelSugestoesDeAmizadeStatusDeUsuario5";
             this.labelSugestoesDeAmizadeStatusDeUsuario5.Size = new System.Drawing.Size(44, 9);

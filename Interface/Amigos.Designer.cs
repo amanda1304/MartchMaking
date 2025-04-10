@@ -62,6 +62,8 @@
             this.btnLogOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogOut.BackgroundImage")));
             this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLogOut.FlatAppearance.BorderSize = 0;
+            this.btnLogOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Location = new System.Drawing.Point(-1, 654);
             this.btnLogOut.Name = "btnLogOut";
@@ -91,6 +93,8 @@
             this.btnConfiguracoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfiguracoes.BackgroundImage")));
             this.btnConfiguracoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnConfiguracoes.FlatAppearance.BorderSize = 0;
+            this.btnConfiguracoes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnConfiguracoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
             this.btnConfiguracoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfiguracoes.Location = new System.Drawing.Point(-1, 403);
             this.btnConfiguracoes.Name = "btnConfiguracoes";
@@ -104,6 +108,8 @@
             this.btnPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPerfil.BackgroundImage")));
             this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPerfil.FlatAppearance.BorderSize = 0;
+            this.btnPerfil.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.btnPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPerfil.Location = new System.Drawing.Point(-1, 171);
             this.btnPerfil.Name = "btnPerfil";
@@ -117,6 +123,8 @@
             this.btnMatchMaking.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMaking.BackgroundImage")));
             this.btnMatchMaking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMatchMaking.FlatAppearance.BorderSize = 0;
+            this.btnMatchMaking.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnMatchMaking.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumVioletRed;
             this.btnMatchMaking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMatchMaking.Location = new System.Drawing.Point(-1, 345);
             this.btnMatchMaking.Name = "btnMatchMaking";
@@ -130,6 +138,8 @@
             this.btnSimbolos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSimbolos.BackgroundImage")));
             this.btnSimbolos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSimbolos.FlatAppearance.BorderSize = 0;
+            this.btnSimbolos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnSimbolos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateBlue;
             this.btnSimbolos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSimbolos.Location = new System.Drawing.Point(-1, 229);
             this.btnSimbolos.Name = "btnSimbolos";
@@ -143,6 +153,8 @@
             this.btnAmigos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigos.BackgroundImage")));
             this.btnAmigos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAmigos.FlatAppearance.BorderSize = 0;
+            this.btnAmigos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnAmigos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnAmigos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAmigos.Location = new System.Drawing.Point(-1, 287);
             this.btnAmigos.Name = "btnAmigos";
