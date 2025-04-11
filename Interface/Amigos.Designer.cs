@@ -39,6 +39,9 @@
             this.btnSimbolos = new System.Windows.Forms.Button();
             this.btnAmigos = new System.Windows.Forms.Button();
             this.timer6 = new System.Windows.Forms.Timer(this.components);
+            this.btnNotificacoes = new System.Windows.Forms.Button();
+            this.btnFecharTelaInicial = new System.Windows.Forms.Button();
+            this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -170,12 +173,60 @@
             this.timer6.Interval = 3;
             this.timer6.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnNotificacoes
+            // 
+            this.btnNotificacoes.BackColor = System.Drawing.Color.Transparent;
+            this.btnNotificacoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNotificacoes.BackgroundImage")));
+            this.btnNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNotificacoes.FlatAppearance.BorderSize = 0;
+            this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotificacoes.Location = new System.Drawing.Point(1135, 22);
+            this.btnNotificacoes.Name = "btnNotificacoes";
+            this.btnNotificacoes.Size = new System.Drawing.Size(16, 20);
+            this.btnNotificacoes.TabIndex = 45;
+            this.btnNotificacoes.UseVisualStyleBackColor = false;
+            // 
+            // btnFecharTelaInicial
+            // 
+            this.btnFecharTelaInicial.BackColor = System.Drawing.Color.Transparent;
+            this.btnFecharTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFecharTelaInicial.BackgroundImage")));
+            this.btnFecharTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnFecharTelaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFecharTelaInicial.FlatAppearance.BorderSize = 0;
+            this.btnFecharTelaInicial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
+            this.btnFecharTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFecharTelaInicial.Location = new System.Drawing.Point(1340, 18);
+            this.btnFecharTelaInicial.Name = "btnFecharTelaInicial";
+            this.btnFecharTelaInicial.Size = new System.Drawing.Size(25, 27);
+            this.btnFecharTelaInicial.TabIndex = 43;
+            this.btnFecharTelaInicial.UseVisualStyleBackColor = false;
+            // 
+            // btnMinimizarTelaInicial
+            // 
+            this.btnMinimizarTelaInicial.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinimizarTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimizarTelaInicial.BackgroundImage")));
+            this.btnMinimizarTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnMinimizarTelaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizarTelaInicial.FlatAppearance.BorderSize = 0;
+            this.btnMinimizarTelaInicial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnMinimizarTelaInicial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.btnMinimizarTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizarTelaInicial.Location = new System.Drawing.Point(1307, 17);
+            this.btnMinimizarTelaInicial.Name = "btnMinimizarTelaInicial";
+            this.btnMinimizarTelaInicial.Size = new System.Drawing.Size(25, 27);
+            this.btnMinimizarTelaInicial.TabIndex = 44;
+            this.btnMinimizarTelaInicial.UseVisualStyleBackColor = false;
+            // 
             // Amigos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1386, 757);
+            this.Controls.Add(this.btnNotificacoes);
+            this.Controls.Add(this.btnFecharTelaInicial);
+            this.Controls.Add(this.btnMinimizarTelaInicial);
             this.Controls.Add(this.pnlMenuTelaInicial);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -203,5 +254,8 @@
         private System.Windows.Forms.Button btnSimbolos;
         private System.Windows.Forms.Button btnAmigos;
         private System.Windows.Forms.Timer timer6;
+        private System.Windows.Forms.Button btnNotificacoes;
+        private System.Windows.Forms.Button btnFecharTelaInicial;
+        private System.Windows.Forms.Button btnMinimizarTelaInicial;
     }
 }
