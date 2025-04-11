@@ -109,7 +109,6 @@
     </Compile>
     <Compile Include="Model\Amigos\Amigos.cs" />
     <Compile Include="Model\Banners\Banners.cs" />
-    <Compile Include="Model\ConexaoBancoDados.cs" />
     <Compile Include="Classes\AnimacaoLogin.cs" />
     <Compile Include="Interface\Configurações.cs">
       <SubType>Form</SubType>
