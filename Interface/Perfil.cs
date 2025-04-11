@@ -99,12 +99,35 @@ namespace Login_Register
 
         private void btnFecharTelaInicial_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult resultado = MessageBox.Show(
+                   "Tem certeza que deseja sair?",
+                   "Confirmação",
+                   MessageBoxButtons.YesNo,
+                   MessageBoxIcon.Question
+               );
+
+            if (resultado == DialogResult.Yes)
+            {
+                
+
+                // Fecha o formulário atual
+                this.Close();
+            }
         }
 
         private void btnMinimizarTelaInicial_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            Opacity += .2;
+        }
+
+        private void Perfil_Load(object sender, EventArgs e)
+        {
+            timer2.Start();
         }
     }
 }

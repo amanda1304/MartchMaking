@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Configurações));
             this.btnMatchMakingLogo = new System.Windows.Forms.Button();
             this.pnlMenuTelaInicial = new System.Windows.Forms.Panel();
@@ -40,6 +41,7 @@
             this.btnNotificacoes = new System.Windows.Forms.Button();
             this.btnFecharTelaInicial = new System.Windows.Forms.Button();
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
+            this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.pnlMenuTelaInicial.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -213,6 +215,11 @@
             this.btnMinimizarTelaInicial.UseVisualStyleBackColor = false;
             this.btnMinimizarTelaInicial.Click += new System.EventHandler(this.btnMinimizarTelaInicial_Click);
             // 
+            // timer5
+            // 
+            this.timer5.Interval = 3;
+            this.timer5.Tick += new System.EventHandler(this.timer5_Tick);
+            // 
             // Configurações
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,8 +236,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Configurações";
+            this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configurações";
+            this.Load += new System.EventHandler(this.Configurações_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Configurações_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Configurações_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Configurações_MouseUp);
@@ -252,5 +261,6 @@
         private System.Windows.Forms.Button btnNotificacoes;
         private System.Windows.Forms.Button btnFecharTelaInicial;
         private System.Windows.Forms.Button btnMinimizarTelaInicial;
+        private System.Windows.Forms.Timer timer5;
     }
 }
