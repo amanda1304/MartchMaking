@@ -190,6 +190,7 @@
             this.btnFecharTelaInicial.Size = new System.Drawing.Size(25, 27);
             this.btnFecharTelaInicial.TabIndex = 40;
             this.btnFecharTelaInicial.UseVisualStyleBackColor = false;
+            this.btnFecharTelaInicial.Click += new System.EventHandler(this.btnFecharTelaInicial_Click);
             // 
             // btnMinimizarTelaInicial
             // 
@@ -206,6 +207,7 @@
             this.btnMinimizarTelaInicial.Size = new System.Drawing.Size(25, 27);
             this.btnMinimizarTelaInicial.TabIndex = 41;
             this.btnMinimizarTelaInicial.UseVisualStyleBackColor = false;
+            this.btnMinimizarTelaInicial.Click += new System.EventHandler(this.btnMinimizarTelaInicial_Click);
             // 
             // MatchMaking
             // 
