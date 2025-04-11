@@ -119,5 +119,15 @@ namespace Login_Register
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            Opacity += .2;
+        }
+
+        private void Perfil_Load(object sender, EventArgs e)
+        {
+            timer2.Start();
+        }
     }
 }

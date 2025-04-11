@@ -96,5 +96,15 @@ namespace Login_Register
                 }
             }
         }
+
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            Opacity += .2;
+        }
+
+        private void Jogos_Load(object sender, EventArgs e)
+        {
+            timer4.Start();
+        }
     }
 }

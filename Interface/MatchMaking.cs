@@ -101,5 +101,15 @@ namespace Login_Register
                 }
             }
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Opacity += .2;
+        }
+
+        private void MatchMaking_Load(object sender, EventArgs e)
+        {
+            timer3.Start();
+        }
     }
 }

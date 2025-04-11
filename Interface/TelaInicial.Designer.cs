@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaInicial));
             this.pnlMenuTelaInicial = new System.Windows.Forms.Panel();
             this.btnLogOut = new System.Windows.Forms.Button();
@@ -129,6 +130,7 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.btnAdicionarAmigo4 = new System.Windows.Forms.Button();
             this.btnAmigoAdicionado4 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnlMenuTelaInicial.SuspendLayout();
             this.pnlBanerSoldado.SuspendLayout();
             this.pnlFavdaSemana1.SuspendLayout();
@@ -1465,6 +1467,11 @@
             this.btnAmigoAdicionado4.UseVisualStyleBackColor = false;
             this.btnAmigoAdicionado4.Click += new System.EventHandler(this.btnAmigoAdicionado4_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 3;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1551,8 +1558,10 @@
             this.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TelaInicial";
+            this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaInicial";
+            this.Load += new System.EventHandler(this.TelaInicial_Load_1);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TelaInicial_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TelaInicial_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.TelaInicial_MouseUp);
@@ -1697,5 +1706,6 @@
         private System.Windows.Forms.Button btnAdicionarAmigo3;
         private System.Windows.Forms.Button btnAdicionarAmigo4;
         private System.Windows.Forms.Button btnAdicionarAmigo5;
+        private System.Windows.Forms.Timer timer1;
     }
 }

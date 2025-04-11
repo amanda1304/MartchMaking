@@ -103,5 +103,15 @@ namespace Login_Register
                 }
             }
         }
+
+        private void Amigos_Load(object sender, EventArgs e)
+        {
+            timer6.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Opacity += .2;
+        }
     }
 }

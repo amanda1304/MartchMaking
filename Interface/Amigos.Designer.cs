@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Amigos));
             this.pnlMenuTelaInicial = new System.Windows.Forms.Panel();
             this.btnLogOut = new System.Windows.Forms.Button();
@@ -37,6 +38,7 @@
             this.btnMatchMaking = new System.Windows.Forms.Button();
             this.btnSimbolos = new System.Windows.Forms.Button();
             this.btnAmigos = new System.Windows.Forms.Button();
+            this.timer6 = new System.Windows.Forms.Timer(this.components);
             this.pnlMenuTelaInicial.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -163,6 +165,11 @@
             this.btnAmigos.UseVisualStyleBackColor = true;
             this.btnAmigos.Click += new System.EventHandler(this.btnAmigos_Click);
             // 
+            // timer6
+            // 
+            this.timer6.Interval = 3;
+            this.timer6.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Amigos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,8 +180,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Amigos";
+            this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Amigos";
+            this.Load += new System.EventHandler(this.Amigos_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Amigos_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Amigos_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Amigos_MouseUp);
@@ -193,5 +202,6 @@
         private System.Windows.Forms.Button btnMatchMaking;
         private System.Windows.Forms.Button btnSimbolos;
         private System.Windows.Forms.Button btnAmigos;
+        private System.Windows.Forms.Timer timer6;
     }
 }

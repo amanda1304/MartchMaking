@@ -127,5 +127,15 @@ namespace Login_Register
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void timer5_Tick(object sender, EventArgs e)
+        {
+            Opacity += .2;
+        }
+
+        private void Configurações_Load(object sender, EventArgs e)
+        {
+           timer5.Start();  
+        }
     }
 }

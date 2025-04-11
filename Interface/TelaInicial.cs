@@ -204,6 +204,16 @@ namespace Login_Register
                 }
             }
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Opacity += .2;
+        }
+
+        private void TelaInicial_Load_1(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
     }
 
 }

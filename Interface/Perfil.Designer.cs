@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Perfil));
             this.pnlMenuTelaInicial = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -45,6 +46,7 @@
             this.btnNotificacoes = new System.Windows.Forms.Button();
             this.btnFecharTelaInicial = new System.Windows.Forms.Button();
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.pnlMenuTelaInicial.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -271,6 +273,11 @@
             this.btnMinimizarTelaInicial.UseVisualStyleBackColor = false;
             this.btnMinimizarTelaInicial.Click += new System.EventHandler(this.btnMinimizarTelaInicial_Click);
             // 
+            // timer2
+            // 
+            this.timer2.Interval = 3;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -288,8 +295,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Perfil";
+            this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perfil";
+            this.Load += new System.EventHandler(this.Perfil_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Perfil_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Perfil_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Perfil_MouseUp);
@@ -319,5 +328,6 @@
         private System.Windows.Forms.Button btnNotificacoes;
         private System.Windows.Forms.Button btnFecharTelaInicial;
         private System.Windows.Forms.Button btnMinimizarTelaInicial;
+        private System.Windows.Forms.Timer timer2;
     }
 }
