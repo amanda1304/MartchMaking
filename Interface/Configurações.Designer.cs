@@ -65,7 +65,7 @@
             // 
             this.pnlMenuTelaInicial.BackColor = System.Drawing.Color.Transparent;
             this.pnlMenuTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMenuTelaInicial.BackgroundImage")));
-            this.pnlMenuTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlMenuTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlMenuTelaInicial.Controls.Add(this.btnLogOut);
             this.pnlMenuTelaInicial.Controls.Add(this.btnMatchMakingLogo);
             this.pnlMenuTelaInicial.Controls.Add(this.btnConfiguracoes);
