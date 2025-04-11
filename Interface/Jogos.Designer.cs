@@ -49,7 +49,7 @@
             // 
             this.pnlMenuTelaInicial.BackColor = System.Drawing.Color.Transparent;
             this.pnlMenuTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMenuTelaInicial.BackgroundImage")));
-            this.pnlMenuTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlMenuTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlMenuTelaInicial.Controls.Add(this.btnLogOut);
             this.pnlMenuTelaInicial.Controls.Add(this.btnMatchMakingLogo);
             this.pnlMenuTelaInicial.Controls.Add(this.btnConfiguracoes);
@@ -64,6 +64,8 @@
             // 
             // btnLogOut
             // 
+            this.btnLogOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogOut.BackgroundImage")));
+            this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLogOut.FlatAppearance.BorderSize = 0;
             this.btnLogOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
@@ -93,6 +95,8 @@
             // 
             // btnConfiguracoes
             // 
+            this.btnConfiguracoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfiguracoes.BackgroundImage")));
+            this.btnConfiguracoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnConfiguracoes.FlatAppearance.BorderSize = 0;
             this.btnConfiguracoes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnConfiguracoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
@@ -106,6 +110,7 @@
             // 
             // btnPerfil
             // 
+            this.btnPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPerfil.BackgroundImage")));
             this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPerfil.FlatAppearance.BorderSize = 0;
             this.btnPerfil.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
@@ -120,6 +125,8 @@
             // 
             // btnMatchMaking
             // 
+            this.btnMatchMaking.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMaking.BackgroundImage")));
+            this.btnMatchMaking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMatchMaking.FlatAppearance.BorderSize = 0;
             this.btnMatchMaking.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnMatchMaking.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumVioletRed;
@@ -133,6 +140,8 @@
             // 
             // btnSimbolos
             // 
+            this.btnSimbolos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSimbolos.BackgroundImage")));
+            this.btnSimbolos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSimbolos.FlatAppearance.BorderSize = 0;
             this.btnSimbolos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnSimbolos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateBlue;
@@ -145,6 +154,8 @@
             // 
             // btnAmigos
             // 
+            this.btnAmigos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigos.BackgroundImage")));
+            this.btnAmigos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAmigos.FlatAppearance.BorderSize = 0;
             this.btnAmigos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnAmigos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
