@@ -42,7 +42,74 @@
             this.btnFecharTelaInicial = new System.Windows.Forms.Button();
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
             this.timer5 = new System.Windows.Forms.Timer(this.components);
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelNomeDeUsuario = new System.Windows.Forms.Label();
+            this.btnSalvarAlterações1 = new System.Windows.Forms.Button();
+            this.btnSalvarAlterações2 = new System.Windows.Forms.Button();
+            this.btnFundo1 = new System.Windows.Forms.Button();
+            this.btnFundo2 = new System.Windows.Forms.Button();
+            this.btnFundoMorgana2 = new System.Windows.Forms.Button();
+            this.btnFundo3 = new System.Windows.Forms.Button();
+            this.btnFundo4 = new System.Windows.Forms.Button();
+            this.btnFundo5 = new System.Windows.Forms.Button();
+            this.btnFundo6 = new System.Windows.Forms.Button();
+            this.btnFundo7 = new System.Windows.Forms.Button();
+            this.btnFundo8 = new System.Windows.Forms.Button();
+            this.btnFundo9 = new System.Windows.Forms.Button();
+            this.btnFundo11 = new System.Windows.Forms.Button();
+            this.btnFundo10 = new System.Windows.Forms.Button();
+            this.btnFundo12 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil1 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil2 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil3 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil5 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil4 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil8 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil7 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil6 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil16 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil15 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil14 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil13 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil12 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil11 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil10 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil9 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil24 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil23 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil22 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil21 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil20 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil19 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil18 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil17 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil32 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil31 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil30 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil29 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil28 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil27 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil26 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil25 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil40 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil39 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil38 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil37 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil36 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil35 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil34 = new System.Windows.Forms.Button();
+            this.btnFotodePerfil33 = new System.Windows.Forms.Button();
+            this.btnTemaAmarelo = new System.Windows.Forms.Button();
+            this.btnTemaVermelho = new System.Windows.Forms.Button();
+            this.btnTemaRoxo = new System.Windows.Forms.Button();
+            this.btnTemaAzul = new System.Windows.Forms.Button();
+            this.btnTemaVerde = new System.Windows.Forms.Button();
+            this.pictureBoxFotodeFundoAtual = new System.Windows.Forms.PictureBox();
             this.pnlMenuTelaInicial.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotodeFundoAtual)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMatchMakingLogo
@@ -220,6 +287,776 @@
             this.timer5.Interval = 3;
             this.timer5.Tick += new System.EventHandler(this.timer5_Tick);
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.panel1);
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(257, 57);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1128, 701);
+            this.flowLayoutPanel1.TabIndex = 46;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.pictureBoxFotodeFundoAtual);
+            this.panel1.Controls.Add(this.btnTemaVerde);
+            this.panel1.Controls.Add(this.btnTemaAzul);
+            this.panel1.Controls.Add(this.btnTemaRoxo);
+            this.panel1.Controls.Add(this.btnTemaVermelho);
+            this.panel1.Controls.Add(this.btnTemaAmarelo);
+            this.panel1.Controls.Add(this.btnFotodePerfil40);
+            this.panel1.Controls.Add(this.btnFotodePerfil39);
+            this.panel1.Controls.Add(this.btnFotodePerfil38);
+            this.panel1.Controls.Add(this.btnFotodePerfil37);
+            this.panel1.Controls.Add(this.btnFotodePerfil36);
+            this.panel1.Controls.Add(this.btnFotodePerfil35);
+            this.panel1.Controls.Add(this.btnFotodePerfil34);
+            this.panel1.Controls.Add(this.btnFotodePerfil33);
+            this.panel1.Controls.Add(this.btnFotodePerfil32);
+            this.panel1.Controls.Add(this.btnFotodePerfil31);
+            this.panel1.Controls.Add(this.btnFotodePerfil30);
+            this.panel1.Controls.Add(this.btnFotodePerfil29);
+            this.panel1.Controls.Add(this.btnFotodePerfil28);
+            this.panel1.Controls.Add(this.btnFotodePerfil27);
+            this.panel1.Controls.Add(this.btnFotodePerfil26);
+            this.panel1.Controls.Add(this.btnFotodePerfil25);
+            this.panel1.Controls.Add(this.btnFotodePerfil24);
+            this.panel1.Controls.Add(this.btnFotodePerfil16);
+            this.panel1.Controls.Add(this.btnFotodePerfil23);
+            this.panel1.Controls.Add(this.btnFotodePerfil15);
+            this.panel1.Controls.Add(this.btnFotodePerfil22);
+            this.panel1.Controls.Add(this.btnFotodePerfil21);
+            this.panel1.Controls.Add(this.btnFotodePerfil14);
+            this.panel1.Controls.Add(this.btnFotodePerfil20);
+            this.panel1.Controls.Add(this.btnFotodePerfil13);
+            this.panel1.Controls.Add(this.btnFotodePerfil19);
+            this.panel1.Controls.Add(this.btnFotodePerfil12);
+            this.panel1.Controls.Add(this.btnFotodePerfil18);
+            this.panel1.Controls.Add(this.btnFotodePerfil11);
+            this.panel1.Controls.Add(this.btnFotodePerfil17);
+            this.panel1.Controls.Add(this.btnFotodePerfil10);
+            this.panel1.Controls.Add(this.btnFotodePerfil9);
+            this.panel1.Controls.Add(this.btnFotodePerfil8);
+            this.panel1.Controls.Add(this.btnFotodePerfil7);
+            this.panel1.Controls.Add(this.btnFotodePerfil6);
+            this.panel1.Controls.Add(this.btnFotodePerfil5);
+            this.panel1.Controls.Add(this.btnFotodePerfil4);
+            this.panel1.Controls.Add(this.btnFotodePerfil3);
+            this.panel1.Controls.Add(this.btnFotodePerfil2);
+            this.panel1.Controls.Add(this.btnFotodePerfil1);
+            this.panel1.Controls.Add(this.btnFundo12);
+            this.panel1.Controls.Add(this.btnFundo10);
+            this.panel1.Controls.Add(this.btnFundo11);
+            this.panel1.Controls.Add(this.btnFundo9);
+            this.panel1.Controls.Add(this.btnFundo8);
+            this.panel1.Controls.Add(this.btnFundo7);
+            this.panel1.Controls.Add(this.btnFundo6);
+            this.panel1.Controls.Add(this.btnFundo5);
+            this.panel1.Controls.Add(this.btnFundo4);
+            this.panel1.Controls.Add(this.btnFundo3);
+            this.panel1.Controls.Add(this.btnFundoMorgana2);
+            this.panel1.Controls.Add(this.btnFundo2);
+            this.panel1.Controls.Add(this.btnFundo1);
+            this.panel1.Controls.Add(this.btnSalvarAlterações2);
+            this.panel1.Controls.Add(this.btnSalvarAlterações1);
+            this.panel1.Controls.Add(this.labelNomeDeUsuario);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1105, 1395);
+            this.panel1.TabIndex = 0;
+            // 
+            // labelNomeDeUsuario
+            // 
+            this.labelNomeDeUsuario.AutoSize = true;
+            this.labelNomeDeUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.labelNomeDeUsuario.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNomeDeUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelNomeDeUsuario.Location = new System.Drawing.Point(247, 83);
+            this.labelNomeDeUsuario.Name = "labelNomeDeUsuario";
+            this.labelNomeDeUsuario.Size = new System.Drawing.Size(101, 18);
+            this.labelNomeDeUsuario.TabIndex = 0;
+            this.labelNomeDeUsuario.Text = "Roberta Pardo";
+            // 
+            // btnSalvarAlterações1
+            // 
+            this.btnSalvarAlterações1.BackColor = System.Drawing.Color.Transparent;
+            this.btnSalvarAlterações1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSalvarAlterações1.BackgroundImage")));
+            this.btnSalvarAlterações1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSalvarAlterações1.FlatAppearance.BorderSize = 0;
+            this.btnSalvarAlterações1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvarAlterações1.Location = new System.Drawing.Point(117, 387);
+            this.btnSalvarAlterações1.Name = "btnSalvarAlterações1";
+            this.btnSalvarAlterações1.Size = new System.Drawing.Size(119, 24);
+            this.btnSalvarAlterações1.TabIndex = 1;
+            this.btnSalvarAlterações1.UseVisualStyleBackColor = false;
+            // 
+            // btnSalvarAlterações2
+            // 
+            this.btnSalvarAlterações2.BackColor = System.Drawing.Color.Transparent;
+            this.btnSalvarAlterações2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSalvarAlterações2.BackgroundImage")));
+            this.btnSalvarAlterações2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSalvarAlterações2.FlatAppearance.BorderSize = 0;
+            this.btnSalvarAlterações2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvarAlterações2.Location = new System.Drawing.Point(88, 950);
+            this.btnSalvarAlterações2.Name = "btnSalvarAlterações2";
+            this.btnSalvarAlterações2.Size = new System.Drawing.Size(119, 24);
+            this.btnSalvarAlterações2.TabIndex = 2;
+            this.btnSalvarAlterações2.UseVisualStyleBackColor = false;
+            // 
+            // btnFundo1
+            // 
+            this.btnFundo1.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo1.FlatAppearance.BorderSize = 0;
+            this.btnFundo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFundo1.Location = new System.Drawing.Point(274, 811);
+            this.btnFundo1.Name = "btnFundo1";
+            this.btnFundo1.Size = new System.Drawing.Size(352, 63);
+            this.btnFundo1.TabIndex = 3;
+            this.btnFundo1.UseVisualStyleBackColor = false;
+            // 
+            // btnFundo2
+            // 
+            this.btnFundo2.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo2.FlatAppearance.BorderSize = 0;
+            this.btnFundo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFundo2.Location = new System.Drawing.Point(277, 897);
+            this.btnFundo2.Name = "btnFundo2";
+            this.btnFundo2.Size = new System.Drawing.Size(352, 63);
+            this.btnFundo2.TabIndex = 4;
+            this.btnFundo2.UseVisualStyleBackColor = false;
+            // 
+            // btnFundoMorgana2
+            // 
+            this.btnFundoMorgana2.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundoMorgana2.FlatAppearance.BorderSize = 0;
+            this.btnFundoMorgana2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFundoMorgana2.Location = new System.Drawing.Point(671, 987);
+            this.btnFundoMorgana2.Name = "btnFundoMorgana2";
+            this.btnFundoMorgana2.Size = new System.Drawing.Size(352, 63);
+            this.btnFundoMorgana2.TabIndex = 5;
+            this.btnFundoMorgana2.UseVisualStyleBackColor = false;
+            // 
+            // btnFundo3
+            // 
+            this.btnFundo3.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo3.FlatAppearance.BorderSize = 0;
+            this.btnFundo3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFundo3.Location = new System.Drawing.Point(277, 987);
+            this.btnFundo3.Name = "btnFundo3";
+            this.btnFundo3.Size = new System.Drawing.Size(352, 63);
+            this.btnFundo3.TabIndex = 6;
+            this.btnFundo3.UseVisualStyleBackColor = false;
+            // 
+            // btnFundo4
+            // 
+            this.btnFundo4.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo4.FlatAppearance.BorderSize = 0;
+            this.btnFundo4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFundo4.Location = new System.Drawing.Point(276, 1071);
+            this.btnFundo4.Name = "btnFundo4";
+            this.btnFundo4.Size = new System.Drawing.Size(352, 63);
+            this.btnFundo4.TabIndex = 7;
+            this.btnFundo4.UseVisualStyleBackColor = false;
+            // 
+            // btnFundo5
+            // 
+            this.btnFundo5.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo5.FlatAppearance.BorderSize = 0;
+            this.btnFundo5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFundo5.Location = new System.Drawing.Point(276, 1157);
+            this.btnFundo5.Name = "btnFundo5";
+            this.btnFundo5.Size = new System.Drawing.Size(352, 63);
+            this.btnFundo5.TabIndex = 8;
+            this.btnFundo5.UseVisualStyleBackColor = false;
+            // 
+            // btnFundo6
+            // 
+            this.btnFundo6.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo6.FlatAppearance.BorderSize = 0;
+            this.btnFundo6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFundo6.Location = new System.Drawing.Point(277, 1244);
+            this.btnFundo6.Name = "btnFundo6";
+            this.btnFundo6.Size = new System.Drawing.Size(352, 63);
+            this.btnFundo6.TabIndex = 9;
+            this.btnFundo6.UseVisualStyleBackColor = false;
+            // 
+            // btnFundo7
+            // 
+            this.btnFundo7.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo7.FlatAppearance.BorderSize = 0;
+            this.btnFundo7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFundo7.Location = new System.Drawing.Point(672, 811);
+            this.btnFundo7.Name = "btnFundo7";
+            this.btnFundo7.Size = new System.Drawing.Size(352, 63);
+            this.btnFundo7.TabIndex = 10;
+            this.btnFundo7.UseVisualStyleBackColor = false;
+            // 
+            // btnFundo8
+            // 
+            this.btnFundo8.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo8.FlatAppearance.BorderSize = 0;
+            this.btnFundo8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFundo8.Location = new System.Drawing.Point(670, 892);
+            this.btnFundo8.Name = "btnFundo8";
+            this.btnFundo8.Size = new System.Drawing.Size(352, 63);
+            this.btnFundo8.TabIndex = 11;
+            this.btnFundo8.UseVisualStyleBackColor = false;
+            // 
+            // btnFundo9
+            // 
+            this.btnFundo9.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo9.FlatAppearance.BorderSize = 0;
+            this.btnFundo9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFundo9.Location = new System.Drawing.Point(668, 986);
+            this.btnFundo9.Name = "btnFundo9";
+            this.btnFundo9.Size = new System.Drawing.Size(352, 63);
+            this.btnFundo9.TabIndex = 12;
+            this.btnFundo9.UseVisualStyleBackColor = false;
+            // 
+            // btnFundo11
+            // 
+            this.btnFundo11.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo11.FlatAppearance.BorderSize = 0;
+            this.btnFundo11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFundo11.Location = new System.Drawing.Point(670, 1156);
+            this.btnFundo11.Name = "btnFundo11";
+            this.btnFundo11.Size = new System.Drawing.Size(352, 63);
+            this.btnFundo11.TabIndex = 13;
+            this.btnFundo11.UseVisualStyleBackColor = false;
+            // 
+            // btnFundo10
+            // 
+            this.btnFundo10.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo10.FlatAppearance.BorderSize = 0;
+            this.btnFundo10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFundo10.Location = new System.Drawing.Point(668, 1069);
+            this.btnFundo10.Name = "btnFundo10";
+            this.btnFundo10.Size = new System.Drawing.Size(352, 63);
+            this.btnFundo10.TabIndex = 14;
+            this.btnFundo10.UseVisualStyleBackColor = false;
+            // 
+            // btnFundo12
+            // 
+            this.btnFundo12.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo12.FlatAppearance.BorderSize = 0;
+            this.btnFundo12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFundo12.Location = new System.Drawing.Point(669, 1244);
+            this.btnFundo12.Name = "btnFundo12";
+            this.btnFundo12.Size = new System.Drawing.Size(352, 63);
+            this.btnFundo12.TabIndex = 15;
+            this.btnFundo12.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil1
+            // 
+            this.btnFotodePerfil1.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil1.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil1.Location = new System.Drawing.Point(326, 250);
+            this.btnFotodePerfil1.Name = "btnFotodePerfil1";
+            this.btnFotodePerfil1.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil1.TabIndex = 16;
+            this.btnFotodePerfil1.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil2
+            // 
+            this.btnFotodePerfil2.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil2.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil2.Location = new System.Drawing.Point(412, 251);
+            this.btnFotodePerfil2.Name = "btnFotodePerfil2";
+            this.btnFotodePerfil2.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil2.TabIndex = 17;
+            this.btnFotodePerfil2.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil2.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnFotodePerfil3
+            // 
+            this.btnFotodePerfil3.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil3.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil3.Location = new System.Drawing.Point(495, 250);
+            this.btnFotodePerfil3.Name = "btnFotodePerfil3";
+            this.btnFotodePerfil3.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil3.TabIndex = 18;
+            this.btnFotodePerfil3.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil5
+            // 
+            this.btnFotodePerfil5.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil5.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil5.Location = new System.Drawing.Point(663, 249);
+            this.btnFotodePerfil5.Name = "btnFotodePerfil5";
+            this.btnFotodePerfil5.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil5.TabIndex = 20;
+            this.btnFotodePerfil5.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil5.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnFotodePerfil4
+            // 
+            this.btnFotodePerfil4.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil4.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil4.Location = new System.Drawing.Point(579, 250);
+            this.btnFotodePerfil4.Name = "btnFotodePerfil4";
+            this.btnFotodePerfil4.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil4.TabIndex = 19;
+            this.btnFotodePerfil4.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btnFotodePerfil8
+            // 
+            this.btnFotodePerfil8.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil8.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil8.Location = new System.Drawing.Point(920, 251);
+            this.btnFotodePerfil8.Name = "btnFotodePerfil8";
+            this.btnFotodePerfil8.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil8.TabIndex = 23;
+            this.btnFotodePerfil8.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil7
+            // 
+            this.btnFotodePerfil7.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil7.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil7.Location = new System.Drawing.Point(838, 252);
+            this.btnFotodePerfil7.Name = "btnFotodePerfil7";
+            this.btnFotodePerfil7.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil7.TabIndex = 22;
+            this.btnFotodePerfil7.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil6
+            // 
+            this.btnFotodePerfil6.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil6.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil6.Location = new System.Drawing.Point(750, 252);
+            this.btnFotodePerfil6.Name = "btnFotodePerfil6";
+            this.btnFotodePerfil6.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil6.TabIndex = 21;
+            this.btnFotodePerfil6.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil16
+            // 
+            this.btnFotodePerfil16.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil16.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil16.Location = new System.Drawing.Point(919, 324);
+            this.btnFotodePerfil16.Name = "btnFotodePerfil16";
+            this.btnFotodePerfil16.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil16.TabIndex = 31;
+            this.btnFotodePerfil16.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil15
+            // 
+            this.btnFotodePerfil15.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil15.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil15.Location = new System.Drawing.Point(837, 324);
+            this.btnFotodePerfil15.Name = "btnFotodePerfil15";
+            this.btnFotodePerfil15.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil15.TabIndex = 30;
+            this.btnFotodePerfil15.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil14
+            // 
+            this.btnFotodePerfil14.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil14.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil14.Location = new System.Drawing.Point(749, 324);
+            this.btnFotodePerfil14.Name = "btnFotodePerfil14";
+            this.btnFotodePerfil14.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil14.TabIndex = 29;
+            this.btnFotodePerfil14.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil13
+            // 
+            this.btnFotodePerfil13.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil13.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil13.Location = new System.Drawing.Point(662, 321);
+            this.btnFotodePerfil13.Name = "btnFotodePerfil13";
+            this.btnFotodePerfil13.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil13.TabIndex = 28;
+            this.btnFotodePerfil13.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil12
+            // 
+            this.btnFotodePerfil12.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil12.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil12.Location = new System.Drawing.Point(578, 322);
+            this.btnFotodePerfil12.Name = "btnFotodePerfil12";
+            this.btnFotodePerfil12.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil12.TabIndex = 27;
+            this.btnFotodePerfil12.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil11
+            // 
+            this.btnFotodePerfil11.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil11.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil11.Location = new System.Drawing.Point(494, 322);
+            this.btnFotodePerfil11.Name = "btnFotodePerfil11";
+            this.btnFotodePerfil11.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil11.TabIndex = 26;
+            this.btnFotodePerfil11.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil10
+            // 
+            this.btnFotodePerfil10.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil10.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil10.Location = new System.Drawing.Point(408, 323);
+            this.btnFotodePerfil10.Name = "btnFotodePerfil10";
+            this.btnFotodePerfil10.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil10.TabIndex = 25;
+            this.btnFotodePerfil10.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil9
+            // 
+            this.btnFotodePerfil9.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil9.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil9.Location = new System.Drawing.Point(325, 322);
+            this.btnFotodePerfil9.Name = "btnFotodePerfil9";
+            this.btnFotodePerfil9.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil9.TabIndex = 24;
+            this.btnFotodePerfil9.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil24
+            // 
+            this.btnFotodePerfil24.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil24.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil24.Location = new System.Drawing.Point(919, 400);
+            this.btnFotodePerfil24.Name = "btnFotodePerfil24";
+            this.btnFotodePerfil24.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil24.TabIndex = 54;
+            this.btnFotodePerfil24.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil23
+            // 
+            this.btnFotodePerfil23.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil23.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil23.Location = new System.Drawing.Point(838, 401);
+            this.btnFotodePerfil23.Name = "btnFotodePerfil23";
+            this.btnFotodePerfil23.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil23.TabIndex = 53;
+            this.btnFotodePerfil23.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil22
+            // 
+            this.btnFotodePerfil22.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil22.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil22.Location = new System.Drawing.Point(751, 400);
+            this.btnFotodePerfil22.Name = "btnFotodePerfil22";
+            this.btnFotodePerfil22.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil22.TabIndex = 52;
+            this.btnFotodePerfil22.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil21
+            // 
+            this.btnFotodePerfil21.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil21.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil21.Location = new System.Drawing.Point(665, 400);
+            this.btnFotodePerfil21.Name = "btnFotodePerfil21";
+            this.btnFotodePerfil21.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil21.TabIndex = 51;
+            this.btnFotodePerfil21.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil20
+            // 
+            this.btnFotodePerfil20.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil20.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil20.Location = new System.Drawing.Point(578, 399);
+            this.btnFotodePerfil20.Name = "btnFotodePerfil20";
+            this.btnFotodePerfil20.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil20.TabIndex = 50;
+            this.btnFotodePerfil20.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil19
+            // 
+            this.btnFotodePerfil19.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil19.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil19.Location = new System.Drawing.Point(494, 399);
+            this.btnFotodePerfil19.Name = "btnFotodePerfil19";
+            this.btnFotodePerfil19.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil19.TabIndex = 49;
+            this.btnFotodePerfil19.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil18
+            // 
+            this.btnFotodePerfil18.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil18.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil18.Location = new System.Drawing.Point(411, 400);
+            this.btnFotodePerfil18.Name = "btnFotodePerfil18";
+            this.btnFotodePerfil18.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil18.TabIndex = 48;
+            this.btnFotodePerfil18.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil17
+            // 
+            this.btnFotodePerfil17.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil17.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil17.Location = new System.Drawing.Point(325, 399);
+            this.btnFotodePerfil17.Name = "btnFotodePerfil17";
+            this.btnFotodePerfil17.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil17.TabIndex = 47;
+            this.btnFotodePerfil17.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil32
+            // 
+            this.btnFotodePerfil32.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil32.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil32.Location = new System.Drawing.Point(919, 474);
+            this.btnFotodePerfil32.Name = "btnFotodePerfil32";
+            this.btnFotodePerfil32.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil32.TabIndex = 62;
+            this.btnFotodePerfil32.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil31
+            // 
+            this.btnFotodePerfil31.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil31.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil31.Location = new System.Drawing.Point(837, 475);
+            this.btnFotodePerfil31.Name = "btnFotodePerfil31";
+            this.btnFotodePerfil31.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil31.TabIndex = 61;
+            this.btnFotodePerfil31.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil30
+            // 
+            this.btnFotodePerfil30.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil30.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil30.Location = new System.Drawing.Point(749, 475);
+            this.btnFotodePerfil30.Name = "btnFotodePerfil30";
+            this.btnFotodePerfil30.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil30.TabIndex = 60;
+            this.btnFotodePerfil30.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil29
+            // 
+            this.btnFotodePerfil29.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil29.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil29.Location = new System.Drawing.Point(663, 473);
+            this.btnFotodePerfil29.Name = "btnFotodePerfil29";
+            this.btnFotodePerfil29.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil29.TabIndex = 59;
+            this.btnFotodePerfil29.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil28
+            // 
+            this.btnFotodePerfil28.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil28.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil28.Location = new System.Drawing.Point(579, 472);
+            this.btnFotodePerfil28.Name = "btnFotodePerfil28";
+            this.btnFotodePerfil28.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil28.TabIndex = 58;
+            this.btnFotodePerfil28.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil27
+            // 
+            this.btnFotodePerfil27.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil27.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil27.Location = new System.Drawing.Point(495, 473);
+            this.btnFotodePerfil27.Name = "btnFotodePerfil27";
+            this.btnFotodePerfil27.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil27.TabIndex = 57;
+            this.btnFotodePerfil27.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil26
+            // 
+            this.btnFotodePerfil26.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil26.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil26.Location = new System.Drawing.Point(411, 474);
+            this.btnFotodePerfil26.Name = "btnFotodePerfil26";
+            this.btnFotodePerfil26.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil26.TabIndex = 56;
+            this.btnFotodePerfil26.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil25
+            // 
+            this.btnFotodePerfil25.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil25.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil25.Location = new System.Drawing.Point(325, 473);
+            this.btnFotodePerfil25.Name = "btnFotodePerfil25";
+            this.btnFotodePerfil25.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil25.TabIndex = 55;
+            this.btnFotodePerfil25.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil40
+            // 
+            this.btnFotodePerfil40.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil40.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil40.Location = new System.Drawing.Point(919, 553);
+            this.btnFotodePerfil40.Name = "btnFotodePerfil40";
+            this.btnFotodePerfil40.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil40.TabIndex = 70;
+            this.btnFotodePerfil40.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil39
+            // 
+            this.btnFotodePerfil39.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil39.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil39.Location = new System.Drawing.Point(837, 554);
+            this.btnFotodePerfil39.Name = "btnFotodePerfil39";
+            this.btnFotodePerfil39.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil39.TabIndex = 69;
+            this.btnFotodePerfil39.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil38
+            // 
+            this.btnFotodePerfil38.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil38.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil38.Location = new System.Drawing.Point(749, 554);
+            this.btnFotodePerfil38.Name = "btnFotodePerfil38";
+            this.btnFotodePerfil38.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil38.TabIndex = 68;
+            this.btnFotodePerfil38.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil37
+            // 
+            this.btnFotodePerfil37.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil37.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil37.Location = new System.Drawing.Point(662, 551);
+            this.btnFotodePerfil37.Name = "btnFotodePerfil37";
+            this.btnFotodePerfil37.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil37.TabIndex = 67;
+            this.btnFotodePerfil37.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil36
+            // 
+            this.btnFotodePerfil36.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil36.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil36.Location = new System.Drawing.Point(578, 552);
+            this.btnFotodePerfil36.Name = "btnFotodePerfil36";
+            this.btnFotodePerfil36.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil36.TabIndex = 66;
+            this.btnFotodePerfil36.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil35
+            // 
+            this.btnFotodePerfil35.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil35.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil35.Location = new System.Drawing.Point(494, 552);
+            this.btnFotodePerfil35.Name = "btnFotodePerfil35";
+            this.btnFotodePerfil35.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil35.TabIndex = 65;
+            this.btnFotodePerfil35.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil34
+            // 
+            this.btnFotodePerfil34.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil34.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil34.Location = new System.Drawing.Point(411, 553);
+            this.btnFotodePerfil34.Name = "btnFotodePerfil34";
+            this.btnFotodePerfil34.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil34.TabIndex = 64;
+            this.btnFotodePerfil34.UseVisualStyleBackColor = false;
+            // 
+            // btnFotodePerfil33
+            // 
+            this.btnFotodePerfil33.BackColor = System.Drawing.Color.Transparent;
+            this.btnFotodePerfil33.FlatAppearance.BorderSize = 0;
+            this.btnFotodePerfil33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFotodePerfil33.Location = new System.Drawing.Point(325, 552);
+            this.btnFotodePerfil33.Name = "btnFotodePerfil33";
+            this.btnFotodePerfil33.Size = new System.Drawing.Size(53, 47);
+            this.btnFotodePerfil33.TabIndex = 63;
+            this.btnFotodePerfil33.UseVisualStyleBackColor = false;
+            // 
+            // btnTemaAmarelo
+            // 
+            this.btnTemaAmarelo.BackColor = System.Drawing.Color.Transparent;
+            this.btnTemaAmarelo.FlatAppearance.BorderSize = 0;
+            this.btnTemaAmarelo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTemaAmarelo.Location = new System.Drawing.Point(665, 66);
+            this.btnTemaAmarelo.Name = "btnTemaAmarelo";
+            this.btnTemaAmarelo.Size = new System.Drawing.Size(53, 47);
+            this.btnTemaAmarelo.TabIndex = 71;
+            this.btnTemaAmarelo.UseVisualStyleBackColor = false;
+            // 
+            // btnTemaVermelho
+            // 
+            this.btnTemaVermelho.BackColor = System.Drawing.Color.Transparent;
+            this.btnTemaVermelho.FlatAppearance.BorderSize = 0;
+            this.btnTemaVermelho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTemaVermelho.Location = new System.Drawing.Point(734, 66);
+            this.btnTemaVermelho.Name = "btnTemaVermelho";
+            this.btnTemaVermelho.Size = new System.Drawing.Size(53, 47);
+            this.btnTemaVermelho.TabIndex = 72;
+            this.btnTemaVermelho.UseVisualStyleBackColor = false;
+            // 
+            // btnTemaRoxo
+            // 
+            this.btnTemaRoxo.BackColor = System.Drawing.Color.Transparent;
+            this.btnTemaRoxo.FlatAppearance.BorderSize = 0;
+            this.btnTemaRoxo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTemaRoxo.Location = new System.Drawing.Point(801, 67);
+            this.btnTemaRoxo.Name = "btnTemaRoxo";
+            this.btnTemaRoxo.Size = new System.Drawing.Size(53, 47);
+            this.btnTemaRoxo.TabIndex = 73;
+            this.btnTemaRoxo.UseVisualStyleBackColor = false;
+            // 
+            // btnTemaAzul
+            // 
+            this.btnTemaAzul.BackColor = System.Drawing.Color.Transparent;
+            this.btnTemaAzul.FlatAppearance.BorderSize = 0;
+            this.btnTemaAzul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTemaAzul.Location = new System.Drawing.Point(868, 68);
+            this.btnTemaAzul.Name = "btnTemaAzul";
+            this.btnTemaAzul.Size = new System.Drawing.Size(53, 47);
+            this.btnTemaAzul.TabIndex = 74;
+            this.btnTemaAzul.UseVisualStyleBackColor = false;
+            // 
+            // btnTemaVerde
+            // 
+            this.btnTemaVerde.BackColor = System.Drawing.Color.Transparent;
+            this.btnTemaVerde.FlatAppearance.BorderSize = 0;
+            this.btnTemaVerde.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTemaVerde.Location = new System.Drawing.Point(936, 69);
+            this.btnTemaVerde.Name = "btnTemaVerde";
+            this.btnTemaVerde.Size = new System.Drawing.Size(53, 47);
+            this.btnTemaVerde.TabIndex = 75;
+            this.btnTemaVerde.UseVisualStyleBackColor = false;
+            // 
+            // pictureBoxFotodeFundoAtual
+            // 
+            this.pictureBoxFotodeFundoAtual.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxFotodeFundoAtual.BackgroundImage")));
+            this.pictureBoxFotodeFundoAtual.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxFotodeFundoAtual.Location = new System.Drawing.Point(39, 760);
+            this.pictureBoxFotodeFundoAtual.Name = "pictureBoxFotodeFundoAtual";
+            this.pictureBoxFotodeFundoAtual.Size = new System.Drawing.Size(229, 147);
+            this.pictureBoxFotodeFundoAtual.TabIndex = 76;
+            this.pictureBoxFotodeFundoAtual.TabStop = false;
+            // 
             // Configurações
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,6 +1065,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1386, 757);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnNotificacoes);
             this.Controls.Add(this.btnFecharTelaInicial);
             this.Controls.Add(this.btnMinimizarTelaInicial);
@@ -244,6 +1082,10 @@
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Configurações_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Configurações_MouseUp);
             this.pnlMenuTelaInicial.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotodeFundoAtual)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -262,5 +1104,69 @@
         private System.Windows.Forms.Button btnFecharTelaInicial;
         private System.Windows.Forms.Button btnMinimizarTelaInicial;
         private System.Windows.Forms.Timer timer5;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnSalvarAlterações1;
+        private System.Windows.Forms.Label labelNomeDeUsuario;
+        private System.Windows.Forms.Button btnFundo1;
+        private System.Windows.Forms.Button btnSalvarAlterações2;
+        private System.Windows.Forms.Button btnFundo3;
+        private System.Windows.Forms.Button btnFundoMorgana2;
+        private System.Windows.Forms.Button btnFundo2;
+        private System.Windows.Forms.Button btnFundo4;
+        private System.Windows.Forms.Button btnFundo12;
+        private System.Windows.Forms.Button btnFundo10;
+        private System.Windows.Forms.Button btnFundo11;
+        private System.Windows.Forms.Button btnFundo9;
+        private System.Windows.Forms.Button btnFundo8;
+        private System.Windows.Forms.Button btnFundo7;
+        private System.Windows.Forms.Button btnFundo6;
+        private System.Windows.Forms.Button btnFundo5;
+        private System.Windows.Forms.Button btnFotodePerfil1;
+        private System.Windows.Forms.Button btnFotodePerfil40;
+        private System.Windows.Forms.Button btnFotodePerfil39;
+        private System.Windows.Forms.Button btnFotodePerfil38;
+        private System.Windows.Forms.Button btnFotodePerfil37;
+        private System.Windows.Forms.Button btnFotodePerfil36;
+        private System.Windows.Forms.Button btnFotodePerfil35;
+        private System.Windows.Forms.Button btnFotodePerfil34;
+        private System.Windows.Forms.Button btnFotodePerfil33;
+        private System.Windows.Forms.Button btnFotodePerfil32;
+        private System.Windows.Forms.Button btnFotodePerfil31;
+        private System.Windows.Forms.Button btnFotodePerfil30;
+        private System.Windows.Forms.Button btnFotodePerfil29;
+        private System.Windows.Forms.Button btnFotodePerfil28;
+        private System.Windows.Forms.Button btnFotodePerfil27;
+        private System.Windows.Forms.Button btnFotodePerfil26;
+        private System.Windows.Forms.Button btnFotodePerfil25;
+        private System.Windows.Forms.Button btnFotodePerfil24;
+        private System.Windows.Forms.Button btnFotodePerfil16;
+        private System.Windows.Forms.Button btnFotodePerfil23;
+        private System.Windows.Forms.Button btnFotodePerfil15;
+        private System.Windows.Forms.Button btnFotodePerfil22;
+        private System.Windows.Forms.Button btnFotodePerfil21;
+        private System.Windows.Forms.Button btnFotodePerfil14;
+        private System.Windows.Forms.Button btnFotodePerfil20;
+        private System.Windows.Forms.Button btnFotodePerfil13;
+        private System.Windows.Forms.Button btnFotodePerfil19;
+        private System.Windows.Forms.Button btnFotodePerfil12;
+        private System.Windows.Forms.Button btnFotodePerfil18;
+        private System.Windows.Forms.Button btnFotodePerfil11;
+        private System.Windows.Forms.Button btnFotodePerfil17;
+        private System.Windows.Forms.Button btnFotodePerfil10;
+        private System.Windows.Forms.Button btnFotodePerfil9;
+        private System.Windows.Forms.Button btnFotodePerfil8;
+        private System.Windows.Forms.Button btnFotodePerfil7;
+        private System.Windows.Forms.Button btnFotodePerfil6;
+        private System.Windows.Forms.Button btnFotodePerfil5;
+        private System.Windows.Forms.Button btnFotodePerfil4;
+        private System.Windows.Forms.Button btnFotodePerfil3;
+        private System.Windows.Forms.Button btnFotodePerfil2;
+        private System.Windows.Forms.PictureBox pictureBoxFotodeFundoAtual;
+        private System.Windows.Forms.Button btnTemaVerde;
+        private System.Windows.Forms.Button btnTemaAzul;
+        private System.Windows.Forms.Button btnTemaRoxo;
+        private System.Windows.Forms.Button btnTemaVermelho;
+        private System.Windows.Forms.Button btnTemaAmarelo;
     }
 }
