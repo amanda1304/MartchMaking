@@ -431,6 +431,7 @@
             this.pnlHistoricoMatchMakingTelaInicial.BackColor = System.Drawing.Color.Transparent;
             this.pnlHistoricoMatchMakingTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlHistoricoMatchMakingTelaInicial.BackgroundImage")));
             this.pnlHistoricoMatchMakingTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlHistoricoMatchMakingTelaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pnlHistoricoMatchMakingTelaInicial.Location = new System.Drawing.Point(279, 529);
             this.pnlHistoricoMatchMakingTelaInicial.Name = "pnlHistoricoMatchMakingTelaInicial";
             this.pnlHistoricoMatchMakingTelaInicial.Size = new System.Drawing.Size(146, 188);
@@ -482,6 +483,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Location = new System.Drawing.Point(8, 16);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(50, 50);
@@ -506,6 +508,7 @@
             // 
             this.labelNomePerfilTelaInicial.AutoSize = true;
             this.labelNomePerfilTelaInicial.BackColor = System.Drawing.Color.Transparent;
+            this.labelNomePerfilTelaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelNomePerfilTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelNomePerfilTelaInicial.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNomePerfilTelaInicial.ForeColor = System.Drawing.Color.Transparent;

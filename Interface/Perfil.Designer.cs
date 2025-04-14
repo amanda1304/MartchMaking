@@ -83,6 +83,7 @@
             // 
             this.btnLogOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogOut.BackgroundImage")));
             this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogOut.FlatAppearance.BorderSize = 0;
             this.btnLogOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
@@ -99,6 +100,7 @@
             this.btnMatchMakingLogo.BackColor = System.Drawing.Color.Transparent;
             this.btnMatchMakingLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMakingLogo.BackgroundImage")));
             this.btnMatchMakingLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMatchMakingLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMatchMakingLogo.FlatAppearance.BorderSize = 0;
             this.btnMatchMakingLogo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnMatchMakingLogo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -114,6 +116,7 @@
             // 
             this.btnConfiguracoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfiguracoes.BackgroundImage")));
             this.btnConfiguracoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnConfiguracoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfiguracoes.FlatAppearance.BorderSize = 0;
             this.btnConfiguracoes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnConfiguracoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
@@ -129,6 +132,7 @@
             // 
             this.btnPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPerfil.BackgroundImage")));
             this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPerfil.FlatAppearance.BorderSize = 0;
             this.btnPerfil.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
@@ -143,6 +147,7 @@
             // 
             this.btnMatchMaking.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMaking.BackgroundImage")));
             this.btnMatchMaking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMatchMaking.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMatchMaking.FlatAppearance.BorderSize = 0;
             this.btnMatchMaking.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnMatchMaking.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumVioletRed;
@@ -158,6 +163,7 @@
             // 
             this.btnSimbolos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSimbolos.BackgroundImage")));
             this.btnSimbolos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSimbolos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSimbolos.FlatAppearance.BorderSize = 0;
             this.btnSimbolos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnSimbolos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateBlue;
@@ -173,6 +179,7 @@
             // 
             this.btnAmigos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigos.BackgroundImage")));
             this.btnAmigos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAmigos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAmigos.FlatAppearance.BorderSize = 0;
             this.btnAmigos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnAmigos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
