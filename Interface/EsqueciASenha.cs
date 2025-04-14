@@ -50,5 +50,15 @@ namespace Login_Register
                 this.SetDesktopLocation(MousePosition.X - MValX, MousePosition.Y - MValY);
             }
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Opacity += .2;
+        }
+
+        private void EsqueciASenha_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
     }
 }
