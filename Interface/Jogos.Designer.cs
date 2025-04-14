@@ -42,6 +42,8 @@
             this.btnNotificacoes = new System.Windows.Forms.Button();
             this.btnFecharTelaInicial = new System.Windows.Forms.Button();
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +52,7 @@
             this.pnlMenuTelaInicial.BackColor = System.Drawing.Color.Transparent;
             this.pnlMenuTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMenuTelaInicial.BackgroundImage")));
             this.pnlMenuTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlMenuTelaInicial.Controls.Add(this.flowLayoutPanel1);
             this.pnlMenuTelaInicial.Controls.Add(this.btnLogOut);
             this.pnlMenuTelaInicial.Controls.Add(this.btnMatchMakingLogo);
             this.pnlMenuTelaInicial.Controls.Add(this.btnConfiguracoes);
@@ -226,12 +229,30 @@
             this.btnMinimizarTelaInicial.UseVisualStyleBackColor = false;
             this.btnMinimizarTelaInicial.Click += new System.EventHandler(this.btnMinimizarTelaInicial_Click);
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(258, 63);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1125, 695);
+            this.flowLayoutPanel1.TabIndex = 49;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(257, 63);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1139, 714);
+            this.panel1.TabIndex = 49;
+            // 
             // Jogos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1386, 757);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnNotificacoes);
             this.Controls.Add(this.btnFecharTelaInicial);
             this.Controls.Add(this.btnMinimizarTelaInicial);
@@ -265,5 +286,7 @@
         private System.Windows.Forms.Button btnNotificacoes;
         private System.Windows.Forms.Button btnFecharTelaInicial;
         private System.Windows.Forms.Button btnMinimizarTelaInicial;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
