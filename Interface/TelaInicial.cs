@@ -7,12 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Login_Register
 {
     public partial class TelaInicial : Form
     {
+
         public TelaInicial()
         {
             InitializeComponent();
