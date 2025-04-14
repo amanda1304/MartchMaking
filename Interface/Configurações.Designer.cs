@@ -379,7 +379,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Location = new System.Drawing.Point(237, 78);
             this.panel2.Name = "panel2";
@@ -388,13 +388,13 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(8, 5);
+            this.textBox1.Location = new System.Drawing.Point(18, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(305, 19);
+            this.textBox1.Size = new System.Drawing.Size(292, 19);
             this.textBox1.TabIndex = 77;
             this.textBox1.Text = "Roberta Pardo";
             // 
