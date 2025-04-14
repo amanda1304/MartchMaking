@@ -44,6 +44,8 @@
             this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBoxFotodeFundoAtual = new System.Windows.Forms.PictureBox();
             this.btnTemaVerde = new System.Windows.Forms.Button();
             this.btnTemaAzul = new System.Windows.Forms.Button();
@@ -105,13 +107,11 @@
             this.btnFundo1 = new System.Windows.Forms.Button();
             this.btnSalvarAlterações2 = new System.Windows.Forms.Button();
             this.btnSalvarAlterações1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotodeFundoAtual)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotodeFundoAtual)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMatchMakingLogo
@@ -376,6 +376,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1105, 1395);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Location = new System.Drawing.Point(237, 78);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(321, 29);
+            this.panel2.TabIndex = 78;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Tahoma", 11.25F);
+            this.textBox1.ForeColor = System.Drawing.Color.White;
+            this.textBox1.Location = new System.Drawing.Point(8, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(305, 19);
+            this.textBox1.TabIndex = 77;
+            this.textBox1.Text = "Roberta Pardo";
             // 
             // pictureBoxFotodeFundoAtual
             // 
@@ -1108,6 +1129,7 @@
             // btnFundo12
             // 
             this.btnFundo12.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFundo12.FlatAppearance.BorderSize = 0;
             this.btnFundo12.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.btnFundo12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1122,6 +1144,7 @@
             // btnFundo10
             // 
             this.btnFundo10.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFundo10.FlatAppearance.BorderSize = 0;
             this.btnFundo10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.btnFundo10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1136,6 +1159,7 @@
             // btnFundo11
             // 
             this.btnFundo11.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFundo11.FlatAppearance.BorderSize = 0;
             this.btnFundo11.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.btnFundo11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1150,6 +1174,7 @@
             // btnFundo9
             // 
             this.btnFundo9.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFundo9.FlatAppearance.BorderSize = 0;
             this.btnFundo9.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.btnFundo9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1164,6 +1189,7 @@
             // btnFundo8
             // 
             this.btnFundo8.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFundo8.FlatAppearance.BorderSize = 0;
             this.btnFundo8.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.btnFundo8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1178,6 +1204,7 @@
             // btnFundo7
             // 
             this.btnFundo7.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFundo7.FlatAppearance.BorderSize = 0;
             this.btnFundo7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.btnFundo7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1192,6 +1219,7 @@
             // btnFundo6
             // 
             this.btnFundo6.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFundo6.FlatAppearance.BorderSize = 0;
             this.btnFundo6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.btnFundo6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1206,6 +1234,7 @@
             // btnFundo5
             // 
             this.btnFundo5.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFundo5.FlatAppearance.BorderSize = 0;
             this.btnFundo5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.btnFundo5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1220,6 +1249,7 @@
             // btnFundo4
             // 
             this.btnFundo4.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFundo4.FlatAppearance.BorderSize = 0;
             this.btnFundo4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.btnFundo4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1234,6 +1264,7 @@
             // btnFundo3
             // 
             this.btnFundo3.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFundo3.FlatAppearance.BorderSize = 0;
             this.btnFundo3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.btnFundo3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1259,6 +1290,7 @@
             // btnFundo2
             // 
             this.btnFundo2.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFundo2.FlatAppearance.BorderSize = 0;
             this.btnFundo2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.btnFundo2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1273,6 +1305,7 @@
             // btnFundo1
             // 
             this.btnFundo1.BackColor = System.Drawing.Color.Transparent;
+            this.btnFundo1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFundo1.FlatAppearance.BorderSize = 0;
             this.btnFundo1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.btnFundo1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1289,6 +1322,7 @@
             this.btnSalvarAlterações2.BackColor = System.Drawing.Color.Transparent;
             this.btnSalvarAlterações2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSalvarAlterações2.BackgroundImage")));
             this.btnSalvarAlterações2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSalvarAlterações2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvarAlterações2.FlatAppearance.BorderSize = 0;
             this.btnSalvarAlterações2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.btnSalvarAlterações2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
@@ -1315,27 +1349,6 @@
             this.btnSalvarAlterações1.Size = new System.Drawing.Size(119, 24);
             this.btnSalvarAlterações1.TabIndex = 1;
             this.btnSalvarAlterações1.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 11.25F);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(8, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(305, 19);
-            this.textBox1.TabIndex = 77;
-            this.textBox1.Text = "Roberta Pardo";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Location = new System.Drawing.Point(237, 78);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(321, 29);
-            this.panel2.TabIndex = 78;
             // 
             // Configurações
             // 
@@ -1364,9 +1377,9 @@
             this.pnlMenuTelaInicial.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotodeFundoAtual)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotodeFundoAtual)).EndInit();
             this.ResumeLayout(false);
 
         }
