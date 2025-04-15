@@ -84,7 +84,7 @@ namespace Login_Register
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-             {
+            {
                 DialogResult resultado = MessageBox.Show(
                     "Tem certeza que deseja sair?",
                     "Confirmação",
@@ -112,6 +112,29 @@ namespace Login_Register
         private void timer1_Tick(object sender, EventArgs e)
         {
             Opacity += .2;
+        }
+
+        private void btnFecharTelaInicial_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show(
+                  "Tem certeza que deseja sair?",
+                  "Confirmação",
+                  MessageBoxButtons.YesNo,
+                  MessageBoxIcon.Question
+              );
+
+            if (resultado == DialogResult.Yes)
+            {
+
+
+                // Fecha o formulário atual
+                this.Close();
+            }
+        }
+
+        private void btnMinimizarTelaInicial_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

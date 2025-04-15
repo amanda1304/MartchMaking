@@ -39,6 +39,9 @@
             this.btnSimbolos = new System.Windows.Forms.Button();
             this.btnAmigos = new System.Windows.Forms.Button();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.btnNotificacoes = new System.Windows.Forms.Button();
+            this.btnFecharTelaInicial = new System.Windows.Forms.Button();
+            this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +49,7 @@
             // 
             this.pnlMenuTelaInicial.BackColor = System.Drawing.Color.Transparent;
             this.pnlMenuTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMenuTelaInicial.BackgroundImage")));
-            this.pnlMenuTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlMenuTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlMenuTelaInicial.Controls.Add(this.btnLogOut);
             this.pnlMenuTelaInicial.Controls.Add(this.btnMatchMakingLogo);
             this.pnlMenuTelaInicial.Controls.Add(this.btnConfiguracoes);
@@ -61,6 +64,9 @@
             // 
             // btnLogOut
             // 
+            this.btnLogOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogOut.BackgroundImage")));
+            this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogOut.FlatAppearance.BorderSize = 0;
             this.btnLogOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnLogOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
@@ -77,6 +83,7 @@
             this.btnMatchMakingLogo.BackColor = System.Drawing.Color.Transparent;
             this.btnMatchMakingLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMakingLogo.BackgroundImage")));
             this.btnMatchMakingLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMatchMakingLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMatchMakingLogo.FlatAppearance.BorderSize = 0;
             this.btnMatchMakingLogo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnMatchMakingLogo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
@@ -90,6 +97,9 @@
             // 
             // btnConfiguracoes
             // 
+            this.btnConfiguracoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfiguracoes.BackgroundImage")));
+            this.btnConfiguracoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnConfiguracoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfiguracoes.FlatAppearance.BorderSize = 0;
             this.btnConfiguracoes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnConfiguracoes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOliveGreen;
@@ -103,7 +113,9 @@
             // 
             // btnPerfil
             // 
+            this.btnPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPerfil.BackgroundImage")));
             this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPerfil.FlatAppearance.BorderSize = 0;
             this.btnPerfil.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
@@ -117,6 +129,9 @@
             // 
             // btnMatchMaking
             // 
+            this.btnMatchMaking.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMaking.BackgroundImage")));
+            this.btnMatchMaking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMatchMaking.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMatchMaking.FlatAppearance.BorderSize = 0;
             this.btnMatchMaking.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnMatchMaking.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumVioletRed;
@@ -130,6 +145,9 @@
             // 
             // btnSimbolos
             // 
+            this.btnSimbolos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSimbolos.BackgroundImage")));
+            this.btnSimbolos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSimbolos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSimbolos.FlatAppearance.BorderSize = 0;
             this.btnSimbolos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnSimbolos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkSlateBlue;
@@ -143,6 +161,9 @@
             // 
             // btnAmigos
             // 
+            this.btnAmigos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigos.BackgroundImage")));
+            this.btnAmigos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAmigos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAmigos.FlatAppearance.BorderSize = 0;
             this.btnAmigos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnAmigos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
@@ -159,12 +180,62 @@
             this.timer3.Interval = 3;
             this.timer3.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // btnNotificacoes
+            // 
+            this.btnNotificacoes.BackColor = System.Drawing.Color.Transparent;
+            this.btnNotificacoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNotificacoes.BackgroundImage")));
+            this.btnNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNotificacoes.FlatAppearance.BorderSize = 0;
+            this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotificacoes.Location = new System.Drawing.Point(1135, 22);
+            this.btnNotificacoes.Name = "btnNotificacoes";
+            this.btnNotificacoes.Size = new System.Drawing.Size(16, 20);
+            this.btnNotificacoes.TabIndex = 42;
+            this.btnNotificacoes.UseVisualStyleBackColor = false;
+            // 
+            // btnFecharTelaInicial
+            // 
+            this.btnFecharTelaInicial.BackColor = System.Drawing.Color.Transparent;
+            this.btnFecharTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFecharTelaInicial.BackgroundImage")));
+            this.btnFecharTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnFecharTelaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFecharTelaInicial.FlatAppearance.BorderSize = 0;
+            this.btnFecharTelaInicial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
+            this.btnFecharTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFecharTelaInicial.Location = new System.Drawing.Point(1340, 18);
+            this.btnFecharTelaInicial.Name = "btnFecharTelaInicial";
+            this.btnFecharTelaInicial.Size = new System.Drawing.Size(25, 27);
+            this.btnFecharTelaInicial.TabIndex = 40;
+            this.btnFecharTelaInicial.UseVisualStyleBackColor = false;
+            this.btnFecharTelaInicial.Click += new System.EventHandler(this.btnFecharTelaInicial_Click);
+            // 
+            // btnMinimizarTelaInicial
+            // 
+            this.btnMinimizarTelaInicial.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinimizarTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimizarTelaInicial.BackgroundImage")));
+            this.btnMinimizarTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnMinimizarTelaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizarTelaInicial.FlatAppearance.BorderSize = 0;
+            this.btnMinimizarTelaInicial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
+            this.btnMinimizarTelaInicial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+            this.btnMinimizarTelaInicial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimizarTelaInicial.Location = new System.Drawing.Point(1307, 17);
+            this.btnMinimizarTelaInicial.Name = "btnMinimizarTelaInicial";
+            this.btnMinimizarTelaInicial.Size = new System.Drawing.Size(25, 27);
+            this.btnMinimizarTelaInicial.TabIndex = 41;
+            this.btnMinimizarTelaInicial.UseVisualStyleBackColor = false;
+            this.btnMinimizarTelaInicial.Click += new System.EventHandler(this.btnMinimizarTelaInicial_Click);
+            // 
             // MatchMaking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1386, 757);
+            this.Controls.Add(this.btnNotificacoes);
+            this.Controls.Add(this.btnFecharTelaInicial);
+            this.Controls.Add(this.btnMinimizarTelaInicial);
             this.Controls.Add(this.pnlMenuTelaInicial);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -192,5 +263,8 @@
         private System.Windows.Forms.Button btnSimbolos;
         private System.Windows.Forms.Button btnAmigos;
         private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Button btnNotificacoes;
+        private System.Windows.Forms.Button btnFecharTelaInicial;
+        private System.Windows.Forms.Button btnMinimizarTelaInicial;
     }
 }

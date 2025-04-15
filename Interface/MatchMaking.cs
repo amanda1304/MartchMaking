@@ -111,5 +111,29 @@ namespace Login_Register
         {
             timer3.Start();
         }
+
+        private void btnFecharTelaInicial_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show(
+                  "Tem certeza que deseja sair?",
+                  "Confirmação",
+                  MessageBoxButtons.YesNo,
+                  MessageBoxIcon.Question
+              );
+
+            if (resultado == DialogResult.Yes)
+            {
+
+
+                // Fecha o formulário atual
+                this.Close();
+            }
+        }
+
+
+        private void btnMinimizarTelaInicial_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
