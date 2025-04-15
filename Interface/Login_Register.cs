@@ -286,11 +286,11 @@ namespace Login_Register
             {
                 UsuarioReferencia usuarioRef = new UsuarioReferencia();
                 bool loginValido = usuarioRef.FazerLogin(email, senha);
-                MessageBox.Show(loginValido.ToString());
+               // MessageBox.Show(loginValido.ToString());
 
                 if (loginValido)
                 {
-                    MessageBox.Show("Login realizado com sucesso!", "Bem-vindo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   // MessageBox.Show("Login realizado com sucesso!", "Bem-vindo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     // Aqui você pode abrir o próximo form, por exemplo:
                     TelaInicial telaInicial = new TelaInicial();
@@ -388,7 +388,8 @@ namespace Login_Register
             }
 
             // Se todas as validações passarem
-            return new RegistroMensagens("Usuário registrado com sucesso!", "sucesso");
+            return new RegistroMensagens("", "sucesso");
+            
         }
 
     }

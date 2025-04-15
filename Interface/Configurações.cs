@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login_Register.Model.Services;
 
 namespace Login_Register
 {
@@ -135,7 +136,8 @@ namespace Login_Register
 
         private void Configurações_Load(object sender, EventArgs e)
         {
-           timer5.Start();  
+         
+            timer5.Start();  
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

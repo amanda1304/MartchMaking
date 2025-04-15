@@ -77,7 +77,7 @@ namespace Login_Register.Model.Usuario
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Email", email);
-                    cmd.Parameters.AddWithValue("@Senha", senha);
+                    cmd.Parameters.AddWithValue("@Senha", senhaHash);
 
                     using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
