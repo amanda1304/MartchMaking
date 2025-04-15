@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login_Register.Model.Services;
 
 namespace Login_Register
 {
@@ -127,6 +128,7 @@ namespace Login_Register
 
         private void Perfil_Load(object sender, EventArgs e)
         {
+            label2.Text = UserSession.userLogado.nome;
             timer2.Start();
         }
     }

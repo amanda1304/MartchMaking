@@ -15,7 +15,7 @@ namespace Login_Register.Model.Services
         public static void RegisterLoginUser(usuario usuario) { 
         
             userLogado = usuario;
-            MessageBox.Show(userLogado.nome);
+           // MessageBox.Show(userLogado.nome);
         
         }
 

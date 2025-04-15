@@ -43,7 +43,7 @@ namespace Login_Register
                 this.SetDesktopLocation(MousePosition.X - MValX, MousePosition.Y - MValY);
             }
         }
-        private void TelaInicial_Load(object sender, EventArgs e)
+        /*private void TelaInicial_Load(object sender, EventArgs e)
         {
 
             
@@ -53,7 +53,7 @@ namespace Login_Register
                 control.Width = this.ClientSize.Width / 2; // Exemplo de ajuste dinâmico
                 control.Height = this.ClientSize.Height / 2;
             }
-        }
+        }*/
   
         private void labelFavoritosDaSemana1_Click(object sender, EventArgs e)
         {
@@ -217,8 +217,13 @@ namespace Login_Register
 
         private void TelaInicial_Load_1(object sender, EventArgs e)
         {
-            label1.Text = UserSession.userLogado.nome;
+            labelNomePerfilTelaInicial.Text = UserSession.userLogado.nome;
             timer1.Start();
+        }
+
+        private void pnlPerfilTelaInicial_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 
