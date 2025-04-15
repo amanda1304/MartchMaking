@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Login_Register.Classes;
+using Login_Register.Model.Usuario;
 using YourNamespace;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Login_Register
 {
@@ -23,7 +26,7 @@ namespace Login_Register
         public Login_Register()
         {
             InitializeComponent();
-            
+           
         }
         int TogMove;
         int MValX;
@@ -266,7 +269,44 @@ namespace Login_Register
 
         private void buttonEntrar_Click(object sender, EventArgs e)
         {
-            ValidarLogin validacao = new ValidarLogin();
+
+
+            string email = textBoxuser.Text.Trim();
+            string senha = textBoxpassword.Text;
+
+            if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha))
+            {
+                label_error.Text = "*O Login e/ou a senhá está incorreto";
+                label_error.Visible = true;
+                //MessageBox.Show("Preencha todos os campos.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                UsuarioReferencia usuarioRef = new UsuarioReferencia();
+                bool loginValido = usuarioRef.FazerLogin(email, senha);
+                MessageBox.Show(loginValido.ToString());
+
+                if (loginValido)
+                {
+                    MessageBox.Show("Login realizado com sucesso!", "Bem-vindo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Aqui você pode abrir o próximo form, por exemplo:
+                    TelaInicial telaInicial = new TelaInicial();
+                    telaInicial.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Email ou senha incorretos.", "Erro de login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao fazer login: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            /*ValidarLogin validacao = new ValidarLogin();
             if (validacao.Validar(textBoxuser.Text, textBoxpassword.Text))
             {
 
@@ -279,7 +319,8 @@ namespace Login_Register
             {
                 label_error.Text = "*O Login e/ou a senhá está incorreto";
                 label_error.Visible = true;
-            }
+            }*/
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -289,22 +330,42 @@ namespace Login_Register
 
         private void btnRegistrar_Click_1(object sender, EventArgs e)
         {
-            string nomeUsuario = textBoxUserNameRegister.Text;
-            string email = textBoxEmail.Text;
+            string nome = textBoxUserNameRegister.Text.Trim();
+            string email = textBoxEmail.Text.Trim();
             string senha = textBoxSenhaRegister.Text;
+
+            if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha))
+            {
+                MessageBox.Show("Preencha todos os campos.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                UsuarioReferencia usuarioRef = new UsuarioReferencia();
+                usuarioRef.RegistrarUsuario(nome, email, senha);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao registrar usuário: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            _ = textBoxUserNameRegister.Text;
+            // string email = textBoxEmail.Text;
+            // string senha = textBoxSenhaRegister.Text;
             string confirmacaoSenha = textBoxConfirmarSenha.Text;
 
-            RegistroMensagens resultado = ValidarCampos(nomeUsuario, email, senha, confirmacaoSenha);
+            RegistroMensagens resultado = ValidarCampos(nome, email, senha, confirmacaoSenha);
             label2.Visible = true;
             // Exibe a mensagem conforme o resultado da validação
             label2.Text = resultado.Mensagem;
            
         }
         // Função que valida os campos do formulário
-        private RegistroMensagens ValidarCampos(string nomeUsuario, string email, string senha, string confirmacaoSenha)
+        private RegistroMensagens ValidarCampos(string nome, string email, string senha, string confirmacaoSenha)
         {
             // Verifica se todos os campos estão preenchidos
-            if (string.IsNullOrEmpty(nomeUsuario) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha) || string.IsNullOrEmpty(confirmacaoSenha))
+            if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(senha) || string.IsNullOrEmpty(confirmacaoSenha))
             {
                 return new RegistroMensagens("Todos os campos devem ser preenchidos!", "erro");
             }

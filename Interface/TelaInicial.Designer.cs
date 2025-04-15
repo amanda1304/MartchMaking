@@ -131,6 +131,7 @@
             this.btnAdicionarAmigo4 = new System.Windows.Forms.Button();
             this.btnAmigoAdicionado4 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.pnlBanerSoldado.SuspendLayout();
             this.pnlFavdaSemana1.SuspendLayout();
@@ -469,6 +470,7 @@
             // pnlPerfilTelaInicial
             // 
             this.pnlPerfilTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPerfilTelaInicial.BackgroundImage")));
+            this.pnlPerfilTelaInicial.Controls.Add(this.label1);
             this.pnlPerfilTelaInicial.Controls.Add(this.pictureBox6);
             this.pnlPerfilTelaInicial.Controls.Add(this.labelStatusPerfilTelaInicial);
             this.pnlPerfilTelaInicial.Controls.Add(this.labelNomePerfilTelaInicial);
@@ -511,9 +513,8 @@
             this.labelNomePerfilTelaInicial.ForeColor = System.Drawing.Color.Transparent;
             this.labelNomePerfilTelaInicial.Location = new System.Drawing.Point(64, 25);
             this.labelNomePerfilTelaInicial.Name = "labelNomePerfilTelaInicial";
-            this.labelNomePerfilTelaInicial.Size = new System.Drawing.Size(102, 16);
+            this.labelNomePerfilTelaInicial.Size = new System.Drawing.Size(0, 16);
             this.labelNomePerfilTelaInicial.TabIndex = 100;
-            this.labelNomePerfilTelaInicial.Text = "Roberta Pardo";
             this.labelNomePerfilTelaInicial.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnFecharTelaInicial
@@ -1472,6 +1473,16 @@
             this.timer1.Interval = 3;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(119, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 102;
+            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1707,5 +1718,6 @@
         private System.Windows.Forms.Button btnAdicionarAmigo4;
         private System.Windows.Forms.Button btnAdicionarAmigo5;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
     }
 }

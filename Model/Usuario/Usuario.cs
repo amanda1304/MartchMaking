@@ -5,24 +5,26 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
-namespace Login_Register.Banco_de_dados.Usuario
+namespace Login_Register.Model.Usuario
 {
-    internal class Usuario
+    public class usuario
     {
         public int id { get; set; }
+        public string nome { get; set; }
         public string email { get; set; }
         public string senha { get; set; }
-        public DateTime data_registro { get; set; }
+       // public DateTime data_registro { get; set; }
 
-        public static Usuario UserFromDataReader(MySqlDataReader reader)
+        public static usuario UserFromDataReader(MySqlDataReader reader)
         {
 
-            return new Usuario
+            return new usuario
             {
-                id = Convert.ToInt32(reader["id"].ToString()),
+                id = Convert.ToInt32(reader["id_usuario"].ToString()),
+                nome = reader["nome"].ToString(),
                 email = reader["email"].ToString(),
                 senha = reader["senha"].ToString(),
-                data_registro = Convert.ToDateTime(reader["data_registro"].ToString()),
+               // data_registro = Convert.ToDateTime(reader["data_registro"].ToString()),
 
 
 

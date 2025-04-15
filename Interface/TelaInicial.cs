@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login_Register.Model.Services;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Login_Register
@@ -43,6 +44,9 @@ namespace Login_Register
         }
         private void TelaInicial_Load(object sender, EventArgs e)
         {
+
+            
+
             foreach (Control control in this.Controls)
             {
                 control.Width = this.ClientSize.Width / 2; // Exemplo de ajuste dinâmico
@@ -212,6 +216,7 @@ namespace Login_Register
 
         private void TelaInicial_Load_1(object sender, EventArgs e)
         {
+            label1.Text = UserSession.userLogado.nome;
             timer1.Start();
         }
     }
