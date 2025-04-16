@@ -396,7 +396,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(292, 19);
             this.textBox1.TabIndex = 77;
-            this.textBox1.Text = "Roberta Pardo";
+            this.textBox1.Text = "Roberta Pardo ";
             // 
             // pictureBoxFotodeFundoAtual
             // 
