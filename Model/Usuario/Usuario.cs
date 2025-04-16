@@ -13,7 +13,7 @@ namespace Login_Register.Model.Usuario
         public string nome { get; set; }
         public string email { get; set; }
         public string senha { get; set; }
-       // public DateTime data_registro { get; set; }
+        public DateTime data_registro { get; set; }
 
         public static usuario UserFromDataReader(MySqlDataReader reader)
         {
@@ -24,7 +24,7 @@ namespace Login_Register.Model.Usuario
                 nome = reader["nome"].ToString(),
                 email = reader["email"].ToString(),
                 senha = reader["senha"].ToString(),
-               // data_registro = Convert.ToDateTime(reader["data_registro"].ToString()),
+                data_registro = Convert.ToDateTime(reader["data_registro"].ToString()),
 
 
 

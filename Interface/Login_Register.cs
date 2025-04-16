@@ -290,11 +290,14 @@ namespace Login_Register
 
                 if (loginValido)
                 {
-                   // MessageBox.Show("Login realizado com sucesso!", "Bem-vindo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // MessageBox.Show("Login realizado com sucesso!", "Bem-vindo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     // Aqui você pode abrir o próximo form, por exemplo:
-                    TelaInicial telaInicial = new TelaInicial();
-                    telaInicial.Show();
+                    /* Tela_de_Carregamento tela_de_carregamento = new Tela_de_Carregamento();
+                     tela_de_carregamento.Show();
+                     this.Hide();*/
+                    TelaInicial telainical = new TelaInicial();
+                    telainical.Show();
                     this.Hide();
                 }
                 else

@@ -15,11 +15,24 @@ namespace Login_Register
         public Tela_de_Carregamento()
         {
             InitializeComponent();
+            FecharJanela();
         }
-
+        private async void FecharJanela()
+        {
+            /*await Task.Delay(5000);
+            this.Close();
+            this.Hide();
+            TelaInicial telaInicial = new TelaInicial();
+            telaInicial.Show();*/
+        }
         private void pictureBox3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Tela_de_Carregamento_Load(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -51,12 +51,13 @@ namespace Login_Register.Model.Usuario
             using (MySqlConnection conn = _dbService.GetConnection())
             {
                 conn.Open();
-                string query = "INSERT INTO usuarios (nome, email, senha ) VALUES (@Nome, @Email, @Senha)";
+                string query = "INSERT INTO usuarios (nome, email, senha, data_registro ) VALUES (@Nome, @Email, @Senha, @data_registro)";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Nome", nome);
                     cmd.Parameters.AddWithValue("@Email", email);
                     cmd.Parameters.AddWithValue("@Senha", senhaHash);
+                    cmd.Parameters.AddWithValue("@data_registro", DateTime.Now);
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -78,6 +79,7 @@ namespace Login_Register.Model.Usuario
                 {
                     cmd.Parameters.AddWithValue("@Email", email);
                     cmd.Parameters.AddWithValue("@Senha", senhaHash);
+                    
 
                     using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
