@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Jogos));
             this.pnlMenuTelaInicial = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.btnMatchMakingLogo = new System.Windows.Forms.Button();
             this.btnConfiguracoes = new System.Windows.Forms.Button();
@@ -42,9 +43,10 @@
             this.btnNotificacoes = new System.Windows.Forms.Button();
             this.btnFecharTelaInicial = new System.Windows.Forms.Button();
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlMenuTelaInicial.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenuTelaInicial
@@ -64,6 +66,13 @@
             this.pnlMenuTelaInicial.Name = "pnlMenuTelaInicial";
             this.pnlMenuTelaInicial.Size = new System.Drawing.Size(256, 758);
             this.pnlMenuTelaInicial.TabIndex = 2;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(258, 63);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1125, 695);
+            this.flowLayoutPanel1.TabIndex = 49;
             // 
             // btnLogOut
             // 
@@ -229,21 +238,25 @@
             this.btnMinimizarTelaInicial.UseVisualStyleBackColor = false;
             this.btnMinimizarTelaInicial.Click += new System.EventHandler(this.btnMinimizarTelaInicial_Click);
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanel2
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(258, 63);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1125, 695);
-            this.flowLayoutPanel1.TabIndex = 49;
+            this.flowLayoutPanel2.AutoScroll = true;
+            this.flowLayoutPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flowLayoutPanel2.BackgroundImage")));
+            this.flowLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel2.Controls.Add(this.panel1);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(256, 63);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1127, 695);
+            this.flowLayoutPanel2.TabIndex = 49;
             // 
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(257, 63);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1139, 714);
-            this.panel1.TabIndex = 49;
+            this.panel1.Size = new System.Drawing.Size(1104, 2370);
+            this.panel1.TabIndex = 0;
             // 
             // Jogos
             // 
@@ -252,7 +265,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1386, 757);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.btnNotificacoes);
             this.Controls.Add(this.btnFecharTelaInicial);
             this.Controls.Add(this.btnMinimizarTelaInicial);
@@ -268,6 +281,7 @@
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Jogos_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Jogos_MouseUp);
             this.pnlMenuTelaInicial.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -287,6 +301,7 @@
         private System.Windows.Forms.Button btnFecharTelaInicial;
         private System.Windows.Forms.Button btnMinimizarTelaInicial;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Panel panel1;
     }
 }
