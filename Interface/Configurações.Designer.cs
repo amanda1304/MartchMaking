@@ -393,10 +393,12 @@
             this.textBox1.Font = new System.Drawing.Font("Tahoma", 11.25F);
             this.textBox1.ForeColor = System.Drawing.Color.White;
             this.textBox1.Location = new System.Drawing.Point(18, 5);
+            this.textBox1.MaxLength = 16;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(292, 19);
             this.textBox1.TabIndex = 77;
-            this.textBox1.Text = "Roberta Pardo ";
+            this.textBox1.Text = "Roberta Pardo";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pictureBoxFotodeFundoAtual
             // 
