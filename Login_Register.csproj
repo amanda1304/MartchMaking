@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -153,25 +168,24 @@
     <Compile Include="Interface\Perfil.Designer.cs">
       <DependentUpon>Perfil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Configuracoes\ConfiguracoesTema.cs" />
+    <Compile Include="Model\Configuracoes\Configuracoes.cs" />
+    <Compile Include="Model\Services\ConfiguracoesService.cs" />
     <Compile Include="Model\Conversas\Conversas.cs" />
     <Compile Include="Model\JogosFavoritos\JogosFavoritos.cs" />
     <Compile Include="Model\Jogos\Jogos.cs" />
     <Compile Include="Model\MatchMaking\MatchMaking.cs" />
     <Compile Include="Model\MensagensChat\MensagensChat.cs" />
+    <Compile Include="Model\PerfilUsuario\AvatarManager.cs" />
     <Compile Include="Model\PerfilUsuario\PerfilUsuario.cs" />
+    <Compile Include="Model\Configuracoes\ConfiguracoesDAO.cs" />
+    <Compile Include="Model\PerfilUsuario\PerfilUsuarioDAO.cs" />
     <Compile Include="Model\Services\Criptografia.cs" />
     <Compile Include="Model\Services\DatabaseService.cs" />
     <Compile Include="Model\Services\UserSession.cs" />
     <Compile Include="Model\SugestaoAmizada\SugestaoAmizade.cs" />
-    <Compile Include="Model\usuario\usuario.cs" />
+    <Compile Include="Model\usuario\Usuario.cs" />
     <Compile Include="Model\usuario\UsuarioReferencia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Interface\TelaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +193,17 @@
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\ValidarLogin.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Tela de Carregamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Tela de Carregamento.Designer.cs">
+      <DependentUpon>Tela de Carregamento.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -211,10 +236,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Tela de Carregamento.resx">
+      <DependentUpon>Tela de Carregamento.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -222,6 +250,89 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\HistoricoPartidas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Menu\Amarelo.png" />
+    <Content Include="Menu\Azul.png" />
+    <Content Include="Bordas\Amarelo.png" />
+    <Content Include="Bordas\Azul.png" />
+    <Content Include="Bandeiras\Amarelo.png" />
+    <Content Include="Avatar\22.png" />
+    <Content Include="Bandeiras\Azul.png" />
+    <Content Include="Bandeiras\Roxo.png" />
+    <Content Include="Bandeiras\Verde.png" />
+    <Content Include="Bandeiras\Vermelho.png" />
+    <Content Include="Fundo\Group 15.png" />
+    <Content Include="Fundo\Group 35.png" />
+    <Content Include="Fundo\Group 40.png" />
+    <Content Include="Fundo\Group 41.png" />
+    <Content Include="Fundo\Group 42.png" />
+    <Content Include="Fundo\Group 43.png" />
+    <Content Include="Fundo\Group 44.png" />
+    <Content Include="Fundo\Group 45.png" />
+    <Content Include="Fundo\Group 46.png" />
+    <Content Include="Fundo\Group 47.png" />
+    <Content Include="Fundo\Group 50.png" />
+    <Content Include="Fundo\Group 51.png" />
+    <Content Include="Bordas\Roxo.png" />
+    <Content Include="Bordas\Verde.png" />
+    <Content Include="Bordas\Vermelho.png" />
+    <Content Include="Menu\Roxo.png" />
+    <Content Include="Menu\Verde.png" />
+    <Content Include="Menu\Vermelho.png" />
+    <None Include="Avatar\222.png" />
+    <None Include="Avatar\221.png" />
+    <Content Include="Avatar\23.png" />
+    <Content Include="Avatar\24.png" />
+    <Content Include="Avatar\25.png" />
+    <Content Include="Avatar\26.png" />
+    <Content Include="Avatar\27.png" />
+    <Content Include="Avatar\28.png" />
+    <Content Include="Avatar\29.png" />
+    <Content Include="Avatar\30.png" />
+    <Content Include="Avatar\31.png" />
+    <Content Include="Avatar\32.png" />
+    <Content Include="Avatar\33.png" />
+    <Content Include="Avatar\34.png" />
+    <Content Include="Avatar\35.png" />
+    <Content Include="Avatar\36.png" />
+    <Content Include="Avatar\37.png" />
+    <Content Include="Avatar\38.png" />
+    <Content Include="Avatar\39.png" />
+    <Content Include="Avatar\40.png" />
+    <Content Include="Avatar\41.png" />
+    <Content Include="Avatar\Ellipse 26.png" />
+    <Content Include="Avatar\Ellipse 27.png" />
+    <Content Include="Avatar\Ellipse 28.png" />
+    <Content Include="Avatar\Ellipse 29.png" />
+    <Content Include="Avatar\Ellipse 30.png" />
+    <Content Include="Avatar\Ellipse 31.png" />
+    <Content Include="Avatar\Ellipse 32.png" />
+    <Content Include="Avatar\Ellipse 33.png" />
+    <Content Include="Avatar\Ellipse 34.png" />
+    <Content Include="Avatar\Ellipse 35.png" />
+    <Content Include="Avatar\Ellipse 36.png" />
+    <Content Include="Avatar\Ellipse 37.png" />
+    <Content Include="Avatar\Ellipse 38.png" />
+    <Content Include="Avatar\Ellipse 39.png" />
+    <Content Include="Avatar\Ellipse 40.png" />
+    <Content Include="Avatar\Ellipse 41.png" />
+    <Content Include="Avatar\Ellipse 42.png" />
+    <Content Include="Avatar\Ellipse 43.png" />
+    <Content Include="Avatar\Ellipse 44.png" />
+    <Content Include="Avatar\Ellipse 45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

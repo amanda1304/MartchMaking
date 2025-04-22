@@ -12,13 +12,16 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Login_Register
 {
+
     public partial class TelaInicial : Form
     {
+       
+
 
         public TelaInicial()
         {
             InitializeComponent();
-            
+         
         }
         int TogMove;
         int MValX;
@@ -217,6 +220,10 @@ namespace Login_Register
 
         private void TelaInicial_Load_1(object sender, EventArgs e)
         {
+
+            ConfiguracoesService configService = new ConfiguracoesService();
+            pictureBox6.Image = configService.CarregarAvatar(UserSession.userLogado.id);
+
             labelNomePerfilTelaInicial.Text = UserSession.userLogado.nome;
             timer1.Start();
         }

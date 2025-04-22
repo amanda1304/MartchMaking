@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -8,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Login_Register.Model.Services;
+using MySql.Data.MySqlClient;
 
 namespace Login_Register
 {
@@ -128,8 +130,13 @@ namespace Login_Register
 
         private void Perfil_Load(object sender, EventArgs e)
         {
+            ConfiguracoesService configService = new ConfiguracoesService();
+            pictureAvatar.Image = configService.CarregarAvatar(UserSession.userLogado.id);
+
             label2.Text = UserSession.userLogado.nome;
             timer2.Start();
+            
         }
+       
     }
 }

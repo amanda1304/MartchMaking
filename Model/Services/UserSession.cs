@@ -1,23 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Login_Register.Model.Usuario;
 using System.Windows.Forms;
-using Login_Register.Model.Usuario;
+using System;
 
-namespace Login_Register.Model.Services
+public static class UserSession
 {
-    public static class UserSession
+    public static Usuario userLogado { get; set; }
+    public static int IdPerfilUsuario { get; set; } // <--- nova propriedade
+
+    public static void RegisterLoginUser(Usuario usuario)
     {
-        public static usuario userLogado { get; set; }
+        userLogado = usuario;
+        MessageBox.Show("ID do usuário: " + UserSession.userLogado.id);
 
-        public static void RegisterLoginUser(usuario usuario) { 
-        
-            userLogado = usuario;
-           // MessageBox.Show(userLogado.nome);
-        
+        // Após logar, buscamos o ID do perfil do usuário
+        try
+        {
+            var perfilDAO = new PerfilUsuarioDAO(new DatabaseService());
+            var perfil = perfilDAO.ObterPerfilPorUsuario(usuario.id);
+
+            if (perfil != null)
+            {
+                IdPerfilUsuario = perfil.IdPerfilUsuario;
+            }
+            else
+            {
+                MessageBox.Show("Perfil do usuário não encontrado.");
+            }
         }
-
+        catch (Exception ex)
+        {
+            MessageBox.Show("Erro ao obter o perfil do usuário: " + ex.Message);
+        }
     }
 }
+
