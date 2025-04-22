@@ -137,6 +137,15 @@ namespace Login_Register
             timer2.Start();
             
         }
-       
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        }
     }
 }
