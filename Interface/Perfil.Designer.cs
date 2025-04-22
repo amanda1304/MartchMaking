@@ -198,7 +198,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(257, 56);
             this.panel1.Name = "panel1";
@@ -238,9 +238,11 @@
             // 
             // pictureAvatar
             // 
-            this.pictureAvatar.Location = new System.Drawing.Point(38, 38);
+            this.pictureAvatar.BackgroundImage = global::Login_Register.Properties.Resources._25;
+            this.pictureAvatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureAvatar.Location = new System.Drawing.Point(34, 33);
             this.pictureAvatar.Name = "pictureAvatar";
-            this.pictureAvatar.Size = new System.Drawing.Size(140, 128);
+            this.pictureAvatar.Size = new System.Drawing.Size(155, 145);
             this.pictureAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureAvatar.TabIndex = 0;
             this.pictureAvatar.TabStop = false;
