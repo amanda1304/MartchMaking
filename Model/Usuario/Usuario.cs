@@ -7,7 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace Login_Register.Model.Usuario
 {
-    public class usuario
+    public class Usuario
     {
         public int id { get; set; }
         public string nome { get; set; }
@@ -15,10 +15,10 @@ namespace Login_Register.Model.Usuario
         public string senha { get; set; }
         public DateTime data_registro { get; set; }
 
-        public static usuario UserFromDataReader(MySqlDataReader reader)
+        public static Usuario UserFromDataReader(MySqlDataReader reader)
         {
 
-            return new usuario
+            return new Usuario
             {
                 id = Convert.ToInt32(reader["id_usuario"].ToString()),
                 nome = reader["nome"].ToString(),
