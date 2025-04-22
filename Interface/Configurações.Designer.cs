@@ -44,6 +44,8 @@
             this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBoxFotodeFundoAtual = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
@@ -63,7 +65,6 @@
             this.pictureBoxPerfil = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBoxFotodeFundoAtual = new System.Windows.Forms.PictureBox();
             this.btnTemaVerde = new System.Windows.Forms.Button();
             this.btnTemaAzul = new System.Windows.Forms.Button();
             this.btnTemaRoxo = new System.Windows.Forms.Button();
@@ -106,13 +107,12 @@
             this.btnFundo1 = new System.Windows.Forms.Button();
             this.btnSalvarAlterações2 = new System.Windows.Forms.Button();
             this.btnSalvarAlterações1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotodeFundoAtual)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPerfil)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotodeFundoAtual)).BeginInit();
             this.SuspendLayout();
             // 
             // btnMatchMakingLogo
@@ -311,6 +311,7 @@
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.pictureBoxFotodeFundoAtual);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button17);
             this.panel1.Controls.Add(this.button16);
@@ -330,7 +331,6 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBoxPerfil);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.pictureBoxFotodeFundoAtual);
             this.panel1.Controls.Add(this.btnTemaVerde);
             this.panel1.Controls.Add(this.btnTemaAzul);
             this.panel1.Controls.Add(this.btnTemaRoxo);
@@ -378,6 +378,34 @@
             this.panel1.Size = new System.Drawing.Size(1105, 1395);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
+            // 
+            // pictureBoxFotodeFundoAtual
+            // 
+            this.pictureBoxFotodeFundoAtual.BackgroundImage = global::Login_Register.Properties.Resources.Group_15;
+            this.pictureBoxFotodeFundoAtual.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxFotodeFundoAtual.Location = new System.Drawing.Point(39, 758);
+            this.pictureBoxFotodeFundoAtual.Name = "pictureBoxFotodeFundoAtual";
+            this.pictureBoxFotodeFundoAtual.Size = new System.Drawing.Size(229, 147);
+            this.pictureBoxFotodeFundoAtual.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxFotodeFundoAtual.TabIndex = 98;
+            this.pictureBoxFotodeFundoAtual.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.Transparent;
+            this.button3.Location = new System.Drawing.Point(665, 474);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(53, 47);
+            this.button3.TabIndex = 97;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // button17
             // 
@@ -682,16 +710,6 @@
             this.textBox1.TabIndex = 77;
             this.textBox1.Text = "Roberta Pardo";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // pictureBoxFotodeFundoAtual
-            // 
-            this.pictureBoxFotodeFundoAtual.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxFotodeFundoAtual.BackgroundImage")));
-            this.pictureBoxFotodeFundoAtual.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxFotodeFundoAtual.Location = new System.Drawing.Point(39, 760);
-            this.pictureBoxFotodeFundoAtual.Name = "pictureBoxFotodeFundoAtual";
-            this.pictureBoxFotodeFundoAtual.Size = new System.Drawing.Size(229, 147);
-            this.pictureBoxFotodeFundoAtual.TabIndex = 76;
-            this.pictureBoxFotodeFundoAtual.TabStop = false;
             // 
             // btnTemaVerde
             // 
@@ -1156,6 +1174,7 @@
             this.btnFundo12.Size = new System.Drawing.Size(352, 63);
             this.btnFundo12.TabIndex = 15;
             this.btnFundo12.UseVisualStyleBackColor = false;
+            this.btnFundo12.Click += new System.EventHandler(this.btnFundo12_Click);
             // 
             // btnFundo10
             // 
@@ -1171,6 +1190,7 @@
             this.btnFundo10.Size = new System.Drawing.Size(352, 63);
             this.btnFundo10.TabIndex = 14;
             this.btnFundo10.UseVisualStyleBackColor = false;
+            this.btnFundo10.Click += new System.EventHandler(this.btnFundo10_Click);
             // 
             // btnFundo11
             // 
@@ -1186,6 +1206,7 @@
             this.btnFundo11.Size = new System.Drawing.Size(352, 63);
             this.btnFundo11.TabIndex = 13;
             this.btnFundo11.UseVisualStyleBackColor = false;
+            this.btnFundo11.Click += new System.EventHandler(this.btnFundo11_Click);
             // 
             // btnFundo9
             // 
@@ -1201,6 +1222,7 @@
             this.btnFundo9.Size = new System.Drawing.Size(352, 63);
             this.btnFundo9.TabIndex = 12;
             this.btnFundo9.UseVisualStyleBackColor = false;
+            this.btnFundo9.Click += new System.EventHandler(this.btnFundo9_Click);
             // 
             // btnFundo8
             // 
@@ -1216,6 +1238,7 @@
             this.btnFundo8.Size = new System.Drawing.Size(352, 63);
             this.btnFundo8.TabIndex = 11;
             this.btnFundo8.UseVisualStyleBackColor = false;
+            this.btnFundo8.Click += new System.EventHandler(this.btnFundo8_Click);
             // 
             // btnFundo7
             // 
@@ -1231,6 +1254,7 @@
             this.btnFundo7.Size = new System.Drawing.Size(352, 63);
             this.btnFundo7.TabIndex = 10;
             this.btnFundo7.UseVisualStyleBackColor = false;
+            this.btnFundo7.Click += new System.EventHandler(this.btnFundo7_Click);
             // 
             // btnFundo6
             // 
@@ -1246,6 +1270,7 @@
             this.btnFundo6.Size = new System.Drawing.Size(352, 63);
             this.btnFundo6.TabIndex = 9;
             this.btnFundo6.UseVisualStyleBackColor = false;
+            this.btnFundo6.Click += new System.EventHandler(this.btnFundo6_Click);
             // 
             // btnFundo5
             // 
@@ -1261,6 +1286,7 @@
             this.btnFundo5.Size = new System.Drawing.Size(352, 63);
             this.btnFundo5.TabIndex = 8;
             this.btnFundo5.UseVisualStyleBackColor = false;
+            this.btnFundo5.Click += new System.EventHandler(this.btnFundo5_Click);
             // 
             // btnFundo4
             // 
@@ -1276,6 +1302,7 @@
             this.btnFundo4.Size = new System.Drawing.Size(352, 63);
             this.btnFundo4.TabIndex = 7;
             this.btnFundo4.UseVisualStyleBackColor = false;
+            this.btnFundo4.Click += new System.EventHandler(this.btnFundo4_Click);
             // 
             // btnFundo3
             // 
@@ -1291,6 +1318,7 @@
             this.btnFundo3.Size = new System.Drawing.Size(352, 63);
             this.btnFundo3.TabIndex = 6;
             this.btnFundo3.UseVisualStyleBackColor = false;
+            this.btnFundo3.Click += new System.EventHandler(this.btnFundo3_Click);
             // 
             // btnFundoMorgana2
             // 
@@ -1317,6 +1345,7 @@
             this.btnFundo2.Size = new System.Drawing.Size(352, 63);
             this.btnFundo2.TabIndex = 4;
             this.btnFundo2.UseVisualStyleBackColor = false;
+            this.btnFundo2.Click += new System.EventHandler(this.btnFundo2_Click);
             // 
             // btnFundo1
             // 
@@ -1332,6 +1361,7 @@
             this.btnFundo1.Size = new System.Drawing.Size(352, 63);
             this.btnFundo1.TabIndex = 3;
             this.btnFundo1.UseVisualStyleBackColor = false;
+            this.btnFundo1.Click += new System.EventHandler(this.btnFundo1_Click);
             // 
             // btnSalvarAlterações2
             // 
@@ -1367,23 +1397,6 @@
             this.btnSalvarAlterações1.UseVisualStyleBackColor = false;
             this.btnSalvarAlterações1.Click += new System.EventHandler(this.btnSalvarAlterações1_Click);
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Transparent;
-            this.button3.Location = new System.Drawing.Point(665, 474);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(53, 47);
-            this.button3.TabIndex = 97;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
             // Configurações
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1411,10 +1424,10 @@
             this.pnlMenuTelaInicial.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotodeFundoAtual)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPerfil)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotodeFundoAtual)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1472,7 +1485,6 @@
         private System.Windows.Forms.Button btnFotodePerfil4;
         private System.Windows.Forms.Button btnFotodePerfil3;
         private System.Windows.Forms.Button btnFotodePerfil2;
-        private System.Windows.Forms.PictureBox pictureBoxFotodeFundoAtual;
         private System.Windows.Forms.Button btnTemaVerde;
         private System.Windows.Forms.Button btnTemaAzul;
         private System.Windows.Forms.Button btnTemaRoxo;
@@ -1498,5 +1510,6 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBoxFotodeFundoAtual;
     }
 }
