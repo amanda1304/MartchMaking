@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Login_Register.Model.PerfilUsuario
 {
-    internal class PerfilUsuario
-    {
-    }
+        public class PerfilUsuario
+        {
+            public int IdPerfilUsuario { get; set; }
+            public int IdUsuario { get; set; }
+            public string Nickname { get; set; }
+            public DateTime? HorarioJogo { get; set; }
+            public string Descricao { get; set; }
+            public bool StatusDescricao { get; set; }
+        }
+
+    
 }

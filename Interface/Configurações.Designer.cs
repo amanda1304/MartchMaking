@@ -44,6 +44,23 @@
             this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBoxPerfil = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBoxFotodeFundoAtual = new System.Windows.Forms.PictureBox();
@@ -52,29 +69,11 @@
             this.btnTemaRoxo = new System.Windows.Forms.Button();
             this.btnTemaVermelho = new System.Windows.Forms.Button();
             this.btnTemaAmarelo = new System.Windows.Forms.Button();
-            this.btnFotodePerfil40 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil39 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil38 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil37 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil36 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil35 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil34 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil33 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil32 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil31 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil30 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil29 = new System.Windows.Forms.Button();
             this.btnFotodePerfil28 = new System.Windows.Forms.Button();
             this.btnFotodePerfil27 = new System.Windows.Forms.Button();
             this.btnFotodePerfil26 = new System.Windows.Forms.Button();
             this.btnFotodePerfil25 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil24 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil16 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil23 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil15 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil22 = new System.Windows.Forms.Button();
             this.btnFotodePerfil21 = new System.Windows.Forms.Button();
-            this.btnFotodePerfil14 = new System.Windows.Forms.Button();
             this.btnFotodePerfil20 = new System.Windows.Forms.Button();
             this.btnFotodePerfil13 = new System.Windows.Forms.Button();
             this.btnFotodePerfil19 = new System.Windows.Forms.Button();
@@ -107,9 +106,11 @@
             this.btnFundo1 = new System.Windows.Forms.Button();
             this.btnSalvarAlterações2 = new System.Windows.Forms.Button();
             this.btnSalvarAlterações1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPerfil)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotodeFundoAtual)).BeginInit();
             this.SuspendLayout();
@@ -310,6 +311,24 @@
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button17);
+            this.panel1.Controls.Add(this.button16);
+            this.panel1.Controls.Add(this.button15);
+            this.panel1.Controls.Add(this.button14);
+            this.panel1.Controls.Add(this.button13);
+            this.panel1.Controls.Add(this.button12);
+            this.panel1.Controls.Add(this.button11);
+            this.panel1.Controls.Add(this.button10);
+            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.pictureBoxPerfil);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.pictureBoxFotodeFundoAtual);
             this.panel1.Controls.Add(this.btnTemaVerde);
@@ -317,29 +336,11 @@
             this.panel1.Controls.Add(this.btnTemaRoxo);
             this.panel1.Controls.Add(this.btnTemaVermelho);
             this.panel1.Controls.Add(this.btnTemaAmarelo);
-            this.panel1.Controls.Add(this.btnFotodePerfil40);
-            this.panel1.Controls.Add(this.btnFotodePerfil39);
-            this.panel1.Controls.Add(this.btnFotodePerfil38);
-            this.panel1.Controls.Add(this.btnFotodePerfil37);
-            this.panel1.Controls.Add(this.btnFotodePerfil36);
-            this.panel1.Controls.Add(this.btnFotodePerfil35);
-            this.panel1.Controls.Add(this.btnFotodePerfil34);
-            this.panel1.Controls.Add(this.btnFotodePerfil33);
-            this.panel1.Controls.Add(this.btnFotodePerfil32);
-            this.panel1.Controls.Add(this.btnFotodePerfil31);
-            this.panel1.Controls.Add(this.btnFotodePerfil30);
-            this.panel1.Controls.Add(this.btnFotodePerfil29);
             this.panel1.Controls.Add(this.btnFotodePerfil28);
             this.panel1.Controls.Add(this.btnFotodePerfil27);
             this.panel1.Controls.Add(this.btnFotodePerfil26);
             this.panel1.Controls.Add(this.btnFotodePerfil25);
-            this.panel1.Controls.Add(this.btnFotodePerfil24);
-            this.panel1.Controls.Add(this.btnFotodePerfil16);
-            this.panel1.Controls.Add(this.btnFotodePerfil23);
-            this.panel1.Controls.Add(this.btnFotodePerfil15);
-            this.panel1.Controls.Add(this.btnFotodePerfil22);
             this.panel1.Controls.Add(this.btnFotodePerfil21);
-            this.panel1.Controls.Add(this.btnFotodePerfil14);
             this.panel1.Controls.Add(this.btnFotodePerfil20);
             this.panel1.Controls.Add(this.btnFotodePerfil13);
             this.panel1.Controls.Add(this.btnFotodePerfil19);
@@ -376,6 +377,288 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1105, 1395);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
+            // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.Transparent;
+            this.button17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button17.FlatAppearance.BorderSize = 0;
+            this.button17.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.ForeColor = System.Drawing.Color.Transparent;
+            this.button17.Location = new System.Drawing.Point(919, 556);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(53, 47);
+            this.button17.TabIndex = 96;
+            this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.Transparent;
+            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button16.FlatAppearance.BorderSize = 0;
+            this.button16.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.ForeColor = System.Drawing.Color.Transparent;
+            this.button16.Location = new System.Drawing.Point(838, 556);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(53, 47);
+            this.button16.TabIndex = 95;
+            this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.Transparent;
+            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button15.FlatAppearance.BorderSize = 0;
+            this.button15.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.ForeColor = System.Drawing.Color.Transparent;
+            this.button15.Location = new System.Drawing.Point(750, 556);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(53, 47);
+            this.button15.TabIndex = 94;
+            this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.Transparent;
+            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button14.FlatAppearance.BorderSize = 0;
+            this.button14.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.ForeColor = System.Drawing.Color.Transparent;
+            this.button14.Location = new System.Drawing.Point(665, 556);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(53, 47);
+            this.button14.TabIndex = 93;
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.Transparent;
+            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.ForeColor = System.Drawing.Color.Transparent;
+            this.button13.Location = new System.Drawing.Point(578, 556);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(53, 47);
+            this.button13.TabIndex = 92;
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.Transparent;
+            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.ForeColor = System.Drawing.Color.Transparent;
+            this.button12.Location = new System.Drawing.Point(495, 556);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(53, 47);
+            this.button12.TabIndex = 91;
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.Transparent;
+            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.ForeColor = System.Drawing.Color.Transparent;
+            this.button11.Location = new System.Drawing.Point(408, 556);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(53, 47);
+            this.button11.TabIndex = 90;
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Transparent;
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.ForeColor = System.Drawing.Color.Transparent;
+            this.button10.Location = new System.Drawing.Point(325, 556);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(53, 47);
+            this.button10.TabIndex = 89;
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Transparent;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.ForeColor = System.Drawing.Color.Transparent;
+            this.button9.Location = new System.Drawing.Point(919, 472);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(53, 47);
+            this.button9.TabIndex = 88;
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.ForeColor = System.Drawing.Color.Transparent;
+            this.button8.Location = new System.Drawing.Point(838, 473);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(53, 47);
+            this.button8.TabIndex = 87;
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.Color.Transparent;
+            this.button7.Location = new System.Drawing.Point(749, 472);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(53, 47);
+            this.button7.TabIndex = 86;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.Color.Transparent;
+            this.button6.Location = new System.Drawing.Point(919, 400);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(53, 47);
+            this.button6.TabIndex = 85;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.Transparent;
+            this.button5.Location = new System.Drawing.Point(837, 399);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(53, 47);
+            this.button5.TabIndex = 84;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.Transparent;
+            this.button4.Location = new System.Drawing.Point(750, 399);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(53, 47);
+            this.button4.TabIndex = 83;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_2);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Location = new System.Drawing.Point(749, 323);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(53, 47);
+            this.button2.TabIndex = 81;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(526, 674);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(53, 47);
+            this.button1.TabIndex = 80;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // pictureBoxPerfil
+            // 
+            this.pictureBoxPerfil.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxPerfil.Location = new System.Drawing.Point(111, 184);
+            this.pictureBoxPerfil.Name = "pictureBoxPerfil";
+            this.pictureBoxPerfil.Size = new System.Drawing.Size(164, 161);
+            this.pictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxPerfil.TabIndex = 79;
+            this.pictureBoxPerfil.TabStop = false;
             // 
             // panel2
             // 
@@ -485,198 +768,6 @@
             this.btnTemaAmarelo.TabIndex = 71;
             this.btnTemaAmarelo.UseVisualStyleBackColor = false;
             // 
-            // btnFotodePerfil40
-            // 
-            this.btnFotodePerfil40.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil40.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil40.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil40.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil40.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil40.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil40.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil40.Location = new System.Drawing.Point(919, 553);
-            this.btnFotodePerfil40.Name = "btnFotodePerfil40";
-            this.btnFotodePerfil40.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil40.TabIndex = 70;
-            this.btnFotodePerfil40.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil39
-            // 
-            this.btnFotodePerfil39.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil39.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil39.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil39.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil39.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil39.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil39.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil39.Location = new System.Drawing.Point(837, 554);
-            this.btnFotodePerfil39.Name = "btnFotodePerfil39";
-            this.btnFotodePerfil39.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil39.TabIndex = 69;
-            this.btnFotodePerfil39.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil38
-            // 
-            this.btnFotodePerfil38.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil38.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil38.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil38.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil38.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil38.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil38.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil38.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil38.Location = new System.Drawing.Point(749, 554);
-            this.btnFotodePerfil38.Name = "btnFotodePerfil38";
-            this.btnFotodePerfil38.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil38.TabIndex = 68;
-            this.btnFotodePerfil38.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil37
-            // 
-            this.btnFotodePerfil37.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil37.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil37.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil37.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil37.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil37.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil37.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil37.Location = new System.Drawing.Point(662, 551);
-            this.btnFotodePerfil37.Name = "btnFotodePerfil37";
-            this.btnFotodePerfil37.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil37.TabIndex = 67;
-            this.btnFotodePerfil37.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil36
-            // 
-            this.btnFotodePerfil36.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil36.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil36.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil36.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil36.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil36.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil36.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil36.Location = new System.Drawing.Point(578, 552);
-            this.btnFotodePerfil36.Name = "btnFotodePerfil36";
-            this.btnFotodePerfil36.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil36.TabIndex = 66;
-            this.btnFotodePerfil36.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil35
-            // 
-            this.btnFotodePerfil35.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil35.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil35.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil35.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil35.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil35.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil35.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil35.Location = new System.Drawing.Point(494, 552);
-            this.btnFotodePerfil35.Name = "btnFotodePerfil35";
-            this.btnFotodePerfil35.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil35.TabIndex = 65;
-            this.btnFotodePerfil35.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil34
-            // 
-            this.btnFotodePerfil34.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil34.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil34.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil34.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil34.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil34.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil34.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil34.Location = new System.Drawing.Point(411, 553);
-            this.btnFotodePerfil34.Name = "btnFotodePerfil34";
-            this.btnFotodePerfil34.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil34.TabIndex = 64;
-            this.btnFotodePerfil34.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil33
-            // 
-            this.btnFotodePerfil33.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil33.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil33.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil33.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil33.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil33.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil33.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil33.Location = new System.Drawing.Point(325, 552);
-            this.btnFotodePerfil33.Name = "btnFotodePerfil33";
-            this.btnFotodePerfil33.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil33.TabIndex = 63;
-            this.btnFotodePerfil33.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil32
-            // 
-            this.btnFotodePerfil32.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil32.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil32.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil32.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil32.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil32.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil32.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil32.Location = new System.Drawing.Point(919, 474);
-            this.btnFotodePerfil32.Name = "btnFotodePerfil32";
-            this.btnFotodePerfil32.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil32.TabIndex = 62;
-            this.btnFotodePerfil32.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil31
-            // 
-            this.btnFotodePerfil31.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil31.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil31.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil31.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil31.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil31.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil31.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil31.Location = new System.Drawing.Point(837, 475);
-            this.btnFotodePerfil31.Name = "btnFotodePerfil31";
-            this.btnFotodePerfil31.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil31.TabIndex = 61;
-            this.btnFotodePerfil31.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil30
-            // 
-            this.btnFotodePerfil30.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil30.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil30.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil30.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil30.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil30.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil30.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil30.Location = new System.Drawing.Point(749, 475);
-            this.btnFotodePerfil30.Name = "btnFotodePerfil30";
-            this.btnFotodePerfil30.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil30.TabIndex = 60;
-            this.btnFotodePerfil30.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil29
-            // 
-            this.btnFotodePerfil29.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil29.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil29.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil29.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil29.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil29.Location = new System.Drawing.Point(663, 473);
-            this.btnFotodePerfil29.Name = "btnFotodePerfil29";
-            this.btnFotodePerfil29.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil29.TabIndex = 59;
-            this.btnFotodePerfil29.UseVisualStyleBackColor = false;
-            // 
             // btnFotodePerfil28
             // 
             this.btnFotodePerfil28.BackColor = System.Drawing.Color.Transparent;
@@ -692,6 +783,7 @@
             this.btnFotodePerfil28.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil28.TabIndex = 58;
             this.btnFotodePerfil28.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil28.Click += new System.EventHandler(this.btnFotodePerfil28_Click);
             // 
             // btnFotodePerfil27
             // 
@@ -708,6 +800,7 @@
             this.btnFotodePerfil27.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil27.TabIndex = 57;
             this.btnFotodePerfil27.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil27.Click += new System.EventHandler(this.btnFotodePerfil27_Click);
             // 
             // btnFotodePerfil26
             // 
@@ -724,6 +817,7 @@
             this.btnFotodePerfil26.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil26.TabIndex = 56;
             this.btnFotodePerfil26.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil26.Click += new System.EventHandler(this.btnFotodePerfil26_Click);
             // 
             // btnFotodePerfil25
             // 
@@ -740,86 +834,7 @@
             this.btnFotodePerfil25.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil25.TabIndex = 55;
             this.btnFotodePerfil25.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil24
-            // 
-            this.btnFotodePerfil24.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil24.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil24.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil24.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil24.Location = new System.Drawing.Point(919, 400);
-            this.btnFotodePerfil24.Name = "btnFotodePerfil24";
-            this.btnFotodePerfil24.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil24.TabIndex = 54;
-            this.btnFotodePerfil24.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil16
-            // 
-            this.btnFotodePerfil16.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil16.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil16.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil16.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil16.Location = new System.Drawing.Point(919, 324);
-            this.btnFotodePerfil16.Name = "btnFotodePerfil16";
-            this.btnFotodePerfil16.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil16.TabIndex = 31;
-            this.btnFotodePerfil16.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil23
-            // 
-            this.btnFotodePerfil23.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil23.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil23.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil23.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil23.Location = new System.Drawing.Point(838, 401);
-            this.btnFotodePerfil23.Name = "btnFotodePerfil23";
-            this.btnFotodePerfil23.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil23.TabIndex = 53;
-            this.btnFotodePerfil23.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil15
-            // 
-            this.btnFotodePerfil15.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil15.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil15.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil15.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil15.Location = new System.Drawing.Point(837, 324);
-            this.btnFotodePerfil15.Name = "btnFotodePerfil15";
-            this.btnFotodePerfil15.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil15.TabIndex = 30;
-            this.btnFotodePerfil15.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil22
-            // 
-            this.btnFotodePerfil22.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil22.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil22.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil22.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil22.Location = new System.Drawing.Point(751, 400);
-            this.btnFotodePerfil22.Name = "btnFotodePerfil22";
-            this.btnFotodePerfil22.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil22.TabIndex = 52;
-            this.btnFotodePerfil22.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil25.Click += new System.EventHandler(this.btnFotodePerfil25_Click);
             // 
             // btnFotodePerfil21
             // 
@@ -836,22 +851,7 @@
             this.btnFotodePerfil21.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil21.TabIndex = 51;
             this.btnFotodePerfil21.UseVisualStyleBackColor = false;
-            // 
-            // btnFotodePerfil14
-            // 
-            this.btnFotodePerfil14.BackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFotodePerfil14.FlatAppearance.BorderSize = 0;
-            this.btnFotodePerfil14.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFotodePerfil14.ForeColor = System.Drawing.Color.Transparent;
-            this.btnFotodePerfil14.Location = new System.Drawing.Point(749, 324);
-            this.btnFotodePerfil14.Name = "btnFotodePerfil14";
-            this.btnFotodePerfil14.Size = new System.Drawing.Size(53, 47);
-            this.btnFotodePerfil14.TabIndex = 29;
-            this.btnFotodePerfil14.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil21.Click += new System.EventHandler(this.btnFotodePerfil21_Click);
             // 
             // btnFotodePerfil20
             // 
@@ -868,6 +868,7 @@
             this.btnFotodePerfil20.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil20.TabIndex = 50;
             this.btnFotodePerfil20.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil20.Click += new System.EventHandler(this.btnFotodePerfil20_Click);
             // 
             // btnFotodePerfil13
             // 
@@ -884,6 +885,7 @@
             this.btnFotodePerfil13.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil13.TabIndex = 28;
             this.btnFotodePerfil13.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil13.Click += new System.EventHandler(this.btnFotodePerfil13_Click);
             // 
             // btnFotodePerfil19
             // 
@@ -900,6 +902,7 @@
             this.btnFotodePerfil19.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil19.TabIndex = 49;
             this.btnFotodePerfil19.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil19.Click += new System.EventHandler(this.btnFotodePerfil19_Click);
             // 
             // btnFotodePerfil12
             // 
@@ -916,6 +919,7 @@
             this.btnFotodePerfil12.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil12.TabIndex = 27;
             this.btnFotodePerfil12.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil12.Click += new System.EventHandler(this.btnFotodePerfil12_Click);
             // 
             // btnFotodePerfil18
             // 
@@ -932,6 +936,7 @@
             this.btnFotodePerfil18.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil18.TabIndex = 48;
             this.btnFotodePerfil18.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil18.Click += new System.EventHandler(this.btnFotodePerfil18_Click);
             // 
             // btnFotodePerfil11
             // 
@@ -948,6 +953,7 @@
             this.btnFotodePerfil11.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil11.TabIndex = 26;
             this.btnFotodePerfil11.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil11.Click += new System.EventHandler(this.btnFotodePerfil11_Click);
             // 
             // btnFotodePerfil17
             // 
@@ -964,6 +970,7 @@
             this.btnFotodePerfil17.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil17.TabIndex = 47;
             this.btnFotodePerfil17.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil17.Click += new System.EventHandler(this.btnFotodePerfil17_Click);
             // 
             // btnFotodePerfil10
             // 
@@ -980,6 +987,7 @@
             this.btnFotodePerfil10.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil10.TabIndex = 25;
             this.btnFotodePerfil10.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil10.Click += new System.EventHandler(this.btnFotodePerfil10_Click);
             // 
             // btnFotodePerfil9
             // 
@@ -996,6 +1004,7 @@
             this.btnFotodePerfil9.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil9.TabIndex = 24;
             this.btnFotodePerfil9.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil9.Click += new System.EventHandler(this.btnFotodePerfil9_Click);
             // 
             // btnFotodePerfil8
             // 
@@ -1012,6 +1021,7 @@
             this.btnFotodePerfil8.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil8.TabIndex = 23;
             this.btnFotodePerfil8.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil8.Click += new System.EventHandler(this.btnFotodePerfil8_Click);
             // 
             // btnFotodePerfil7
             // 
@@ -1028,6 +1038,7 @@
             this.btnFotodePerfil7.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil7.TabIndex = 22;
             this.btnFotodePerfil7.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil7.Click += new System.EventHandler(this.btnFotodePerfil7_Click);
             // 
             // btnFotodePerfil6
             // 
@@ -1044,6 +1055,7 @@
             this.btnFotodePerfil6.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil6.TabIndex = 21;
             this.btnFotodePerfil6.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil6.Click += new System.EventHandler(this.btnFotodePerfil6_Click);
             // 
             // btnFotodePerfil5
             // 
@@ -1094,6 +1106,7 @@
             this.btnFotodePerfil3.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil3.TabIndex = 18;
             this.btnFotodePerfil3.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil3.Click += new System.EventHandler(this.btnFotodePerfil3_Click);
             // 
             // btnFotodePerfil2
             // 
@@ -1127,6 +1140,7 @@
             this.btnFotodePerfil1.Size = new System.Drawing.Size(53, 47);
             this.btnFotodePerfil1.TabIndex = 16;
             this.btnFotodePerfil1.UseVisualStyleBackColor = false;
+            this.btnFotodePerfil1.Click += new System.EventHandler(this.btnFotodePerfil1_Click);
             // 
             // btnFundo12
             // 
@@ -1351,6 +1365,24 @@
             this.btnSalvarAlterações1.Size = new System.Drawing.Size(119, 24);
             this.btnSalvarAlterações1.TabIndex = 1;
             this.btnSalvarAlterações1.UseVisualStyleBackColor = false;
+            this.btnSalvarAlterações1.Click += new System.EventHandler(this.btnSalvarAlterações1_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.Transparent;
+            this.button3.Location = new System.Drawing.Point(665, 474);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(53, 47);
+            this.button3.TabIndex = 97;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // Configurações
             // 
@@ -1379,6 +1411,7 @@
             this.pnlMenuTelaInicial.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPerfil)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotodeFundoAtual)).EndInit();
@@ -1418,29 +1451,11 @@
         private System.Windows.Forms.Button btnFundo6;
         private System.Windows.Forms.Button btnFundo5;
         private System.Windows.Forms.Button btnFotodePerfil1;
-        private System.Windows.Forms.Button btnFotodePerfil40;
-        private System.Windows.Forms.Button btnFotodePerfil39;
-        private System.Windows.Forms.Button btnFotodePerfil38;
-        private System.Windows.Forms.Button btnFotodePerfil37;
-        private System.Windows.Forms.Button btnFotodePerfil36;
-        private System.Windows.Forms.Button btnFotodePerfil35;
-        private System.Windows.Forms.Button btnFotodePerfil34;
-        private System.Windows.Forms.Button btnFotodePerfil33;
-        private System.Windows.Forms.Button btnFotodePerfil32;
-        private System.Windows.Forms.Button btnFotodePerfil31;
-        private System.Windows.Forms.Button btnFotodePerfil30;
-        private System.Windows.Forms.Button btnFotodePerfil29;
         private System.Windows.Forms.Button btnFotodePerfil28;
         private System.Windows.Forms.Button btnFotodePerfil27;
         private System.Windows.Forms.Button btnFotodePerfil26;
         private System.Windows.Forms.Button btnFotodePerfil25;
-        private System.Windows.Forms.Button btnFotodePerfil24;
-        private System.Windows.Forms.Button btnFotodePerfil16;
-        private System.Windows.Forms.Button btnFotodePerfil23;
-        private System.Windows.Forms.Button btnFotodePerfil15;
-        private System.Windows.Forms.Button btnFotodePerfil22;
         private System.Windows.Forms.Button btnFotodePerfil21;
-        private System.Windows.Forms.Button btnFotodePerfil14;
         private System.Windows.Forms.Button btnFotodePerfil20;
         private System.Windows.Forms.Button btnFotodePerfil13;
         private System.Windows.Forms.Button btnFotodePerfil19;
@@ -1465,5 +1480,23 @@
         private System.Windows.Forms.Button btnTemaAmarelo;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBoxPerfil;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button3;
     }
 }

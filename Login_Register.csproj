@@ -168,18 +168,22 @@
     <Compile Include="Interface\Perfil.Designer.cs">
       <DependentUpon>Perfil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Configuracoes\ConfiguracoesTema.cs" />
+    <Compile Include="Model\Configuracoes\Configuracoes.cs" />
+    <Compile Include="Model\Services\ConfiguracoesService.cs" />
     <Compile Include="Model\Conversas\Conversas.cs" />
     <Compile Include="Model\JogosFavoritos\JogosFavoritos.cs" />
     <Compile Include="Model\Jogos\Jogos.cs" />
     <Compile Include="Model\MatchMaking\MatchMaking.cs" />
     <Compile Include="Model\MensagensChat\MensagensChat.cs" />
+    <Compile Include="Model\PerfilUsuario\AvatarManager.cs" />
     <Compile Include="Model\PerfilUsuario\PerfilUsuario.cs" />
+    <Compile Include="Model\Configuracoes\ConfiguracoesDAO.cs" />
+    <Compile Include="Model\PerfilUsuario\PerfilUsuarioDAO.cs" />
     <Compile Include="Model\Services\Criptografia.cs" />
     <Compile Include="Model\Services\DatabaseService.cs" />
     <Compile Include="Model\Services\UserSession.cs" />
     <Compile Include="Model\SugestaoAmizada\SugestaoAmizade.cs" />
-    <Compile Include="Model\usuario\usuario.cs" />
+    <Compile Include="Model\usuario\Usuario.cs" />
     <Compile Include="Model\usuario\UsuarioReferencia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Interface\TelaInicial.cs">
@@ -194,10 +198,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Tela de Carregamento.cs">
+    <Compile Include="Interface\Tela de Carregamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tela de Carregamento.Designer.cs">
+    <Compile Include="Interface\Tela de Carregamento.Designer.cs">
       <DependentUpon>Tela de Carregamento.cs</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -237,7 +241,7 @@
     <EmbeddedResource Include="Interface\TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tela de Carregamento.resx">
+    <EmbeddedResource Include="Interface\Tela de Carregamento.resx">
       <DependentUpon>Tela de Carregamento.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
@@ -248,7 +252,34 @@
     <Folder Include="Model\HistoricoPartidas\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Menu\Amarelo.png" />
+    <Content Include="Menu\Azul.png" />
+    <Content Include="Bordas\Amarelo.png" />
+    <Content Include="Bordas\Azul.png" />
+    <Content Include="Bandeiras\Amarelo.png" />
     <Content Include="Avatar\22.png" />
+    <Content Include="Bandeiras\Azul.png" />
+    <Content Include="Bandeiras\Roxo.png" />
+    <Content Include="Bandeiras\Verde.png" />
+    <Content Include="Bandeiras\Vermelho.png" />
+    <Content Include="Fundo\Group 15.png" />
+    <Content Include="Fundo\Group 35.png" />
+    <Content Include="Fundo\Group 40.png" />
+    <Content Include="Fundo\Group 41.png" />
+    <Content Include="Fundo\Group 42.png" />
+    <Content Include="Fundo\Group 43.png" />
+    <Content Include="Fundo\Group 44.png" />
+    <Content Include="Fundo\Group 45.png" />
+    <Content Include="Fundo\Group 46.png" />
+    <Content Include="Fundo\Group 47.png" />
+    <Content Include="Fundo\Group 50.png" />
+    <Content Include="Fundo\Group 51.png" />
+    <Content Include="Bordas\Roxo.png" />
+    <Content Include="Bordas\Verde.png" />
+    <Content Include="Bordas\Vermelho.png" />
+    <Content Include="Menu\Roxo.png" />
+    <Content Include="Menu\Verde.png" />
+    <Content Include="Menu\Vermelho.png" />
     <None Include="Avatar\222.png" />
     <None Include="Avatar\221.png" />
     <Content Include="Avatar\23.png" />

@@ -43,6 +43,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureAvatar = new System.Windows.Forms.PictureBox();
             this.btnNotificacoes = new System.Windows.Forms.Button();
             this.btnFecharTelaInicial = new System.Windows.Forms.Button();
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
@@ -50,6 +51,8 @@
             this.pnlMenuTelaInicial.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenuTelaInicial
@@ -227,10 +230,20 @@
             // 
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel4.Controls.Add(this.pictureAvatar);
             this.panel4.Location = new System.Drawing.Point(35, 116);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(220, 220);
             this.panel4.TabIndex = 2;
+            // 
+            // pictureAvatar
+            // 
+            this.pictureAvatar.Location = new System.Drawing.Point(38, 38);
+            this.pictureAvatar.Name = "pictureAvatar";
+            this.pictureAvatar.Size = new System.Drawing.Size(140, 128);
+            this.pictureAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureAvatar.TabIndex = 0;
+            this.pictureAvatar.TabStop = false;
             // 
             // btnNotificacoes
             // 
@@ -312,6 +325,8 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -335,5 +350,6 @@
         private System.Windows.Forms.Button btnFecharTelaInicial;
         private System.Windows.Forms.Button btnMinimizarTelaInicial;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.PictureBox pictureAvatar;
     }
 }

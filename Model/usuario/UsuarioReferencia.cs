@@ -37,7 +37,6 @@ namespace Login_Register.Model.Usuario
                 }
             }
         }
-
         public void RegistrarUsuario(string nome, string email, string senha)
         {
             if (UsuarioExiste(email))
@@ -51,18 +50,35 @@ namespace Login_Register.Model.Usuario
             using (MySqlConnection conn = _dbService.GetConnection())
             {
                 conn.Open();
-                string query = "INSERT INTO usuarios (nome, email, senha ) VALUES (@Nome, @Email, @Senha)";
+
+                // Inserir usuário
+                string query = "INSERT INTO usuarios (nome, email, senha, data_registro) VALUES (@Nome, @Email, @Senha, @DataRegistro)";
                 using (MySqlCommand cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Nome", nome);
                     cmd.Parameters.AddWithValue("@Email", email);
                     cmd.Parameters.AddWithValue("@Senha", senhaHash);
+                    cmd.Parameters.AddWithValue("@DataRegistro", DateTime.Now);
                     cmd.ExecuteNonQuery();
+
+                    // Recuperar o ID gerado
+                    long idUsuario = cmd.LastInsertedId;
+
+                    // Inserir perfil do usuário
+                    string perfilQuery = "INSERT INTO perfil_usuario (id_usuario, nickname, status_descricao) VALUES (@IdUsuario, @Nickname, @Status)";
+                    using (MySqlCommand perfilCmd = new MySqlCommand(perfilQuery, conn))
+                    {
+                        perfilCmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
+                        perfilCmd.Parameters.AddWithValue("@Nickname", nome);
+                        perfilCmd.Parameters.AddWithValue("@Status", true);
+                        perfilCmd.ExecuteNonQuery();
+                    }
                 }
             }
 
             MessageBox.Show("Usuário registrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
 
         public bool FazerLogin(string email, string senha)
         {
@@ -78,17 +94,30 @@ namespace Login_Register.Model.Usuario
                 {
                     cmd.Parameters.AddWithValue("@Email", email);
                     cmd.Parameters.AddWithValue("@Senha", senhaHash);
+                    
 
                     using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
                         if (reader.Read())
                         {
-                            // Aqui pode usar o método UserFromDataReader
-                            usuario usuario = usuario.UserFromDataReader(reader);
-                            UserSession.RegisterLoginUser(usuario);
+                            try
+                            {
+                                Usuario usuario = Usuario.UserFromDataReader(reader);
 
-                            return true;
-                          
+                                if (usuario == null)
+                                {
+                                    MessageBox.Show("Erro: objeto usuário está nulo.");
+                                    return false;
+                                }
+
+                                UserSession.RegisterLoginUser(usuario);
+                                return true;
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show("Erro ao montar objeto Usuario: " + ex.Message);
+                                return false;
+                            }
                         }
                     }
                 }
