@@ -215,16 +215,18 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(292, 635);
             this.panel3.TabIndex = 1;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(80, 352);
+            this.label2.Location = new System.Drawing.Point(48, 346);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 23);
+            this.label2.Size = new System.Drawing.Size(196, 35);
             this.label2.TabIndex = 2;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel4
             // 
@@ -324,7 +326,6 @@
             this.pnlMenuTelaInicial.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar)).EndInit();
             this.ResumeLayout(false);
