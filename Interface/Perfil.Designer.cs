@@ -242,9 +242,9 @@
             // 
             this.pictureAvatar.BackgroundImage = global::Login_Register.Properties.Resources._25;
             this.pictureAvatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureAvatar.Location = new System.Drawing.Point(34, 33);
+            this.pictureAvatar.Location = new System.Drawing.Point(38, 34);
             this.pictureAvatar.Name = "pictureAvatar";
-            this.pictureAvatar.Size = new System.Drawing.Size(155, 145);
+            this.pictureAvatar.Size = new System.Drawing.Size(146, 144);
             this.pictureAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureAvatar.TabIndex = 0;
             this.pictureAvatar.TabStop = false;
