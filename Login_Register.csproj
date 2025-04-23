@@ -271,6 +271,11 @@
     <Content Include="Menu\Roxo.png" />
     <Content Include="Menu\Verde.png" />
     <Content Include="Menu\Vermelho.png" />
+    <None Include="Resources\Full Stop.png" />
+    <None Include="Resources\Group 9.png" />
+    <None Include="Resources\Group 8.png" />
+    <None Include="Resources\Rectangle 31.png" />
+    <None Include="Resources\Group 7.png" />
     <None Include="Avatar\222.png" />
     <None Include="Avatar\221.png" />
     <Content Include="Avatar\23.png" />
