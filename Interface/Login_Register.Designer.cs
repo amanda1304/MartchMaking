@@ -71,6 +71,10 @@
             this.btnFecharRegister = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnopenaye2 = new System.Windows.Forms.Button();
+            this.btnayeclosed2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.panelconfirmsenha.SuspendLayout();
             this.panelsenharegister.SuspendLayout();
             this.panelemail.SuspendLayout();
@@ -223,6 +227,7 @@
             this.textBoxConfirmarSenha.Location = new System.Drawing.Point(11, 10);
             this.textBoxConfirmarSenha.Multiline = true;
             this.textBoxConfirmarSenha.Name = "textBoxConfirmarSenha";
+            this.textBoxConfirmarSenha.PasswordChar = '•';
             this.textBoxConfirmarSenha.Size = new System.Drawing.Size(242, 22);
             this.textBoxConfirmarSenha.TabIndex = 2;
             // 
@@ -230,6 +235,8 @@
             // 
             this.panelconfirmsenha.BackColor = System.Drawing.Color.Gainsboro;
             this.panelconfirmsenha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelconfirmsenha.Controls.Add(this.button5);
+            this.panelconfirmsenha.Controls.Add(this.button4);
             this.panelconfirmsenha.Controls.Add(this.textBoxConfirmarSenha);
             this.panelconfirmsenha.Location = new System.Drawing.Point(89, 345);
             this.panelconfirmsenha.Margin = new System.Windows.Forms.Padding(0);
@@ -260,6 +267,7 @@
             this.textBoxSenhaRegister.Location = new System.Drawing.Point(11, 11);
             this.textBoxSenhaRegister.Multiline = true;
             this.textBoxSenhaRegister.Name = "textBoxSenhaRegister";
+            this.textBoxSenhaRegister.PasswordChar = '•';
             this.textBoxSenhaRegister.Size = new System.Drawing.Size(242, 22);
             this.textBoxSenhaRegister.TabIndex = 2;
             // 
@@ -267,6 +275,8 @@
             // 
             this.panelsenharegister.BackColor = System.Drawing.Color.Gainsboro;
             this.panelsenharegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelsenharegister.Controls.Add(this.btnayeclosed2);
+            this.panelsenharegister.Controls.Add(this.btnopenaye2);
             this.panelsenharegister.Controls.Add(this.textBoxSenhaRegister);
             this.panelsenharegister.Location = new System.Drawing.Point(89, 277);
             this.panelsenharegister.Margin = new System.Windows.Forms.Padding(0);
@@ -478,7 +488,7 @@
             this.btnClosedEye.FlatAppearance.BorderSize = 0;
             this.btnClosedEye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClosedEye.ForeColor = System.Drawing.Color.Transparent;
-            this.btnClosedEye.Location = new System.Drawing.Point(238, 9);
+            this.btnClosedEye.Location = new System.Drawing.Point(241, 8);
             this.btnClosedEye.Name = "btnClosedEye";
             this.btnClosedEye.Size = new System.Drawing.Size(26, 22);
             this.btnClosedEye.TabIndex = 62;
@@ -491,7 +501,7 @@
             this.btnOpenEye.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnOpenEye.FlatAppearance.BorderSize = 0;
             this.btnOpenEye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpenEye.Location = new System.Drawing.Point(239, 8);
+            this.btnOpenEye.Location = new System.Drawing.Point(241, 8);
             this.btnOpenEye.Name = "btnOpenEye";
             this.btnOpenEye.Size = new System.Drawing.Size(26, 22);
             this.btnOpenEye.TabIndex = 61;
@@ -552,7 +562,7 @@
             // 
             this.pnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl.BackgroundImage")));
             this.pnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnl.Location = new System.Drawing.Point(0, 0);
+            this.pnl.Location = new System.Drawing.Point(456, 0);
             this.pnl.Name = "pnl";
             this.pnl.Size = new System.Drawing.Size(459, 600);
             this.pnl.TabIndex = 51;
@@ -601,6 +611,64 @@
             // 
             this.timer1.Interval = 20;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // btnopenaye2
+            // 
+            this.btnopenaye2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnopenaye2.BackgroundImage")));
+            this.btnopenaye2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnopenaye2.FlatAppearance.BorderSize = 0;
+            this.btnopenaye2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnopenaye2.Location = new System.Drawing.Point(240, 8);
+            this.btnopenaye2.Name = "btnopenaye2";
+            this.btnopenaye2.Size = new System.Drawing.Size(26, 22);
+            this.btnopenaye2.TabIndex = 64;
+            this.btnopenaye2.UseVisualStyleBackColor = true;
+            this.btnopenaye2.Click += new System.EventHandler(this.btnopenaye2_Click);
+            // 
+            // btnayeclosed2
+            // 
+            this.btnayeclosed2.BackColor = System.Drawing.Color.Transparent;
+            this.btnayeclosed2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnayeclosed2.BackgroundImage")));
+            this.btnayeclosed2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnayeclosed2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnayeclosed2.FlatAppearance.BorderSize = 0;
+            this.btnayeclosed2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnayeclosed2.ForeColor = System.Drawing.Color.Transparent;
+            this.btnayeclosed2.Location = new System.Drawing.Point(240, 8);
+            this.btnayeclosed2.Name = "btnayeclosed2";
+            this.btnayeclosed2.Size = new System.Drawing.Size(26, 22);
+            this.btnayeclosed2.TabIndex = 64;
+            this.btnayeclosed2.UseVisualStyleBackColor = false;
+            this.btnayeclosed2.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(238, 8);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(26, 22);
+            this.button4.TabIndex = 65;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.Transparent;
+            this.button5.Location = new System.Drawing.Point(238, 8);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(26, 22);
+            this.button5.TabIndex = 65;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Login_Register
             // 
@@ -714,5 +782,9 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btnOpenEye;
         private System.Windows.Forms.Button btnClosedEye;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnayeclosed2;
+        private System.Windows.Forms.Button btnopenaye2;
     }
 }

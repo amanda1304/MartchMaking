@@ -395,5 +395,40 @@ namespace Login_Register
             
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBoxSenhaRegister.PasswordChar == '•')
+            {
+                btnopenaye2.BringToFront();
+                textBoxSenhaRegister.PasswordChar = '\0';
+            }
+        }
+
+        private void btnopenaye2_Click(object sender, EventArgs e)
+        {
+            if (textBoxSenhaRegister.PasswordChar == '\0')
+            {
+                btnayeclosed2.BringToFront();
+                textBoxSenhaRegister.PasswordChar = '•';
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (textBoxSenhaRegister.PasswordChar == '•')
+            {
+                button4.BringToFront();
+                textBoxConfirmarSenha.PasswordChar = '\0';
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (textBoxSenhaRegister.PasswordChar == '\0')
+            {
+                button5.BringToFront();
+                textBoxConfirmarSenha.PasswordChar = '•';
+            }
+        }
     }
 }
