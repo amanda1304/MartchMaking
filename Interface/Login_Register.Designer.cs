@@ -42,9 +42,13 @@
             this.linkLogin = new System.Windows.Forms.LinkLabel();
             this.textBoxConfirmarSenha = new System.Windows.Forms.TextBox();
             this.panelconfirmsenha = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.txtConfirmarSenha = new System.Windows.Forms.Label();
             this.textBoxSenhaRegister = new System.Windows.Forms.TextBox();
             this.panelsenharegister = new System.Windows.Forms.Panel();
+            this.btnayeclosed2 = new System.Windows.Forms.Button();
+            this.btnopenaye2 = new System.Windows.Forms.Button();
             this.txtSenhaRegister = new System.Windows.Forms.Label();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.panelemail = new System.Windows.Forms.Panel();
@@ -71,10 +75,6 @@
             this.btnFecharRegister = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnopenaye2 = new System.Windows.Forms.Button();
-            this.btnayeclosed2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.panelconfirmsenha.SuspendLayout();
             this.panelsenharegister.SuspendLayout();
             this.panelemail.SuspendLayout();
@@ -244,6 +244,35 @@
             this.panelconfirmsenha.Size = new System.Drawing.Size(270, 37);
             this.panelconfirmsenha.TabIndex = 48;
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.Transparent;
+            this.button5.Location = new System.Drawing.Point(241, 8);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(26, 22);
+            this.button5.TabIndex = 65;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(241, 8);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(26, 22);
+            this.button4.TabIndex = 65;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // txtConfirmarSenha
             // 
             this.txtConfirmarSenha.AutoSize = true;
@@ -283,6 +312,35 @@
             this.panelsenharegister.Name = "panelsenharegister";
             this.panelsenharegister.Size = new System.Drawing.Size(270, 37);
             this.panelsenharegister.TabIndex = 46;
+            // 
+            // btnayeclosed2
+            // 
+            this.btnayeclosed2.BackColor = System.Drawing.Color.Transparent;
+            this.btnayeclosed2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnayeclosed2.BackgroundImage")));
+            this.btnayeclosed2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnayeclosed2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnayeclosed2.FlatAppearance.BorderSize = 0;
+            this.btnayeclosed2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnayeclosed2.ForeColor = System.Drawing.Color.Transparent;
+            this.btnayeclosed2.Location = new System.Drawing.Point(242, 8);
+            this.btnayeclosed2.Name = "btnayeclosed2";
+            this.btnayeclosed2.Size = new System.Drawing.Size(26, 22);
+            this.btnayeclosed2.TabIndex = 64;
+            this.btnayeclosed2.UseVisualStyleBackColor = false;
+            this.btnayeclosed2.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnopenaye2
+            // 
+            this.btnopenaye2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnopenaye2.BackgroundImage")));
+            this.btnopenaye2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnopenaye2.FlatAppearance.BorderSize = 0;
+            this.btnopenaye2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnopenaye2.Location = new System.Drawing.Point(241, 8);
+            this.btnopenaye2.Name = "btnopenaye2";
+            this.btnopenaye2.Size = new System.Drawing.Size(26, 22);
+            this.btnopenaye2.TabIndex = 64;
+            this.btnopenaye2.UseVisualStyleBackColor = true;
+            this.btnopenaye2.Click += new System.EventHandler(this.btnopenaye2_Click);
             // 
             // txtSenhaRegister
             // 
@@ -562,7 +620,7 @@
             // 
             this.pnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl.BackgroundImage")));
             this.pnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnl.Location = new System.Drawing.Point(456, 0);
+            this.pnl.Location = new System.Drawing.Point(454, 0);
             this.pnl.Name = "pnl";
             this.pnl.Size = new System.Drawing.Size(459, 600);
             this.pnl.TabIndex = 51;
@@ -611,64 +669,6 @@
             // 
             this.timer1.Interval = 20;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // btnopenaye2
-            // 
-            this.btnopenaye2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnopenaye2.BackgroundImage")));
-            this.btnopenaye2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnopenaye2.FlatAppearance.BorderSize = 0;
-            this.btnopenaye2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnopenaye2.Location = new System.Drawing.Point(240, 8);
-            this.btnopenaye2.Name = "btnopenaye2";
-            this.btnopenaye2.Size = new System.Drawing.Size(26, 22);
-            this.btnopenaye2.TabIndex = 64;
-            this.btnopenaye2.UseVisualStyleBackColor = true;
-            this.btnopenaye2.Click += new System.EventHandler(this.btnopenaye2_Click);
-            // 
-            // btnayeclosed2
-            // 
-            this.btnayeclosed2.BackColor = System.Drawing.Color.Transparent;
-            this.btnayeclosed2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnayeclosed2.BackgroundImage")));
-            this.btnayeclosed2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnayeclosed2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnayeclosed2.FlatAppearance.BorderSize = 0;
-            this.btnayeclosed2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnayeclosed2.ForeColor = System.Drawing.Color.Transparent;
-            this.btnayeclosed2.Location = new System.Drawing.Point(240, 8);
-            this.btnayeclosed2.Name = "btnayeclosed2";
-            this.btnayeclosed2.Size = new System.Drawing.Size(26, 22);
-            this.btnayeclosed2.TabIndex = 64;
-            this.btnayeclosed2.UseVisualStyleBackColor = false;
-            this.btnayeclosed2.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(238, 8);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(26, 22);
-            this.button4.TabIndex = 65;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.Transparent;
-            this.button5.Location = new System.Drawing.Point(238, 8);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(26, 22);
-            this.button5.TabIndex = 65;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Login_Register
             // 

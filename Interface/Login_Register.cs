@@ -415,7 +415,7 @@ namespace Login_Register
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (textBoxSenhaRegister.PasswordChar == '•')
+            if (textBoxConfirmarSenha.PasswordChar == '•')
             {
                 button4.BringToFront();
                 textBoxConfirmarSenha.PasswordChar = '\0';
@@ -424,7 +424,7 @@ namespace Login_Register
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (textBoxSenhaRegister.PasswordChar == '\0')
+            if (textBoxConfirmarSenha.PasswordChar == '\0')
             {
                 button5.BringToFront();
                 textBoxConfirmarSenha.PasswordChar = '•';
