@@ -90,7 +90,20 @@ public class ConfiguracoesDAO
             cmd.ExecuteNonQuery();
         }
     }
-
+    public void AtualizarCorFundo(int idPerfilUsuario, string nomeImagemFundo)
+    {
+        using (var connection = new MySqlConnection(connectionString))
+        {
+            connection.Open();
+            string query = "UPDATE configuracoes SET cor_fundo = @nome WHERE id_perfil_usuario = @idPerfil";
+            using (var cmd = new MySqlCommand(query, connection))
+            {
+                cmd.Parameters.AddWithValue("@nome", nomeImagemFundo);
+                cmd.Parameters.AddWithValue("@idPerfil", idPerfilUsuario);
+                cmd.ExecuteNonQuery();
+            }
+        }
+    }
 
 
 

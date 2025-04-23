@@ -19,6 +19,7 @@ namespace Login_Register
     {
         ConfiguracoesService configService = new ConfiguracoesService();
         string imagemSelecionada = "";
+        string imagemCorFundoSelecionada;
         int idUsuario = 1; // aqui você coloca o ID real do usuário logado
         public Configurações()
         {
@@ -151,12 +152,32 @@ namespace Login_Register
             {
                 pictureBoxPerfil.Image = avatar;
             }
+
+            Image fundo = configService.CarregarCorFundo(UserSession.userLogado.id);
+            if (fundo != null)
+            {
+                pictureBoxFotodeFundoAtual.Image = fundo; // ou: panel1.BackgroundImage = fundo;
+               // this.BackgroundImageLayout = ImageLayout.Stretch; // ou outra opção: Tile, Center, Zoom
+            }
         }
         private void SelecionarAvatar(string nomeAvatar)
         {
             imagemSelecionada = nomeAvatar;
             pictureBoxPerfil.Image = (Image)Properties.Resources.ResourceManager.GetObject(nomeAvatar);
         }
+        private void SelecionarCorFundo(string nomeImagemFundo)
+        {
+            imagemCorFundoSelecionada = nomeImagemFundo;
+
+            // Define a imagem de fundo no formulário
+            pictureBoxFotodeFundoAtual.Image = (Image)Properties.Resources.ResourceManager.GetObject(nomeImagemFundo);
+            //this.BackgroundImageLayout = ImageLayout.Stretch;
+
+            // Salva no banco
+            configService.SalvarCorFundo(UserSession.userLogado.id, nomeImagemFundo);
+        }
+
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -212,11 +233,17 @@ namespace Login_Register
                 MessageBox.Show("Selecione uma imagem primeiro.");
                 return;
             }
+
+            if (string.IsNullOrEmpty(imagemCorFundoSelecionada))
+            {
+                MessageBox.Show("Selecione uma cor de fundo primeiro.");
+                return;
+            }
             //bool sucesso = configService.SalvarAvatar(UserSession.IdUsuario, imagemSelecionada);
 
             //bool sucesso = configService.SalvarAvatar(UserSession.IdPerfilUsuario, imagemSelecionada);
             bool sucesso = configService.SalvarAvatar(UserSession.userLogado.id, imagemSelecionada);
-
+            configService.SalvarCorFundo(UserSession.userLogado.id, imagemCorFundoSelecionada);
             if (sucesso)
                 MessageBox.Show("Imagem de perfil atualizada com sucesso!");
             else
@@ -429,6 +456,78 @@ namespace Login_Register
         {
             SelecionarAvatar("_41");
             pictureBoxPerfil.Image = Properties.Resources._41;
+        }
+
+        private void btnFundo1_Click(object sender, EventArgs e)
+        {
+            SelecionarCorFundo("Group_15");
+            pictureBoxFotodeFundoAtual.Image = Properties.Resources.Group_15;
+        }
+
+        private void btnFundo7_Click(object sender, EventArgs e)
+        {
+            SelecionarCorFundo("Group_35");
+            pictureBoxFotodeFundoAtual.Image = Properties.Resources.Group_35;
+        }
+
+        private void btnFundo2_Click(object sender, EventArgs e)
+        {
+            SelecionarCorFundo("Group_51");
+            pictureBoxFotodeFundoAtual.Image = Properties.Resources.Group_51;
+        }
+
+        private void btnFundo8_Click(object sender, EventArgs e)
+        {
+            SelecionarCorFundo("Group_42");
+            pictureBoxFotodeFundoAtual.Image = Properties.Resources.Group_42;
+        }
+
+        private void btnFundo3_Click(object sender, EventArgs e)
+        {
+            SelecionarCorFundo("Group_44");
+            pictureBoxFotodeFundoAtual.Image = Properties.Resources.Group_44;
+        }
+
+        private void btnFundo9_Click(object sender, EventArgs e)
+        {
+            SelecionarCorFundo("Group_50");
+            pictureBoxFotodeFundoAtual.Image = Properties.Resources.Group_50;
+        }
+
+        private void btnFundo4_Click(object sender, EventArgs e)
+        {
+            SelecionarCorFundo("Group_45");
+            pictureBoxFotodeFundoAtual.Image = Properties.Resources.Group_45;
+        }
+
+        private void btnFundo10_Click(object sender, EventArgs e)
+        {
+            SelecionarCorFundo("Group_47");
+            pictureBoxFotodeFundoAtual.Image = Properties.Resources.Group_47;
+        }
+
+        private void btnFundo5_Click(object sender, EventArgs e)
+        {
+            SelecionarCorFundo("Group_46");
+            pictureBoxFotodeFundoAtual.Image = Properties.Resources.Group_46;
+        }
+
+        private void btnFundo11_Click(object sender, EventArgs e)
+        {
+            SelecionarCorFundo("Group_43");
+            pictureBoxFotodeFundoAtual.Image = Properties.Resources.Group_43;
+        }
+
+        private void btnFundo6_Click(object sender, EventArgs e)
+        {
+            SelecionarCorFundo("Group_41");
+            pictureBoxFotodeFundoAtual.Image = Properties.Resources.Group_41;
+        }
+
+        private void btnFundo12_Click(object sender, EventArgs e)
+        {
+            SelecionarCorFundo("Group_40");
+            pictureBoxFotodeFundoAtual.Image = Properties.Resources.Group_40;
         }
     }
 }

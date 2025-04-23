@@ -60,6 +60,44 @@ public class ConfiguracoesService
             
         }
     }
+    public Image CarregarCorFundo(int idUsuario)
+    {
+        try
+        {
+            var perfilDAO = new PerfilUsuarioDAO(new DatabaseService());
+            var perfil = perfilDAO.ObterPerfilPorUsuario(idUsuario);
+
+            var configDAO = new ConfiguracoesDAO(new DatabaseService());
+            var config = configDAO.ObterPorIdPerfilUsuario(perfil.IdPerfilUsuario);
+
+            if (!string.IsNullOrEmpty(config.cor_fundo))
+            {
+                return (Image)Login_Register.Properties.Resources.ResourceManager.GetObject(config.cor_fundo);
+            }
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Erro ao carregar imagem de fundo: " + ex.Message);
+        }
+
+        return null;
+    }
+    public void SalvarCorFundo(int idUsuario, string nomeImagemFundo)
+    {
+        try
+        {
+            var perfilDAO = new PerfilUsuarioDAO(new DatabaseService());
+            var perfil = perfilDAO.ObterPerfilPorUsuario(idUsuario);
+
+            var configDAO = new ConfiguracoesDAO(new DatabaseService());
+            configDAO.AtualizarCorFundo(perfil.IdPerfilUsuario, nomeImagemFundo);
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Erro ao salvar imagem de fundo: " + ex.Message);
+        }
+    }
+
 
 }
 

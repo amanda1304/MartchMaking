@@ -132,7 +132,7 @@ namespace Login_Register
         {
             ConfiguracoesService configService = new ConfiguracoesService();
             pictureAvatar.Image = configService.CarregarAvatar(UserSession.userLogado.id);
-
+            panel1.BackgroundImage = configService.CarregarCorFundo(UserSession.userLogado.id);
             label2.Text = UserSession.userLogado.nome;
             timer2.Start();
             
