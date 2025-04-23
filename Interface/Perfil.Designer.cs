@@ -133,7 +133,7 @@
             // 
             // btnPerfil
             // 
-            this.btnPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPerfil.BackgroundImage")));
+            this.btnPerfil.BackgroundImage = global::Login_Register.Properties.Resources.Capa_caderneta_de_saúde_infantil_leãozinho_aquarela_fofa_amarelo_2;
             this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPerfil.FlatAppearance.BorderSize = 0;
@@ -164,7 +164,7 @@
             // 
             // btnSimbolos
             // 
-            this.btnSimbolos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSimbolos.BackgroundImage")));
+            this.btnSimbolos.BackgroundImage = global::Login_Register.Properties.Resources.Capa_caderneta_de_saúde_infantil_leãozinho_aquarela_fofa_amarelo_3;
             this.btnSimbolos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSimbolos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSimbolos.FlatAppearance.BorderSize = 0;
@@ -180,7 +180,7 @@
             // 
             // btnAmigos
             // 
-            this.btnAmigos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigos.BackgroundImage")));
+            this.btnAmigos.BackgroundImage = global::Login_Register.Properties.Resources.Amigos;
             this.btnAmigos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAmigos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAmigos.FlatAppearance.BorderSize = 0;

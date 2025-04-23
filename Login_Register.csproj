@@ -193,11 +193,6 @@
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\ValidarLogin.cs" />
-    <Compile Include="Properties\Resources1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -230,7 +225,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
@@ -271,6 +265,10 @@
     <Content Include="Menu\Roxo.png" />
     <Content Include="Menu\Verde.png" />
     <Content Include="Menu\Vermelho.png" />
+    <None Include="Resources\MatchMaking.png" />
+    <None Include="Resources\Amigos.png" />
+    <None Include="Resources\Capa caderneta de saúde infantil leãozinho aquarela fofa amarelo 3.png" />
+    <None Include="Resources\Capa caderneta de saúde infantil leãozinho aquarela fofa amarelo 2.png" />
     <None Include="Resources\Full Stop.png" />
     <None Include="Resources\Group 9.png" />
     <None Include="Resources\Group 8.png" />
