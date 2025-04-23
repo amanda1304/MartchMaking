@@ -21,6 +21,11 @@ namespace Login_Register
         string imagemSelecionada = "";
         string imagemCorFundoSelecionada;
         int idUsuario = 1; // aqui você coloca o ID real do usuário logado
+
+        string nomeBandeiraSelecionada;
+        string nomeBordaSelecionada;
+        string nomeMenuSelecionado;
+
         public Configurações()
         {
             InitializeComponent();
@@ -528,6 +533,47 @@ namespace Login_Register
         {
             SelecionarCorFundo("Group_40");
             pictureBoxFotodeFundoAtual.Image = Properties.Resources.Group_40;
+        }
+
+        private void AplicarTema(string bandeira, string borda, string menu)
+        {
+            nomeBandeiraSelecionada = bandeira;
+            nomeBordaSelecionada = borda;
+            nomeMenuSelecionado = menu;
+
+           
+            
+        }
+
+        private void btnTemaAmarelo_Click(object sender, EventArgs e)
+        {
+            AplicarTema("Amanrelo", "Amanrelo1", "Amarelo2");
+            pnlMenuTelaInicial.BackgroundImage = Properties.Resources.Amarelo2;
+        }
+
+        private void btnTemaVermelho_Click(object sender, EventArgs e)
+        {
+
+            AplicarTema("Vermelho", "Vermelho1", "Vermelho2");
+            pnlMenuTelaInicial.BackgroundImage = Properties.Resources.Vermelho2;
+        }
+
+        private void btnTemaRoxo_Click(object sender, EventArgs e)
+        {
+            AplicarTema("Roxo", "Roxo1", "Roxo2");
+            pnlMenuTelaInicial.BackgroundImage = Properties.Resources.Roxo2;
+        }
+
+        private void btnTemaAzul_Click(object sender, EventArgs e)
+        {
+            AplicarTema("Azul", "Azul1", "Azul2");
+            pnlMenuTelaInicial.BackgroundImage = Properties.Resources.Azul2;
+        }
+
+        private void btnTemaVerde_Click(object sender, EventArgs e)
+        {
+            AplicarTema("Verde", "Verde1", "Verde2");
+            pnlMenuTelaInicial.BackgroundImage = Properties.Resources.Verde2;
         }
     }
 }

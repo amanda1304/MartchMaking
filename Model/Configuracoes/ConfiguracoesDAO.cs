@@ -105,6 +105,27 @@ public class ConfiguracoesDAO
         }
     }
 
+    public void AtualizarTema(int idPerfilUsuario, string bandeira, string borda, string menu)
+    {
+        using (var conexao = new MySqlConnection(connectionString))
+        {
+            conexao.Open();
+
+            string query = @"UPDATE configuracoes 
+                         SET bandeiras = @bandeira, bordas = @borda, menu = @menu 
+                         WHERE id_perfil_usuario = @idPerfil";
+
+            using (var cmd = new MySqlCommand(query, conexao))
+            {
+                cmd.Parameters.AddWithValue("@bandeira", bandeira);
+                cmd.Parameters.AddWithValue("@borda", borda);
+                cmd.Parameters.AddWithValue("@menu", menu);
+                cmd.Parameters.AddWithValue("@idPerfil", idPerfilUsuario);
+
+                cmd.ExecuteNonQuery();
+            }
+        }
+    }
 
 
 

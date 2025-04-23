@@ -135,7 +135,7 @@
             // pnlMenuTelaInicial
             // 
             this.pnlMenuTelaInicial.BackColor = System.Drawing.Color.Transparent;
-            this.pnlMenuTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMenuTelaInicial.BackgroundImage")));
+            this.pnlMenuTelaInicial.BackgroundImage = global::Login_Register.Properties.Resources.Azul2;
             this.pnlMenuTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlMenuTelaInicial.Controls.Add(this.btnLogOut);
             this.pnlMenuTelaInicial.Controls.Add(this.btnMatchMakingLogo);
@@ -725,6 +725,7 @@
             this.btnTemaVerde.Size = new System.Drawing.Size(53, 47);
             this.btnTemaVerde.TabIndex = 75;
             this.btnTemaVerde.UseVisualStyleBackColor = false;
+            this.btnTemaVerde.Click += new System.EventHandler(this.btnTemaVerde_Click);
             // 
             // btnTemaAzul
             // 
@@ -740,6 +741,7 @@
             this.btnTemaAzul.Size = new System.Drawing.Size(53, 47);
             this.btnTemaAzul.TabIndex = 74;
             this.btnTemaAzul.UseVisualStyleBackColor = false;
+            this.btnTemaAzul.Click += new System.EventHandler(this.btnTemaAzul_Click);
             // 
             // btnTemaRoxo
             // 
@@ -755,6 +757,7 @@
             this.btnTemaRoxo.Size = new System.Drawing.Size(53, 47);
             this.btnTemaRoxo.TabIndex = 73;
             this.btnTemaRoxo.UseVisualStyleBackColor = false;
+            this.btnTemaRoxo.Click += new System.EventHandler(this.btnTemaRoxo_Click);
             // 
             // btnTemaVermelho
             // 
@@ -770,6 +773,7 @@
             this.btnTemaVermelho.Size = new System.Drawing.Size(53, 47);
             this.btnTemaVermelho.TabIndex = 72;
             this.btnTemaVermelho.UseVisualStyleBackColor = false;
+            this.btnTemaVermelho.Click += new System.EventHandler(this.btnTemaVermelho_Click);
             // 
             // btnTemaAmarelo
             // 
@@ -785,6 +789,7 @@
             this.btnTemaAmarelo.Size = new System.Drawing.Size(53, 47);
             this.btnTemaAmarelo.TabIndex = 71;
             this.btnTemaAmarelo.UseVisualStyleBackColor = false;
+            this.btnTemaAmarelo.Click += new System.EventHandler(this.btnTemaAmarelo_Click);
             // 
             // btnFotodePerfil28
             // 

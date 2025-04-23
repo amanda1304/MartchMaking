@@ -193,6 +193,11 @@
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\ValidarLogin.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -225,6 +230,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\TelaInicial.resx">
       <DependentUpon>TelaInicial.cs</DependentUpon>
@@ -237,6 +243,7 @@
     <Folder Include="Model\HistoricoPartidas\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="audio\Matchmaking_audio.wav" />
     <Content Include="Menu\Amarelo.png" />
     <Content Include="Menu\Azul.png" />
     <Content Include="Bordas\Amarelo.png" />

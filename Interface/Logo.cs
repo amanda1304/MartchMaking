@@ -22,7 +22,7 @@ namespace Login_Register
         private void PlaySound()
         {
             // Reproduz o áudio embutido
-            SoundPlayer player = new SoundPlayer(Properties.Resources.Matchmaking);
+            SoundPlayer player = new SoundPlayer(Properties.Resources.Matchmaking_audio);
             player.Play(); // ou .PlayLooping() ou .PlaySync()
         }
         private async void FecharJanela()

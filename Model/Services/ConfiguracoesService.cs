@@ -97,8 +97,21 @@ public class ConfiguracoesService
             MessageBox.Show("Erro ao salvar imagem de fundo: " + ex.Message);
         }
     }
+    public void SalvarTema(int idUsuario, string bandeira, string borda, string menu)
+    {
+        try
+        {
+            var perfilDAO = new PerfilUsuarioDAO(new DatabaseService());
+            var perfil = perfilDAO.ObterPerfilPorUsuario(idUsuario);
 
-
+            var configDAO = new ConfiguracoesDAO(new DatabaseService());
+            configDAO.AtualizarTema(perfil.IdPerfilUsuario, bandeira, borda, menu);
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Erro ao salvar o tema: " + ex.Message);
+        }
+    }
 }
 
 

@@ -620,7 +620,7 @@
             // 
             this.pnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl.BackgroundImage")));
             this.pnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnl.Location = new System.Drawing.Point(454, 0);
+            this.pnl.Location = new System.Drawing.Point(1, -1);
             this.pnl.Name = "pnl";
             this.pnl.Size = new System.Drawing.Size(459, 600);
             this.pnl.TabIndex = 51;
