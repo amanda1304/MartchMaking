@@ -8,7 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login_Register.Model.PerfilUsuario;
 using Login_Register.Model.Services;
+using Login_Register.Model.Usuario;
 using MySql.Data.MySqlClient;
 
 namespace Login_Register
@@ -135,7 +137,8 @@ namespace Login_Register
             panel1.BackgroundImage = configService.CarregarCorFundo(UserSession.userLogado.id);
             label2.Text = UserSession.userLogado.nome;
             timer2.Start();
-            
+
+         
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -146,6 +149,12 @@ namespace Login_Register
         private void label2_Click(object sender, EventArgs e)
         {
             label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+        }
+        public void AplicarTema(string nomeBorda, string nomeBandeira, string nomeMenu)
+        {
+            panel4.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nomeBorda);
+            panel3.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nomeBandeira);
+            pnlMenuTelaInicial.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nomeMenu);
         }
     }
 }

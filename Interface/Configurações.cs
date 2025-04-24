@@ -164,6 +164,8 @@ namespace Login_Register
                 pictureBoxFotodeFundoAtual.Image = fundo; // ou: panel1.BackgroundImage = fundo;
                // this.BackgroundImageLayout = ImageLayout.Stretch; // ou outra opção: Tile, Center, Zoom
             }
+
+          
         }
         private void SelecionarAvatar(string nomeAvatar)
         {
@@ -244,9 +246,6 @@ namespace Login_Register
                 MessageBox.Show("Selecione uma cor de fundo primeiro.");
                 return;
             }
-            //bool sucesso = configService.SalvarAvatar(UserSession.IdUsuario, imagemSelecionada);
-
-            //bool sucesso = configService.SalvarAvatar(UserSession.IdPerfilUsuario, imagemSelecionada);
             bool sucesso = configService.SalvarAvatar(UserSession.userLogado.id, imagemSelecionada);
             configService.SalvarCorFundo(UserSession.userLogado.id, imagemCorFundoSelecionada);
             if (sucesso)
@@ -535,15 +534,12 @@ namespace Login_Register
             pictureBoxFotodeFundoAtual.Image = Properties.Resources.Group_40;
         }
 
-        private void AplicarTema(string bandeira, string borda, string menu)
+       
+        public void AplicarTema(string nomeBorda, string nomeBandeira, string nomeMenu)
         {
-            nomeBandeiraSelecionada = bandeira;
-            nomeBordaSelecionada = borda;
-            nomeMenuSelecionado = menu;
-
-           
-            
+            pnlMenuTelaInicial.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nomeMenu);
         }
+
 
         private void btnTemaAmarelo_Click(object sender, EventArgs e)
         {
