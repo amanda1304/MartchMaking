@@ -243,7 +243,34 @@
     <Folder Include="Model\HistoricoPartidas\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="banco de imagens\ai-generated-futuristic-esport-background-for-gaming-live-streaming-esport-game-tournament-competition-neon-banner-photo.jpg" />
+    <Content Include="banco de imagens\arrow-down-sign-to-navigate.png" />
+    <Content Include="banco de imagens\Design sem nome %282%29 %281%29.png" />
+    <Content Include="banco de imagens\eye.png" />
+    <Content Include="banco de imagens\Group 19.png" />
+    <Content Include="banco de imagens\Group 21.png" />
+    <Content Include="banco de imagens\Group 22.png" />
+    <Content Include="banco de imagens\Group 34.png" />
+    <Content Include="banco de imagens\Group 6.png" />
+    <Content Include="banco de imagens\Group 7.png" />
+    <Content Include="banco de imagens\hide.png" />
+    <Content Include="banco de imagens\image.png" />
+    <Content Include="banco de imagens\Line 1.png" />
+    <Content Include="banco de imagens\logo branco.png" />
+    <Content Include="banco de imagens\logo preto.png" />
+    <Content Include="banco de imagens\Rectangle 31.png" />
+    <Content Include="banco de imagens\Rectangle 32.png" />
+    <Content Include="banco de imagens\view.png" />
+    <Content Include="banco de imagens\visible.png" />
+    <Content Include="banco de imagens\Wireframe - 2.png" />
+    <Content Include="banco de imagens\Wireframe - 3 %283%29.png" />
+    <Content Include="banco de imagens\Wireframe - 3 %284%29.png" />
+    <Content Include="banco de imagens\Wireframe - 3.png" />
+    <Content Include="banco de imagens\Wireframe - 9 1.png" />
     <None Include="audio\Matchmaking_audio.wav" />
+    <Content Include="banco de imagens\Full Stop.png" />
+    <Content Include="banco de imagens\Group 8.png" />
+    <Content Include="banco de imagens\Group 9.png" />
     <Content Include="Menu\Amarelo.png" />
     <Content Include="Menu\Azul.png" />
     <Content Include="Bordas\Amarelo.png" />
