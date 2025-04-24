@@ -20,7 +20,7 @@ namespace Login_Register
         ConfiguracoesService configService = new ConfiguracoesService();
         string imagemSelecionada = "";
         string imagemCorFundoSelecionada;
-        int idUsuario = 1; // aqui você coloca o ID real do usuário logado
+       // int idUsuario = 1; // aqui você coloca o ID real do usuário logado
 
         string nomeBandeiraSelecionada;
         string nomeBordaSelecionada;
