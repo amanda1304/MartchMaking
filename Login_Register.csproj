@@ -244,7 +244,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="banco de imagens\ai-generated-futuristic-esport-background-for-gaming-live-streaming-esport-game-tournament-competition-neon-banner-photo.jpg" />
+    <Content Include="banco de imagens\Amigos.png" />
     <Content Include="banco de imagens\arrow-down-sign-to-navigate.png" />
+    <Content Include="banco de imagens\Configurações.png" />
     <Content Include="banco de imagens\Design sem nome %282%29 %281%29.png" />
     <Content Include="banco de imagens\eye.png" />
     <Content Include="banco de imagens\Group 19.png" />
@@ -255,9 +257,12 @@
     <Content Include="banco de imagens\Group 7.png" />
     <Content Include="banco de imagens\hide.png" />
     <Content Include="banco de imagens\image.png" />
+    <Content Include="banco de imagens\Jogos.png" />
     <Content Include="banco de imagens\Line 1.png" />
     <Content Include="banco de imagens\logo branco.png" />
     <Content Include="banco de imagens\logo preto.png" />
+    <Content Include="banco de imagens\MatchMaking.png" />
+    <Content Include="banco de imagens\Perfil.png" />
     <Content Include="banco de imagens\Rectangle 31.png" />
     <Content Include="banco de imagens\Rectangle 32.png" />
     <Content Include="banco de imagens\view.png" />
@@ -267,6 +272,9 @@
     <Content Include="banco de imagens\Wireframe - 3 %284%29.png" />
     <Content Include="banco de imagens\Wireframe - 3.png" />
     <Content Include="banco de imagens\Wireframe - 9 1.png" />
+    <None Include="Resources\Perfil.png" />
+    <None Include="Resources\Jogos.png" />
+    <None Include="Resources\Configurações.png" />
     <None Include="audio\Matchmaking_audio.wav" />
     <Content Include="banco de imagens\Full Stop.png" />
     <Content Include="banco de imagens\Group 8.png" />

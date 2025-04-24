@@ -263,6 +263,17 @@ namespace Login_Register.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ai_generated_futuristic_esport_background_for_gaming_live_streaming_esport_game_tournament_competition_neon_banner_photo {
+            get {
+                object obj = ResourceManager.GetObject("ai_generated_futuristic_esport_background_for_gaming_live_streaming_esport_game_t" +
+                        "ournament_competition_neon_banner_photo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Amarelo {
             get {
                 object obj = ResourceManager.GetObject("Amarelo", resourceCulture);
@@ -296,6 +307,26 @@ namespace Login_Register.Properties {
         internal static System.Drawing.Bitmap Amigos {
             get {
                 object obj = ResourceManager.GetObject("Amigos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Amigos1 {
+            get {
+                object obj = ResourceManager.GetObject("Amigos1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap arrow_down_sign_to_navigate {
+            get {
+                object obj = ResourceManager.GetObject("arrow_down_sign_to_navigate", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -346,6 +377,26 @@ namespace Login_Register.Properties {
         internal static System.Drawing.Bitmap Capa_caderneta_de_saúde_infantil_leãozinho_aquarela_fofa_amarelo_3 {
             get {
                 object obj = ResourceManager.GetObject("Capa caderneta de saúde infantil leãozinho aquarela fofa amarelo 3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Configurações {
+            get {
+                object obj = ResourceManager.GetObject("Configurações", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Design_sem_nome__2___1_ {
+            get {
+                object obj = ResourceManager.GetObject("Design_sem_nome__2___1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -553,9 +604,9 @@ namespace Login_Register.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Full_Stop {
+        internal static System.Drawing.Bitmap eye {
             get {
-                object obj = ResourceManager.GetObject("Full Stop", resourceCulture);
+                object obj = ResourceManager.GetObject("eye", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -566,6 +617,46 @@ namespace Login_Register.Properties {
         internal static System.Drawing.Bitmap Group_15 {
             get {
                 object obj = ResourceManager.GetObject("Group_15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_19 {
+            get {
+                object obj = ResourceManager.GetObject("Group_19", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_21 {
+            get {
+                object obj = ResourceManager.GetObject("Group_21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_22 {
+            get {
+                object obj = ResourceManager.GetObject("Group_22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_34 {
+            get {
+                object obj = ResourceManager.GetObject("Group_34", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -683,9 +774,9 @@ namespace Login_Register.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Group_7 {
+        internal static System.Drawing.Bitmap Group_6 {
             get {
-                object obj = ResourceManager.GetObject("Group 7", resourceCulture);
+                object obj = ResourceManager.GetObject("Group_6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -693,9 +784,9 @@ namespace Login_Register.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Group_8 {
+        internal static System.Drawing.Bitmap hide {
             get {
-                object obj = ResourceManager.GetObject("Group 8", resourceCulture);
+                object obj = ResourceManager.GetObject("hide", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -703,9 +794,59 @@ namespace Login_Register.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Group_9 {
+        internal static System.Drawing.Bitmap image {
             get {
-                object obj = ResourceManager.GetObject("Group 9", resourceCulture);
+                object obj = ResourceManager.GetObject("image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Jogos {
+            get {
+                object obj = ResourceManager.GetObject("Jogos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Line_1 {
+            get {
+                object obj = ResourceManager.GetObject("Line_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_branco {
+            get {
+                object obj = ResourceManager.GetObject("logo_branco", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_preto {
+            get {
+                object obj = ResourceManager.GetObject("logo_preto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MatchMaking {
+            get {
+                object obj = ResourceManager.GetObject("MatchMaking", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -722,9 +863,19 @@ namespace Login_Register.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rectangle_31 {
+        internal static System.Drawing.Bitmap Perfil {
             get {
-                object obj = ResourceManager.GetObject("Rectangle 31", resourceCulture);
+                object obj = ResourceManager.GetObject("Perfil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rectangle_32 {
+            get {
+                object obj = ResourceManager.GetObject("Rectangle_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -815,6 +966,76 @@ namespace Login_Register.Properties {
         internal static System.Drawing.Bitmap Vermelho2 {
             get {
                 object obj = ResourceManager.GetObject("Vermelho2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view {
+            get {
+                object obj = ResourceManager.GetObject("view", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visible {
+            get {
+                object obj = ResourceManager.GetObject("visible", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wireframe___2 {
+            get {
+                object obj = ResourceManager.GetObject("Wireframe___2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wireframe___3 {
+            get {
+                object obj = ResourceManager.GetObject("Wireframe___3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wireframe___3__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Wireframe___3__3_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wireframe___3__4_ {
+            get {
+                object obj = ResourceManager.GetObject("Wireframe___3__4_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wireframe___9_1 {
+            get {
+                object obj = ResourceManager.GetObject("Wireframe___9_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
