@@ -98,7 +98,7 @@ namespace Login_Register.Model.Usuario
 
                     using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
-                        if (reader.Read())
+                       if (reader.Read())
                         {
                             try
                             {

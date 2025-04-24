@@ -46,7 +46,7 @@ public class PerfilUsuarioDAO
                     };
 
                     // AQUI SIM o objeto já foi criado e podemos acessar a propriedade
-                    MessageBox.Show("ID do perfil do usuário: " + perfil.IdPerfilUsuario);
+                    //MessageBox.Show("ID do perfil do usuário: " + perfil.IdPerfilUsuario);
                 }
             }
         }

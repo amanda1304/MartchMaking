@@ -56,18 +56,17 @@ public class ConfiguracoesDAO
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 conn.Open();
-                MessageBox.Show("Conexão com o banco aberta com sucesso.");
+
 
                 string query = "UPDATE configuracoes SET avatar_perfil = @avatar WHERE id_perfil_usuario = @id_perfil_usuario";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@avatar", avatar);
                 cmd.Parameters.AddWithValue("@id_perfil_usuario", idPerfilUsuario);
 
-                MessageBox.Show($"Executando query para id_perfil_usuario = {idPerfilUsuario} com avatar = {avatar}");
 
                 int rows = cmd.ExecuteNonQuery();
 
-                MessageBox.Show($"Linhas afetadas: {rows}");
+
 
                 return rows > 0;
             }

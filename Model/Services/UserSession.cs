@@ -10,7 +10,7 @@ public static class UserSession
     public static void RegisterLoginUser(Usuario usuario)
     {
         userLogado = usuario;
-        MessageBox.Show("ID do usuário: " + UserSession.userLogado.id);
+     
 
         // Após logar, buscamos o ID do perfil do usuário
         try

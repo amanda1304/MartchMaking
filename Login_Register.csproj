@@ -175,7 +175,6 @@
     <Compile Include="Model\Jogos\Jogos.cs" />
     <Compile Include="Model\MatchMaking\MatchMaking.cs" />
     <Compile Include="Model\MensagensChat\MensagensChat.cs" />
-    <Compile Include="Model\PerfilUsuario\AvatarManager.cs" />
     <Compile Include="Model\PerfilUsuario\PerfilUsuario.cs" />
     <Compile Include="Model\Configuracoes\ConfiguracoesDAO.cs" />
     <Compile Include="Model\PerfilUsuario\PerfilUsuarioDAO.cs" />
