@@ -284,7 +284,8 @@ namespace Login_Register
 
             try
             {
-                UsuarioReferencia usuarioRef = new UsuarioReferencia();
+                
+                UsuarioReferencia usuarioRef = new UsuarioReferencia(new DatabaseService());
                 bool loginValido = usuarioRef.FazerLogin(email, senha);
                // MessageBox.Show(loginValido.ToString());
 
@@ -345,7 +346,7 @@ namespace Login_Register
 
             try
             {
-                UsuarioReferencia usuarioRef = new UsuarioReferencia();
+                UsuarioReferencia usuarioRef = new UsuarioReferencia(new DatabaseService());
                 usuarioRef.RegistrarUsuario(nome, email, senha);
             }
             catch (Exception ex)

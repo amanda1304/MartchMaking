@@ -82,19 +82,48 @@ public class ConfiguracoesService
 
         return null;
     }
-    public void SalvarCorFundo(int idUsuario, string nomeImagemFundo)
+    public bool SalvarCorFundo(int idUsuario, string nomeImagemFundo)
     {
+        // Validação dos parâmetros de entrada
+        if (idUsuario <= 0)
+        {
+            MessageBox.Show("ID do usuário inválido");
+            return false;
+        }
+
+        if (string.IsNullOrWhiteSpace(nomeImagemFundo))
+        {
+            MessageBox.Show("Nome da imagem de fundo não pode ser vazio");
+            return false;
+        }
+
         try
         {
             var perfilDAO = new PerfilUsuarioDAO(new DatabaseService());
             var perfil = perfilDAO.ObterPerfilPorUsuario(idUsuario);
 
+            // Verifica se o perfil foi encontrado
+            if (perfil == null)
+            {
+                MessageBox.Show("Perfil do usuário não encontrado");
+                return false;
+            }
+
             var configDAO = new ConfiguracoesDAO(new DatabaseService());
-            configDAO.AtualizarCorFundo(perfil.IdPerfilUsuario, nomeImagemFundo);
+            bool atualizado = configDAO.AtualizarCorFundo(perfil.IdPerfilUsuario, nomeImagemFundo);
+
+            if (!atualizado)
+            {
+                MessageBox.Show("Não foi possível atualizar a cor de fundo");
+                return false;
+            }
+
+            return true;
         }
         catch (Exception ex)
         {
-            MessageBox.Show("Erro ao salvar imagem de fundo: " + ex.Message);
+            MessageBox.Show($"Erro ao salvar imagem de fundo: {ex.Message}");
+            return false;
         }
     }
     public void SalvarTema(int idUsuario, string bandeira, string borda, string menu)

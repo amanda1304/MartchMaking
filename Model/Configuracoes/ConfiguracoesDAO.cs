@@ -89,18 +89,30 @@ public class ConfiguracoesDAO
             cmd.ExecuteNonQuery();
         }
     }
-    public void AtualizarCorFundo(int idPerfilUsuario, string nomeImagemFundo)
+    public bool AtualizarCorFundo(int idPerfilUsuario, string nomeImagemFundo)
     {
-        using (var connection = new MySqlConnection(connectionString))
+        try
         {
-            connection.Open();
-            string query = "UPDATE configuracoes SET cor_fundo = @nome WHERE id_perfil_usuario = @idPerfil";
-            using (var cmd = new MySqlCommand(query, connection))
+            using (var connection = new MySqlConnection(connectionString))
             {
-                cmd.Parameters.AddWithValue("@nome", nomeImagemFundo);
-                cmd.Parameters.AddWithValue("@idPerfil", idPerfilUsuario);
-                cmd.ExecuteNonQuery();
+                connection.Open();
+                string query = "UPDATE configuracoes SET cor_fundo = @nome WHERE id_perfil_usuario = @idPerfil";
+
+                using (var cmd = new MySqlCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@nome", nomeImagemFundo);
+                    cmd.Parameters.AddWithValue("@idPerfil", idPerfilUsuario);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    return rowsAffected > 0; // Retorna true se pelo menos uma linha foi afetada
+                }
             }
+        }
+        catch (Exception ex)
+        {
+            // Log do erro (opcional)
+            Console.WriteLine($"Erro ao atualizar cor de fundo: {ex.Message}");
+            return false;
         }
     }
 

@@ -18,9 +18,10 @@ namespace Login_Register
     public partial class Configurações : Form
     {
         ConfiguracoesService configService = new ConfiguracoesService();
+        
         string imagemSelecionada = "";
         string imagemCorFundoSelecionada;
-       // int idUsuario = 1; // aqui você coloca o ID real do usuário logado
+        int idUsuario = 1; // aqui você coloca o ID real do usuário logado
 
         string nomeBandeiraSelecionada;
         string nomeBordaSelecionada;
@@ -152,7 +153,7 @@ namespace Login_Register
         {
             timer5.Start();
 
-             Image avatar = configService.CarregarAvatar(UserSession.userLogado.id);
+            Image avatar = configService.CarregarAvatar(UserSession.userLogado.id);
             if (avatar != null)
             {
                 pictureBoxPerfil.Image = avatar;
@@ -161,12 +162,23 @@ namespace Login_Register
             Image fundo = configService.CarregarCorFundo(UserSession.userLogado.id);
             if (fundo != null)
             {
-                pictureBoxFotodeFundoAtual.Image = fundo; // ou: panel1.BackgroundImage = fundo;
-               // this.BackgroundImageLayout = ImageLayout.Stretch; // ou outra opção: Tile, Center, Zoom
+                pictureBoxFotodeFundoAtual.Image = fundo;
             }
 
-          
+            // Aqui: carregando nome do usuário no TextBox
+            textBox1.Text = UserSession.userLogado.nome;
+
+            // Opcional: se quiser também puxar dados do perfil
+            PerfilUsuarioDAO perfilDAO = new PerfilUsuarioDAO(new DatabaseService());
+            PerfilUsuario perfil = perfilDAO.ObterPerfilPorUsuario(this.idUsuario);
+
+            if (perfil != null)
+            {
+                textBox1.Text = perfil.Nickname;
+                // ou outros campos, como descricao etc
+            }
         }
+
         private void SelecionarAvatar(string nomeAvatar)
         {
             imagemSelecionada = nomeAvatar;
@@ -210,7 +222,9 @@ namespace Login_Register
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            string novoNome = textBox1.Text.Trim();
+            btnSalvarAlterações1.Enabled = !string.IsNullOrEmpty(novoNome);
+        
         }
 
         private void btnFotodePerfil1_Click(object sender, EventArgs e)
@@ -232,31 +246,92 @@ namespace Login_Register
 
         private void btnSalvarAlterações1_Click(object sender, EventArgs e)
         {
-            
+            bool algoFoiAlterado = false;
+            bool sucessoGeral = true;
+            string mensagem = "";
 
-            if (string.IsNullOrEmpty(imagemSelecionada))
+            // 1. Atualizar nome se foi modificado
+            string novoNome = textBox1.Text.Trim();
+            if (novoNome != UserSession.userLogado.nome)
             {
-                
-                MessageBox.Show("Selecione uma imagem primeiro.");
-                return;
+                if (!string.IsNullOrEmpty(novoNome))
+                {
+                    var usuarioDAO = new UsuarioReferencia(new DatabaseService());
+                    bool nomeAtualizado = usuarioDAO.AtualizarNome(UserSession.userLogado.id, novoNome);
+
+                    if (nomeAtualizado)
+                    {
+                        UserSession.userLogado.nome = novoNome;
+                        algoFoiAlterado = true;
+                    }
+                    else
+                    {
+                        sucessoGeral = false;
+                        mensagem += "Erro ao atualizar o nome.\n";
+                    }
+                }
+                else
+                {
+                    sucessoGeral = false;
+                    mensagem += "O nome não pode estar vazio.\n";
+                    textBox1.Text = UserSession.userLogado.nome; // Restaura o nome original
+                }
             }
 
-            if (string.IsNullOrEmpty(imagemCorFundoSelecionada))
+            // 2. Atualizar avatar se foi selecionado
+            if (!string.IsNullOrEmpty(imagemSelecionada))
             {
-                MessageBox.Show("Selecione uma cor de fundo primeiro.");
-                return;
+                bool avatarAtualizado = configService.SalvarAvatar(UserSession.userLogado.id, imagemSelecionada);
+
+                if (avatarAtualizado)
+                {
+                    algoFoiAlterado = true;
+                }
+                else
+                {
+                    sucessoGeral = false;
+                    mensagem += "Erro ao atualizar avatar.\n";
+                }
             }
-            bool sucesso = configService.SalvarAvatar(UserSession.userLogado.id, imagemSelecionada);
-            configService.SalvarCorFundo(UserSession.userLogado.id, imagemCorFundoSelecionada);
-            if (sucesso)
-                MessageBox.Show("Imagem de perfil atualizada com sucesso!");
+
+            // 3. Atualizar fundo se foi selecionado
+            if (!string.IsNullOrEmpty(imagemCorFundoSelecionada))
+            {
+                bool fundoAtualizado = configService.SalvarCorFundo(UserSession.userLogado.id, imagemCorFundoSelecionada);
+
+                if (fundoAtualizado)
+                {
+                    algoFoiAlterado = true;
+                }
+                else
+                {
+                    sucessoGeral = false;
+                    mensagem += "Erro ao atualizar fundo.\n";
+                }
+            }
+
+            // Feedback para o usuário
+            if (algoFoiAlterado)
+            {
+                if (sucessoGeral)
+                {
+                    MessageBox.Show("Alterações salvas com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Algumas alterações não puderam ser salvas:\n" + mensagem, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
             else
-                MessageBox.Show("Erro ao salvar imagem.");
-          }
- 
+            {
+                MessageBox.Show("Nenhuma alteração foi feita.", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
         private void btnFotodePerfil6_Click(object sender, EventArgs e)
         {
-           SelecionarAvatar("Ellipse_40");
+            
+            SelecionarAvatar("Ellipse_40");
             pictureBoxPerfil.Image = Properties.Resources.Ellipse_40;
         }
 
