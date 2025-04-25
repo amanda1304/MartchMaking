@@ -271,6 +271,7 @@
     <Content Include="banco de imagens\Wireframe - 3 %284%29.png" />
     <Content Include="banco de imagens\Wireframe - 3.png" />
     <Content Include="banco de imagens\Wireframe - 9 1.png" />
+    <None Include="Resources\Group 31 %281%29.png" />
     <None Include="Resources\Perfil.png" />
     <None Include="Resources\Jogos.png" />
     <None Include="Resources\Configurações.png" />
