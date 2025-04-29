@@ -136,5 +136,20 @@ namespace Login_Register
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void panelFigurinhasChat_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void btnFigurinhas_Click(object sender, EventArgs e)
+        {
+            panelFigurinhasChat.Visible = !panelFigurinhasChat.Visible;
+        }
+
+        private void Fig4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
