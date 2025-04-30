@@ -131,6 +131,7 @@
             this.btnAdicionarAmigo4 = new System.Windows.Forms.Button();
             this.btnAmigoAdicionado4 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panelNotificacoes = new System.Windows.Forms.Panel();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.pnlBanerSoldado.SuspendLayout();
             this.pnlFavdaSemana1.SuspendLayout();
@@ -566,6 +567,7 @@
             this.btnNotificacoes.Size = new System.Drawing.Size(16, 20);
             this.btnNotificacoes.TabIndex = 39;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
+            this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
             // 
             // labelHistoricoNomeDeUsuario1
             // 
@@ -1476,6 +1478,19 @@
             this.timer1.Interval = 3;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panelNotificacoes
+            // 
+            this.panelNotificacoes.BackColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.BackgroundImage = global::Login_Register.Properties.Resources.Notificações;
+            this.panelNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelNotificacoes.ForeColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.Location = new System.Drawing.Point(793, 43);
+            this.panelNotificacoes.Name = "panelNotificacoes";
+            this.panelNotificacoes.Size = new System.Drawing.Size(373, 717);
+            this.panelNotificacoes.TabIndex = 1;
+            this.panelNotificacoes.Visible = false;
+            this.panelNotificacoes.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNotificacoes_Paint);
+            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1483,6 +1498,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1386, 757);
+            this.Controls.Add(this.panelNotificacoes);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel11);
@@ -1711,5 +1727,6 @@
         private System.Windows.Forms.Button btnAdicionarAmigo4;
         private System.Windows.Forms.Button btnAdicionarAmigo5;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panelNotificacoes;
     }
 }

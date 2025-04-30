@@ -287,6 +287,7 @@
     <Content Include="banco de imagens\Group 22.png" />
     <Content Include="banco de imagens\Group 34.png" />
     <Content Include="banco de imagens\Group 6.png" />
+    <Content Include="banco de imagens\Group 7 %281%29.png" />
     <Content Include="banco de imagens\Group 7.png" />
     <Content Include="banco de imagens\hide.png" />
     <Content Include="banco de imagens\image.png" />
@@ -295,6 +296,8 @@
     <Content Include="banco de imagens\logo branco.png" />
     <Content Include="banco de imagens\logo preto.png" />
     <Content Include="banco de imagens\MatchMaking.png" />
+    <Content Include="banco de imagens\Notificações.png" />
+    <Content Include="banco de imagens\PaineldeFigurinhas.png" />
     <Content Include="banco de imagens\Perfil.png" />
     <Content Include="banco de imagens\Rectangle 31.png" />
     <Content Include="banco de imagens\Rectangle 32.png" />
@@ -305,6 +308,8 @@
     <Content Include="banco de imagens\Wireframe - 3 %284%29.png" />
     <Content Include="banco de imagens\Wireframe - 3.png" />
     <Content Include="banco de imagens\Wireframe - 9 1.png" />
+    <None Include="Resources\Notificações.png" />
+    <None Include="Resources\Group 7 %281%29.png" />
     <None Include="Resources\PaineldeFigurinhas.png" />
     <None Include="Resources\Group 31 %281%29.png" />
     <None Include="Resources\Perfil.png" />

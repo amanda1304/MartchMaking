@@ -44,48 +44,49 @@
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnFigurinhas = new System.Windows.Forms.Button();
             this.panelFigurinhasChat = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.labelChatTelaGrandeOnline = new System.Windows.Forms.Label();
-            this.labelChatTelaGrande = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Fig1 = new System.Windows.Forms.Button();
-            this.Fig2 = new System.Windows.Forms.Button();
-            this.Fig4 = new System.Windows.Forms.Button();
-            this.Fig3 = new System.Windows.Forms.Button();
-            this.Fig8 = new System.Windows.Forms.Button();
-            this.Fig7 = new System.Windows.Forms.Button();
-            this.Fig6 = new System.Windows.Forms.Button();
-            this.Fig5 = new System.Windows.Forms.Button();
-            this.Fig12 = new System.Windows.Forms.Button();
-            this.Fig11 = new System.Windows.Forms.Button();
-            this.Fig10 = new System.Windows.Forms.Button();
-            this.Fig9 = new System.Windows.Forms.Button();
-            this.Fig16 = new System.Windows.Forms.Button();
-            this.Fig15 = new System.Windows.Forms.Button();
-            this.Fig14 = new System.Windows.Forms.Button();
-            this.Fig13 = new System.Windows.Forms.Button();
-            this.Fig20 = new System.Windows.Forms.Button();
-            this.Fig19 = new System.Windows.Forms.Button();
-            this.Fig18 = new System.Windows.Forms.Button();
-            this.Fig17 = new System.Windows.Forms.Button();
-            this.Fig24 = new System.Windows.Forms.Button();
-            this.Fig23 = new System.Windows.Forms.Button();
-            this.Fig22 = new System.Windows.Forms.Button();
-            this.Fig21 = new System.Windows.Forms.Button();
-            this.Fig28 = new System.Windows.Forms.Button();
-            this.Fig27 = new System.Windows.Forms.Button();
-            this.Fig26 = new System.Windows.Forms.Button();
-            this.Fig25 = new System.Windows.Forms.Button();
-            this.Fig32 = new System.Windows.Forms.Button();
-            this.Fig31 = new System.Windows.Forms.Button();
-            this.Fig30 = new System.Windows.Forms.Button();
-            this.Fig29 = new System.Windows.Forms.Button();
             this.Fig36 = new System.Windows.Forms.Button();
             this.Fig35 = new System.Windows.Forms.Button();
             this.Fig34 = new System.Windows.Forms.Button();
             this.Fig33 = new System.Windows.Forms.Button();
-            this.btnFigurinhas = new System.Windows.Forms.Button();
+            this.Fig32 = new System.Windows.Forms.Button();
+            this.Fig31 = new System.Windows.Forms.Button();
+            this.Fig30 = new System.Windows.Forms.Button();
+            this.Fig29 = new System.Windows.Forms.Button();
+            this.Fig28 = new System.Windows.Forms.Button();
+            this.Fig27 = new System.Windows.Forms.Button();
+            this.Fig26 = new System.Windows.Forms.Button();
+            this.Fig25 = new System.Windows.Forms.Button();
+            this.Fig24 = new System.Windows.Forms.Button();
+            this.Fig23 = new System.Windows.Forms.Button();
+            this.Fig22 = new System.Windows.Forms.Button();
+            this.Fig21 = new System.Windows.Forms.Button();
+            this.Fig20 = new System.Windows.Forms.Button();
+            this.Fig19 = new System.Windows.Forms.Button();
+            this.Fig18 = new System.Windows.Forms.Button();
+            this.Fig17 = new System.Windows.Forms.Button();
+            this.Fig16 = new System.Windows.Forms.Button();
+            this.Fig15 = new System.Windows.Forms.Button();
+            this.Fig14 = new System.Windows.Forms.Button();
+            this.Fig13 = new System.Windows.Forms.Button();
+            this.Fig12 = new System.Windows.Forms.Button();
+            this.Fig11 = new System.Windows.Forms.Button();
+            this.Fig10 = new System.Windows.Forms.Button();
+            this.Fig9 = new System.Windows.Forms.Button();
+            this.Fig8 = new System.Windows.Forms.Button();
+            this.Fig7 = new System.Windows.Forms.Button();
+            this.Fig6 = new System.Windows.Forms.Button();
+            this.Fig5 = new System.Windows.Forms.Button();
+            this.Fig4 = new System.Windows.Forms.Button();
+            this.Fig3 = new System.Windows.Forms.Button();
+            this.Fig2 = new System.Windows.Forms.Button();
+            this.Fig1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.labelChatTelaGrandeOnline = new System.Windows.Forms.Label();
+            this.labelChatTelaGrande = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelNotificacoes = new System.Windows.Forms.Panel();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelFigurinhasChat.SuspendLayout();
@@ -241,6 +242,7 @@
             this.btnNotificacoes.Size = new System.Drawing.Size(16, 20);
             this.btnNotificacoes.TabIndex = 45;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
+            this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
             // 
             // btnFecharTelaInicial
             // 
@@ -289,7 +291,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::Login_Register.Properties.Resources.Group_8;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.btnFigurinhas);
             this.panel1.Controls.Add(this.panelFigurinhasChat);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -300,6 +302,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(823, 696);
             this.panel1.TabIndex = 47;
+            // 
+            // btnFigurinhas
+            // 
+            this.btnFigurinhas.FlatAppearance.BorderSize = 0;
+            this.btnFigurinhas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFigurinhas.Location = new System.Drawing.Point(107, 595);
+            this.btnFigurinhas.Name = "btnFigurinhas";
+            this.btnFigurinhas.Size = new System.Drawing.Size(15, 15);
+            this.btnFigurinhas.TabIndex = 5;
+            this.btnFigurinhas.UseVisualStyleBackColor = true;
+            this.btnFigurinhas.Click += new System.EventHandler(this.btnFigurinhas_Click);
             // 
             // panelFigurinhasChat
             // 
@@ -347,435 +360,6 @@
             this.panelFigurinhasChat.TabIndex = 4;
             this.panelFigurinhasChat.Visible = false;
             this.panelFigurinhasChat.Paint += new System.Windows.Forms.PaintEventHandler(this.panelFigurinhasChat_Paint);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::Login_Register.Properties.Resources.Full_Stop;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(127, 91);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(12, 12);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // labelChatTelaGrandeOnline
-            // 
-            this.labelChatTelaGrandeOnline.AutoSize = true;
-            this.labelChatTelaGrandeOnline.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelChatTelaGrandeOnline.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelChatTelaGrandeOnline.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelChatTelaGrandeOnline.Location = new System.Drawing.Point(137, 89);
-            this.labelChatTelaGrandeOnline.Name = "labelChatTelaGrandeOnline";
-            this.labelChatTelaGrandeOnline.Size = new System.Drawing.Size(44, 16);
-            this.labelChatTelaGrandeOnline.TabIndex = 2;
-            this.labelChatTelaGrandeOnline.Text = "Online";
-            // 
-            // labelChatTelaGrande
-            // 
-            this.labelChatTelaGrande.AutoSize = true;
-            this.labelChatTelaGrande.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelChatTelaGrande.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelChatTelaGrande.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelChatTelaGrande.Location = new System.Drawing.Point(123, 67);
-            this.labelChatTelaGrande.Name = "labelChatTelaGrande";
-            this.labelChatTelaGrande.Size = new System.Drawing.Size(134, 22);
-            this.labelChatTelaGrande.TabIndex = 1;
-            this.labelChatTelaGrande.Text = "Samuel Alves";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Login_Register.Properties.Resources._24;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(57, 54);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(55, 56);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // Fig1
-            // 
-            this.Fig1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig1.FlatAppearance.BorderSize = 0;
-            this.Fig1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig1.Location = new System.Drawing.Point(32, 53);
-            this.Fig1.Name = "Fig1";
-            this.Fig1.Size = new System.Drawing.Size(54, 55);
-            this.Fig1.TabIndex = 0;
-            this.Fig1.UseVisualStyleBackColor = true;
-            // 
-            // Fig2
-            // 
-            this.Fig2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig2.FlatAppearance.BorderSize = 0;
-            this.Fig2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig2.Location = new System.Drawing.Point(92, 53);
-            this.Fig2.Name = "Fig2";
-            this.Fig2.Size = new System.Drawing.Size(54, 55);
-            this.Fig2.TabIndex = 1;
-            this.Fig2.UseVisualStyleBackColor = true;
-            // 
-            // Fig4
-            // 
-            this.Fig4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig4.FlatAppearance.BorderSize = 0;
-            this.Fig4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig4.Location = new System.Drawing.Point(213, 53);
-            this.Fig4.Name = "Fig4";
-            this.Fig4.Size = new System.Drawing.Size(54, 55);
-            this.Fig4.TabIndex = 3;
-            this.Fig4.UseVisualStyleBackColor = true;
-            this.Fig4.Click += new System.EventHandler(this.Fig4_Click);
-            // 
-            // Fig3
-            // 
-            this.Fig3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig3.FlatAppearance.BorderSize = 0;
-            this.Fig3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig3.Location = new System.Drawing.Point(152, 54);
-            this.Fig3.Name = "Fig3";
-            this.Fig3.Size = new System.Drawing.Size(54, 55);
-            this.Fig3.TabIndex = 2;
-            this.Fig3.UseVisualStyleBackColor = true;
-            // 
-            // Fig8
-            // 
-            this.Fig8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig8.FlatAppearance.BorderSize = 0;
-            this.Fig8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig8.Location = new System.Drawing.Point(213, 114);
-            this.Fig8.Name = "Fig8";
-            this.Fig8.Size = new System.Drawing.Size(54, 51);
-            this.Fig8.TabIndex = 7;
-            this.Fig8.UseVisualStyleBackColor = true;
-            // 
-            // Fig7
-            // 
-            this.Fig7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig7.FlatAppearance.BorderSize = 0;
-            this.Fig7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig7.Location = new System.Drawing.Point(152, 115);
-            this.Fig7.Name = "Fig7";
-            this.Fig7.Size = new System.Drawing.Size(54, 51);
-            this.Fig7.TabIndex = 6;
-            this.Fig7.UseVisualStyleBackColor = true;
-            // 
-            // Fig6
-            // 
-            this.Fig6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig6.FlatAppearance.BorderSize = 0;
-            this.Fig6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig6.Location = new System.Drawing.Point(92, 114);
-            this.Fig6.Name = "Fig6";
-            this.Fig6.Size = new System.Drawing.Size(54, 51);
-            this.Fig6.TabIndex = 5;
-            this.Fig6.UseVisualStyleBackColor = true;
-            // 
-            // Fig5
-            // 
-            this.Fig5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig5.FlatAppearance.BorderSize = 0;
-            this.Fig5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig5.Location = new System.Drawing.Point(32, 113);
-            this.Fig5.Name = "Fig5";
-            this.Fig5.Size = new System.Drawing.Size(54, 52);
-            this.Fig5.TabIndex = 4;
-            this.Fig5.UseVisualStyleBackColor = true;
-            // 
-            // Fig12
-            // 
-            this.Fig12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig12.FlatAppearance.BorderSize = 0;
-            this.Fig12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig12.Location = new System.Drawing.Point(213, 172);
-            this.Fig12.Name = "Fig12";
-            this.Fig12.Size = new System.Drawing.Size(54, 51);
-            this.Fig12.TabIndex = 11;
-            this.Fig12.UseVisualStyleBackColor = true;
-            // 
-            // Fig11
-            // 
-            this.Fig11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig11.FlatAppearance.BorderSize = 0;
-            this.Fig11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig11.Location = new System.Drawing.Point(152, 173);
-            this.Fig11.Name = "Fig11";
-            this.Fig11.Size = new System.Drawing.Size(54, 51);
-            this.Fig11.TabIndex = 10;
-            this.Fig11.UseVisualStyleBackColor = true;
-            // 
-            // Fig10
-            // 
-            this.Fig10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig10.FlatAppearance.BorderSize = 0;
-            this.Fig10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig10.Location = new System.Drawing.Point(92, 172);
-            this.Fig10.Name = "Fig10";
-            this.Fig10.Size = new System.Drawing.Size(54, 51);
-            this.Fig10.TabIndex = 9;
-            this.Fig10.UseVisualStyleBackColor = true;
-            // 
-            // Fig9
-            // 
-            this.Fig9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig9.FlatAppearance.BorderSize = 0;
-            this.Fig9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig9.Location = new System.Drawing.Point(32, 171);
-            this.Fig9.Name = "Fig9";
-            this.Fig9.Size = new System.Drawing.Size(54, 52);
-            this.Fig9.TabIndex = 8;
-            this.Fig9.UseVisualStyleBackColor = true;
-            // 
-            // Fig16
-            // 
-            this.Fig16.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig16.FlatAppearance.BorderSize = 0;
-            this.Fig16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig16.Location = new System.Drawing.Point(214, 226);
-            this.Fig16.Name = "Fig16";
-            this.Fig16.Size = new System.Drawing.Size(54, 51);
-            this.Fig16.TabIndex = 15;
-            this.Fig16.UseVisualStyleBackColor = true;
-            // 
-            // Fig15
-            // 
-            this.Fig15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig15.FlatAppearance.BorderSize = 0;
-            this.Fig15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig15.Location = new System.Drawing.Point(153, 227);
-            this.Fig15.Name = "Fig15";
-            this.Fig15.Size = new System.Drawing.Size(54, 51);
-            this.Fig15.TabIndex = 14;
-            this.Fig15.UseVisualStyleBackColor = true;
-            // 
-            // Fig14
-            // 
-            this.Fig14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig14.FlatAppearance.BorderSize = 0;
-            this.Fig14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig14.Location = new System.Drawing.Point(93, 226);
-            this.Fig14.Name = "Fig14";
-            this.Fig14.Size = new System.Drawing.Size(54, 51);
-            this.Fig14.TabIndex = 13;
-            this.Fig14.UseVisualStyleBackColor = true;
-            // 
-            // Fig13
-            // 
-            this.Fig13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig13.FlatAppearance.BorderSize = 0;
-            this.Fig13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig13.Location = new System.Drawing.Point(33, 225);
-            this.Fig13.Name = "Fig13";
-            this.Fig13.Size = new System.Drawing.Size(54, 52);
-            this.Fig13.TabIndex = 12;
-            this.Fig13.UseVisualStyleBackColor = true;
-            // 
-            // Fig20
-            // 
-            this.Fig20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig20.FlatAppearance.BorderSize = 0;
-            this.Fig20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig20.Location = new System.Drawing.Point(215, 284);
-            this.Fig20.Name = "Fig20";
-            this.Fig20.Size = new System.Drawing.Size(54, 51);
-            this.Fig20.TabIndex = 19;
-            this.Fig20.UseVisualStyleBackColor = true;
-            // 
-            // Fig19
-            // 
-            this.Fig19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig19.FlatAppearance.BorderSize = 0;
-            this.Fig19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig19.Location = new System.Drawing.Point(154, 285);
-            this.Fig19.Name = "Fig19";
-            this.Fig19.Size = new System.Drawing.Size(54, 51);
-            this.Fig19.TabIndex = 18;
-            this.Fig19.UseVisualStyleBackColor = true;
-            // 
-            // Fig18
-            // 
-            this.Fig18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig18.FlatAppearance.BorderSize = 0;
-            this.Fig18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig18.Location = new System.Drawing.Point(94, 284);
-            this.Fig18.Name = "Fig18";
-            this.Fig18.Size = new System.Drawing.Size(54, 51);
-            this.Fig18.TabIndex = 17;
-            this.Fig18.UseVisualStyleBackColor = true;
-            // 
-            // Fig17
-            // 
-            this.Fig17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig17.FlatAppearance.BorderSize = 0;
-            this.Fig17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig17.Location = new System.Drawing.Point(34, 283);
-            this.Fig17.Name = "Fig17";
-            this.Fig17.Size = new System.Drawing.Size(54, 52);
-            this.Fig17.TabIndex = 16;
-            this.Fig17.UseVisualStyleBackColor = true;
-            // 
-            // Fig24
-            // 
-            this.Fig24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig24.FlatAppearance.BorderSize = 0;
-            this.Fig24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig24.Location = new System.Drawing.Point(214, 340);
-            this.Fig24.Name = "Fig24";
-            this.Fig24.Size = new System.Drawing.Size(54, 51);
-            this.Fig24.TabIndex = 23;
-            this.Fig24.UseVisualStyleBackColor = true;
-            // 
-            // Fig23
-            // 
-            this.Fig23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig23.FlatAppearance.BorderSize = 0;
-            this.Fig23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig23.Location = new System.Drawing.Point(153, 341);
-            this.Fig23.Name = "Fig23";
-            this.Fig23.Size = new System.Drawing.Size(54, 51);
-            this.Fig23.TabIndex = 22;
-            this.Fig23.UseVisualStyleBackColor = true;
-            // 
-            // Fig22
-            // 
-            this.Fig22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig22.FlatAppearance.BorderSize = 0;
-            this.Fig22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig22.Location = new System.Drawing.Point(93, 340);
-            this.Fig22.Name = "Fig22";
-            this.Fig22.Size = new System.Drawing.Size(54, 51);
-            this.Fig22.TabIndex = 21;
-            this.Fig22.UseVisualStyleBackColor = true;
-            // 
-            // Fig21
-            // 
-            this.Fig21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig21.FlatAppearance.BorderSize = 0;
-            this.Fig21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig21.Location = new System.Drawing.Point(33, 339);
-            this.Fig21.Name = "Fig21";
-            this.Fig21.Size = new System.Drawing.Size(54, 52);
-            this.Fig21.TabIndex = 20;
-            this.Fig21.UseVisualStyleBackColor = true;
-            // 
-            // Fig28
-            // 
-            this.Fig28.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig28.FlatAppearance.BorderSize = 0;
-            this.Fig28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig28.Location = new System.Drawing.Point(213, 397);
-            this.Fig28.Name = "Fig28";
-            this.Fig28.Size = new System.Drawing.Size(54, 51);
-            this.Fig28.TabIndex = 27;
-            this.Fig28.UseVisualStyleBackColor = true;
-            // 
-            // Fig27
-            // 
-            this.Fig27.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig27.FlatAppearance.BorderSize = 0;
-            this.Fig27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig27.Location = new System.Drawing.Point(152, 398);
-            this.Fig27.Name = "Fig27";
-            this.Fig27.Size = new System.Drawing.Size(54, 51);
-            this.Fig27.TabIndex = 26;
-            this.Fig27.UseVisualStyleBackColor = true;
-            // 
-            // Fig26
-            // 
-            this.Fig26.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig26.FlatAppearance.BorderSize = 0;
-            this.Fig26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig26.Location = new System.Drawing.Point(92, 397);
-            this.Fig26.Name = "Fig26";
-            this.Fig26.Size = new System.Drawing.Size(54, 51);
-            this.Fig26.TabIndex = 25;
-            this.Fig26.UseVisualStyleBackColor = true;
-            // 
-            // Fig25
-            // 
-            this.Fig25.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig25.FlatAppearance.BorderSize = 0;
-            this.Fig25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig25.Location = new System.Drawing.Point(32, 396);
-            this.Fig25.Name = "Fig25";
-            this.Fig25.Size = new System.Drawing.Size(54, 52);
-            this.Fig25.TabIndex = 24;
-            this.Fig25.UseVisualStyleBackColor = true;
-            // 
-            // Fig32
-            // 
-            this.Fig32.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig32.FlatAppearance.BorderSize = 0;
-            this.Fig32.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig32.Location = new System.Drawing.Point(214, 451);
-            this.Fig32.Name = "Fig32";
-            this.Fig32.Size = new System.Drawing.Size(54, 51);
-            this.Fig32.TabIndex = 31;
-            this.Fig32.UseVisualStyleBackColor = true;
-            // 
-            // Fig31
-            // 
-            this.Fig31.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig31.FlatAppearance.BorderSize = 0;
-            this.Fig31.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig31.Location = new System.Drawing.Point(153, 452);
-            this.Fig31.Name = "Fig31";
-            this.Fig31.Size = new System.Drawing.Size(54, 51);
-            this.Fig31.TabIndex = 30;
-            this.Fig31.UseVisualStyleBackColor = true;
-            // 
-            // Fig30
-            // 
-            this.Fig30.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig30.FlatAppearance.BorderSize = 0;
-            this.Fig30.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig30.Location = new System.Drawing.Point(93, 451);
-            this.Fig30.Name = "Fig30";
-            this.Fig30.Size = new System.Drawing.Size(54, 51);
-            this.Fig30.TabIndex = 29;
-            this.Fig30.UseVisualStyleBackColor = true;
-            // 
-            // Fig29
-            // 
-            this.Fig29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fig29.FlatAppearance.BorderSize = 0;
-            this.Fig29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.Fig29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fig29.Location = new System.Drawing.Point(33, 450);
-            this.Fig29.Name = "Fig29";
-            this.Fig29.Size = new System.Drawing.Size(54, 52);
-            this.Fig29.TabIndex = 28;
-            this.Fig29.UseVisualStyleBackColor = true;
             // 
             // Fig36
             // 
@@ -825,15 +409,447 @@
             this.Fig33.TabIndex = 32;
             this.Fig33.UseVisualStyleBackColor = true;
             // 
-            // btnFigurinhas
+            // Fig32
             // 
-            this.btnFigurinhas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFigurinhas.Location = new System.Drawing.Point(107, 595);
-            this.btnFigurinhas.Name = "btnFigurinhas";
-            this.btnFigurinhas.Size = new System.Drawing.Size(15, 15);
-            this.btnFigurinhas.TabIndex = 5;
-            this.btnFigurinhas.UseVisualStyleBackColor = true;
-            this.btnFigurinhas.Click += new System.EventHandler(this.btnFigurinhas_Click);
+            this.Fig32.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig32.FlatAppearance.BorderSize = 0;
+            this.Fig32.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig32.Location = new System.Drawing.Point(214, 451);
+            this.Fig32.Name = "Fig32";
+            this.Fig32.Size = new System.Drawing.Size(54, 51);
+            this.Fig32.TabIndex = 31;
+            this.Fig32.UseVisualStyleBackColor = true;
+            // 
+            // Fig31
+            // 
+            this.Fig31.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig31.FlatAppearance.BorderSize = 0;
+            this.Fig31.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig31.Location = new System.Drawing.Point(153, 452);
+            this.Fig31.Name = "Fig31";
+            this.Fig31.Size = new System.Drawing.Size(54, 51);
+            this.Fig31.TabIndex = 30;
+            this.Fig31.UseVisualStyleBackColor = true;
+            // 
+            // Fig30
+            // 
+            this.Fig30.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig30.FlatAppearance.BorderSize = 0;
+            this.Fig30.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig30.Location = new System.Drawing.Point(93, 451);
+            this.Fig30.Name = "Fig30";
+            this.Fig30.Size = new System.Drawing.Size(54, 51);
+            this.Fig30.TabIndex = 29;
+            this.Fig30.UseVisualStyleBackColor = true;
+            // 
+            // Fig29
+            // 
+            this.Fig29.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig29.FlatAppearance.BorderSize = 0;
+            this.Fig29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig29.Location = new System.Drawing.Point(33, 450);
+            this.Fig29.Name = "Fig29";
+            this.Fig29.Size = new System.Drawing.Size(54, 52);
+            this.Fig29.TabIndex = 28;
+            this.Fig29.UseVisualStyleBackColor = true;
+            // 
+            // Fig28
+            // 
+            this.Fig28.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig28.FlatAppearance.BorderSize = 0;
+            this.Fig28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig28.Location = new System.Drawing.Point(213, 397);
+            this.Fig28.Name = "Fig28";
+            this.Fig28.Size = new System.Drawing.Size(54, 51);
+            this.Fig28.TabIndex = 27;
+            this.Fig28.UseVisualStyleBackColor = true;
+            // 
+            // Fig27
+            // 
+            this.Fig27.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig27.FlatAppearance.BorderSize = 0;
+            this.Fig27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig27.Location = new System.Drawing.Point(152, 398);
+            this.Fig27.Name = "Fig27";
+            this.Fig27.Size = new System.Drawing.Size(54, 51);
+            this.Fig27.TabIndex = 26;
+            this.Fig27.UseVisualStyleBackColor = true;
+            // 
+            // Fig26
+            // 
+            this.Fig26.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig26.FlatAppearance.BorderSize = 0;
+            this.Fig26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig26.Location = new System.Drawing.Point(92, 397);
+            this.Fig26.Name = "Fig26";
+            this.Fig26.Size = new System.Drawing.Size(54, 51);
+            this.Fig26.TabIndex = 25;
+            this.Fig26.UseVisualStyleBackColor = true;
+            // 
+            // Fig25
+            // 
+            this.Fig25.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig25.FlatAppearance.BorderSize = 0;
+            this.Fig25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig25.Location = new System.Drawing.Point(32, 396);
+            this.Fig25.Name = "Fig25";
+            this.Fig25.Size = new System.Drawing.Size(54, 52);
+            this.Fig25.TabIndex = 24;
+            this.Fig25.UseVisualStyleBackColor = true;
+            // 
+            // Fig24
+            // 
+            this.Fig24.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig24.FlatAppearance.BorderSize = 0;
+            this.Fig24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig24.Location = new System.Drawing.Point(214, 340);
+            this.Fig24.Name = "Fig24";
+            this.Fig24.Size = new System.Drawing.Size(54, 51);
+            this.Fig24.TabIndex = 23;
+            this.Fig24.UseVisualStyleBackColor = true;
+            // 
+            // Fig23
+            // 
+            this.Fig23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig23.FlatAppearance.BorderSize = 0;
+            this.Fig23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig23.Location = new System.Drawing.Point(153, 341);
+            this.Fig23.Name = "Fig23";
+            this.Fig23.Size = new System.Drawing.Size(54, 51);
+            this.Fig23.TabIndex = 22;
+            this.Fig23.UseVisualStyleBackColor = true;
+            // 
+            // Fig22
+            // 
+            this.Fig22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig22.FlatAppearance.BorderSize = 0;
+            this.Fig22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig22.Location = new System.Drawing.Point(93, 340);
+            this.Fig22.Name = "Fig22";
+            this.Fig22.Size = new System.Drawing.Size(54, 51);
+            this.Fig22.TabIndex = 21;
+            this.Fig22.UseVisualStyleBackColor = true;
+            // 
+            // Fig21
+            // 
+            this.Fig21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig21.FlatAppearance.BorderSize = 0;
+            this.Fig21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig21.Location = new System.Drawing.Point(33, 339);
+            this.Fig21.Name = "Fig21";
+            this.Fig21.Size = new System.Drawing.Size(54, 52);
+            this.Fig21.TabIndex = 20;
+            this.Fig21.UseVisualStyleBackColor = true;
+            // 
+            // Fig20
+            // 
+            this.Fig20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig20.FlatAppearance.BorderSize = 0;
+            this.Fig20.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig20.Location = new System.Drawing.Point(215, 284);
+            this.Fig20.Name = "Fig20";
+            this.Fig20.Size = new System.Drawing.Size(54, 51);
+            this.Fig20.TabIndex = 19;
+            this.Fig20.UseVisualStyleBackColor = true;
+            // 
+            // Fig19
+            // 
+            this.Fig19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig19.FlatAppearance.BorderSize = 0;
+            this.Fig19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig19.Location = new System.Drawing.Point(154, 285);
+            this.Fig19.Name = "Fig19";
+            this.Fig19.Size = new System.Drawing.Size(54, 51);
+            this.Fig19.TabIndex = 18;
+            this.Fig19.UseVisualStyleBackColor = true;
+            // 
+            // Fig18
+            // 
+            this.Fig18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig18.FlatAppearance.BorderSize = 0;
+            this.Fig18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig18.Location = new System.Drawing.Point(94, 284);
+            this.Fig18.Name = "Fig18";
+            this.Fig18.Size = new System.Drawing.Size(54, 51);
+            this.Fig18.TabIndex = 17;
+            this.Fig18.UseVisualStyleBackColor = true;
+            // 
+            // Fig17
+            // 
+            this.Fig17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig17.FlatAppearance.BorderSize = 0;
+            this.Fig17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig17.Location = new System.Drawing.Point(34, 283);
+            this.Fig17.Name = "Fig17";
+            this.Fig17.Size = new System.Drawing.Size(54, 52);
+            this.Fig17.TabIndex = 16;
+            this.Fig17.UseVisualStyleBackColor = true;
+            // 
+            // Fig16
+            // 
+            this.Fig16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig16.FlatAppearance.BorderSize = 0;
+            this.Fig16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig16.Location = new System.Drawing.Point(214, 226);
+            this.Fig16.Name = "Fig16";
+            this.Fig16.Size = new System.Drawing.Size(54, 51);
+            this.Fig16.TabIndex = 15;
+            this.Fig16.UseVisualStyleBackColor = true;
+            // 
+            // Fig15
+            // 
+            this.Fig15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig15.FlatAppearance.BorderSize = 0;
+            this.Fig15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig15.Location = new System.Drawing.Point(153, 227);
+            this.Fig15.Name = "Fig15";
+            this.Fig15.Size = new System.Drawing.Size(54, 51);
+            this.Fig15.TabIndex = 14;
+            this.Fig15.UseVisualStyleBackColor = true;
+            // 
+            // Fig14
+            // 
+            this.Fig14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig14.FlatAppearance.BorderSize = 0;
+            this.Fig14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig14.Location = new System.Drawing.Point(93, 226);
+            this.Fig14.Name = "Fig14";
+            this.Fig14.Size = new System.Drawing.Size(54, 51);
+            this.Fig14.TabIndex = 13;
+            this.Fig14.UseVisualStyleBackColor = true;
+            // 
+            // Fig13
+            // 
+            this.Fig13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig13.FlatAppearance.BorderSize = 0;
+            this.Fig13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig13.Location = new System.Drawing.Point(33, 225);
+            this.Fig13.Name = "Fig13";
+            this.Fig13.Size = new System.Drawing.Size(54, 52);
+            this.Fig13.TabIndex = 12;
+            this.Fig13.UseVisualStyleBackColor = true;
+            // 
+            // Fig12
+            // 
+            this.Fig12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig12.FlatAppearance.BorderSize = 0;
+            this.Fig12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig12.Location = new System.Drawing.Point(213, 172);
+            this.Fig12.Name = "Fig12";
+            this.Fig12.Size = new System.Drawing.Size(54, 51);
+            this.Fig12.TabIndex = 11;
+            this.Fig12.UseVisualStyleBackColor = true;
+            // 
+            // Fig11
+            // 
+            this.Fig11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig11.FlatAppearance.BorderSize = 0;
+            this.Fig11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig11.Location = new System.Drawing.Point(152, 173);
+            this.Fig11.Name = "Fig11";
+            this.Fig11.Size = new System.Drawing.Size(54, 51);
+            this.Fig11.TabIndex = 10;
+            this.Fig11.UseVisualStyleBackColor = true;
+            // 
+            // Fig10
+            // 
+            this.Fig10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig10.FlatAppearance.BorderSize = 0;
+            this.Fig10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig10.Location = new System.Drawing.Point(92, 172);
+            this.Fig10.Name = "Fig10";
+            this.Fig10.Size = new System.Drawing.Size(54, 51);
+            this.Fig10.TabIndex = 9;
+            this.Fig10.UseVisualStyleBackColor = true;
+            // 
+            // Fig9
+            // 
+            this.Fig9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig9.FlatAppearance.BorderSize = 0;
+            this.Fig9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig9.Location = new System.Drawing.Point(32, 171);
+            this.Fig9.Name = "Fig9";
+            this.Fig9.Size = new System.Drawing.Size(54, 52);
+            this.Fig9.TabIndex = 8;
+            this.Fig9.UseVisualStyleBackColor = true;
+            // 
+            // Fig8
+            // 
+            this.Fig8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig8.FlatAppearance.BorderSize = 0;
+            this.Fig8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig8.Location = new System.Drawing.Point(213, 114);
+            this.Fig8.Name = "Fig8";
+            this.Fig8.Size = new System.Drawing.Size(54, 51);
+            this.Fig8.TabIndex = 7;
+            this.Fig8.UseVisualStyleBackColor = true;
+            // 
+            // Fig7
+            // 
+            this.Fig7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig7.FlatAppearance.BorderSize = 0;
+            this.Fig7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig7.Location = new System.Drawing.Point(152, 115);
+            this.Fig7.Name = "Fig7";
+            this.Fig7.Size = new System.Drawing.Size(54, 51);
+            this.Fig7.TabIndex = 6;
+            this.Fig7.UseVisualStyleBackColor = true;
+            // 
+            // Fig6
+            // 
+            this.Fig6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig6.FlatAppearance.BorderSize = 0;
+            this.Fig6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig6.Location = new System.Drawing.Point(92, 114);
+            this.Fig6.Name = "Fig6";
+            this.Fig6.Size = new System.Drawing.Size(54, 51);
+            this.Fig6.TabIndex = 5;
+            this.Fig6.UseVisualStyleBackColor = true;
+            // 
+            // Fig5
+            // 
+            this.Fig5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig5.FlatAppearance.BorderSize = 0;
+            this.Fig5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig5.Location = new System.Drawing.Point(32, 113);
+            this.Fig5.Name = "Fig5";
+            this.Fig5.Size = new System.Drawing.Size(54, 52);
+            this.Fig5.TabIndex = 4;
+            this.Fig5.UseVisualStyleBackColor = true;
+            // 
+            // Fig4
+            // 
+            this.Fig4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig4.FlatAppearance.BorderSize = 0;
+            this.Fig4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig4.Location = new System.Drawing.Point(213, 53);
+            this.Fig4.Name = "Fig4";
+            this.Fig4.Size = new System.Drawing.Size(54, 55);
+            this.Fig4.TabIndex = 3;
+            this.Fig4.UseVisualStyleBackColor = true;
+            this.Fig4.Click += new System.EventHandler(this.Fig4_Click);
+            // 
+            // Fig3
+            // 
+            this.Fig3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig3.FlatAppearance.BorderSize = 0;
+            this.Fig3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig3.Location = new System.Drawing.Point(152, 54);
+            this.Fig3.Name = "Fig3";
+            this.Fig3.Size = new System.Drawing.Size(54, 55);
+            this.Fig3.TabIndex = 2;
+            this.Fig3.UseVisualStyleBackColor = true;
+            // 
+            // Fig2
+            // 
+            this.Fig2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig2.FlatAppearance.BorderSize = 0;
+            this.Fig2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig2.Location = new System.Drawing.Point(92, 53);
+            this.Fig2.Name = "Fig2";
+            this.Fig2.Size = new System.Drawing.Size(54, 55);
+            this.Fig2.TabIndex = 1;
+            this.Fig2.UseVisualStyleBackColor = true;
+            // 
+            // Fig1
+            // 
+            this.Fig1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fig1.FlatAppearance.BorderSize = 0;
+            this.Fig1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.Fig1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fig1.Location = new System.Drawing.Point(32, 53);
+            this.Fig1.Name = "Fig1";
+            this.Fig1.Size = new System.Drawing.Size(54, 55);
+            this.Fig1.TabIndex = 0;
+            this.Fig1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::Login_Register.Properties.Resources.Full_Stop;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(127, 91);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(12, 12);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // labelChatTelaGrandeOnline
+            // 
+            this.labelChatTelaGrandeOnline.AutoSize = true;
+            this.labelChatTelaGrandeOnline.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelChatTelaGrandeOnline.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChatTelaGrandeOnline.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelChatTelaGrandeOnline.Location = new System.Drawing.Point(137, 89);
+            this.labelChatTelaGrandeOnline.Name = "labelChatTelaGrandeOnline";
+            this.labelChatTelaGrandeOnline.Size = new System.Drawing.Size(44, 16);
+            this.labelChatTelaGrandeOnline.TabIndex = 2;
+            this.labelChatTelaGrandeOnline.Text = "Online";
+            // 
+            // labelChatTelaGrande
+            // 
+            this.labelChatTelaGrande.AutoSize = true;
+            this.labelChatTelaGrande.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelChatTelaGrande.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChatTelaGrande.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelChatTelaGrande.Location = new System.Drawing.Point(123, 67);
+            this.labelChatTelaGrande.Name = "labelChatTelaGrande";
+            this.labelChatTelaGrande.Size = new System.Drawing.Size(134, 22);
+            this.labelChatTelaGrande.TabIndex = 1;
+            this.labelChatTelaGrande.Text = "Samuel Alves";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Login_Register.Properties.Resources._24;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(57, 54);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(55, 56);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panelNotificacoes
+            // 
+            this.panelNotificacoes.BackColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.BackgroundImage = global::Login_Register.Properties.Resources.Notificações;
+            this.panelNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelNotificacoes.ForeColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.Location = new System.Drawing.Point(793, 43);
+            this.panelNotificacoes.Name = "panelNotificacoes";
+            this.panelNotificacoes.Size = new System.Drawing.Size(373, 717);
+            this.panelNotificacoes.TabIndex = 48;
+            this.panelNotificacoes.Visible = false;
+            this.panelNotificacoes.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNotificacoes_Paint);
             // 
             // Amigos
             // 
@@ -843,12 +859,13 @@
             this.BackgroundImage = global::Login_Register.Properties.Resources.Wireframe___3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1386, 757);
+            this.Controls.Add(this.panelNotificacoes);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnNotificacoes);
             this.Controls.Add(this.btnFecharTelaInicial);
             this.Controls.Add(this.btnMinimizarTelaInicial);
             this.Controls.Add(this.pnlMenuTelaInicial);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -928,5 +945,6 @@
         private System.Windows.Forms.Button Fig22;
         private System.Windows.Forms.Button Fig21;
         private System.Windows.Forms.Button btnFigurinhas;
+        private System.Windows.Forms.Panel panelNotificacoes;
     }
 }

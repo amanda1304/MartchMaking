@@ -814,6 +814,16 @@ namespace Login_Register.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Group_7__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Group 7 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_8 {
             get {
                 object obj = ResourceManager.GetObject("Group_8", resourceCulture);
@@ -907,6 +917,16 @@ namespace Login_Register.Properties {
         internal static System.IO.UnmanagedMemoryStream Matchmaking_audio {
             get {
                 return ResourceManager.GetStream("Matchmaking_audio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Notificações {
+            get {
+                object obj = ResourceManager.GetObject("Notificações", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

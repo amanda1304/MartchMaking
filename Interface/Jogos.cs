@@ -134,5 +134,15 @@ namespace Login_Register
         {
 
         }
+
+        private void panelNotificacoes_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnNotificacoes_Click(object sender, EventArgs e)
+        {
+            panelNotificacoes.Visible = !panelNotificacoes.Visible;
+        }
     }
 }
