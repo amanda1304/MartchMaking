@@ -308,6 +308,8 @@
     <Content Include="banco de imagens\Wireframe - 3 %284%29.png" />
     <Content Include="banco de imagens\Wireframe - 3.png" />
     <Content Include="banco de imagens\Wireframe - 9 1.png" />
+    <None Include="Resources\fundo para o perfil.png" />
+    <None Include="Resources\Group 22 %281%29.png" />
     <None Include="Resources\Notificações.png" />
     <None Include="Resources\Group 7 %281%29.png" />
     <None Include="Resources\PaineldeFigurinhas.png" />

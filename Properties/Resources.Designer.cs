@@ -624,6 +624,16 @@ namespace Login_Register.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fundo_para_o_perfil {
+            get {
+                object obj = ResourceManager.GetObject("fundo para o perfil", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group_15 {
             get {
                 object obj = ResourceManager.GetObject("Group_15", resourceCulture);
@@ -657,6 +667,16 @@ namespace Login_Register.Properties {
         internal static System.Drawing.Bitmap Group_22 {
             get {
                 object obj = ResourceManager.GetObject("Group_22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_22__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Group 22 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
