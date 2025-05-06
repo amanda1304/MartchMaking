@@ -156,5 +156,15 @@ namespace Login_Register
             panel3.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nomeBandeira);
             pnlMenuTelaInicial.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nomeMenu);
         }
+
+        private void btnNotificacoes_Click(object sender, EventArgs e)
+        {
+            panelNotificacoes.Visible = !panelNotificacoes.Visible;
+        }
+
+        private void pictureAvatar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

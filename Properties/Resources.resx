@@ -130,8 +130,8 @@
   <data name="hide" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\hide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Avatar\24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo_preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\banco de imagens\logo preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Amigos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Amigos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,8 +139,8 @@
   <data name="_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ellipse_38" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Avatar\Ellipse 38.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Avatar\28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_37" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,11 +157,14 @@
   <data name="Roxo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Bordas\Roxo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Notificações" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Notificações.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Azul2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Menu\Azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Vermelho1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Bordas\Vermelho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Avatar\24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MatchMaking" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\MatchMaking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,8 +175,8 @@
   <data name="Wireframe___3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\Wireframe - 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_38" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Avatar\38.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Fundo\Group 45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ellipse_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\Ellipse 30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -192,6 +195,9 @@
   </data>
   <data name="Capa caderneta de saúde infantil leãozinho aquarela fofa amarelo 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Capa caderneta de saúde infantil leãozinho aquarela fofa amarelo 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FundoChatAmigos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FundoChatAmigos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group_34" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\Group 34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -217,6 +223,12 @@
   <data name="Amarelo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Bordas\Amarelo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fundo Tela Matchmaking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundo Tela Matchmaking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\33.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -240,6 +252,9 @@
   </data>
   <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vermelho1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bordas\Vermelho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Wireframe___2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\Wireframe - 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,8 +286,8 @@
   <data name="visible" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\visible.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group 22 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Group 22 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fundodechat amigos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundodechat amigos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -283,17 +298,20 @@
   <data name="Ellipse_27" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\Ellipse 27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Avatar\28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group 22 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 22 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Configurações" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\Configurações.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fundo para o perfil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundo para o perfil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Group_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\Group 9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group_44" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Fundo\Group 44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fundomatchmaking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundomatchmaking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -316,6 +334,9 @@
   <data name="Ellipse_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\Ellipse 31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Group_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Fundo\Group 15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Amigos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\Amigos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -328,11 +349,11 @@
   <data name="Rectangle_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\Rectangle 31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Fundo\Group 45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Group 7 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 7 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_38" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Avatar\38.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\Group 6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -343,8 +364,8 @@
   <data name="Roxo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Bandeiras\Roxo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Group_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Fundo\Group 15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Group_44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Fundo\Group 44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -367,14 +388,11 @@
   <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Avatar\31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Group_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\Group 8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Notificações" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Notificações.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Avatar\31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\Group 7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -412,8 +430,8 @@
   <data name="Matchmaking_audio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\audio\Matchmaking_audio.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="logo_preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\banco de imagens\logo preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Ellipse_38" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Avatar\Ellipse 38.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group_42" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Fundo\Group 42.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -442,7 +460,7 @@
   <data name="ai_generated_futuristic_esport_background_for_gaming_live_streaming_esport_game_tournament_competition_neon_banner_photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\ai-generated-futuristic-esport-background-for-gaming-live-streaming-esport-game-tournament-competition-neon-banner-photo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fundo para o perfil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fundo para o perfil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fundochat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fundochat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

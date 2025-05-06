@@ -42,7 +42,17 @@
             this.btnNotificacoes = new System.Windows.Forms.Button();
             this.btnFecharTelaInicial = new System.Windows.Forms.Button();
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
+            this.panelFundoMatchmaking = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureAvatar = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAmigo2Matchmaking = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAmigo1Matchmaking = new System.Windows.Forms.PictureBox();
+            this.labelPerfilMatchmaking = new System.Windows.Forms.Label();
             this.pnlMenuTelaInicial.SuspendLayout();
+            this.panelFundoMatchmaking.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAmigo2Matchmaking)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAmigo1Matchmaking)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenuTelaInicial
@@ -227,16 +237,88 @@
             this.btnMinimizarTelaInicial.UseVisualStyleBackColor = false;
             this.btnMinimizarTelaInicial.Click += new System.EventHandler(this.btnMinimizarTelaInicial_Click);
             // 
+            // panelFundoMatchmaking
+            // 
+            this.panelFundoMatchmaking.BackgroundImage = global::Login_Register.Properties.Resources.fundomatchmaking;
+            this.panelFundoMatchmaking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelFundoMatchmaking.Controls.Add(this.labelPerfilMatchmaking);
+            this.panelFundoMatchmaking.Controls.Add(this.pictureBoxAmigo1Matchmaking);
+            this.panelFundoMatchmaking.Controls.Add(this.pictureBoxAmigo2Matchmaking);
+            this.panelFundoMatchmaking.Controls.Add(this.pictureAvatar);
+            this.panelFundoMatchmaking.Location = new System.Drawing.Point(255, 58);
+            this.panelFundoMatchmaking.Name = "panelFundoMatchmaking";
+            this.panelFundoMatchmaking.Size = new System.Drawing.Size(853, 700);
+            this.panelFundoMatchmaking.TabIndex = 43;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(1107, 58);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(280, 700);
+            this.panel1.TabIndex = 44;
+            // 
+            // pictureAvatar
+            // 
+            this.pictureAvatar.BackColor = System.Drawing.Color.Transparent;
+            this.pictureAvatar.BackgroundImage = global::Login_Register.Properties.Resources._25;
+            this.pictureAvatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureAvatar.Location = new System.Drawing.Point(396, 245);
+            this.pictureAvatar.Name = "pictureAvatar";
+            this.pictureAvatar.Size = new System.Drawing.Size(80, 80);
+            this.pictureAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureAvatar.TabIndex = 1;
+            this.pictureAvatar.TabStop = false;
+            // 
+            // pictureBoxAmigo2Matchmaking
+            // 
+            this.pictureBoxAmigo2Matchmaking.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxAmigo2Matchmaking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxAmigo2Matchmaking.Location = new System.Drawing.Point(236, 230);
+            this.pictureBoxAmigo2Matchmaking.Name = "pictureBoxAmigo2Matchmaking";
+            this.pictureBoxAmigo2Matchmaking.Size = new System.Drawing.Size(67, 67);
+            this.pictureBoxAmigo2Matchmaking.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAmigo2Matchmaking.TabIndex = 2;
+            this.pictureBoxAmigo2Matchmaking.TabStop = false;
+            // 
+            // pictureBoxAmigo1Matchmaking
+            // 
+            this.pictureBoxAmigo1Matchmaking.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxAmigo1Matchmaking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxAmigo1Matchmaking.Location = new System.Drawing.Point(570, 230);
+            this.pictureBoxAmigo1Matchmaking.Name = "pictureBoxAmigo1Matchmaking";
+            this.pictureBoxAmigo1Matchmaking.Size = new System.Drawing.Size(67, 67);
+            this.pictureBoxAmigo1Matchmaking.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAmigo1Matchmaking.TabIndex = 3;
+            this.pictureBoxAmigo1Matchmaking.TabStop = false;
+            // 
+            // labelPerfilMatchmaking
+            // 
+            this.labelPerfilMatchmaking.BackColor = System.Drawing.Color.Transparent;
+            this.labelPerfilMatchmaking.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPerfilMatchmaking.ForeColor = System.Drawing.Color.White;
+            this.labelPerfilMatchmaking.Location = new System.Drawing.Point(376, 452);
+            this.labelPerfilMatchmaking.Name = "labelPerfilMatchmaking";
+            this.labelPerfilMatchmaking.Size = new System.Drawing.Size(120, 30);
+            this.labelPerfilMatchmaking.TabIndex = 4;
+            this.labelPerfilMatchmaking.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MatchMaking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackgroundImage = global::Login_Register.Properties.Resources.Wireframe___3__3_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1386, 757);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelFundoMatchmaking);
             this.Controls.Add(this.btnNotificacoes);
             this.Controls.Add(this.btnFecharTelaInicial);
             this.Controls.Add(this.btnMinimizarTelaInicial);
             this.Controls.Add(this.pnlMenuTelaInicial);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MatchMaking";
@@ -248,6 +330,10 @@
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MatchMaking_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MatchMaking_MouseUp);
             this.pnlMenuTelaInicial.ResumeLayout(false);
+            this.panelFundoMatchmaking.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAmigo2Matchmaking)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAmigo1Matchmaking)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -266,5 +352,11 @@
         private System.Windows.Forms.Button btnNotificacoes;
         private System.Windows.Forms.Button btnFecharTelaInicial;
         private System.Windows.Forms.Button btnMinimizarTelaInicial;
+        private System.Windows.Forms.Panel panelFundoMatchmaking;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureAvatar;
+        private System.Windows.Forms.PictureBox pictureBoxAmigo2Matchmaking;
+        private System.Windows.Forms.PictureBox pictureBoxAmigo1Matchmaking;
+        private System.Windows.Forms.Label labelPerfilMatchmaking;
     }
 }
