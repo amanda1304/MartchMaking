@@ -974,6 +974,16 @@ namespace Login_Register.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap listadosjogos2 {
+            get {
+                object obj = ResourceManager.GetObject("listadosjogos2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_branco {
             get {
                 object obj = ResourceManager.GetObject("logo_branco", resourceCulture);
