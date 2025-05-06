@@ -107,6 +107,7 @@
             this.btnFundo1 = new System.Windows.Forms.Button();
             this.btnSalvarAlterações2 = new System.Windows.Forms.Button();
             this.btnSalvarAlterações1 = new System.Windows.Forms.Button();
+            this.panelNotificacoes = new System.Windows.Forms.Panel();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -258,6 +259,7 @@
             this.btnNotificacoes.Size = new System.Drawing.Size(16, 20);
             this.btnNotificacoes.TabIndex = 45;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
+            this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
             // 
             // btnFecharTelaInicial
             // 
@@ -1402,14 +1404,28 @@
             this.btnSalvarAlterações1.UseVisualStyleBackColor = false;
             this.btnSalvarAlterações1.Click += new System.EventHandler(this.btnSalvarAlterações1_Click);
             // 
+            // panelNotificacoes
+            // 
+            this.panelNotificacoes.BackColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.BackgroundImage = global::Login_Register.Properties.Resources.Notificações;
+            this.panelNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelNotificacoes.ForeColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.Location = new System.Drawing.Point(793, 43);
+            this.panelNotificacoes.Name = "panelNotificacoes";
+            this.panelNotificacoes.Size = new System.Drawing.Size(373, 717);
+            this.panelNotificacoes.TabIndex = 49;
+            this.panelNotificacoes.Visible = false;
+            this.panelNotificacoes.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNotificacoes_Paint);
+            // 
             // Configurações
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Login_Register.Properties.Resources.Wireframe___3__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1386, 757);
+            this.Controls.Add(this.panelNotificacoes);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnNotificacoes);
             this.Controls.Add(this.btnFecharTelaInicial);
@@ -1516,5 +1532,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBoxFotodeFundoAtual;
+        private System.Windows.Forms.Panel panelNotificacoes;
     }
 }

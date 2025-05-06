@@ -18,7 +18,7 @@ namespace Login_Register
     public partial class TelaInicial : Form
     {
         //SugestaoAmizadeDAO sugestaoDAO = new SugestaoAmizadeDAO();
-        private int idUsuarioAtual = 1; // Exemplo. Pegue isso da sessão do usuário logado.
+       // private int idUsuarioAtual = 1; // Exemplo. Pegue isso da sessão do usuário logado.
         int id_usuario = UserSession.userLogado.id;
 
 
@@ -263,9 +263,9 @@ namespace Login_Register
             }
         }*/
 
-        private void panel12_Paint(object sender, PaintEventArgs e)
+        /*private void panel12_Paint(object sender, PaintEventArgs e)
         {
-           /* var sugestoes = sugestaoDAO.ObterNomesSugestoes(id_usuario);
+            var sugestoes = sugestaoDAO.ObterNomesSugestoes(id_usuario);
 
             panel12.Controls.Clear();
 
@@ -286,7 +286,17 @@ namespace Login_Register
 
                 panel12.Controls.Add(card);
             }
-           */
+           
+        }*/
+
+        private void btnNotificacoes_Click(object sender, EventArgs e)
+        {
+            //panelNotificacoes.Visible = !panelNotificacoes.Visible;
+        }
+
+        private void panelNotificacoes_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 

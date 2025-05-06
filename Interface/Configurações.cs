@@ -24,7 +24,7 @@ namespace Login_Register
         
         string imagemSelecionada = "";
         string imagemCorFundoSelecionada;
-        int idUsuario = 1; // aqui você coloca o ID real do usuário logado
+       // int idUsuario = 1; // aqui você coloca o ID real do usuário logado
         string bandeira = nomeBandeiraSelecionada; // <- a imagem selecionada no botão
         string borda = nomeBordaSelecionada;       // <- a imagem selecionada no botão
         string menu = nomeMenuSelecionado;       // <- a imagem selecionada no botão                                              
@@ -770,6 +770,16 @@ namespace Login_Register
 
          
            // Console.WriteLine($"Tema Selecionado: {temaSelecionado}, Bandeira: {bandeiraSelecionada}, Borda: {bordaSelecionada}");
+        }
+
+        private void panelNotificacoes_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnNotificacoes_Click(object sender, EventArgs e)
+        {
+            panelNotificacoes.Visible = !panelNotificacoes.Visible;
         }
     }
 }

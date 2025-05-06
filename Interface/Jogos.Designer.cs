@@ -45,8 +45,11 @@
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panelNotificacoes = new System.Windows.Forms.Panel();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenuTelaInicial
@@ -204,6 +207,7 @@
             this.btnNotificacoes.Size = new System.Drawing.Size(16, 20);
             this.btnNotificacoes.TabIndex = 48;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
+            this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
             // 
             // btnFecharTelaInicial
             // 
@@ -253,10 +257,38 @@
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1104, 2370);
             this.panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Azure;
+            this.button1.Location = new System.Drawing.Point(88, 251);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(300, 195);
+            this.button1.TabIndex = 0;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // panelNotificacoes
+            // 
+            this.panelNotificacoes.BackColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.BackgroundImage = global::Login_Register.Properties.Resources.Notificações;
+            this.panelNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelNotificacoes.ForeColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.Location = new System.Drawing.Point(793, 43);
+            this.panelNotificacoes.Name = "panelNotificacoes";
+            this.panelNotificacoes.Size = new System.Drawing.Size(373, 717);
+            this.panelNotificacoes.TabIndex = 50;
+            this.panelNotificacoes.Visible = false;
+            this.panelNotificacoes.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNotificacoes_Paint);
             // 
             // Jogos
             // 
@@ -265,6 +297,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1386, 757);
+            this.Controls.Add(this.panelNotificacoes);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.btnNotificacoes);
             this.Controls.Add(this.btnFecharTelaInicial);
@@ -282,6 +315,7 @@
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Jogos_MouseUp);
             this.pnlMenuTelaInicial.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -303,5 +337,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panelNotificacoes;
     }
 }

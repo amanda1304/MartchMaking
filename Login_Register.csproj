@@ -201,6 +201,40 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Figurinhas\Fig1.webp" />
+    <None Include="Figurinhas\Fig10.webp" />
+    <None Include="Figurinhas\Fig11.webp" />
+    <None Include="Figurinhas\Fig12.webp" />
+    <None Include="Figurinhas\Fig13.webp" />
+    <None Include="Figurinhas\Fig14.webp" />
+    <None Include="Figurinhas\Fig15.webp" />
+    <None Include="Figurinhas\Fig16.webp" />
+    <None Include="Figurinhas\Fig17.webp" />
+    <None Include="Figurinhas\Fig18.webp" />
+    <None Include="Figurinhas\Fig19.webp" />
+    <None Include="Figurinhas\Fig2.webp" />
+    <None Include="Figurinhas\Fig20.webp" />
+    <None Include="Figurinhas\Fig21.webp" />
+    <None Include="Figurinhas\Fig22.webp" />
+    <None Include="Figurinhas\Fig23.webp" />
+    <None Include="Figurinhas\Fig24.webp" />
+    <None Include="Figurinhas\Fig25.webp" />
+    <None Include="Figurinhas\Fig26.webp" />
+    <None Include="Figurinhas\Fig27.webp" />
+    <None Include="Figurinhas\Fig28.webp" />
+    <None Include="Figurinhas\Fig29.webp" />
+    <None Include="Figurinhas\Fig30.webp" />
+    <None Include="Figurinhas\Fig31.webp" />
+    <None Include="Figurinhas\Fig32.webp" />
+    <None Include="Figurinhas\Fig33.webp" />
+    <None Include="Figurinhas\Fig34.webp" />
+    <None Include="Figurinhas\Fig35.webp" />
+    <None Include="Figurinhas\Fig36.webp" />
+    <None Include="Figurinhas\Fig5.webp" />
+    <None Include="Figurinhas\Fig6.webp" />
+    <None Include="Figurinhas\Fig7.webp" />
+    <None Include="Figurinhas\Fig8.webp" />
+    <None Include="Figurinhas\Fig9.webp" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -254,6 +288,7 @@
     <Content Include="banco de imagens\Group 22.png" />
     <Content Include="banco de imagens\Group 34.png" />
     <Content Include="banco de imagens\Group 6.png" />
+    <Content Include="banco de imagens\Group 7 %281%29.png" />
     <Content Include="banco de imagens\Group 7.png" />
     <Content Include="banco de imagens\hide.png" />
     <Content Include="banco de imagens\image.png" />
@@ -262,6 +297,8 @@
     <Content Include="banco de imagens\logo branco.png" />
     <Content Include="banco de imagens\logo preto.png" />
     <Content Include="banco de imagens\MatchMaking.png" />
+    <Content Include="banco de imagens\Notificações.png" />
+    <Content Include="banco de imagens\PaineldeFigurinhas.png" />
     <Content Include="banco de imagens\Perfil.png" />
     <Content Include="banco de imagens\Rectangle 31.png" />
     <Content Include="banco de imagens\Rectangle 32.png" />
@@ -272,6 +309,12 @@
     <Content Include="banco de imagens\Wireframe - 3 %284%29.png" />
     <Content Include="banco de imagens\Wireframe - 3.png" />
     <Content Include="banco de imagens\Wireframe - 9 1.png" />
+    <None Include="Resources\fundo para o perfil.png" />
+    <None Include="Resources\Group 22 %281%29.png" />
+    <None Include="Resources\Notificações.png" />
+    <None Include="Resources\Group 7 %281%29.png" />
+    <None Include="Resources\PaineldeFigurinhas.png" />
+    <None Include="Resources\Group 31 %281%29.png" />
     <None Include="Resources\Perfil.png" />
     <None Include="Resources\Jogos.png" />
     <None Include="Resources\Configurações.png" />
@@ -279,6 +322,8 @@
     <Content Include="banco de imagens\Full Stop.png" />
     <Content Include="banco de imagens\Group 8.png" />
     <Content Include="banco de imagens\Group 9.png" />
+    <Content Include="Figurinhas\Fig3.png" />
+    <Content Include="Figurinhas\Fig4.png" />
     <Content Include="Menu\Amarelo.png" />
     <Content Include="Menu\Azul.png" />
     <Content Include="Bordas\Amarelo.png" />

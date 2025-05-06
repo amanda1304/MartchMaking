@@ -568,6 +568,7 @@
             this.btnNotificacoes.Size = new System.Drawing.Size(16, 20);
             this.btnNotificacoes.TabIndex = 39;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
+            this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
             // 
             // labelHistoricoNomeDeUsuario1
             // 
@@ -1478,35 +1479,6 @@
             this.timer1.Interval = 3;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.Transparent;
-            this.panel12.Controls.Add(this.panel10);
-            this.panel12.Controls.Add(this.panel9);
-            this.panel12.Controls.Add(this.panel11);
-            this.panel12.Controls.Add(this.panel2);
-            this.panel12.Controls.Add(this.panel1);
-            this.panel12.Controls.Add(this.pictureBoxSugestoesDeAmizadeFotoDeUsuario5);
-            this.panel12.Controls.Add(this.labelSugestoesDeAmizadeStatusDeUsuario5);
-            this.panel12.Controls.Add(this.labelSugestoesDeAmizadeNomeDeUsuario5);
-            this.panel12.Controls.Add(this.pictureBoxSugestoesDeAmizadeFotoDeUsuario4);
-            this.panel12.Controls.Add(this.labelSugestoesDeAmizadeStatusDeUsuario4);
-            this.panel12.Controls.Add(this.labelSugestoesDeAmizadeNomeDeUsuario4);
-            this.panel12.Controls.Add(this.pictureBoxSugestoesDeAmizadeFotoDeUsuario3);
-            this.panel12.Controls.Add(this.labelSugestoesDeAmizadeStatusDeUsuario3);
-            this.panel12.Controls.Add(this.labelSugestoesDeAmizadeNomeDeUsuario3);
-            this.panel12.Controls.Add(this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2);
-            this.panel12.Controls.Add(this.labelSugestoesDeAmizadeStatusDeUsuario);
-            this.panel12.Controls.Add(this.labelSugestoesDeAmizadeNomeDeUsuario2);
-            this.panel12.Controls.Add(this.pictureBoxSugestoesDeAmizadeFotoDeUsuario1);
-            this.panel12.Controls.Add(this.labelSugestoesDeAmizadeStatusDeUsuario1);
-            this.panel12.Controls.Add(this.labelSugestoesDeAmizadeNomeDeUsuario1);
-            this.panel12.Location = new System.Drawing.Point(919, 471);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(212, 234);
-            this.panel12.TabIndex = 99;
-            this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
-            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1514,7 +1486,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1386, 757);
-            this.Controls.Add(this.panel12);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.labelAmigosOnlineStatus5);
             this.Controls.Add(this.label10);
@@ -1725,6 +1701,5 @@
         private System.Windows.Forms.Button btnAdicionarAmigo4;
         private System.Windows.Forms.Button btnAdicionarAmigo5;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Panel panel12;
     }
 }
