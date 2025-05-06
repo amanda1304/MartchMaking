@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login_Register.Classes;
 using Login_Register.Model.Services;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -21,6 +22,7 @@ namespace Login_Register
         public TelaInicial()
         {
             InitializeComponent();
+            this.FormClosing += EncerrarAplicacao.FecharAplicacao;
          
         }
         int TogMove;
@@ -241,6 +243,11 @@ namespace Login_Register
         private void panelNotificacoes_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void pnlHistoricoMatchMakingTelaInicial_Paint(object sender, PaintEventArgs e)
+        {
+           
         }
     }
 

@@ -437,6 +437,7 @@
             this.pnlHistoricoMatchMakingTelaInicial.Name = "pnlHistoricoMatchMakingTelaInicial";
             this.pnlHistoricoMatchMakingTelaInicial.Size = new System.Drawing.Size(146, 188);
             this.pnlHistoricoMatchMakingTelaInicial.TabIndex = 8;
+            this.pnlHistoricoMatchMakingTelaInicial.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlHistoricoMatchMakingTelaInicial_Paint);
             // 
             // panel6
             // 
