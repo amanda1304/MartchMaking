@@ -137,6 +137,56 @@ public class ConfiguracoesDAO
             }
         }
     }
+    public void InserirTema(int idPerfilUsuario, string bandeira, string borda, string menu)
+    {
+        using (var conexao = new MySqlConnection(connectionString))
+        {
+            conexao.Open();
+
+            string query = @"INSERT INTO configuracoes (id_perfil_usuario, bandeiras, bordas, menu)
+                         VALUES (@idPerfil, @bandeira, @borda, @menu)";
+
+            using (var cmd = new MySqlCommand(query, conexao))
+            {
+                cmd.Parameters.AddWithValue("@idPerfil", idPerfilUsuario);
+                cmd.Parameters.AddWithValue("@bandeira", bandeira);
+                cmd.Parameters.AddWithValue("@borda", borda);
+                cmd.Parameters.AddWithValue("@menu", menu);
+
+                cmd.ExecuteNonQuery();
+            }
+        }
+    }
+
+    public Configuracoes ObterConfiguracoesPorUsuario(int idUsuario)
+    {
+        using (var conexao = new MySqlConnection(connectionString))
+        {
+            conexao.Open();
+
+            string query = @"SELECT bandeiras, bordas, menu FROM configuracoes WHERE id_perfil_usuario = @idUsuario";
+
+            using (var cmd = new MySqlCommand(query, conexao))
+            {
+                cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return new Configuracoes
+                        {
+                            bandeiras = reader["bandeiras"].ToString(),
+                            bordas = reader["bordas"].ToString(),
+                            menu = reader["menu"].ToString()
+                        };
+                    }
+                }
+            }
+        }
+
+        return null;
+    }
 
 
 

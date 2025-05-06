@@ -12,6 +12,9 @@ using Login_Register.Model.PerfilUsuario;
 using Login_Register.Model.Services;
 using Login_Register.Model.Usuario;
 using MySql.Data.MySqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Login_Register.Model.Configuracoes;
 namespace Login_Register
 {
     
@@ -22,10 +25,16 @@ namespace Login_Register
         string imagemSelecionada = "";
         string imagemCorFundoSelecionada;
         int idUsuario = 1; // aqui você coloca o ID real do usuário logado
-
-        string nomeBandeiraSelecionada;
-        string nomeBordaSelecionada;
-        string nomeMenuSelecionado;
+        string bandeira = nomeBandeiraSelecionada; // <- a imagem selecionada no botão
+        string borda = nomeBordaSelecionada;       // <- a imagem selecionada no botão
+        string menu = nomeMenuSelecionado;       // <- a imagem selecionada no botão                                              
+        // Variáveis para armazenar a seleção do tema
+        static string nomeBandeiraSelecionada;
+        static string nomeBordaSelecionada;
+        static string nomeMenuSelecionado;
+        //string nomeBandeiraSelecionada;
+        //string nomeBordaSelecionada;
+        // string nomeMenuSelecionado;
 
         public Configurações()
         {
@@ -169,32 +178,39 @@ namespace Login_Register
             textBox1.Text = UserSession.userLogado.nome;
 
             // Opcional: se quiser também puxar dados do perfil
-            PerfilUsuarioDAO perfilDAO = new PerfilUsuarioDAO(new DatabaseService());
-            PerfilUsuario perfil = perfilDAO.ObterPerfilPorUsuario(this.idUsuario);
+            ConfiguracoesDAO configDAO = new ConfiguracoesDAO(new DatabaseService());
+            var perfilDAO = new PerfilUsuarioDAO(new DatabaseService());
+            var perfil = perfilDAO.ObterPerfilPorUsuario(UserSession.userLogado.id);
+            var configuracoes = configDAO.ObterPorIdPerfilUsuario(perfil.IdPerfilUsuario);
+
+            //PerfilUsuarioDAO perfilDAO = new PerfilUsuarioDAO(new DatabaseService());
+            //PerfilUsuario perfil = perfilDAO.ObterPerfilPorUsuario(this.idUsuario);
 
             if (perfil != null)
             {
                 textBox1.Text = perfil.Nickname;
                 // ou outros campos, como descricao etc
             }
+            if (configuracoes != null)
+            {
+                AplicarTema(configuracoes.bordas, configuracoes.bandeiras, configuracoes.menu); // você pode chamar isso com os três, mas aplicar só o menu
+            }
         }
-
         private void SelecionarAvatar(string nomeAvatar)
         {
             imagemSelecionada = nomeAvatar;
             pictureBoxPerfil.Image = (Image)Properties.Resources.ResourceManager.GetObject(nomeAvatar);
         }
+        // private string imagemCorFundoSelecionada; // precisa ser uma variável fora do método
+
         private void SelecionarCorFundo(string nomeImagemFundo)
         {
             imagemCorFundoSelecionada = nomeImagemFundo;
 
-            // Define a imagem de fundo no formulário
+            // Define a imagem de fundo no PictureBox (para visualizar antes de salvar)
             pictureBoxFotodeFundoAtual.Image = (Image)Properties.Resources.ResourceManager.GetObject(nomeImagemFundo);
-            //this.BackgroundImageLayout = ImageLayout.Stretch;
-
-            // Salva no banco
-            configService.SalvarCorFundo(UserSession.userLogado.id, nomeImagemFundo);
         }
+
 
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -278,6 +294,51 @@ namespace Login_Register
                 }
             }
 
+            try
+            {
+                var perfilDAO = new PerfilUsuarioDAO(new DatabaseService());
+                var perfil = perfilDAO.ObterPerfilPorUsuario(UserSession.userLogado.id);
+
+                if (perfil == null)
+                {
+                    MessageBox.Show("Perfil de usuário não encontrado.");
+                    return;
+                }
+
+                var configDAO = new ConfiguracoesDAO(new DatabaseService());
+                var configuracaoAtual = configDAO.ObterPorIdPerfilUsuario(perfil.IdPerfilUsuario);
+
+                if (configuracaoAtual == null)
+                {
+                    MessageBox.Show("Configurações atuais não encontradas.");
+                    return;
+                }
+                
+                // Aqui você precisa pegar as seleções feitas no formulário
+                string bandeiraSelecionada = nomeBandeiraSelecionada ;// pegar a bandeira selecionada 
+
+                string bordaSelecionada =  nomeBordaSelecionada;// pegar a borda selecionada 
+
+                string menuSelecionado =  nomeMenuSelecionado;// pegar o menu selecionado 
+                
+                if (configuracaoAtual.bandeiras != bandeiraSelecionada ||
+                    configuracaoAtual.bordas != bordaSelecionada ||
+                    configuracaoAtual.menu != menuSelecionado)
+                {
+                    configDAO.AtualizarTema(perfil.IdPerfilUsuario, bandeiraSelecionada, bordaSelecionada, menuSelecionado);
+                    MessageBox.Show("Tema salvo com sucesso!");
+                    algoFoiAlterado = true;
+                }
+                else
+                {
+                    // Nenhuma alteração no tema
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao salvar o tema: " + ex.Message + "\n" + ex.StackTrace);
+            }
+
             // 2. Atualizar avatar se foi selecionado
             if (!string.IsNullOrEmpty(imagemSelecionada))
             {
@@ -327,6 +388,7 @@ namespace Login_Register
                 MessageBox.Show("Nenhuma alteração foi feita.", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
 
         private void btnFotodePerfil6_Click(object sender, EventArgs e)
         {
@@ -609,42 +671,105 @@ namespace Login_Register
             pictureBoxFotodeFundoAtual.Image = Properties.Resources.Group_40;
         }
 
-       
+
         public void AplicarTema(string nomeBorda, string nomeBandeira, string nomeMenu)
         {
-            pnlMenuTelaInicial.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nomeMenu);
+            object imgObj = Properties.Resources.ResourceManager.GetObject(nomeMenu);
+
+            if (imgObj is Image img)
+            {
+                pnlMenuTelaInicial.BackgroundImage = img;
+                nomeMenuSelecionado = nomeMenu;
+                nomeBordaSelecionada = nomeBorda;
+                nomeBandeiraSelecionada = nomeBandeira;
+            }
+            else
+            {
+                MessageBox.Show($"Erro: imagem '{nomeMenu}' não encontrada ou inválida.", "Erro de Tema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
 
+        /*  private void btnTemaAmarelo_Click(object sender, EventArgs e)
+          {
+              AplicarTema("Amanrelo", "Amanrelo1", "Amarelo2");
+              pnlMenuTelaInicial.BackgroundImage = Properties.Resources.Amarelo2;
+              nomeMenuSelecionado = "Amanrelo2";
+              nomeBandeiraSelecionada = "Amanrelo";
+              nomeBordaSelecionada = "Amanrelo1";
+          }
+
+          private void btnTemaVermelho_Click(object sender, EventArgs e)
+          {
+
+              AplicarTema("Vermelho", "Vermelho1", "Vermelho2");
+              pnlMenuTelaInicial.BackgroundImage = Properties.Resources.Vermelho2;
+              nomeMenuSelecionado = "Vermelho2";
+              nomeBandeiraSelecionada = "Vermelho";
+              nomeBordaSelecionada = "Vermelho1";
+          }*/
+        /* private void btnTemaAmarelo_Click(object sender, EventArgs e)
+         {
+             pnlMenuTelaInicial.BackgroundImage = null;
+             AplicarTema("Amarelo1", "Amarelo", "Amarelo2");
+         }
+
+         private void btnTemaVermelho_Click(object sender, EventArgs e)
+         {
+             pnlMenuTelaInicial.BackgroundImage = null;
+             AplicarTema("Vermelho1", "Vermelho", "Vermelho2");
+         }*/
         private void btnTemaAmarelo_Click(object sender, EventArgs e)
         {
-            AplicarTema("Amanrelo", "Amanrelo1", "Amarelo2");
-            pnlMenuTelaInicial.BackgroundImage = Properties.Resources.Amarelo2;
+            LiberarImagemAtual();
+            AplicarTema("Amarelo1", "Amarelo", "Amarelo2");
         }
 
         private void btnTemaVermelho_Click(object sender, EventArgs e)
         {
-
-            AplicarTema("Vermelho", "Vermelho1", "Vermelho2");
-            pnlMenuTelaInicial.BackgroundImage = Properties.Resources.Vermelho2;
+            LiberarImagemAtual();
+            AplicarTema("Vermelho1", "Vermelho", "Vermelho2");
         }
+
+        // Método para liberar a imagem atual e evitar vazamento
+        private void LiberarImagemAtual()
+        {
+            if (pnlMenuTelaInicial.BackgroundImage != null)
+            {
+                pnlMenuTelaInicial.BackgroundImage.Dispose();
+                pnlMenuTelaInicial.BackgroundImage = null;
+            }
+        }
+
 
         private void btnTemaRoxo_Click(object sender, EventArgs e)
         {
+            LiberarImagemAtual();
             AplicarTema("Roxo", "Roxo1", "Roxo2");
-            pnlMenuTelaInicial.BackgroundImage = Properties.Resources.Roxo2;
+           
         }
+
+      
 
         private void btnTemaAzul_Click(object sender, EventArgs e)
         {
+            LiberarImagemAtual();
+            // Aplica o tema visualmente
             AplicarTema("Azul", "Azul1", "Azul2");
-            pnlMenuTelaInicial.BackgroundImage = Properties.Resources.Azul2;
+           
+            
         }
+
 
         private void btnTemaVerde_Click(object sender, EventArgs e)
         {
+            LiberarImagemAtual();
+            // Aplica o tema visualmente
             AplicarTema("Verde", "Verde1", "Verde2");
-            pnlMenuTelaInicial.BackgroundImage = Properties.Resources.Verde2;
+            
+
+         
+           // Console.WriteLine($"Tema Selecionado: {temaSelecionado}, Bandeira: {bandeiraSelecionada}, Borda: {bordaSelecionada}");
         }
     }
 }

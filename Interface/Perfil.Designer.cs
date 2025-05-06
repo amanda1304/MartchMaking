@@ -72,6 +72,7 @@
             this.pnlMenuTelaInicial.Name = "pnlMenuTelaInicial";
             this.pnlMenuTelaInicial.Size = new System.Drawing.Size(256, 758);
             this.pnlMenuTelaInicial.TabIndex = 1;
+            this.pnlMenuTelaInicial.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMenuTelaInicial_Paint);
             // 
             // panel2
             // 

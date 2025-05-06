@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.Design.Serialization;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -8,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Login_Register.Model.Services;
+using Login_Register.Model.Usuario;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Login_Register
@@ -15,13 +17,15 @@ namespace Login_Register
 
     public partial class TelaInicial : Form
     {
-       
+        //SugestaoAmizadeDAO sugestaoDAO = new SugestaoAmizadeDAO();
+        private int idUsuarioAtual = 1; // Exemplo. Pegue isso da sessão do usuário logado.
+        int id_usuario = UserSession.userLogado.id;
 
 
         public TelaInicial()
         {
             InitializeComponent();
-         
+           // var nomes = sugestaoDAO.ObterNomesSugestoes(id_usuario);
         }
         int TogMove;
         int MValX;
@@ -98,7 +102,9 @@ namespace Login_Register
 
         private void btnAdicionarAmigo1_Click(object sender, EventArgs e)
         {
+           
             btnAmigoAdicionado1.BringToFront();
+
         }
 
         private void btnAmigoAdicionado1_Click(object sender, EventArgs e)
@@ -220,17 +226,67 @@ namespace Login_Register
 
         private void TelaInicial_Load_1(object sender, EventArgs e)
         {
-
+            timer1.Start();
             ConfiguracoesService configService = new ConfiguracoesService();
             pictureBox6.Image = configService.CarregarAvatar(UserSession.userLogado.id);
 
             labelNomePerfilTelaInicial.Text = UserSession.userLogado.nome;
-            timer1.Start();
+
+            //CarregarSugestoes();
         }
+   
 
         private void pnlPerfilTelaInicial_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        /*private void CarregarSugestoes()
+        {
+            var sugestoes = sugestaoDAO.ObterNomesSugestoes(id_usuario);
+            panel12.Controls.Clear();
+
+            foreach (var nome in sugestoes)
+            {
+                Label label = new Label();
+                label.Text = nome;
+                label.AutoSize = true;
+                label.Margin = new Padding(5);
+
+                Panel card = new Panel();
+                card.BorderStyle = BorderStyle.FixedSingle;
+                card.Padding = new Padding(10);
+                card.Margin = new Padding(5);
+                card.Width = 200;
+                card.Controls.Add(label);
+
+                panel12.Controls.Add(card);
+            }
+        }*/
+
+        private void panel12_Paint(object sender, PaintEventArgs e)
+        {
+           /* var sugestoes = sugestaoDAO.ObterNomesSugestoes(id_usuario);
+
+            panel12.Controls.Clear();
+
+            foreach (var nome in sugestoes)
+            {
+                Label label = new Label();
+                label.Text = nome;
+                label.AutoSize = true;
+                label.Margin = new Padding(5);
+
+                // Opcional: colocar dentro de um pequeno panel/card para estilizar
+                Panel card = new Panel();
+                card.BorderStyle = BorderStyle.FixedSingle;
+                card.Padding = new Padding(10);
+                card.Margin = new Padding(5);
+                card.Width = 200;
+                card.Controls.Add(label);
+
+                panel12.Controls.Add(card);
+            }
+           */
         }
     }
 
