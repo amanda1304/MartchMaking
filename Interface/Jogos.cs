@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login_Register.Classes;
 
 namespace Login_Register
 {
@@ -15,6 +16,7 @@ namespace Login_Register
         public Jogos()
         {
             InitializeComponent();
+            this.FormClosing += EncerrarAplicacao.FecharAplicacao;
         }
         int TogMove;
         int MValX;

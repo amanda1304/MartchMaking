@@ -115,6 +115,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\EncerrarAplicacao.cs" />
     <Compile Include="Classes\RegistroMensagens.cs" />
     <Compile Include="Interface\Amigos.cs">
       <SubType>Form</SubType>

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login_Register.Classes;
 using Login_Register.Model.PerfilUsuario;
 using Login_Register.Model.Services;
 using Login_Register.Model.Usuario;
@@ -29,7 +30,8 @@ namespace Login_Register
         public Configurações()
         {
             InitializeComponent();
-            
+            this.FormClosing += EncerrarAplicacao.FecharAplicacao;
+
         }
         int TogMove;
         int MValX;
