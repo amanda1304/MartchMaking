@@ -43,17 +43,21 @@
             this.btnFecharTelaInicial = new System.Windows.Forms.Button();
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
             this.panelFundoMatchmaking = new System.Windows.Forms.Panel();
+            this.btnListadeJogos = new System.Windows.Forms.Button();
             this.flowLayoutPanelListadeJogos = new System.Windows.Forms.FlowLayoutPanel();
             this.panelListadeJogos = new System.Windows.Forms.Panel();
+            this.buttonAlbion = new System.Windows.Forms.Button();
             this.labelPerfilMatchmaking = new System.Windows.Forms.Label();
             this.pictureBoxAmigo1Matchmaking = new System.Windows.Forms.PictureBox();
             this.pictureBoxAmigo2Matchmaking = new System.Windows.Forms.PictureBox();
             this.pictureAvatar = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnListadeJogos = new System.Windows.Forms.Button();
+            this.labelDataEHorário = new System.Windows.Forms.Label();
+            this.labelJogo = new System.Windows.Forms.Label();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.panelFundoMatchmaking.SuspendLayout();
             this.flowLayoutPanelListadeJogos.SuspendLayout();
+            this.panelListadeJogos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAmigo1Matchmaking)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAmigo2Matchmaking)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar)).BeginInit();
@@ -245,6 +249,8 @@
             // 
             this.panelFundoMatchmaking.BackgroundImage = global::Login_Register.Properties.Resources.fundomatchmaking;
             this.panelFundoMatchmaking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelFundoMatchmaking.Controls.Add(this.labelJogo);
+            this.panelFundoMatchmaking.Controls.Add(this.labelDataEHorário);
             this.panelFundoMatchmaking.Controls.Add(this.btnListadeJogos);
             this.panelFundoMatchmaking.Controls.Add(this.flowLayoutPanelListadeJogos);
             this.panelFundoMatchmaking.Controls.Add(this.labelPerfilMatchmaking);
@@ -255,6 +261,19 @@
             this.panelFundoMatchmaking.Name = "panelFundoMatchmaking";
             this.panelFundoMatchmaking.Size = new System.Drawing.Size(853, 700);
             this.panelFundoMatchmaking.TabIndex = 43;
+            // 
+            // btnListadeJogos
+            // 
+            this.btnListadeJogos.BackColor = System.Drawing.Color.Transparent;
+            this.btnListadeJogos.FlatAppearance.BorderSize = 0;
+            this.btnListadeJogos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListadeJogos.ForeColor = System.Drawing.Color.Transparent;
+            this.btnListadeJogos.Location = new System.Drawing.Point(409, 617);
+            this.btnListadeJogos.Name = "btnListadeJogos";
+            this.btnListadeJogos.Size = new System.Drawing.Size(15, 16);
+            this.btnListadeJogos.TabIndex = 45;
+            this.btnListadeJogos.UseVisualStyleBackColor = false;
+            this.btnListadeJogos.Click += new System.EventHandler(this.btnListadeJogos_Click);
             // 
             // flowLayoutPanelListadeJogos
             // 
@@ -272,13 +291,23 @@
             // 
             // panelListadeJogos
             // 
-            this.panelListadeJogos.BackgroundImage = global::Login_Register.Properties.Resources.Listadejogos;
+            this.panelListadeJogos.BackgroundImage = global::Login_Register.Properties.Resources.listadosjogos2;
             this.panelListadeJogos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelListadeJogos.Controls.Add(this.buttonAlbion);
             this.panelListadeJogos.Location = new System.Drawing.Point(3, 3);
             this.panelListadeJogos.Name = "panelListadeJogos";
-            this.panelListadeJogos.Size = new System.Drawing.Size(221, 874);
+            this.panelListadeJogos.Size = new System.Drawing.Size(221, 861);
             this.panelListadeJogos.TabIndex = 6;
             this.panelListadeJogos.Paint += new System.Windows.Forms.PaintEventHandler(this.panelListadeJogos_Paint);
+            // 
+            // buttonAlbion
+            // 
+            this.buttonAlbion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAlbion.Location = new System.Drawing.Point(-3, 26);
+            this.buttonAlbion.Name = "buttonAlbion";
+            this.buttonAlbion.Size = new System.Drawing.Size(224, 23);
+            this.buttonAlbion.TabIndex = 0;
+            this.buttonAlbion.UseVisualStyleBackColor = true;
             // 
             // labelPerfilMatchmaking
             // 
@@ -334,18 +363,29 @@
             this.panel1.Size = new System.Drawing.Size(280, 700);
             this.panel1.TabIndex = 44;
             // 
-            // btnListadeJogos
+            // labelDataEHorário
             // 
-            this.btnListadeJogos.BackColor = System.Drawing.Color.Transparent;
-            this.btnListadeJogos.FlatAppearance.BorderSize = 0;
-            this.btnListadeJogos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListadeJogos.ForeColor = System.Drawing.Color.Transparent;
-            this.btnListadeJogos.Location = new System.Drawing.Point(409, 617);
-            this.btnListadeJogos.Name = "btnListadeJogos";
-            this.btnListadeJogos.Size = new System.Drawing.Size(15, 16);
-            this.btnListadeJogos.TabIndex = 45;
-            this.btnListadeJogos.UseVisualStyleBackColor = false;
-            this.btnListadeJogos.Click += new System.EventHandler(this.btnListadeJogos_Click);
+            this.labelDataEHorário.AutoSize = true;
+            this.labelDataEHorário.BackColor = System.Drawing.Color.Transparent;
+            this.labelDataEHorário.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDataEHorário.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelDataEHorário.Location = new System.Drawing.Point(534, 647);
+            this.labelDataEHorário.Name = "labelDataEHorário";
+            this.labelDataEHorário.Size = new System.Drawing.Size(120, 21);
+            this.labelDataEHorário.TabIndex = 46;
+            this.labelDataEHorário.Text = "10/03 às 19h00";
+            // 
+            // labelJogo
+            // 
+            this.labelJogo.AutoSize = true;
+            this.labelJogo.BackColor = System.Drawing.Color.Transparent;
+            this.labelJogo.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelJogo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelJogo.Location = new System.Drawing.Point(241, 647);
+            this.labelJogo.Name = "labelJogo";
+            this.labelJogo.Size = new System.Drawing.Size(91, 21);
+            this.labelJogo.TabIndex = 47;
+            this.labelJogo.Text = "Call of Duty";
             // 
             // MatchMaking
             // 
@@ -374,7 +414,9 @@
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MatchMaking_MouseUp);
             this.pnlMenuTelaInicial.ResumeLayout(false);
             this.panelFundoMatchmaking.ResumeLayout(false);
+            this.panelFundoMatchmaking.PerformLayout();
             this.flowLayoutPanelListadeJogos.ResumeLayout(false);
+            this.panelListadeJogos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAmigo1Matchmaking)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAmigo2Matchmaking)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureAvatar)).EndInit();
@@ -405,5 +447,8 @@
         private System.Windows.Forms.Panel panelListadeJogos;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelListadeJogos;
         private System.Windows.Forms.Button btnListadeJogos;
+        private System.Windows.Forms.Button buttonAlbion;
+        private System.Windows.Forms.Label labelJogo;
+        private System.Windows.Forms.Label labelDataEHorário;
     }
 }
