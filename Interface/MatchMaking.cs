@@ -135,5 +135,20 @@ namespace Login_Register
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnListadeJogos_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanelListadeJogos.Visible = !flowLayoutPanelListadeJogos.Visible;
+        }
+
+        private void panelListadeJogos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanelListadeJogos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

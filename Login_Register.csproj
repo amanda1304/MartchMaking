@@ -308,6 +308,7 @@
     <Content Include="banco de imagens\Wireframe - 3 %284%29.png" />
     <Content Include="banco de imagens\Wireframe - 3.png" />
     <Content Include="banco de imagens\Wireframe - 9 1.png" />
+    <None Include="Resources\Listadejogos.png" />
     <None Include="Resources\fundochat.png" />
     <None Include="Resources\FundoChatAmigos.png" />
     <None Include="Resources\fundodechat amigos.png" />
