@@ -131,7 +131,7 @@
             this.btnAdicionarAmigo4 = new System.Windows.Forms.Button();
             this.btnAmigoAdicionado4 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel12 = new System.Windows.Forms.Panel();
+            this.panelNotificacoes = new System.Windows.Forms.Panel();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.pnlBanerSoldado.SuspendLayout();
             this.pnlFavdaSemana1.SuspendLayout();
@@ -161,7 +161,6 @@
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenuTelaInicial
@@ -438,6 +437,7 @@
             this.pnlHistoricoMatchMakingTelaInicial.Name = "pnlHistoricoMatchMakingTelaInicial";
             this.pnlHistoricoMatchMakingTelaInicial.Size = new System.Drawing.Size(146, 188);
             this.pnlHistoricoMatchMakingTelaInicial.TabIndex = 8;
+            this.pnlHistoricoMatchMakingTelaInicial.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlHistoricoMatchMakingTelaInicial_Paint);
             // 
             // panel6
             // 
@@ -875,7 +875,7 @@
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxSugestoesDeAmizadeFotoDeUsuario1.BackgroundImage")));
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxSugestoesDeAmizadeFotoDeUsuario1.Location = new System.Drawing.Point(11, 6);
+            this.pictureBoxSugestoesDeAmizadeFotoDeUsuario1.Location = new System.Drawing.Point(930, 477);
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario1.Name = "pictureBoxSugestoesDeAmizadeFotoDeUsuario1";
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario1.Size = new System.Drawing.Size(25, 25);
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario1.TabIndex = 65;
@@ -888,7 +888,7 @@
             this.labelSugestoesDeAmizadeStatusDeUsuario1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelSugestoesDeAmizadeStatusDeUsuario1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSugestoesDeAmizadeStatusDeUsuario1.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.labelSugestoesDeAmizadeStatusDeUsuario1.Location = new System.Drawing.Point(41, 21);
+            this.labelSugestoesDeAmizadeStatusDeUsuario1.Location = new System.Drawing.Point(960, 492);
             this.labelSugestoesDeAmizadeStatusDeUsuario1.Name = "labelSugestoesDeAmizadeStatusDeUsuario1";
             this.labelSugestoesDeAmizadeStatusDeUsuario1.Size = new System.Drawing.Size(80, 9);
             this.labelSugestoesDeAmizadeStatusDeUsuario1.TabIndex = 64;
@@ -901,7 +901,7 @@
             this.labelSugestoesDeAmizadeNomeDeUsuario1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelSugestoesDeAmizadeNomeDeUsuario1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSugestoesDeAmizadeNomeDeUsuario1.ForeColor = System.Drawing.Color.Transparent;
-            this.labelSugestoesDeAmizadeNomeDeUsuario1.Location = new System.Drawing.Point(41, 6);
+            this.labelSugestoesDeAmizadeNomeDeUsuario1.Location = new System.Drawing.Point(960, 477);
             this.labelSugestoesDeAmizadeNomeDeUsuario1.Name = "labelSugestoesDeAmizadeNomeDeUsuario1";
             this.labelSugestoesDeAmizadeNomeDeUsuario1.Size = new System.Drawing.Size(60, 13);
             this.labelSugestoesDeAmizadeNomeDeUsuario1.TabIndex = 63;
@@ -912,7 +912,7 @@
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxSugestoesDeAmizadeFotoDeUsuario2.BackgroundImage")));
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2.Location = new System.Drawing.Point(11, 55);
+            this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2.Location = new System.Drawing.Point(930, 526);
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2.Name = "pictureBoxSugestoesDeAmizadeFotoDeUsuario2";
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2.Size = new System.Drawing.Size(25, 25);
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2.TabIndex = 69;
@@ -925,7 +925,7 @@
             this.labelSugestoesDeAmizadeStatusDeUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelSugestoesDeAmizadeStatusDeUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSugestoesDeAmizadeStatusDeUsuario.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.labelSugestoesDeAmizadeStatusDeUsuario.Location = new System.Drawing.Point(41, 70);
+            this.labelSugestoesDeAmizadeStatusDeUsuario.Location = new System.Drawing.Point(960, 541);
             this.labelSugestoesDeAmizadeStatusDeUsuario.Name = "labelSugestoesDeAmizadeStatusDeUsuario";
             this.labelSugestoesDeAmizadeStatusDeUsuario.Size = new System.Drawing.Size(55, 9);
             this.labelSugestoesDeAmizadeStatusDeUsuario.TabIndex = 68;
@@ -938,7 +938,7 @@
             this.labelSugestoesDeAmizadeNomeDeUsuario2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelSugestoesDeAmizadeNomeDeUsuario2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSugestoesDeAmizadeNomeDeUsuario2.ForeColor = System.Drawing.Color.Transparent;
-            this.labelSugestoesDeAmizadeNomeDeUsuario2.Location = new System.Drawing.Point(41, 55);
+            this.labelSugestoesDeAmizadeNomeDeUsuario2.Location = new System.Drawing.Point(960, 526);
             this.labelSugestoesDeAmizadeNomeDeUsuario2.Name = "labelSugestoesDeAmizadeNomeDeUsuario2";
             this.labelSugestoesDeAmizadeNomeDeUsuario2.Size = new System.Drawing.Size(56, 13);
             this.labelSugestoesDeAmizadeNomeDeUsuario2.TabIndex = 67;
@@ -949,7 +949,7 @@
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxSugestoesDeAmizadeFotoDeUsuario3.BackgroundImage")));
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxSugestoesDeAmizadeFotoDeUsuario3.Location = new System.Drawing.Point(11, 104);
+            this.pictureBoxSugestoesDeAmizadeFotoDeUsuario3.Location = new System.Drawing.Point(930, 575);
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario3.Name = "pictureBoxSugestoesDeAmizadeFotoDeUsuario3";
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario3.Size = new System.Drawing.Size(25, 25);
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario3.TabIndex = 73;
@@ -962,7 +962,7 @@
             this.labelSugestoesDeAmizadeStatusDeUsuario3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelSugestoesDeAmizadeStatusDeUsuario3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSugestoesDeAmizadeStatusDeUsuario3.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.labelSugestoesDeAmizadeStatusDeUsuario3.Location = new System.Drawing.Point(41, 119);
+            this.labelSugestoesDeAmizadeStatusDeUsuario3.Location = new System.Drawing.Point(960, 590);
             this.labelSugestoesDeAmizadeStatusDeUsuario3.Name = "labelSugestoesDeAmizadeStatusDeUsuario3";
             this.labelSugestoesDeAmizadeStatusDeUsuario3.Size = new System.Drawing.Size(80, 9);
             this.labelSugestoesDeAmizadeStatusDeUsuario3.TabIndex = 72;
@@ -975,7 +975,7 @@
             this.labelSugestoesDeAmizadeNomeDeUsuario3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelSugestoesDeAmizadeNomeDeUsuario3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSugestoesDeAmizadeNomeDeUsuario3.ForeColor = System.Drawing.Color.Transparent;
-            this.labelSugestoesDeAmizadeNomeDeUsuario3.Location = new System.Drawing.Point(41, 104);
+            this.labelSugestoesDeAmizadeNomeDeUsuario3.Location = new System.Drawing.Point(960, 575);
             this.labelSugestoesDeAmizadeNomeDeUsuario3.Name = "labelSugestoesDeAmizadeNomeDeUsuario3";
             this.labelSugestoesDeAmizadeNomeDeUsuario3.Size = new System.Drawing.Size(69, 13);
             this.labelSugestoesDeAmizadeNomeDeUsuario3.TabIndex = 71;
@@ -986,7 +986,7 @@
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxSugestoesDeAmizadeFotoDeUsuario5.BackgroundImage")));
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxSugestoesDeAmizadeFotoDeUsuario5.Location = new System.Drawing.Point(11, 199);
+            this.pictureBoxSugestoesDeAmizadeFotoDeUsuario5.Location = new System.Drawing.Point(930, 670);
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario5.Name = "pictureBoxSugestoesDeAmizadeFotoDeUsuario5";
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario5.Size = new System.Drawing.Size(25, 25);
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario5.TabIndex = 81;
@@ -999,7 +999,7 @@
             this.labelSugestoesDeAmizadeStatusDeUsuario5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelSugestoesDeAmizadeStatusDeUsuario5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSugestoesDeAmizadeStatusDeUsuario5.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.labelSugestoesDeAmizadeStatusDeUsuario5.Location = new System.Drawing.Point(41, 214);
+            this.labelSugestoesDeAmizadeStatusDeUsuario5.Location = new System.Drawing.Point(960, 685);
             this.labelSugestoesDeAmizadeStatusDeUsuario5.Name = "labelSugestoesDeAmizadeStatusDeUsuario5";
             this.labelSugestoesDeAmizadeStatusDeUsuario5.Size = new System.Drawing.Size(44, 9);
             this.labelSugestoesDeAmizadeStatusDeUsuario5.TabIndex = 80;
@@ -1012,7 +1012,7 @@
             this.labelSugestoesDeAmizadeNomeDeUsuario5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelSugestoesDeAmizadeNomeDeUsuario5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSugestoesDeAmizadeNomeDeUsuario5.ForeColor = System.Drawing.Color.Transparent;
-            this.labelSugestoesDeAmizadeNomeDeUsuario5.Location = new System.Drawing.Point(41, 199);
+            this.labelSugestoesDeAmizadeNomeDeUsuario5.Location = new System.Drawing.Point(960, 670);
             this.labelSugestoesDeAmizadeNomeDeUsuario5.Name = "labelSugestoesDeAmizadeNomeDeUsuario5";
             this.labelSugestoesDeAmizadeNomeDeUsuario5.Size = new System.Drawing.Size(76, 13);
             this.labelSugestoesDeAmizadeNomeDeUsuario5.TabIndex = 79;
@@ -1023,7 +1023,7 @@
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxSugestoesDeAmizadeFotoDeUsuario4.BackgroundImage")));
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxSugestoesDeAmizadeFotoDeUsuario4.Location = new System.Drawing.Point(11, 152);
+            this.pictureBoxSugestoesDeAmizadeFotoDeUsuario4.Location = new System.Drawing.Point(930, 623);
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario4.Name = "pictureBoxSugestoesDeAmizadeFotoDeUsuario4";
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario4.Size = new System.Drawing.Size(25, 25);
             this.pictureBoxSugestoesDeAmizadeFotoDeUsuario4.TabIndex = 77;
@@ -1036,7 +1036,7 @@
             this.labelSugestoesDeAmizadeStatusDeUsuario4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelSugestoesDeAmizadeStatusDeUsuario4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSugestoesDeAmizadeStatusDeUsuario4.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.labelSugestoesDeAmizadeStatusDeUsuario4.Location = new System.Drawing.Point(41, 167);
+            this.labelSugestoesDeAmizadeStatusDeUsuario4.Location = new System.Drawing.Point(960, 638);
             this.labelSugestoesDeAmizadeStatusDeUsuario4.Name = "labelSugestoesDeAmizadeStatusDeUsuario4";
             this.labelSugestoesDeAmizadeStatusDeUsuario4.Size = new System.Drawing.Size(50, 9);
             this.labelSugestoesDeAmizadeStatusDeUsuario4.TabIndex = 76;
@@ -1049,7 +1049,7 @@
             this.labelSugestoesDeAmizadeNomeDeUsuario4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelSugestoesDeAmizadeNomeDeUsuario4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSugestoesDeAmizadeNomeDeUsuario4.ForeColor = System.Drawing.Color.Transparent;
-            this.labelSugestoesDeAmizadeNomeDeUsuario4.Location = new System.Drawing.Point(41, 152);
+            this.labelSugestoesDeAmizadeNomeDeUsuario4.Location = new System.Drawing.Point(960, 623);
             this.labelSugestoesDeAmizadeNomeDeUsuario4.Name = "labelSugestoesDeAmizadeNomeDeUsuario4";
             this.labelSugestoesDeAmizadeNomeDeUsuario4.Size = new System.Drawing.Size(76, 13);
             this.labelSugestoesDeAmizadeNomeDeUsuario4.TabIndex = 75;
@@ -1265,7 +1265,7 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.btnAdicionarAmigo1);
             this.panel1.Controls.Add(this.btnAmigoAdicionado1);
-            this.panel1.Location = new System.Drawing.Point(126, 9);
+            this.panel1.Location = new System.Drawing.Point(1045, 480);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(76, 25);
             this.panel1.TabIndex = 0;
@@ -1308,7 +1308,7 @@
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.btnAdicionarAmigo2);
             this.panel2.Controls.Add(this.btnAmigoAdicionado2);
-            this.panel2.Location = new System.Drawing.Point(126, 54);
+            this.panel2.Location = new System.Drawing.Point(1045, 525);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(76, 25);
             this.panel2.TabIndex = 1;
@@ -1351,7 +1351,7 @@
             this.panel9.BackColor = System.Drawing.Color.Transparent;
             this.panel9.Controls.Add(this.btnAdicionarAmigo3);
             this.panel9.Controls.Add(this.btnAmigoAdicionado3);
-            this.panel9.Location = new System.Drawing.Point(126, 101);
+            this.panel9.Location = new System.Drawing.Point(1045, 572);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(76, 25);
             this.panel9.TabIndex = 2;
@@ -1394,7 +1394,7 @@
             this.panel10.BackColor = System.Drawing.Color.Transparent;
             this.panel10.Controls.Add(this.btnAdicionarAmigo5);
             this.panel10.Controls.Add(this.btnAmigoAdicionado5);
-            this.panel10.Location = new System.Drawing.Point(126, 198);
+            this.panel10.Location = new System.Drawing.Point(1045, 669);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(76, 25);
             this.panel10.TabIndex = 4;
@@ -1436,7 +1436,7 @@
             this.panel11.BackColor = System.Drawing.Color.Transparent;
             this.panel11.Controls.Add(this.btnAdicionarAmigo4);
             this.panel11.Controls.Add(this.btnAmigoAdicionado4);
-            this.panel11.Location = new System.Drawing.Point(126, 151);
+            this.panel11.Location = new System.Drawing.Point(1045, 622);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(76, 25);
             this.panel11.TabIndex = 3;
@@ -1479,6 +1479,19 @@
             this.timer1.Interval = 3;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panelNotificacoes
+            // 
+            this.panelNotificacoes.BackColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.BackgroundImage = global::Login_Register.Properties.Resources.Notificações;
+            this.panelNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelNotificacoes.ForeColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.Location = new System.Drawing.Point(793, 43);
+            this.panelNotificacoes.Name = "panelNotificacoes";
+            this.panelNotificacoes.Size = new System.Drawing.Size(373, 717);
+            this.panelNotificacoes.TabIndex = 1;
+            this.panelNotificacoes.Visible = false;
+            this.panelNotificacoes.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNotificacoes_Paint);
+            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1486,6 +1499,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1386, 757);
+            this.Controls.Add(this.panelNotificacoes);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel11);
@@ -1507,6 +1521,21 @@
             this.Controls.Add(this.labelAmigosOnlineStatus1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel8);
+            this.Controls.Add(this.pictureBoxSugestoesDeAmizadeFotoDeUsuario5);
+            this.Controls.Add(this.labelSugestoesDeAmizadeStatusDeUsuario5);
+            this.Controls.Add(this.labelSugestoesDeAmizadeNomeDeUsuario5);
+            this.Controls.Add(this.pictureBoxSugestoesDeAmizadeFotoDeUsuario4);
+            this.Controls.Add(this.labelSugestoesDeAmizadeStatusDeUsuario4);
+            this.Controls.Add(this.labelSugestoesDeAmizadeNomeDeUsuario4);
+            this.Controls.Add(this.pictureBoxSugestoesDeAmizadeFotoDeUsuario3);
+            this.Controls.Add(this.labelSugestoesDeAmizadeStatusDeUsuario3);
+            this.Controls.Add(this.labelSugestoesDeAmizadeNomeDeUsuario3);
+            this.Controls.Add(this.pictureBoxSugestoesDeAmizadeFotoDeUsuario2);
+            this.Controls.Add(this.labelSugestoesDeAmizadeStatusDeUsuario);
+            this.Controls.Add(this.labelSugestoesDeAmizadeNomeDeUsuario2);
+            this.Controls.Add(this.pictureBoxSugestoesDeAmizadeFotoDeUsuario1);
+            this.Controls.Add(this.labelSugestoesDeAmizadeStatusDeUsuario1);
+            this.Controls.Add(this.labelSugestoesDeAmizadeNomeDeUsuario1);
             this.Controls.Add(this.pictureBoxHistoricoFotoDeUsuario6);
             this.Controls.Add(this.pictureBoxHistoricoFotoDeUsuario5);
             this.Controls.Add(this.pictureBoxHistoricoFotoDeUsuario4);
@@ -1591,8 +1620,6 @@
             this.panel9.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1701,5 +1728,6 @@
         private System.Windows.Forms.Button btnAdicionarAmigo4;
         private System.Windows.Forms.Button btnAdicionarAmigo5;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panelNotificacoes;
     }
 }

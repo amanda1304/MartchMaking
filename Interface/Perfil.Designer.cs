@@ -55,6 +55,8 @@
             this.btnFecharTelaInicial = new System.Windows.Forms.Button();
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.panelNotificacoes = new System.Windows.Forms.Panel();
+            this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelPerfilInformações.SuspendLayout();
@@ -207,12 +209,12 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.panelPerfilInformações);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(257, 56);
+            this.panel1.Location = new System.Drawing.Point(253, 56);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1131, 701);
+            this.panel1.Size = new System.Drawing.Size(1135, 701);
             this.panel1.TabIndex = 2;
             // 
             // panelPerfilInformações
@@ -225,7 +227,7 @@
             this.panelPerfilInformações.Controls.Add(this.labelStatus);
             this.panelPerfilInformações.Controls.Add(this.labelAmigos);
             this.panelPerfilInformações.Controls.Add(this.labelJogos);
-            this.panelPerfilInformações.Location = new System.Drawing.Point(331, 257);
+            this.panelPerfilInformações.Location = new System.Drawing.Point(331, 222);
             this.panelPerfilInformações.Name = "panelPerfilInformações";
             this.panelPerfilInformações.Size = new System.Drawing.Size(744, 379);
             this.panelPerfilInformações.TabIndex = 2;
@@ -236,7 +238,7 @@
             this.labelStatusEscrito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelStatusEscrito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStatusEscrito.ForeColor = System.Drawing.Color.White;
-            this.labelStatusEscrito.Location = new System.Drawing.Point(204, 216);
+            this.labelStatusEscrito.Location = new System.Drawing.Point(209, 214);
             this.labelStatusEscrito.Name = "labelStatusEscrito";
             this.labelStatusEscrito.Size = new System.Drawing.Size(327, 20);
             this.labelStatusEscrito.TabIndex = 7;
@@ -248,7 +250,7 @@
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(555, 103);
+            this.label4.Location = new System.Drawing.Point(555, 105);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 25);
             this.label4.TabIndex = 6;
@@ -260,7 +262,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(167, 104);
+            this.label3.Location = new System.Drawing.Point(167, 105);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 25);
             this.label3.TabIndex = 5;
@@ -284,7 +286,7 @@
             this.labelAmigos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelAmigos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAmigos.ForeColor = System.Drawing.Color.White;
-            this.labelAmigos.Location = new System.Drawing.Point(543, 73);
+            this.labelAmigos.Location = new System.Drawing.Point(543, 69);
             this.labelAmigos.Name = "labelAmigos";
             this.labelAmigos.Size = new System.Drawing.Size(62, 20);
             this.labelAmigos.TabIndex = 1;
@@ -296,7 +298,7 @@
             this.labelJogos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelJogos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelJogos.ForeColor = System.Drawing.Color.White;
-            this.labelJogos.Location = new System.Drawing.Point(159, 71);
+            this.labelJogos.Location = new System.Drawing.Point(159, 69);
             this.labelJogos.Name = "labelJogos";
             this.labelJogos.Size = new System.Drawing.Size(52, 20);
             this.labelJogos.TabIndex = 0;
@@ -345,6 +347,7 @@
             this.pictureAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureAvatar.TabIndex = 0;
             this.pictureAvatar.TabStop = false;
+            this.pictureAvatar.Click += new System.EventHandler(this.pictureAvatar_Click);
             // 
             // btnNotificacoes
             // 
@@ -359,6 +362,7 @@
             this.btnNotificacoes.Size = new System.Drawing.Size(16, 20);
             this.btnNotificacoes.TabIndex = 42;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
+            this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
             // 
             // btnFecharTelaInicial
             // 
@@ -398,6 +402,25 @@
             this.timer2.Interval = 3;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
+            // panelNotificacoes
+            // 
+            this.panelNotificacoes.BackColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.BackgroundImage = global::Login_Register.Properties.Resources.Notificações;
+            this.panelNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelNotificacoes.ForeColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.Location = new System.Drawing.Point(793, 43);
+            this.panelNotificacoes.Name = "panelNotificacoes";
+            this.panelNotificacoes.Size = new System.Drawing.Size(373, 717);
+            this.panelNotificacoes.TabIndex = 43;
+            this.panelNotificacoes.Visible = false;
+            // 
+            // mySqlCommand1
+            // 
+            this.mySqlCommand1.CacheAge = 0;
+            this.mySqlCommand1.Connection = null;
+            this.mySqlCommand1.EnableCaching = false;
+            this.mySqlCommand1.Transaction = null;
+            // 
             // Perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -406,6 +429,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1386, 757);
+            this.Controls.Add(this.panelNotificacoes);
             this.Controls.Add(this.btnNotificacoes);
             this.Controls.Add(this.btnFecharTelaInicial);
             this.Controls.Add(this.btnMinimizarTelaInicial);
@@ -460,5 +484,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelStatus;
         private System.Windows.Forms.Label labelAmigos;
+        private System.Windows.Forms.Panel panelNotificacoes;
+        private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
     }
 }

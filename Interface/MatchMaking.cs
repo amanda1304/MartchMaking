@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login_Register.Classes;
 
 namespace Login_Register
 {
@@ -15,6 +16,7 @@ namespace Login_Register
         public MatchMaking()
         {
             InitializeComponent();
+            this.FormClosing += EncerrarAplicacao.FecharAplicacao;
         }
         int TogMove;
         int MValX;
@@ -134,6 +136,21 @@ namespace Login_Register
         private void btnMinimizarTelaInicial_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnListadeJogos_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanelListadeJogos.Visible = !flowLayoutPanelListadeJogos.Visible;
+        }
+
+        private void panelListadeJogos_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanelListadeJogos_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

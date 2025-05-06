@@ -26,7 +26,8 @@ namespace Login_Register
         public Login_Register()
         {
             InitializeComponent();
-           
+            this.FormClosing += EncerrarAplicacao.FecharAplicacao;
+
         }
         int TogMove;
         int MValX;

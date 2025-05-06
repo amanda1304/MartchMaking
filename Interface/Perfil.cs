@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login_Register.Classes;
 using Login_Register.Model.PerfilUsuario;
 using Login_Register.Model.Services;
 using Login_Register.Model.Usuario;
@@ -20,7 +21,8 @@ namespace Login_Register
         public Perfil()
         {
             InitializeComponent();
-           
+            this.FormClosing += EncerrarAplicacao.FecharAplicacao;
+
         }
         int TogMove;
         int MValX;
@@ -180,6 +182,16 @@ namespace Login_Register
         }
 
         private void pnlMenuTelaInicial_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnNotificacoes_Click(object sender, EventArgs e)
+        {
+            panelNotificacoes.Visible = !panelNotificacoes.Visible;
+        }
+
+        private void pictureAvatar_Click(object sender, EventArgs e)
         {
 
         }

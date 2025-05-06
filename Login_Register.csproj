@@ -115,6 +115,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\EncerrarAplicacao.cs" />
     <Compile Include="Classes\RegistroMensagens.cs" />
     <Compile Include="Interface\Amigos.cs">
       <SubType>Form</SubType>
@@ -309,6 +310,13 @@
     <Content Include="banco de imagens\Wireframe - 3 %284%29.png" />
     <Content Include="banco de imagens\Wireframe - 3.png" />
     <Content Include="banco de imagens\Wireframe - 9 1.png" />
+    <None Include="Resources\Listadejogos.png" />
+    <None Include="Resources\fundochat.png" />
+    <None Include="Resources\FundoChatAmigos.png" />
+    <None Include="Resources\fundodechat amigos.png" />
+    <None Include="Resources\fundomatchmaking.png" />
+    <None Include="Resources\fundo.png" />
+    <None Include="Resources\fundo Tela Matchmaking.png" />
     <None Include="Resources\fundo para o perfil.png" />
     <None Include="Resources\Group 22 %281%29.png" />
     <None Include="Resources\Notificações.png" />

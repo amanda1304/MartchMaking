@@ -43,8 +43,11 @@
             this.btnFecharTelaInicial = new System.Windows.Forms.Button();
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnFigurinhas = new System.Windows.Forms.Button();
+            this.panelNotificacoes = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelChatTelaGrande = new System.Windows.Forms.Label();
+            this.labelChatTelaGrandeOnline = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelFigurinhasChat = new System.Windows.Forms.Panel();
             this.Fig36 = new System.Windows.Forms.Button();
             this.Fig35 = new System.Windows.Forms.Button();
@@ -82,16 +85,13 @@
             this.Fig3 = new System.Windows.Forms.Button();
             this.Fig2 = new System.Windows.Forms.Button();
             this.Fig1 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.labelChatTelaGrandeOnline = new System.Windows.Forms.Label();
-            this.labelChatTelaGrande = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelNotificacoes = new System.Windows.Forms.Panel();
+            this.btnFigurinhas = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnlMenuTelaInicial.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panelFigurinhasChat.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelFigurinhasChat.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMenuTelaInicial
@@ -280,39 +280,69 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.BackgroundImage = global::Login_Register.Properties.Resources.Group_9;
+            this.flowLayoutPanel1.BackgroundImage = global::Login_Register.Properties.Resources.fundodechat_amigos;
             this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(1076, 59);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(309, 699);
             this.flowLayoutPanel1.TabIndex = 46;
             // 
-            // panel1
+            // panelNotificacoes
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::Login_Register.Properties.Resources.Group_8;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.btnFigurinhas);
-            this.panel1.Controls.Add(this.panelFigurinhasChat);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.labelChatTelaGrandeOnline);
-            this.panel1.Controls.Add(this.labelChatTelaGrande);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(255, 59);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(823, 696);
-            this.panel1.TabIndex = 47;
+            this.panelNotificacoes.BackColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.BackgroundImage = global::Login_Register.Properties.Resources.Notificações;
+            this.panelNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelNotificacoes.ForeColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.Location = new System.Drawing.Point(793, 43);
+            this.panelNotificacoes.Name = "panelNotificacoes";
+            this.panelNotificacoes.Size = new System.Drawing.Size(373, 717);
+            this.panelNotificacoes.TabIndex = 48;
+            this.panelNotificacoes.Visible = false;
+            this.panelNotificacoes.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNotificacoes_Paint);
             // 
-            // btnFigurinhas
+            // pictureBox1
             // 
-            this.btnFigurinhas.FlatAppearance.BorderSize = 0;
-            this.btnFigurinhas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFigurinhas.Location = new System.Drawing.Point(107, 595);
-            this.btnFigurinhas.Name = "btnFigurinhas";
-            this.btnFigurinhas.Size = new System.Drawing.Size(15, 15);
-            this.btnFigurinhas.TabIndex = 5;
-            this.btnFigurinhas.UseVisualStyleBackColor = true;
-            this.btnFigurinhas.Click += new System.EventHandler(this.btnFigurinhas_Click);
+            this.pictureBox1.BackgroundImage = global::Login_Register.Properties.Resources._24;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(57, 54);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(55, 56);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // labelChatTelaGrande
+            // 
+            this.labelChatTelaGrande.AutoSize = true;
+            this.labelChatTelaGrande.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelChatTelaGrande.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChatTelaGrande.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelChatTelaGrande.Location = new System.Drawing.Point(123, 67);
+            this.labelChatTelaGrande.Name = "labelChatTelaGrande";
+            this.labelChatTelaGrande.Size = new System.Drawing.Size(134, 22);
+            this.labelChatTelaGrande.TabIndex = 1;
+            this.labelChatTelaGrande.Text = "Samuel Alves";
+            // 
+            // labelChatTelaGrandeOnline
+            // 
+            this.labelChatTelaGrandeOnline.AutoSize = true;
+            this.labelChatTelaGrandeOnline.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelChatTelaGrandeOnline.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChatTelaGrandeOnline.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelChatTelaGrandeOnline.Location = new System.Drawing.Point(137, 89);
+            this.labelChatTelaGrandeOnline.Name = "labelChatTelaGrandeOnline";
+            this.labelChatTelaGrandeOnline.Size = new System.Drawing.Size(44, 16);
+            this.labelChatTelaGrandeOnline.TabIndex = 2;
+            this.labelChatTelaGrandeOnline.Text = "Online";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::Login_Register.Properties.Resources.Full_Stop;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(127, 91);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(12, 12);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
             // 
             // panelFigurinhasChat
             // 
@@ -354,7 +384,7 @@
             this.panelFigurinhasChat.Controls.Add(this.Fig3);
             this.panelFigurinhasChat.Controls.Add(this.Fig2);
             this.panelFigurinhasChat.Controls.Add(this.Fig1);
-            this.panelFigurinhasChat.Location = new System.Drawing.Point(97, 22);
+            this.panelFigurinhasChat.Location = new System.Drawing.Point(99, 33);
             this.panelFigurinhasChat.Name = "panelFigurinhasChat";
             this.panelFigurinhasChat.Size = new System.Drawing.Size(302, 596);
             this.panelFigurinhasChat.TabIndex = 4;
@@ -794,62 +824,32 @@
             this.Fig1.TabIndex = 0;
             this.Fig1.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // btnFigurinhas
             // 
-            this.pictureBox2.BackgroundImage = global::Login_Register.Properties.Resources.Full_Stop;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(127, 91);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(12, 12);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.btnFigurinhas.FlatAppearance.BorderSize = 0;
+            this.btnFigurinhas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFigurinhas.Location = new System.Drawing.Point(103, 610);
+            this.btnFigurinhas.Name = "btnFigurinhas";
+            this.btnFigurinhas.Size = new System.Drawing.Size(15, 15);
+            this.btnFigurinhas.TabIndex = 5;
+            this.btnFigurinhas.UseVisualStyleBackColor = true;
+            this.btnFigurinhas.Click += new System.EventHandler(this.btnFigurinhas_Click);
             // 
-            // labelChatTelaGrandeOnline
+            // panel1
             // 
-            this.labelChatTelaGrandeOnline.AutoSize = true;
-            this.labelChatTelaGrandeOnline.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelChatTelaGrandeOnline.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelChatTelaGrandeOnline.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelChatTelaGrandeOnline.Location = new System.Drawing.Point(137, 89);
-            this.labelChatTelaGrandeOnline.Name = "labelChatTelaGrandeOnline";
-            this.labelChatTelaGrandeOnline.Size = new System.Drawing.Size(44, 16);
-            this.labelChatTelaGrandeOnline.TabIndex = 2;
-            this.labelChatTelaGrandeOnline.Text = "Online";
-            // 
-            // labelChatTelaGrande
-            // 
-            this.labelChatTelaGrande.AutoSize = true;
-            this.labelChatTelaGrande.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelChatTelaGrande.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelChatTelaGrande.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelChatTelaGrande.Location = new System.Drawing.Point(123, 67);
-            this.labelChatTelaGrande.Name = "labelChatTelaGrande";
-            this.labelChatTelaGrande.Size = new System.Drawing.Size(134, 22);
-            this.labelChatTelaGrande.TabIndex = 1;
-            this.labelChatTelaGrande.Text = "Samuel Alves";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Login_Register.Properties.Resources._24;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(57, 54);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(55, 56);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panelNotificacoes
-            // 
-            this.panelNotificacoes.BackColor = System.Drawing.Color.Transparent;
-            this.panelNotificacoes.BackgroundImage = global::Login_Register.Properties.Resources.Notificações;
-            this.panelNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelNotificacoes.ForeColor = System.Drawing.Color.Transparent;
-            this.panelNotificacoes.Location = new System.Drawing.Point(793, 43);
-            this.panelNotificacoes.Name = "panelNotificacoes";
-            this.panelNotificacoes.Size = new System.Drawing.Size(373, 717);
-            this.panelNotificacoes.TabIndex = 48;
-            this.panelNotificacoes.Visible = false;
-            this.panelNotificacoes.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNotificacoes_Paint);
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::Login_Register.Properties.Resources.fundochat;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.btnFigurinhas);
+            this.panel1.Controls.Add(this.panelFigurinhasChat);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.labelChatTelaGrandeOnline);
+            this.panel1.Controls.Add(this.labelChatTelaGrande);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(255, 59);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(823, 696);
+            this.panel1.TabIndex = 47;
             // 
             // Amigos
             // 
@@ -878,11 +878,11 @@
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Amigos_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Amigos_MouseUp);
             this.pnlMenuTelaInicial.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelFigurinhasChat.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panelFigurinhasChat.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -902,13 +902,28 @@
         private System.Windows.Forms.Button btnFecharTelaInicial;
         private System.Windows.Forms.Button btnMinimizarTelaInicial;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelNotificacoes;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label labelChatTelaGrande;
         private System.Windows.Forms.Label labelChatTelaGrandeOnline;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panelFigurinhasChat;
-        private System.Windows.Forms.Button Fig1;
+        private System.Windows.Forms.Button Fig36;
+        private System.Windows.Forms.Button Fig35;
+        private System.Windows.Forms.Button Fig34;
+        private System.Windows.Forms.Button Fig33;
+        private System.Windows.Forms.Button Fig32;
+        private System.Windows.Forms.Button Fig31;
+        private System.Windows.Forms.Button Fig30;
+        private System.Windows.Forms.Button Fig29;
+        private System.Windows.Forms.Button Fig28;
+        private System.Windows.Forms.Button Fig27;
+        private System.Windows.Forms.Button Fig26;
+        private System.Windows.Forms.Button Fig25;
+        private System.Windows.Forms.Button Fig24;
+        private System.Windows.Forms.Button Fig23;
+        private System.Windows.Forms.Button Fig22;
+        private System.Windows.Forms.Button Fig21;
         private System.Windows.Forms.Button Fig20;
         private System.Windows.Forms.Button Fig19;
         private System.Windows.Forms.Button Fig18;
@@ -928,23 +943,8 @@
         private System.Windows.Forms.Button Fig4;
         private System.Windows.Forms.Button Fig3;
         private System.Windows.Forms.Button Fig2;
-        private System.Windows.Forms.Button Fig36;
-        private System.Windows.Forms.Button Fig35;
-        private System.Windows.Forms.Button Fig34;
-        private System.Windows.Forms.Button Fig33;
-        private System.Windows.Forms.Button Fig32;
-        private System.Windows.Forms.Button Fig31;
-        private System.Windows.Forms.Button Fig30;
-        private System.Windows.Forms.Button Fig29;
-        private System.Windows.Forms.Button Fig28;
-        private System.Windows.Forms.Button Fig27;
-        private System.Windows.Forms.Button Fig26;
-        private System.Windows.Forms.Button Fig25;
-        private System.Windows.Forms.Button Fig24;
-        private System.Windows.Forms.Button Fig23;
-        private System.Windows.Forms.Button Fig22;
-        private System.Windows.Forms.Button Fig21;
+        private System.Windows.Forms.Button Fig1;
         private System.Windows.Forms.Button btnFigurinhas;
-        private System.Windows.Forms.Panel panelNotificacoes;
+        private System.Windows.Forms.Panel panel1;
     }
 }
