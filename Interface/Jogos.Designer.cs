@@ -52,6 +52,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panelNotificacoes = new System.Windows.Forms.Panel();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -67,7 +68,7 @@
             // pnlMenuTelaInicial
             // 
             this.pnlMenuTelaInicial.BackColor = System.Drawing.Color.Transparent;
-            this.pnlMenuTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMenuTelaInicial.BackgroundImage")));
+            this.pnlMenuTelaInicial.BackgroundImage = global::Login_Register.Properties.Resources.Azul2;
             this.pnlMenuTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlMenuTelaInicial.Controls.Add(this.flowLayoutPanel1);
             this.pnlMenuTelaInicial.Controls.Add(this.btnLogOut);
@@ -91,7 +92,7 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogOut.BackgroundImage")));
+            this.btnLogOut.BackgroundImage = global::Login_Register.Properties.Resources.Group_34;
             this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogOut.FlatAppearance.BorderSize = 0;
@@ -108,7 +109,7 @@
             // btnMatchMakingLogo
             // 
             this.btnMatchMakingLogo.BackColor = System.Drawing.Color.Transparent;
-            this.btnMatchMakingLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMakingLogo.BackgroundImage")));
+            this.btnMatchMakingLogo.BackgroundImage = global::Login_Register.Properties.Resources.logo_branco;
             this.btnMatchMakingLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMatchMakingLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMatchMakingLogo.FlatAppearance.BorderSize = 0;
@@ -124,7 +125,7 @@
             // 
             // btnConfiguracoes
             // 
-            this.btnConfiguracoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfiguracoes.BackgroundImage")));
+            this.btnConfiguracoes.BackgroundImage = global::Login_Register.Properties.Resources.Configurações;
             this.btnConfiguracoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnConfiguracoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfiguracoes.FlatAppearance.BorderSize = 0;
@@ -140,7 +141,7 @@
             // 
             // btnPerfil
             // 
-            this.btnPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPerfil.BackgroundImage")));
+            this.btnPerfil.BackgroundImage = global::Login_Register.Properties.Resources.Perfil;
             this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPerfil.FlatAppearance.BorderSize = 0;
@@ -156,7 +157,7 @@
             // 
             // btnMatchMaking
             // 
-            this.btnMatchMaking.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMaking.BackgroundImage")));
+            this.btnMatchMaking.BackgroundImage = global::Login_Register.Properties.Resources.MatchMaking;
             this.btnMatchMaking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMatchMaking.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMatchMaking.FlatAppearance.BorderSize = 0;
@@ -172,7 +173,7 @@
             // 
             // btnSimbolos
             // 
-            this.btnSimbolos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSimbolos.BackgroundImage")));
+            this.btnSimbolos.BackgroundImage = global::Login_Register.Properties.Resources.Jogos;
             this.btnSimbolos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSimbolos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSimbolos.FlatAppearance.BorderSize = 0;
@@ -187,7 +188,7 @@
             // 
             // btnAmigos
             // 
-            this.btnAmigos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigos.BackgroundImage")));
+            this.btnAmigos.BackgroundImage = global::Login_Register.Properties.Resources.Amigos;
             this.btnAmigos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAmigos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAmigos.FlatAppearance.BorderSize = 0;
@@ -267,7 +268,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImage = global::Login_Register.Properties.Resources.Wireframe___9_1;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel3);
@@ -355,6 +356,18 @@
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
             // 
+            // panelNotificacoes
+            // 
+            this.panelNotificacoes.BackColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.BackgroundImage = global::Login_Register.Properties.Resources.Notificações;
+            this.panelNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelNotificacoes.ForeColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.Location = new System.Drawing.Point(778, 48);
+            this.panelNotificacoes.Name = "panelNotificacoes";
+            this.panelNotificacoes.Size = new System.Drawing.Size(373, 717);
+            this.panelNotificacoes.TabIndex = 50;
+            this.panelNotificacoes.Visible = false;
+            // 
             // Jogos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -362,6 +375,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1386, 757);
+            this.Controls.Add(this.panelNotificacoes);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.btnNotificacoes);
             this.Controls.Add(this.btnFecharTelaInicial);
@@ -415,5 +429,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panelNotificacoes;
     }
 }
