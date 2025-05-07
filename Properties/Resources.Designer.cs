@@ -614,9 +614,29 @@ namespace Login_Register.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Estrelas {
+            get {
+                object obj = ResourceManager.GetObject("Estrelas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eye {
             get {
                 object obj = ResourceManager.GetObject("eye", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FORTNITE {
+            get {
+                object obj = ResourceManager.GetObject("FORTNITE", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1044,6 +1064,16 @@ namespace Login_Register.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LOL {
+            get {
+                object obj = ResourceManager.GetObject("LOL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MatchMaking {
             get {
                 object obj = ResourceManager.GetObject("MatchMaking", resourceCulture);
@@ -1103,6 +1133,16 @@ namespace Login_Register.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap panelRivals {
+            get {
+                object obj = ResourceManager.GetObject("panelRivals", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Perfil {
             get {
                 object obj = ResourceManager.GetObject("Perfil", resourceCulture);
@@ -1146,6 +1186,16 @@ namespace Login_Register.Properties {
         internal static System.Drawing.Bitmap Rectangle_32 {
             get {
                 object obj = ResourceManager.GetObject("Rectangle_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RIVALS {
+            get {
+                object obj = ResourceManager.GetObject("RIVALS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

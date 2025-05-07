@@ -283,7 +283,10 @@
     <Content Include="banco de imagens\arrow-down-sign-to-navigate.png" />
     <Content Include="banco de imagens\Configurações.png" />
     <Content Include="banco de imagens\Design sem nome %282%29 %281%29.png" />
+    <Content Include="banco de imagens\Estrela.png" />
+    <Content Include="banco de imagens\Estrelas.png" />
     <Content Include="banco de imagens\eye.png" />
+    <Content Include="banco de imagens\FORTNITE.png" />
     <Content Include="banco de imagens\Group 19.png" />
     <Content Include="banco de imagens\Group 21.png" />
     <Content Include="banco de imagens\Group 22.png" />
@@ -297,6 +300,7 @@
     <Content Include="banco de imagens\Line 1.png" />
     <Content Include="banco de imagens\logo branco.png" />
     <Content Include="banco de imagens\logo preto.png" />
+    <Content Include="banco de imagens\LOL.png" />
     <Content Include="banco de imagens\matchmaking.ico.ico" />
     <Content Include="banco de imagens\MatchMaking.png" />
     <Content Include="banco de imagens\Notificações.png" />
@@ -304,6 +308,7 @@
     <Content Include="banco de imagens\Perfil.png" />
     <Content Include="banco de imagens\Rectangle 31.png" />
     <Content Include="banco de imagens\Rectangle 32.png" />
+    <Content Include="banco de imagens\RIVALS.png" />
     <Content Include="banco de imagens\view.png" />
     <Content Include="banco de imagens\visible.png" />
     <Content Include="banco de imagens\Wireframe - 2.png" />
@@ -311,6 +316,11 @@
     <Content Include="banco de imagens\Wireframe - 3 %284%29.png" />
     <Content Include="banco de imagens\Wireframe - 3.png" />
     <Content Include="banco de imagens\Wireframe - 9 1.png" />
+    <None Include="Resources\Estrelas.png" />
+    <None Include="Resources\FORTNITE.png" />
+    <None Include="Resources\LOL.png" />
+    <None Include="Resources\RIVALS.png" />
+    <None Include="Resources\panelRivals.png" />
     <None Include="Resources\matchmaking.ico.ico" />
     <None Include="Resources\porfavor2.png" />
     <None Include="Resources\porfavor.png" />
