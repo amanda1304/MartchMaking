@@ -45,29 +45,34 @@
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panelRivals = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelRivals = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panelNotificacoes = new System.Windows.Forms.Panel();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panelRivals.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelRivals.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenuTelaInicial
             // 
             this.pnlMenuTelaInicial.BackColor = System.Drawing.Color.Transparent;
-            this.pnlMenuTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMenuTelaInicial.BackgroundImage")));
+            this.pnlMenuTelaInicial.BackgroundImage = global::Login_Register.Properties.Resources.Azul2;
             this.pnlMenuTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlMenuTelaInicial.Controls.Add(this.flowLayoutPanel1);
             this.pnlMenuTelaInicial.Controls.Add(this.btnLogOut);
@@ -91,7 +96,7 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogOut.BackgroundImage")));
+            this.btnLogOut.BackgroundImage = global::Login_Register.Properties.Resources.Group_34;
             this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogOut.FlatAppearance.BorderSize = 0;
@@ -108,7 +113,7 @@
             // btnMatchMakingLogo
             // 
             this.btnMatchMakingLogo.BackColor = System.Drawing.Color.Transparent;
-            this.btnMatchMakingLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMakingLogo.BackgroundImage")));
+            this.btnMatchMakingLogo.BackgroundImage = global::Login_Register.Properties.Resources.logo_branco;
             this.btnMatchMakingLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMatchMakingLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMatchMakingLogo.FlatAppearance.BorderSize = 0;
@@ -124,7 +129,7 @@
             // 
             // btnConfiguracoes
             // 
-            this.btnConfiguracoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfiguracoes.BackgroundImage")));
+            this.btnConfiguracoes.BackgroundImage = global::Login_Register.Properties.Resources.Configurações;
             this.btnConfiguracoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnConfiguracoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfiguracoes.FlatAppearance.BorderSize = 0;
@@ -140,7 +145,7 @@
             // 
             // btnPerfil
             // 
-            this.btnPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPerfil.BackgroundImage")));
+            this.btnPerfil.BackgroundImage = global::Login_Register.Properties.Resources.Perfil;
             this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPerfil.FlatAppearance.BorderSize = 0;
@@ -156,7 +161,7 @@
             // 
             // btnMatchMaking
             // 
-            this.btnMatchMaking.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMaking.BackgroundImage")));
+            this.btnMatchMaking.BackgroundImage = global::Login_Register.Properties.Resources.MatchMaking;
             this.btnMatchMaking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMatchMaking.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMatchMaking.FlatAppearance.BorderSize = 0;
@@ -172,7 +177,7 @@
             // 
             // btnSimbolos
             // 
-            this.btnSimbolos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSimbolos.BackgroundImage")));
+            this.btnSimbolos.BackgroundImage = global::Login_Register.Properties.Resources.Jogos;
             this.btnSimbolos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSimbolos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSimbolos.FlatAppearance.BorderSize = 0;
@@ -187,7 +192,7 @@
             // 
             // btnAmigos
             // 
-            this.btnAmigos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigos.BackgroundImage")));
+            this.btnAmigos.BackgroundImage = global::Login_Register.Properties.Resources.Amigos;
             this.btnAmigos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAmigos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAmigos.FlatAppearance.BorderSize = 0;
@@ -219,6 +224,7 @@
             this.btnNotificacoes.Size = new System.Drawing.Size(16, 20);
             this.btnNotificacoes.TabIndex = 48;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
+            this.btnNotificacoes.Visible = false;
             this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
             // 
             // btnFecharTelaInicial
@@ -267,8 +273,9 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImage = global::Login_Register.Properties.Resources.Wireframe___9_1;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
@@ -278,49 +285,28 @@
             this.panel1.Size = new System.Drawing.Size(1104, 2370);
             this.panel1.TabIndex = 0;
             // 
-            // pictureBox1
+            // panel4
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Login_Register.Properties.Resources.Estrelas;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(268, 138);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 20);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel4.Controls.Add(this.pictureBox5);
+            this.panel4.Location = new System.Drawing.Point(86, 465);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(150, 205);
+            this.panel4.TabIndex = 5;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // panel3
+            // pictureBox5
             // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = global::Login_Register.Properties.Resources.FORTNITE;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.pictureBox4);
-            this.panel3.Location = new System.Drawing.Point(709, 247);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(299, 205);
-            this.panel3.TabIndex = 2;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.BackgroundImage = global::Login_Register.Properties.Resources.LOL;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(398, 247);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(299, 205);
-            this.panel2.TabIndex = 1;
-            // 
-            // panelRivals
-            // 
-            this.panelRivals.BackColor = System.Drawing.Color.Transparent;
-            this.panelRivals.BackgroundImage = global::Login_Register.Properties.Resources.RIVALS;
-            this.panelRivals.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelRivals.Controls.Add(this.pictureBox3);
-            this.panelRivals.Location = new System.Drawing.Point(89, 247);
-            this.panelRivals.Name = "panelRivals";
-            this.panelRivals.Size = new System.Drawing.Size(299, 205);
-            this.panelRivals.TabIndex = 0;
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.BackgroundImage = global::Login_Register.Properties.Resources.Estrelas;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.Location = new System.Drawing.Point(265, 139);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(25, 20);
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -333,16 +319,16 @@
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox3
+            // panel3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::Login_Register.Properties.Resources.Estrelas;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(265, 139);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 20);
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BackgroundImage = global::Login_Register.Properties.Resources.FORTNITE;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Controls.Add(this.pictureBox4);
+            this.panel3.Location = new System.Drawing.Point(709, 247);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(299, 205);
+            this.panel3.TabIndex = 2;
             // 
             // pictureBox4
             // 
@@ -355,6 +341,63 @@
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BackgroundImage = global::Login_Register.Properties.Resources.LOL;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Location = new System.Drawing.Point(398, 247);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(299, 205);
+            this.panel2.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Login_Register.Properties.Resources.Estrelas;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(268, 138);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 20);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panelRivals
+            // 
+            this.panelRivals.BackColor = System.Drawing.Color.Transparent;
+            this.panelRivals.BackgroundImage = global::Login_Register.Properties.Resources.RIVALS;
+            this.panelRivals.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelRivals.Controls.Add(this.pictureBox3);
+            this.panelRivals.Location = new System.Drawing.Point(89, 247);
+            this.panelRivals.Name = "panelRivals";
+            this.panelRivals.Size = new System.Drawing.Size(299, 205);
+            this.panelRivals.TabIndex = 0;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::Login_Register.Properties.Resources.Estrelas;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.Location = new System.Drawing.Point(265, 139);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(25, 20);
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            // 
+            // panelNotificacoes
+            // 
+            this.panelNotificacoes.BackColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.BackgroundImage = global::Login_Register.Properties.Resources.Notificações;
+            this.panelNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelNotificacoes.ForeColor = System.Drawing.Color.Transparent;
+            this.panelNotificacoes.Location = new System.Drawing.Point(778, 48);
+            this.panelNotificacoes.Name = "panelNotificacoes";
+            this.panelNotificacoes.Size = new System.Drawing.Size(373, 717);
+            this.panelNotificacoes.TabIndex = 50;
+            this.panelNotificacoes.Visible = false;
+            this.panelNotificacoes.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNotificacoes_Paint_1);
+            // 
             // Jogos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -362,6 +405,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1386, 757);
+            this.Controls.Add(this.panelNotificacoes);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.btnNotificacoes);
             this.Controls.Add(this.btnFecharTelaInicial);
@@ -380,13 +424,15 @@
             this.pnlMenuTelaInicial.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panelRivals.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelRivals.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -415,5 +461,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panelNotificacoes;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

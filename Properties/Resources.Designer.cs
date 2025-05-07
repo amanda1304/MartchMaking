@@ -334,6 +334,16 @@ namespace Login_Register.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap amongUS {
+            get {
+                object obj = ResourceManager.GetObject("amongUS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrow_down_sign_to_navigate {
             get {
                 object obj = ResourceManager.GetObject("arrow_down_sign_to_navigate", resourceCulture);
