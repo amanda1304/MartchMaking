@@ -134,14 +134,42 @@ namespace Login_Register
 
         private void Perfil_Load(object sender, EventArgs e)
         {
+            timer2.Start();
             ConfiguracoesService configService = new ConfiguracoesService();
             pictureAvatar.Image = configService.CarregarAvatar(UserSession.userLogado.id);
             panel1.BackgroundImage = configService.CarregarCorFundo(UserSession.userLogado.id);
             label2.Text = UserSession.userLogado.nome;
-            timer2.Start();
+            var perfilDAO = new PerfilUsuarioDAO(new DatabaseService());
+            var configDAO = new ConfiguracoesDAO(new DatabaseService());
 
-         
+            var perfil = perfilDAO.ObterPerfilPorUsuario(UserSession.userLogado.id);
+            var config = configDAO.ObterPorIdPerfilUsuario(perfil.IdPerfilUsuario);
+            MessageBox.Show($"menu: '{config.menu}'\nborda: '{config.bordas}'\nbandeira: '{config.bandeiras}'");
+
+            if (config != null)
+            {
+                AplicarTemaCompleto(config.bordas, config.bandeiras, config.menu);
+            }
+
+
+
         }
+        public void AplicarTemaCompleto(string nomeBorda, string nomeBandeira, string nomeMenu)
+        {
+            object imgMenu = Properties.Resources.ResourceManager.GetObject(nomeMenu);
+            if (imgMenu != null)
+                pnlMenuTelaInicial.BackgroundImage = (Image)imgMenu;
+
+            object imgBorda = Properties.Resources.ResourceManager.GetObject(nomeBorda);
+            if (imgBorda != null)
+                panel4.BackgroundImage = (Image)imgBorda;
+
+            object imgBandeira = Properties.Resources.ResourceManager.GetObject(nomeBandeira);
+            if (imgBandeira != null)
+                panel3.BackgroundImage = (Image)imgBandeira;
+        }
+
+
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
@@ -152,11 +180,10 @@ namespace Login_Register
         {
             label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
         }
-        public void AplicarTema(string nomeBorda, string nomeBandeira, string nomeMenu)
+
+        private void pnlMenuTelaInicial_Paint(object sender, PaintEventArgs e)
         {
-            panel4.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nomeBorda);
-            panel3.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nomeBandeira);
-            pnlMenuTelaInicial.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject(nomeMenu);
+
         }
 
         private void btnNotificacoes_Click(object sender, EventArgs e)

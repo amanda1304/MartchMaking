@@ -18,7 +18,7 @@ namespace Login_Register.Model.Usuario
 
         private readonly DatabaseService _dbService;
 
-        public UsuarioReferencia()
+        public UsuarioReferencia(DatabaseService databaseService)
         {
             _dbService = new DatabaseService();
         }
@@ -125,6 +125,25 @@ namespace Login_Register.Model.Usuario
 
             return false;
         }
+
+        public bool AtualizarNome(int idUsuario, string novoNome)
+        {
+            using (var conn = _dbService.GetConnection())
+            {
+                conn.Open();
+                string query = "UPDATE usuarios SET nome = @nome WHERE id_usuario = @id";
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@nome", novoNome);
+                    cmd.Parameters.AddWithValue("@id", idUsuario);
+
+                    int linhasAfetadas = cmd.ExecuteNonQuery();
+                    return linhasAfetadas > 0;
+                }
+            }
+        }
+
     }
 
 

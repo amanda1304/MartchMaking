@@ -182,6 +182,7 @@
     <Compile Include="Model\Services\Criptografia.cs" />
     <Compile Include="Model\Services\DatabaseService.cs" />
     <Compile Include="Model\Services\UserSession.cs" />
+    <Compile Include="Model\SugestaoAmizada\SugestaoAmizadeDAO.cs" />
     <Compile Include="Model\SugestaoAmizada\SugestaoAmizade.cs" />
     <Compile Include="Model\usuario\Usuario.cs" />
     <Compile Include="Model\usuario\UsuarioReferencia.cs" />
