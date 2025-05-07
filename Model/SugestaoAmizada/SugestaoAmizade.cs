@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Login_Register.Model.SugestaoAmizada
 {
-    internal class SugestaoAmizade
+    public class SugestaoAmizade
     {
+
+        public int id_susgestao { get; set; }
+        public int id_usuario_origem { get; set; }
+        public int id_usuario_destino { get; set; }  
+
     }
 }
