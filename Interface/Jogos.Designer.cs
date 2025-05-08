@@ -248,7 +248,6 @@
             this.btnNotificacoes.Size = new System.Drawing.Size(16, 20);
             this.btnNotificacoes.TabIndex = 48;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
-            this.btnNotificacoes.Visible = false;
             this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
             // 
             // btnFecharTelaInicial
@@ -287,7 +286,6 @@
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flowLayoutPanel2.BackgroundImage")));
             this.flowLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flowLayoutPanel2.Controls.Add(this.panel1);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(256, 63);
@@ -297,7 +295,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::Login_Register.Properties.Resources.Wireframe___9_1;
+            this.panel1.BackgroundImage = global::Login_Register.Properties.Resources.Wireframe___11;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.panelUno);
             this.panel1.Controls.Add(this.panelMineCraftDungeons);
@@ -441,7 +439,7 @@
             // panelDeadByDaylight
             // 
             this.panelDeadByDaylight.BackColor = System.Drawing.Color.Transparent;
-            this.panelDeadByDaylight.BackgroundImage = global::Login_Register.Properties.Resources.Group_76;
+            this.panelDeadByDaylight.BackgroundImage = global::Login_Register.Properties.Resources.Group_82;
             this.panelDeadByDaylight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelDeadByDaylight.Location = new System.Drawing.Point(709, 883);
             this.panelDeadByDaylight.Name = "panelDeadByDaylight";
@@ -451,7 +449,7 @@
             // panelFallGuys
             // 
             this.panelFallGuys.BackColor = System.Drawing.Color.Transparent;
-            this.panelFallGuys.BackgroundImage = global::Login_Register.Properties.Resources.Group_76;
+            this.panelFallGuys.BackgroundImage = global::Login_Register.Properties.Resources.Group_89;
             this.panelFallGuys.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelFallGuys.Location = new System.Drawing.Point(89, 1562);
             this.panelFallGuys.Name = "panelFallGuys";
@@ -471,7 +469,7 @@
             // panelValorant
             // 
             this.panelValorant.BackColor = System.Drawing.Color.Transparent;
-            this.panelValorant.BackgroundImage = global::Login_Register.Properties.Resources.Group_76;
+            this.panelValorant.BackgroundImage = global::Login_Register.Properties.Resources.Group_81;
             this.panelValorant.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelValorant.Location = new System.Drawing.Point(398, 883);
             this.panelValorant.Name = "panelValorant";
@@ -491,7 +489,7 @@
             // panelStopots
             // 
             this.panelStopots.BackColor = System.Drawing.Color.Transparent;
-            this.panelStopots.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panelStopots.BackgroundImage = global::Login_Register.Properties.Resources.Group_87;
             this.panelStopots.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelStopots.Location = new System.Drawing.Point(707, 1110);
             this.panelStopots.Name = "panelStopots";
@@ -501,7 +499,7 @@
             // panelDota2
             // 
             this.panelDota2.BackColor = System.Drawing.Color.Transparent;
-            this.panelDota2.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panelDota2.BackgroundImage = global::Login_Register.Properties.Resources.Group_84;
             this.panelDota2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelDota2.Location = new System.Drawing.Point(243, 1111);
             this.panelDota2.Name = "panelDota2";
@@ -521,7 +519,7 @@
             // panelGartic
             // 
             this.panelGartic.BackColor = System.Drawing.Color.Transparent;
-            this.panelGartic.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panelGartic.BackgroundImage = global::Login_Register.Properties.Resources.Group_88;
             this.panelGartic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelGartic.Location = new System.Drawing.Point(860, 1109);
             this.panelGartic.Name = "panelGartic";
@@ -541,7 +539,7 @@
             // panelCounterStrike
             // 
             this.panelCounterStrike.BackColor = System.Drawing.Color.Transparent;
-            this.panelCounterStrike.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panelCounterStrike.BackgroundImage = global::Login_Register.Properties.Resources.Group_86;
             this.panelCounterStrike.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelCounterStrike.Location = new System.Drawing.Point(550, 1110);
             this.panelCounterStrike.Name = "panelCounterStrike";
@@ -561,7 +559,7 @@
             // panelArk
             // 
             this.panelArk.BackColor = System.Drawing.Color.Transparent;
-            this.panelArk.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panelArk.BackgroundImage = global::Login_Register.Properties.Resources.Group_85;
             this.panelArk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelArk.Location = new System.Drawing.Point(396, 1110);
             this.panelArk.Name = "panelArk";
@@ -571,7 +569,7 @@
             // panelItTakesTwo
             // 
             this.panelItTakesTwo.BackColor = System.Drawing.Color.Transparent;
-            this.panelItTakesTwo.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panelItTakesTwo.BackgroundImage = global::Login_Register.Properties.Resources.Group_79;
             this.panelItTakesTwo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelItTakesTwo.Location = new System.Drawing.Point(709, 467);
             this.panelItTakesTwo.Name = "panelItTakesTwo";
@@ -581,7 +579,7 @@
             // panelAlbionOnline
             // 
             this.panelAlbionOnline.BackColor = System.Drawing.Color.Transparent;
-            this.panelAlbionOnline.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panelAlbionOnline.BackgroundImage = global::Login_Register.Properties.Resources.Group_83;
             this.panelAlbionOnline.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelAlbionOnline.Location = new System.Drawing.Point(86, 1111);
             this.panelAlbionOnline.Name = "panelAlbionOnline";
@@ -601,7 +599,7 @@
             // panelMortalKombat
             // 
             this.panelMortalKombat.BackColor = System.Drawing.Color.Transparent;
-            this.panelMortalKombat.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panelMortalKombat.BackgroundImage = global::Login_Register.Properties.Resources.Group_80;
             this.panelMortalKombat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelMortalKombat.Location = new System.Drawing.Point(862, 466);
             this.panelMortalKombat.Name = "panelMortalKombat";
@@ -611,7 +609,7 @@
             // panelApex
             // 
             this.panelApex.BackColor = System.Drawing.Color.Transparent;
-            this.panelApex.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panelApex.BackgroundImage = global::Login_Register.Properties.Resources.Group_78;
             this.panelApex.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelApex.Location = new System.Drawing.Point(552, 467);
             this.panelApex.Name = "panelApex";
@@ -621,11 +619,11 @@
             // panelOverwatch
             // 
             this.panelOverwatch.BackColor = System.Drawing.Color.Transparent;
-            this.panelOverwatch.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panelOverwatch.BackgroundImage = global::Login_Register.Properties.Resources.Group_77;
             this.panelOverwatch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelOverwatch.Location = new System.Drawing.Point(398, 467);
+            this.panelOverwatch.Location = new System.Drawing.Point(398, 466);
             this.panelOverwatch.Name = "panelOverwatch";
-            this.panelOverwatch.Size = new System.Drawing.Size(151, 200);
+            this.panelOverwatch.Size = new System.Drawing.Size(151, 201);
             this.panelOverwatch.TabIndex = 6;
             // 
             // panelAmongUs
