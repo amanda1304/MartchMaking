@@ -618,7 +618,7 @@
             // 
             // pnl
             // 
-            this.pnl.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnl.BackgroundImage")));
+            this.pnl.BackgroundImage = global::Login_Register.Properties.Resources.matchmakingpaneldologinquesemove;
             this.pnl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnl.Location = new System.Drawing.Point(1, -1);
             this.pnl.Name = "pnl";

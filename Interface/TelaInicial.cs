@@ -237,7 +237,7 @@ namespace Login_Register
 
         private void btnNotificacoes_Click(object sender, EventArgs e)
         {
-            panelNotificacoes.Visible = !panelNotificacoes.Visible;
+            //panelNotificacoes.Visible = !panelNotificacoes.Visible;
         }
 
         private void panelNotificacoes_Paint(object sender, PaintEventArgs e)
