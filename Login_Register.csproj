@@ -295,6 +295,9 @@
     <Content Include="banco de imagens\Group 7 %281%29.png" />
     <Content Include="banco de imagens\Group 7.png" />
     <Content Include="banco de imagens\hide.png" />
+    <Content Include="banco de imagens\image %281%29.png" />
+    <Content Include="banco de imagens\image %282%29.png" />
+    <Content Include="banco de imagens\image %283%29.png" />
     <Content Include="banco de imagens\image.png" />
     <Content Include="banco de imagens\Jogos.png" />
     <Content Include="banco de imagens\Line 1.png" />
@@ -316,6 +319,7 @@
     <Content Include="banco de imagens\Wireframe - 3 %284%29.png" />
     <Content Include="banco de imagens\Wireframe - 3.png" />
     <Content Include="banco de imagens\Wireframe - 9 1.png" />
+    <None Include="Resources\image %281%29.png" />
     <None Include="Resources\amongUS.png" />
     <None Include="Resources\Estrelas.png" />
     <None Include="Resources\FORTNITE.png" />
