@@ -426,6 +426,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private readonly object panel4;
+       // private readonly object panel4;
     }
 }
