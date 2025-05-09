@@ -95,7 +95,7 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogOut.BackgroundImage")));
+            this.btnLogOut.BackgroundImage = global::Login_Register.Properties.Resources.Group_34;
             this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogOut.FlatAppearance.BorderSize = 0;
@@ -208,7 +208,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImage = global::Login_Register.Properties.Resources.Group_15;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.panelPerfilInformações);
             this.panel1.Controls.Add(this.panel3);
@@ -352,14 +352,14 @@
             // btnNotificacoes
             // 
             this.btnNotificacoes.BackColor = System.Drawing.Color.Transparent;
-            this.btnNotificacoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNotificacoes.BackgroundImage")));
-            this.btnNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnNotificacoes.BackgroundImage = global::Login_Register.Properties.Resources.BTNSininho;
+            this.btnNotificacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNotificacoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNotificacoes.FlatAppearance.BorderSize = 0;
             this.btnNotificacoes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotificacoes.Location = new System.Drawing.Point(1135, 22);
+            this.btnNotificacoes.Location = new System.Drawing.Point(1143, 20);
             this.btnNotificacoes.Name = "btnNotificacoes";
-            this.btnNotificacoes.Size = new System.Drawing.Size(16, 20);
+            this.btnNotificacoes.Size = new System.Drawing.Size(22, 22);
             this.btnNotificacoes.TabIndex = 42;
             this.btnNotificacoes.UseVisualStyleBackColor = false;
             this.btnNotificacoes.Click += new System.EventHandler(this.btnNotificacoes_Click);
@@ -367,8 +367,8 @@
             // btnFecharTelaInicial
             // 
             this.btnFecharTelaInicial.BackColor = System.Drawing.Color.Transparent;
-            this.btnFecharTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFecharTelaInicial.BackgroundImage")));
-            this.btnFecharTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnFecharTelaInicial.BackgroundImage = global::Login_Register.Properties.Resources.BTNFechar;
+            this.btnFecharTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnFecharTelaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFecharTelaInicial.FlatAppearance.BorderSize = 0;
             this.btnFecharTelaInicial.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick;
@@ -383,8 +383,8 @@
             // btnMinimizarTelaInicial
             // 
             this.btnMinimizarTelaInicial.BackColor = System.Drawing.Color.Transparent;
-            this.btnMinimizarTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimizarTelaInicial.BackgroundImage")));
-            this.btnMinimizarTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnMinimizarTelaInicial.BackgroundImage = global::Login_Register.Properties.Resources.BTNMinimizar;
+            this.btnMinimizarTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMinimizarTelaInicial.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizarTelaInicial.FlatAppearance.BorderSize = 0;
             this.btnMinimizarTelaInicial.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
