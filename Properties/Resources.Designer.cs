@@ -384,6 +384,36 @@ namespace Login_Register.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BTNFechar {
+            get {
+                object obj = ResourceManager.GetObject("BTNFechar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BTNMinimizar {
+            get {
+                object obj = ResourceManager.GetObject("BTNMinimizar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BTNSininho {
+            get {
+                object obj = ResourceManager.GetObject("BTNSininho", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Capa_caderneta_de_saúde_infantil_leãozinho_aquarela_fofa_amarelo_2 {
             get {
                 object obj = ResourceManager.GetObject("Capa caderneta de saúde infantil leãozinho aquarela fofa amarelo 2", resourceCulture);

@@ -281,6 +281,9 @@
     <Content Include="banco de imagens\ai-generated-futuristic-esport-background-for-gaming-live-streaming-esport-game-tournament-competition-neon-banner-photo.jpg" />
     <Content Include="banco de imagens\Amigos.png" />
     <Content Include="banco de imagens\arrow-down-sign-to-navigate.png" />
+    <Content Include="banco de imagens\BTNFechar.png" />
+    <Content Include="banco de imagens\BTNMinimizar.png" />
+    <Content Include="banco de imagens\BTNSininho.png" />
     <Content Include="banco de imagens\Configurações.png" />
     <Content Include="banco de imagens\Design sem nome %282%29 %281%29.png" />
     <Content Include="banco de imagens\Estrela.png" />
@@ -350,6 +353,9 @@
     <Content Include="banco de imagens\Wireframe - 3 %284%29.png" />
     <Content Include="banco de imagens\Wireframe - 3.png" />
     <Content Include="banco de imagens\Wireframe - 9 1.png" />
+    <None Include="Resources\BTNFechar.png" />
+    <None Include="Resources\BTNMinimizar.png" />
+    <None Include="Resources\BTNSininho.png" />
     <None Include="Resources\Sininho %281%29.png" />
     <None Include="Resources\Minimizar.png" />
     <None Include="Resources\Fechar.png" />
