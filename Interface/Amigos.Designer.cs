@@ -113,7 +113,7 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogOut.BackgroundImage")));
+            this.btnLogOut.BackgroundImage = global::Login_Register.Properties.Resources.Group_34;
             this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogOut.FlatAppearance.BorderSize = 0;
@@ -146,7 +146,7 @@
             // 
             // btnConfiguracoes
             // 
-            this.btnConfiguracoes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfiguracoes.BackgroundImage")));
+            this.btnConfiguracoes.BackgroundImage = global::Login_Register.Properties.Resources.Configurações;
             this.btnConfiguracoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnConfiguracoes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConfiguracoes.FlatAppearance.BorderSize = 0;
@@ -162,7 +162,7 @@
             // 
             // btnPerfil
             // 
-            this.btnPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPerfil.BackgroundImage")));
+            this.btnPerfil.BackgroundImage = global::Login_Register.Properties.Resources.Perfil;
             this.btnPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPerfil.FlatAppearance.BorderSize = 0;
@@ -178,7 +178,7 @@
             // 
             // btnMatchMaking
             // 
-            this.btnMatchMaking.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMatchMaking.BackgroundImage")));
+            this.btnMatchMaking.BackgroundImage = global::Login_Register.Properties.Resources.MatchMaking;
             this.btnMatchMaking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnMatchMaking.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMatchMaking.FlatAppearance.BorderSize = 0;
@@ -194,7 +194,7 @@
             // 
             // btnSimbolos
             // 
-            this.btnSimbolos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSimbolos.BackgroundImage")));
+            this.btnSimbolos.BackgroundImage = global::Login_Register.Properties.Resources.Jogos;
             this.btnSimbolos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSimbolos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSimbolos.FlatAppearance.BorderSize = 0;
@@ -210,7 +210,7 @@
             // 
             // btnAmigos
             // 
-            this.btnAmigos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAmigos.BackgroundImage")));
+            this.btnAmigos.BackgroundImage = global::Login_Register.Properties.Resources.Amigos1;
             this.btnAmigos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAmigos.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAmigos.FlatAppearance.BorderSize = 0;

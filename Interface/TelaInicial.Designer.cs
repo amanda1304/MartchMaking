@@ -218,7 +218,7 @@
             // 
             // pnlPerfilTelaInicial
             // 
-            this.pnlPerfilTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPerfilTelaInicial.BackgroundImage")));
+            this.pnlPerfilTelaInicial.BackColor = System.Drawing.Color.Transparent;
             this.pnlPerfilTelaInicial.Controls.Add(this.pictureBox6);
             this.pnlPerfilTelaInicial.Controls.Add(this.labelStatusPerfilTelaInicial);
             this.pnlPerfilTelaInicial.Controls.Add(this.labelNomePerfilTelaInicial);
