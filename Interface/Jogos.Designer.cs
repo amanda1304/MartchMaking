@@ -297,6 +297,7 @@
             // 
             this.panel1.BackgroundImage = global::Login_Register.Properties.Resources.Wireframe___11;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.panel1ForzaHorizon);
             this.panel1.Controls.Add(this.panelUno);
             this.panel1.Controls.Add(this.panelMineCraftDungeons);
             this.panel1.Controls.Add(this.panelGolfBattle);
@@ -306,7 +307,6 @@
             this.panel1.Controls.Add(this.panelRoblox);
             this.panel1.Controls.Add(this.panelRocketLeague);
             this.panel1.Controls.Add(this.panelJogoRocketLeague);
-            this.panel1.Controls.Add(this.panel1ForzaHorizon);
             this.panel1.Controls.Add(this.panelDeadByDaylight);
             this.panel1.Controls.Add(this.panelFallGuys);
             this.panel1.Controls.Add(this.panelGTA);
@@ -339,7 +339,7 @@
             // panelUno
             // 
             this.panelUno.BackColor = System.Drawing.Color.Transparent;
-            this.panelUno.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panelUno.BackgroundImage = global::Login_Register.Properties.Resources.Group_96;
             this.panelUno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelUno.Location = new System.Drawing.Point(717, 1794);
             this.panelUno.Name = "panelUno";
@@ -349,7 +349,7 @@
             // panelMineCraftDungeons
             // 
             this.panelMineCraftDungeons.BackColor = System.Drawing.Color.Transparent;
-            this.panelMineCraftDungeons.BackgroundImage = global::Login_Register.Properties.Resources.Group_76;
+            this.panelMineCraftDungeons.BackgroundImage = global::Login_Register.Properties.Resources.Group_100;
             this.panelMineCraftDungeons.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelMineCraftDungeons.Location = new System.Drawing.Point(721, 2011);
             this.panelMineCraftDungeons.Name = "panelMineCraftDungeons";
@@ -359,7 +359,7 @@
             // panelGolfBattle
             // 
             this.panelGolfBattle.BackColor = System.Drawing.Color.Transparent;
-            this.panelGolfBattle.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panelGolfBattle.BackgroundImage = global::Login_Register.Properties.Resources.Group_93;
             this.panelGolfBattle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelGolfBattle.Location = new System.Drawing.Point(253, 1795);
             this.panelGolfBattle.Name = "panelGolfBattle";
@@ -369,7 +369,7 @@
             // panelDontStarveTogether
             // 
             this.panelDontStarveTogether.BackColor = System.Drawing.Color.Transparent;
-            this.panelDontStarveTogether.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panelDontStarveTogether.BackgroundImage = global::Login_Register.Properties.Resources.Group_97;
             this.panelDontStarveTogether.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelDontStarveTogether.Location = new System.Drawing.Point(870, 1793);
             this.panelDontStarveTogether.Name = "panelDontStarveTogether";
@@ -379,7 +379,7 @@
             // panelRedDead
             // 
             this.panelRedDead.BackColor = System.Drawing.Color.Transparent;
-            this.panelRedDead.BackgroundImage = global::Login_Register.Properties.Resources.Group_76;
+            this.panelRedDead.BackgroundImage = global::Login_Register.Properties.Resources.Group_91;
             this.panelRedDead.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelRedDead.Location = new System.Drawing.Point(718, 1562);
             this.panelRedDead.Name = "panelRedDead";
@@ -389,7 +389,7 @@
             // panelStreetFigther
             // 
             this.panelStreetFigther.BackColor = System.Drawing.Color.Transparent;
-            this.panelStreetFigther.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panelStreetFigther.BackgroundImage = global::Login_Register.Properties.Resources.Group_95;
             this.panelStreetFigther.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelStreetFigther.Location = new System.Drawing.Point(560, 1794);
             this.panelStreetFigther.Name = "panelStreetFigther";
@@ -399,17 +399,17 @@
             // panelRoblox
             // 
             this.panelRoblox.BackColor = System.Drawing.Color.Transparent;
-            this.panelRoblox.BackgroundImage = global::Login_Register.Properties.Resources.Group_76;
+            this.panelRoblox.BackgroundImage = global::Login_Register.Properties.Resources.Group_98;
             this.panelRoblox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelRoblox.Location = new System.Drawing.Point(92, 2011);
+            this.panelRoblox.Location = new System.Drawing.Point(64, 1985);
             this.panelRoblox.Name = "panelRoblox";
-            this.panelRoblox.Size = new System.Drawing.Size(311, 219);
+            this.panelRoblox.Size = new System.Drawing.Size(336, 241);
             this.panelRoblox.TabIndex = 13;
             // 
             // panelRocketLeague
             // 
             this.panelRocketLeague.BackColor = System.Drawing.Color.Transparent;
-            this.panelRocketLeague.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panelRocketLeague.BackgroundImage = global::Login_Register.Properties.Resources.Group_94;
             this.panelRocketLeague.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelRocketLeague.Location = new System.Drawing.Point(406, 1794);
             this.panelRocketLeague.Name = "panelRocketLeague";
@@ -419,7 +419,7 @@
             // panelJogoRocketLeague
             // 
             this.panelJogoRocketLeague.BackColor = System.Drawing.Color.Transparent;
-            this.panelJogoRocketLeague.BackgroundImage = global::Login_Register.Properties.Resources.Group_76;
+            this.panelJogoRocketLeague.BackgroundImage = global::Login_Register.Properties.Resources.Group_99;
             this.panelJogoRocketLeague.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelJogoRocketLeague.Location = new System.Drawing.Point(410, 2011);
             this.panelJogoRocketLeague.Name = "panelJogoRocketLeague";
@@ -429,7 +429,7 @@
             // panel1ForzaHorizon
             // 
             this.panel1ForzaHorizon.BackColor = System.Drawing.Color.Transparent;
-            this.panel1ForzaHorizon.BackgroundImage = global::Login_Register.Properties.Resources.amongUS;
+            this.panel1ForzaHorizon.BackgroundImage = global::Login_Register.Properties.Resources.Group_92;
             this.panel1ForzaHorizon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1ForzaHorizon.Location = new System.Drawing.Point(96, 1795);
             this.panel1ForzaHorizon.Name = "panel1ForzaHorizon";
@@ -451,15 +451,15 @@
             this.panelFallGuys.BackColor = System.Drawing.Color.Transparent;
             this.panelFallGuys.BackgroundImage = global::Login_Register.Properties.Resources.Group_89;
             this.panelFallGuys.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelFallGuys.Location = new System.Drawing.Point(89, 1562);
+            this.panelFallGuys.Location = new System.Drawing.Point(60, 1536);
             this.panelFallGuys.Name = "panelFallGuys";
-            this.panelFallGuys.Size = new System.Drawing.Size(311, 219);
+            this.panelFallGuys.Size = new System.Drawing.Size(336, 241);
             this.panelFallGuys.TabIndex = 10;
             // 
             // panelGTA
             // 
             this.panelGTA.BackColor = System.Drawing.Color.Transparent;
-            this.panelGTA.BackgroundImage = global::Login_Register.Properties.Resources.Group_76;
+            this.panelGTA.BackgroundImage = global::Login_Register.Properties.Resources.Group_90;
             this.panelGTA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panelGTA.Location = new System.Drawing.Point(407, 1562);
             this.panelGTA.Name = "panelGTA";

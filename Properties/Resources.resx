@@ -577,4 +577,37 @@
   <data name="Azul2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Menu\Azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Group_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_91" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 91.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_92" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 92.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_93" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 93.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_94" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 94.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_95" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 95.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_97" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 97.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_98" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 98.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Group_99" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Group 99.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

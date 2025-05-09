@@ -347,6 +347,17 @@
     <Content Include="banco de imagens\Wireframe - 3 %284%29.png" />
     <Content Include="banco de imagens\Wireframe - 3.png" />
     <Content Include="banco de imagens\Wireframe - 9 1.png" />
+    <None Include="Resources\Group 90.png" />
+    <None Include="Resources\Group 91.png" />
+    <None Include="Resources\Group 92.png" />
+    <None Include="Resources\Group 93.png" />
+    <None Include="Resources\Group 94.png" />
+    <None Include="Resources\Group 95.png" />
+    <None Include="Resources\Group 96.png" />
+    <None Include="Resources\Group 97.png" />
+    <None Include="Resources\Group 98.png" />
+    <None Include="Resources\Group 99.png" />
+    <None Include="Resources\Group 100.png" />
     <None Include="Resources\Group 88.png" />
     <None Include="Resources\Group 89.png" />
     <None Include="Resources\Group 87.png" />
