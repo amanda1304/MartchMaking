@@ -146,7 +146,7 @@ namespace Login_Register
 
             var perfil = perfilDAO.ObterPerfilPorUsuario(UserSession.userLogado.id);
             var config = configDAO.ObterPorIdPerfilUsuario(perfil.IdPerfilUsuario);
-            MessageBox.Show($"menu: '{config.menu}'\nborda: '{config.bordas}'\nbandeira: '{config.bandeiras}'");
+           // MessageBox.Show($"menu: '{config.menu}'\nborda: '{config.bordas}'\nbandeira: '{config.bandeiras}'");
 
             if (config != null)
             {
