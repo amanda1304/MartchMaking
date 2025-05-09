@@ -286,6 +286,7 @@
     <Content Include="banco de imagens\Estrela.png" />
     <Content Include="banco de imagens\Estrelas.png" />
     <Content Include="banco de imagens\eye.png" />
+    <Content Include="banco de imagens\Fechar.png" />
     <Content Include="banco de imagens\FORTNITE.png" />
     <Content Include="banco de imagens\Group 100.png" />
     <Content Include="banco de imagens\Group 19.png" />
@@ -332,6 +333,7 @@
     <Content Include="banco de imagens\LOL.png" />
     <Content Include="banco de imagens\matchmaking.ico.ico" />
     <Content Include="banco de imagens\MatchMaking.png" />
+    <Content Include="banco de imagens\Minimizar.png" />
     <Content Include="banco de imagens\Notificações.png" />
     <Content Include="banco de imagens\PaineldeFigurinhas.png" />
     <Content Include="banco de imagens\Perfil.png" />
@@ -339,6 +341,7 @@
     <Content Include="banco de imagens\Rectangle 31.png" />
     <Content Include="banco de imagens\Rectangle 32.png" />
     <Content Include="banco de imagens\RIVALS.png" />
+    <Content Include="banco de imagens\Sininho %281%29.png" />
     <Content Include="banco de imagens\view.png" />
     <Content Include="banco de imagens\visible.png" />
     <Content Include="banco de imagens\Wireframe - 11.png" />
@@ -347,6 +350,9 @@
     <Content Include="banco de imagens\Wireframe - 3 %284%29.png" />
     <Content Include="banco de imagens\Wireframe - 3.png" />
     <Content Include="banco de imagens\Wireframe - 9 1.png" />
+    <None Include="Resources\Sininho %281%29.png" />
+    <None Include="Resources\Minimizar.png" />
+    <None Include="Resources\Fechar.png" />
     <None Include="Resources\Group 90.png" />
     <None Include="Resources\Group 91.png" />
     <None Include="Resources\Group 92.png" />
