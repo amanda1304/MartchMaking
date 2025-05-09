@@ -45,6 +45,7 @@
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1ForzaHorizon = new System.Windows.Forms.Panel();
             this.panelUno = new System.Windows.Forms.Panel();
             this.panelMineCraftDungeons = new System.Windows.Forms.Panel();
             this.panelGolfBattle = new System.Windows.Forms.Panel();
@@ -54,7 +55,6 @@
             this.panelRoblox = new System.Windows.Forms.Panel();
             this.panelRocketLeague = new System.Windows.Forms.Panel();
             this.panelJogoRocketLeague = new System.Windows.Forms.Panel();
-            this.panel1ForzaHorizon = new System.Windows.Forms.Panel();
             this.panelDeadByDaylight = new System.Windows.Forms.Panel();
             this.panelFallGuys = new System.Windows.Forms.Panel();
             this.panelGTA = new System.Windows.Forms.Panel();
@@ -336,6 +336,16 @@
             this.panel1.Size = new System.Drawing.Size(1104, 2370);
             this.panel1.TabIndex = 0;
             // 
+            // panel1ForzaHorizon
+            // 
+            this.panel1ForzaHorizon.BackColor = System.Drawing.Color.Transparent;
+            this.panel1ForzaHorizon.BackgroundImage = global::Login_Register.Properties.Resources.Group_92;
+            this.panel1ForzaHorizon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1ForzaHorizon.Location = new System.Drawing.Point(96, 1795);
+            this.panel1ForzaHorizon.Name = "panel1ForzaHorizon";
+            this.panel1ForzaHorizon.Size = new System.Drawing.Size(151, 200);
+            this.panel1ForzaHorizon.TabIndex = 17;
+            // 
             // panelUno
             // 
             this.panelUno.BackColor = System.Drawing.Color.Transparent;
@@ -425,16 +435,6 @@
             this.panelJogoRocketLeague.Name = "panelJogoRocketLeague";
             this.panelJogoRocketLeague.Size = new System.Drawing.Size(311, 219);
             this.panelJogoRocketLeague.TabIndex = 14;
-            // 
-            // panel1ForzaHorizon
-            // 
-            this.panel1ForzaHorizon.BackColor = System.Drawing.Color.Transparent;
-            this.panel1ForzaHorizon.BackgroundImage = global::Login_Register.Properties.Resources.Group_92;
-            this.panel1ForzaHorizon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1ForzaHorizon.Location = new System.Drawing.Point(96, 1795);
-            this.panel1ForzaHorizon.Name = "panel1ForzaHorizon";
-            this.panel1ForzaHorizon.Size = new System.Drawing.Size(151, 200);
-            this.panel1ForzaHorizon.TabIndex = 17;
             // 
             // panelDeadByDaylight
             // 

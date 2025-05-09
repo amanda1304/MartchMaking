@@ -43,6 +43,8 @@
             this.btnFecharTelaInicial = new System.Windows.Forms.Button();
             this.btnMinimizarTelaInicial = new System.Windows.Forms.Button();
             this.panelFundoMatchmaking = new System.Windows.Forms.Panel();
+            this.labelJogo = new System.Windows.Forms.Label();
+            this.labelDataEHorário = new System.Windows.Forms.Label();
             this.btnListadeJogos = new System.Windows.Forms.Button();
             this.flowLayoutPanelListadeJogos = new System.Windows.Forms.FlowLayoutPanel();
             this.panelListadeJogos = new System.Windows.Forms.Panel();
@@ -52,8 +54,6 @@
             this.pictureBoxAmigo2Matchmaking = new System.Windows.Forms.PictureBox();
             this.pictureAvatar = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelDataEHorário = new System.Windows.Forms.Label();
-            this.labelJogo = new System.Windows.Forms.Label();
             this.pnlMenuTelaInicial.SuspendLayout();
             this.panelFundoMatchmaking.SuspendLayout();
             this.flowLayoutPanelListadeJogos.SuspendLayout();
@@ -66,7 +66,7 @@
             // pnlMenuTelaInicial
             // 
             this.pnlMenuTelaInicial.BackColor = System.Drawing.Color.Transparent;
-            this.pnlMenuTelaInicial.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMenuTelaInicial.BackgroundImage")));
+            this.pnlMenuTelaInicial.BackgroundImage = global::Login_Register.Properties.Resources.Azul2;
             this.pnlMenuTelaInicial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlMenuTelaInicial.Controls.Add(this.btnLogOut);
             this.pnlMenuTelaInicial.Controls.Add(this.btnMatchMakingLogo);
@@ -262,6 +262,30 @@
             this.panelFundoMatchmaking.Size = new System.Drawing.Size(853, 700);
             this.panelFundoMatchmaking.TabIndex = 43;
             // 
+            // labelJogo
+            // 
+            this.labelJogo.AutoSize = true;
+            this.labelJogo.BackColor = System.Drawing.Color.Transparent;
+            this.labelJogo.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelJogo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelJogo.Location = new System.Drawing.Point(241, 647);
+            this.labelJogo.Name = "labelJogo";
+            this.labelJogo.Size = new System.Drawing.Size(91, 21);
+            this.labelJogo.TabIndex = 47;
+            this.labelJogo.Text = "Call of Duty";
+            // 
+            // labelDataEHorário
+            // 
+            this.labelDataEHorário.AutoSize = true;
+            this.labelDataEHorário.BackColor = System.Drawing.Color.Transparent;
+            this.labelDataEHorário.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDataEHorário.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelDataEHorário.Location = new System.Drawing.Point(534, 647);
+            this.labelDataEHorário.Name = "labelDataEHorário";
+            this.labelDataEHorário.Size = new System.Drawing.Size(120, 21);
+            this.labelDataEHorário.TabIndex = 46;
+            this.labelDataEHorário.Text = "10/03 às 19h00";
+            // 
             // btnListadeJogos
             // 
             this.btnListadeJogos.BackColor = System.Drawing.Color.Transparent;
@@ -362,30 +386,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(280, 700);
             this.panel1.TabIndex = 44;
-            // 
-            // labelDataEHorário
-            // 
-            this.labelDataEHorário.AutoSize = true;
-            this.labelDataEHorário.BackColor = System.Drawing.Color.Transparent;
-            this.labelDataEHorário.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDataEHorário.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelDataEHorário.Location = new System.Drawing.Point(534, 647);
-            this.labelDataEHorário.Name = "labelDataEHorário";
-            this.labelDataEHorário.Size = new System.Drawing.Size(120, 21);
-            this.labelDataEHorário.TabIndex = 46;
-            this.labelDataEHorário.Text = "10/03 às 19h00";
-            // 
-            // labelJogo
-            // 
-            this.labelJogo.AutoSize = true;
-            this.labelJogo.BackColor = System.Drawing.Color.Transparent;
-            this.labelJogo.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelJogo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelJogo.Location = new System.Drawing.Point(241, 647);
-            this.labelJogo.Name = "labelJogo";
-            this.labelJogo.Size = new System.Drawing.Size(91, 21);
-            this.labelJogo.TabIndex = 47;
-            this.labelJogo.Text = "Call of Duty";
             // 
             // MatchMaking
             // 

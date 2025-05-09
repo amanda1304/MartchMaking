@@ -199,23 +199,14 @@
   <data name="Ellipse_37" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\Ellipse 37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Vermelho2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Menu\Vermelho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="logo_preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\logo preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group_51" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Fundo\Group 51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Roxo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Menu\Roxo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Ellipse_41" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\Ellipse 41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Amarelo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Menu\Amarelo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="view" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\view.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,9 +238,6 @@
   <data name="Wireframe___3__3_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\Wireframe - 3 (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Amarelo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Bordas\Amarelo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Group 77" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 77.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -267,9 +255,6 @@
   </data>
   <data name="Wireframe - 2 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wireframe - 2 (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Roxo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Bordas\Roxo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rectangle 104" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 104.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -301,9 +286,6 @@
   <data name="porfavor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\porfavor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Vermelho" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Bandeiras\Vermelho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="amongUS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\amongUS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -324,9 +306,6 @@
   </data>
   <data name="Ellipse_38" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\Ellipse 38.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Vermelho1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Bordas\Vermelho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Fundo\Group 15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -360,9 +339,6 @@
   </data>
   <data name="Ellipse_44" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\Ellipse 44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Verde" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Bandeiras\Verde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ellipse_39" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\Ellipse 39.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -451,17 +427,11 @@
   <data name="image (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Verde2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Menu\Verde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="fundo Tela Matchmaking" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fundo Tela Matchmaking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ellipse_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\Ellipse 45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Verde1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Bordas\Verde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ellipse_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\Ellipse 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -505,17 +475,11 @@
   <data name="Jogos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\Jogos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Roxo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Bandeiras\Roxo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Amigos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\Amigos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Avatar\22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Amarelo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Bandeiras\Amarelo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rectangle_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\banco de imagens\Rectangle 31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -568,15 +532,6 @@
   <data name="Group 88" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 88.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Bandeiras\Azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Azul1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Bordas\Azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Azul2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Menu\Azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Group_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -609,5 +564,50 @@
   </data>
   <data name="Group_99" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 99.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Amarelo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bandeiras\Amarelo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Amarelo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bordas\Amarelo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Amarelo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Menu\Amarelo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Azul" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bandeiras\Azul.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Azul1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bordas\Azul1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Azul2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Menu\Azul2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Roxo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bandeiras\Roxo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Roxo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bordas\Roxo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Roxo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Menu\Roxo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Verde" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bandeiras\Verde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Verde1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bordas\Verde1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Verde2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Menu\Verde2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vermelho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bandeiras\Vermelho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vermelho1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bordas\Vermelho1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vermelho2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Menu\Vermelho2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

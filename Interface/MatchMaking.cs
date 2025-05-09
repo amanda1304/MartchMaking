@@ -44,9 +44,17 @@ namespace Login_Register
 
         private void btnPerfil_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Perfil perfil = new Perfil();
-            perfil.Show();
+            try
+            {
+                this.Hide();
+                Perfil perfil = new Perfil();
+                perfil.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao abrir o formulário Perfil:\n" + ex.Message);
+                this.Show(); // Reexibe o form atual, se quiser
+            }
         }
 
         private void btnSimbolos_Click(object sender, EventArgs e)

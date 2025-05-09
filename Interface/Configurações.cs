@@ -165,6 +165,7 @@ namespace Login_Register
             timer5.Start();
 
             Image avatar = configService.CarregarAvatar(UserSession.userLogado.id);
+            pictureBoxPerfil.Image = (Image)Properties.Resources._24;
             if (avatar != null)
             {
                 pictureBoxPerfil.Image = avatar;
@@ -692,11 +693,12 @@ namespace Login_Register
         }
 
 
-        /*  private void btnTemaAmarelo_Click(object sender, EventArgs e)
+          /*private void btnTemaAmarelo_Click(object sender, EventArgs e)
           {
               AplicarTema("Amanrelo", "Amanrelo1", "Amarelo2");
-              pnlMenuTelaInicial.BackgroundImage = Properties.Resources.Amarelo2;
-              nomeMenuSelecionado = "Amanrelo2";
+                LiberarImagemAtual();
+            //pnlMenuTelaInicial.BackgroundImage = Properties.Resources.Amarelo2;
+            nomeMenuSelecionado = "Amanrelo2";
               nomeBandeiraSelecionada = "Amanrelo";
               nomeBordaSelecionada = "Amanrelo1";
           }
@@ -705,12 +707,13 @@ namespace Login_Register
           {
 
               AplicarTema("Vermelho", "Vermelho1", "Vermelho2");
-              pnlMenuTelaInicial.BackgroundImage = Properties.Resources.Vermelho2;
-              nomeMenuSelecionado = "Vermelho2";
+                LiberarImagemAtual();
+            //pnlMenuTelaInicial.BackgroundImage = Properties.Resources.Vermelho2;
+            nomeMenuSelecionado = "Vermelho2";
               nomeBandeiraSelecionada = "Vermelho";
               nomeBordaSelecionada = "Vermelho1";
-          }*/
-        /* private void btnTemaAmarelo_Click(object sender, EventArgs e)
+          }
+         private void btnTemaAmarelo_Click(object sender, EventArgs e)
          {
              pnlMenuTelaInicial.BackgroundImage = null;
              AplicarTema("Amarelo1", "Amarelo", "Amarelo2");
@@ -721,7 +724,7 @@ namespace Login_Register
              pnlMenuTelaInicial.BackgroundImage = null;
              AplicarTema("Vermelho1", "Vermelho", "Vermelho2");
          }*/
-        private void btnTemaAmarelo_Click(object sender, EventArgs e)
+       private void btnTemaAmarelo_Click(object sender, EventArgs e)
         {
             LiberarImagemAtual();
             AplicarTema("Amarelo1", "Amarelo", "Amarelo2");
@@ -747,7 +750,7 @@ namespace Login_Register
         private void btnTemaRoxo_Click(object sender, EventArgs e)
         {
             LiberarImagemAtual();
-            AplicarTema("Roxo", "Roxo1", "Roxo2");
+            AplicarTema("Roxo1", "Roxo", "Roxo2");
            
         }
 
@@ -757,7 +760,7 @@ namespace Login_Register
         {
             LiberarImagemAtual();
             // Aplica o tema visualmente
-            AplicarTema("Azul", "Azul1", "Azul2");
+            AplicarTema("Azul1", "Azul", "Azul2");
            
             
         }
@@ -767,12 +770,13 @@ namespace Login_Register
         {
             LiberarImagemAtual();
             // Aplica o tema visualmente
-            AplicarTema("Verde", "Verde1", "Verde2");
+            AplicarTema("Verde1", "Verde", "Verde2");
             
 
          
            // Console.WriteLine($"Tema Selecionado: {temaSelecionado}, Bandeira: {bandeiraSelecionada}, Borda: {bordaSelecionada}");
         }
+       
 
         private void panelNotificacoes_Paint(object sender, PaintEventArgs e)
         {

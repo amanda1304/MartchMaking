@@ -307,7 +307,7 @@
             // panel3
             // 
             this.panel3.BackgroundImage = global::Login_Register.Properties.Resources.Azul;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(1, 1);
@@ -330,7 +330,7 @@
             // panel4
             // 
             this.panel4.BackgroundImage = global::Login_Register.Properties.Resources.Azul1;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Controls.Add(this.pictureAvatar);
             this.panel4.Location = new System.Drawing.Point(35, 116);
             this.panel4.Name = "panel4";

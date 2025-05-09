@@ -222,7 +222,7 @@ namespace Login_Register
 
         private void TelaInicial_Load_1(object sender, EventArgs e)
         {
-
+            pictureBox6.Image = (Image)Properties.Resources._24;
             ConfiguracoesService configService = new ConfiguracoesService();
             pictureBox6.Image = configService.CarregarAvatar(UserSession.userLogado.id);
 

@@ -135,6 +135,8 @@ namespace Login_Register
         private void Perfil_Load(object sender, EventArgs e)
         {
             timer2.Start();
+            pictureAvatar.Image = (Image)Properties.Resources._24;
+            panel1.BackgroundImage = (Image)Properties.Resources.Group_15;
             ConfiguracoesService configService = new ConfiguracoesService();
             pictureAvatar.Image = configService.CarregarAvatar(UserSession.userLogado.id);
             panel1.BackgroundImage = configService.CarregarCorFundo(UserSession.userLogado.id);
